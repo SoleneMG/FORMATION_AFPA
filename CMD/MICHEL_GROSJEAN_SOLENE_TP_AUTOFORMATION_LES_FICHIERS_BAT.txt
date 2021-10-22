@@ -1,0 +1,42 @@
+EXERCICE 1 :
+
+cf bonjour1.bat
+
+Definition des commandes :
+@echo off		-> n'affiche pas à la console les instructions du script
+cls				-> efface l'écran
+echo			-> affiche le contenu qui suit 
+pause			-> arrête le script et demande à l'utilisateur d'intéragir pour le redémarrer
+
+_______________________________________________________________________________________
+
+EXERCICE 2 :
+
+cf d.bat t.bat dt.bat
+
+date/t 			-> l'option /t permet d'afficher la date sans demander à la modifier
+time/t			-> l'option /t permet d'afficher l'heure sans demander à la modifier
+call			-> permet de renvoyer l'instance en fin de script
+
+_______________________________________________________________________________________
+
+EXERCICE 3 :
+
+cf bonjour2.bat param1.bat param2.bat agentsecret.bat
+
+_______________________________________________________________________________________
+
+EXERCICE 4 :
+
+cd %tmp%
+agentsecret %var1% %var2%
+
+cf affParam.bat 
+
+_______________________________________________________________________________________
+
+EXERCICE 5 et 6 :
+
+cf aleatoire.bat trouve.bat
+
+
