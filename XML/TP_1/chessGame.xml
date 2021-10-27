@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<chessGame>
+	<date>1998</date>
+	<location>Moscou</location>
+
+	<player>
+		<name>Karpov</name>
+		<color></color>
+	</player>
+
+	<player>
+		<name>Kasparov</name>
+		<color></color>
+	</player>
+
+	<gameProcess>
+		<turn number="1">
+			<movement>
+				<white>
+					<piece>pawn</piece>
+					<leave>A7</leave>
+					<reach>A5</reach>
+				</white>
+				
+				<black>
+					<piece>pawn</piece>
+					<leave>A2</leave>
+					<reach>A4</reach>
+				</black>
+			</movement>
+		</turn>
+		
+		<turn number="2">
+			<movement>
+				<white>
+					<piece>pawn</piece>
+					<leave>B7</leave>
+					<reach>B5</reach>
+				</white>
+					
+				<black>
+					<piece>pawn</piece>
+					<leave>A4</leave>
+					<reach>B5</reach>
+					<removed>pawn</removed>
+				</black>
+			</movement>
+		</turn>
+		
+		<turn number="7">
+			<white>
+				<castling>
+					<kingLeaveSquare>E1</kingLeaveSquare>
+					<kingReachSquare>G1</kingReachSquare>
+					<rookLeaveSquare>H1</rookLeaveSquare>
+					<rookReachSquare>F1</rookReachSquare>
+				</castling>
+			</white>
+			
+			<black>
+				<piece>knight</piece>
+				<leave>H4</leave>
+				<reach>F3</reach>
+				<check>yes</check>
+			</black>
+		</turn>
+		
+		<turn number="10">
+			<movement>	
+				<white>
+				<piece>rook</piece>
+				<leave>E3</leave>
+				<reach>E7</reach>
+				<removed>knight</removed>
+				</white>
+				
+				<black>
+				<piece>pawn</piece>
+				<leave>E7</leave>
+				<reach>E8</reach>
+				<promotion>queen</promotion>
+				</black>
+			</movement>
+		</turn>
+	</gameProcess>
+	
+	<endOfTheGame>
+		<winner>Kasparov</winner>
+		<way>Win on time</way>
+	</endOfTheGame>
+
+</chessGame>
+

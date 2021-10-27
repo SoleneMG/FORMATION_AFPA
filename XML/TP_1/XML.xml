@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<christmasGiftsList>
+
+	<supplies>
+		<pen>
+			<color>red</color>
+			<quantity>1</quantity>
+		</pen>
+	</supplies>
+
+	<cars>
+		<mark name="Ferrari">
+			<car>
+			<color>blue</color>
+			</car>
+		</mark>
+	</cars>
+
+	<jewerly>
+		<necklace>
+			<gemstones>
+				<diamond>1</diamond>
+				<ruby>2</ruby>
+				<pearls>
+					<white>3</white>
+					<black>3</black>
+				</pearls>
+			</gemstones>
+		</necklace>
+	</jewerly>
+
+	<shoes>
+		<cupleOfBoot>
+			<boot feet="left">
+				<brand></brand>
+				<size></size>
+				<color></color>
+				<status>new</status>
+			</boot>
+			
+			<boot feet="right">
+				<brand></brand>
+				<size></size>
+				<color></color>
+			</boot>
+		</cupleOfBoot>	
+	</shoes>
+
+</christmasGiftsList>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<art>
+	<artisticMovement>
+	Art et Mysticisme
+		<painter>
+		Vincent VAN GOGH
+			<signPicture>pictures\van_gogh_sign.jpg</signPicture>
+			<profilePicture>pictures\van_gogh_profile_picture.jpg</profilePicture>
+			
+			<biography>
+				<paragraph number=1>
+				Fils d'un pasteur néerlandais, neveu de son homonyme Vincent Van Gogh qui co-dirigeait la firme de négoce d'art international Goupil &amp; Cie à La Haye, Vincent, comme son frère Théo, commença par suivre la tradition familiale en juillet 1869 en entrant en apprentissage chez Goupil &amp; Cie.
+				</paragraph>
+				<paragraph number=2>
+				Il devait y rester plus de 5 ans, à La Haye, puis dans les filiales, à Bruxelles, Londres (juin 1873 à mai 1875), Paris (jusqu'à fin 1875), où il commenca à développer un dégoût pour le commerce de l'art. Il se mit alors à mener une vie de reclus et à lire intensément la Bible.
+				</paragraph>
+				<paragraph number=3>
+				Il quitte son emploi et retourne chez ses parents à Etten en 1876, avant de retourner en Angleterre comme professeur dans un internat, puis prédicateur.
+				</paragraph>
+				<paragraph number=4>
+				L'année suivante, il commence des études de théologie à Amsterdam, qu'il abandonne un an après, avant de partir pour le Borinage, en Belgique, comme prédicateur et évangéliste auprès des mineurs de charbon de cette région désolée.
+				</paragraph>
+				<paragraph number=5>
+				Son tempérament fougueux et ses opinions politiques et sociales avancées le font se heurter aux autorités de l'Eglise et Vincent abandonne sa vocation. 
+				</paragraph>
+			</biography>
+			
+			<paintings>
+				<paint>
+					<title>Fritillaires couronne impériale dans un vase de cuivre</title>
+					<date>1887</date>
+					<museum>Musée d'Orsay, Paris</museum>
+					<picture>pictures\van_gogh_fritillaires_couronne_imperiale.jpg</picture>
+				</paint>
+				
+				<paint>
+					<title>Semeur au soleil couchant</title>
+					<date>1888</date>
+					<museum>Rijksmuseum Kröller-Müller Otterlo, Pays-Bas</museum>
+					<picture>pictures\van_gogh_semeur_au_soleil_couchant.jpg</picture>
+				</paint>
+				
+				<paint>
+					<title>Champ de blé sous un ciel orageux</title>
+					<date>1890</date>
+					<museum>Rijksmuseum Vincent Van Gogh, Amsterdam</museum>
+					<picture>pictures\van_gogh_champ_de_ble_sous_un_ciel_orageux.jpg</picture>
+				</paint>
+			</paintings>
+			
+		</painter>
+	</artisticMovement>
+	
+	<artisticMovement>
+	Travail et impressionnisme
+		<painter>
+		Armand GUILLAUMIN
+			<signPicture>pictures\guillaumin_sign.jpg</signPicture>
+			<profilePicture>pictures\guillaumin_profile_picture.jpg</profilePicture>
+			
+			<biography>
+				<paragraph number=1>
+				Armand GUILLAUMIN est probablement le moins connu des grands peintres impresssionnistes, bien qu'il fit partie du mouvement impressionniste dès son origine et qu'il en fut le dernier survivant. 
+				</paragraph>
+				<paragraph number=2>
+				Peintre paysagiste au coloris intense, il se distingua par ses paysages de la Région Parisienne, de la Creuse et de l'Esterel.
+				</paragraph>
+				<paragraph number=3>
+				Né à Paris dans une famille ouvrière récemment émigrée de Moulins dans le Bourbonnais, où enfant il passa ses vacances, il commença à travailler à Paris dans le magasin de son oncle en 1857 à 15 ans tout en étudiant le dessin le soir.
+				</paragraph>
+				<paragraph number=4>
+				En 1860 il fut embauché sur la ligne de chemin de fer Paris-Orléans, continuant à pratiquer le dessin pendant ses loisirs, avant d'étudier à l'Académie Suisse où il fit la connaissance de Cézanne et Pissaro, avec lesquels il restera toute sa vie en étroite collaboration et amitié.
+				</paragraph>
+			</biography>
+			
+			<paintings>
+				<paint>
+					<title>Soleil couchant à Ivry</title>
+					<date>1873</date>
+					<museum>Musée d'Orsay, Paris</museum>
+					<picture>pictures\guillaumin_soleil_couchant_a_ivry.jpg</picture>
+				</paint>
+				
+				<paint>
+					<title>La baie d'Agay</title>
+					<date>1910</date>
+					<museum>Collection particulière</museum>
+					<picture>pictures\guillaumin_la_baie_d_agay.jpg</picture>
+				</paint>
+				
+				<paint>
+					<title>Le ravin de la folie à Crozan</title>
+					<date>1894</date>
+					<museum>Musée du Petit Palais, Genève</museum>
+					<picture>pictures\guillaumin_le_ravin_de_la_folie_a_crozant.jpg</picture>
+				</paint>
+			</paintings>
+			
+		</painter>
+	
+	</artisticMovement>
+	
+	<artisticMovement>
+	Mouvement et composition
+		<painter>
+		Edgar DEGAS
+			<signPicture>pictures\degas_sign.jpg</signPicture>
+			<profilePicture>pictures\degas_profile_picture.jpg</profilePicture>
+			
+			<biography>
+				<paragraph number=1>
+				Edgar DEGAS (1834-1917), peintre et sculpteur français, est considéré comme l'un des représentants majeurs de l'impressionnisme grâce à sa composition novatrice et à son analyse perspective du mouvement.
+				</paragraph>
+				<paragraph number=2>
+				Il fut aussi l'un des plus actifs organisateurs du mouvement impressionniste, même si ses conceptions artistiques étaient distinctes de celles de ses amis impressionnistes. 
+				</paragraph>
+				<paragraph number=3>
+				De son vrai nom Hilaire Germain Edgar de Gas, il naît à  Paris en juillet 1834 dans une grande famille noble de banquiers, aisée et cultivée. Sa mère était créole, originaire de la Nouvelle-Orléans. Son père, amateur d'art éclairé, permet à son fils d'aménager un atelier dans sa propre maison. 	
+				</paragraph>
+				<paragraph number=4>
+				Après de brèves études de droit, il étudie à l'Ecole des Beaux-Arts sous la direction de Lamothe, un disciple d'Ingres, peintre auquel il devait toujours vouer une admiration sans borne. Il y acquiert une grande maîtrise du dessin qui constituera toujours une caractéristique majeure de son art.
+				</paragraph>
+				<paragraph number=5>
+				En 1859, il part pour l'Italie où il étudie, à Florence, Naples et Rome, les œuvres du Quattrocento, et peint de nombreux portraits.	
+				</paragraph>
+				<paragraph number=6>
+				Il étudiera à fond l'art ancien, tout en programmant dès 1859 dans ses carnets, toute une liste de motifs de la vie contemporaine qu'il projette de traiter : musiciens, danseuses, deuils, cafés le soir... autant de thèmes qu'on retrouvera dans son oeuvre.
+				</paragraph>
+				<paragraph number=7>
+				Par son statut social, sa culture et sa conception artistique, Degas a beaucoup de points communs avec Manet. Plus encore que Manet, c'est un peintre de figures, il ne s'intéresse jamais au paysage. 
+				</paragraph>
+			</biography>
+			
+			<paintings>
+				<paint>
+					<title>l'orchestre de l'Opéra</title>
+					<date>vers 1868-69</date>
+					<museum>Musée d'Orsay, Paris</museum>
+					<picture>pictures\degas_l_orchestre_de_l_opera.jpg</picture>
+				</paint>
+				
+				<paint>
+					<title>Danseuses</title>
+					<date>1878</date>
+					<museum>Collection privée</museum>
+					<picture>pictures\degas_danseuses.jpg</picture>
+				</paint>
+				
+				<paint>
+					<title>Cavaliers sous la pluie</title>
+					<date>1886</date>
+					<museum>Glasgow Museums and Art Gallery, Ecosse</museum>
+					<picture>pictures\degas_cavaliers_sous_la_pluie.jpg</picture>
+				</paint>
+			</paintings>
+			
+		</painter>
+	
+	
+	</artisticMovement>
+</art>

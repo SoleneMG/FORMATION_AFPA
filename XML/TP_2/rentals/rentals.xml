@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rentals>
+	<country name="Guadeloupe">
+		<localization name="Pointe Noire">
+			<rental>
+				<title>Très belle villa avec piscine et magnifique vue sur la Mer des Caraibes</title>	
+				<image>rentals\pictures\gite_1.jpg</image>
+				<location>13 min à pied de la plage</location>
+				<type>Villa</type>
+				<isFavorite>no</isFavorite>
+				<cancellationMessage>Annulation gratuite jusqu'à 30 jours avant la date d'arrivée.</cancellationMessage>
+				<ranked>Particulier</ranked>
+				
+				<priceInfo currency="€" period="mediumSeason">
+					<amount>290</amount>
+					<period>nuit</period>
+				</priceInfo>
+				
+				<roomBedsDetails>
+					<bedsRoomNumber>3</bedsRoomNumber>
+					<bedsNumber>3</bedsNumber>
+					<personsNumber>6</personsNumber>
+				</roomBedsDetails>
+				
+				<notation>
+					<ratingCount>18 appréciations</ratingCount>
+					<ratingLabel>4.9</ratingLabel>
+					<ratingComment>Fabuleux! 4.9/5</ratingComment>
+				</notation>
+			</rental>
+
+			<rental>
+				<title>Promo Homerez - Joli bungalow avec piscine partagée</title>	
+				<image>rentals\pictures\gite_2.jpg</image>
+				<location>6 min en voiture de la plage</location>
+				<type>Bungalow</type>
+				<isFavorite>no</isFavorite>
+				<cancellationMessage>Annulation gratuite jusqu'à 60 jours avant la date d'arrivée.</cancellationMessage>
+				<ranked>Professionel</ranked>
+				<premiumHost>yes</premiumHost>
+				<newAnnoucement>yes</newAnnoucement>
+				
+				<priceInfo currency="€" period="mediumSeason">
+					<amount>188</amount>
+					<period>nuit</period>
+				</priceInfo>
+				
+				<roomBedsDetails>
+					<bedsRoomNumber>1</bedsRoomNumber>
+					<bedsNumber>3</bedsNumber>
+					<personsNumber>4</personsNumber>
+				</roomBedsDetails>
+				
+				<notation>
+					<ratingCount>0 appréciation</ratingCount>
+				</notation>
+			</rental>
+
+		</localization>
+	</country>
+</rentals>

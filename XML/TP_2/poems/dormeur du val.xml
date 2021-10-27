@@ -1,0 +1,35 @@
+<author>
+Arthur Rimbaud
+
+	<poem>
+		<name>Le dormeur du val</name>
+		<date>octobre 1870</date>
+		<content>
+			<paragraph number=1>
+				<sentence number=1>C'est un trou de verdure où chante une rivière,</sentence>
+				<sentence number=2>Accrochant follement aux herbes des haillons</sentence>
+				<sentence number=3>D'argent ; où le soleil, de la montagne fière,</sentence>
+				<sentence number=4>Luit : c'est un petit val qui mousse de rayons.</sentence>
+			</paragraph>
+
+			<paragraph number=2>
+				<sentence number=1>Un soldat jeune, bouche ouverte, tête nue,</sentence>
+				<sentence number=2>Et la nuque baignant dans le frais cresson bleu,</sentence>
+				<sentence number=3>Dort ; il est étendu dans l'herbe, sous la nue,</sentence>
+				<sentence number=4>Pâle dans son lit vert où la lumière pleut.</sentence>
+			</paragraph>
+
+			<paragraph number=3>
+				<sentence number=1>Les pieds dans les glaïeuls, il dort. Souriant comme</sentence>
+				<sentence number=2>Sourirait un enfant malade, il fait un somme :</sentence>
+				<sentence number=3>Nature, berce-le chaudement : il a froid.</sentence>
+			</paragraph>
+				
+			<paragraph number=4>
+				<sentence number=1>Les parfums ne font pas frissonner sa narine ;</sentence>
+				<sentence number=2>Il dort dans le soleil, la main sur sa poitrine,</sentence>
+				<sentence number=3>Tranquille. Il a deux trous rouges au côté droit.</sentence>
+			</paragraph>
+			</content>
+	</poem>
+</author>

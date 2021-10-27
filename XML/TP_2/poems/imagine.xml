@@ -1,0 +1,52 @@
+<author>
+John Lennon
+
+	<poem>
+		<name>Imagine 1970</name>
+		<date>unknown</date>
+		<content>
+			<paragraph number=1>
+				<sentence number=1>Imagine there's no heaven[[</sentence>
+				<sentence number=2>It's easy if you try</sentence>
+				<sentence number=3>No hell below us</sentence>
+				<sentence number=4>Above us only sky</sentence>
+				<sentence number=5>Imagine all the people</sentence>
+				<sentence number=6>Living for today...</sentence>
+			</paragraph>
+
+			<paragraph number=2>
+				<sentence number=1>Imagine there's no countries</sentence>
+				<sentence number=2>It isn't hard to do</sentence>
+				<sentence number=3>Nothing to kill or die for</sentence>
+				<sentence number=4>And no religion too</sentence>
+				<sentence number=5>Imagine all the people</sentence>
+				<sentence number=6>Living life in peace...</sentence>
+			</paragraph>
+
+			<paragraph number=3>
+				<sentence number=1>You may say I'm a dreamer</sentence>
+				<sentence number=2>But I'm not the only one</sentence>
+				<sentence number=3>I hope someday you'll join us</sentence>
+				<sentence number=4>And the world will be as one</sentence>
+			</paragraph>
+				
+			<paragraph number=4>
+				<sentence number=1>Imagine no possession</sentence>
+				<sentence number=2>I wonder if you can</sentence>
+				<sentence number=3>No need for greed or hunger</sentence>
+				<sentence number=4>A brotherhood of man</sentence>
+				<sentence number=5>Imagine all the people</sentence>
+				<sentence number=6>Sharing all the world...</sentence>
+			</paragraph>
+			
+			<paragraph number=5>
+				<sentence number=1>You may say I'm a dreamer</sentence>
+				<sentence number=2>But I'm not the only one</sentence>
+				<sentence number=3>I hope someday you'll join us</sentence>
+				<sentence number=4>And the world will live as one]]</sentence>
+			</paragraph>	
+		</content>
+		
+	</poem>
+	
+</author>

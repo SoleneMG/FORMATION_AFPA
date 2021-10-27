@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<weather>
+	<date date="today">
+		<region>
+		Bretagne
+		<textDescription>Temps plus calme sur ces régions</textDescription>
+		</region>
+		
+		<region>
+		Nord-Picardie
+		<textDescription>Matinée humide avec des pluies localement orageuses</textDescription>
+		</region>
+		
+		<region>
+		Auvergne
+		<textDescription>Temps maussade avec quelques éclaircies passagères</textDescription>
+		</region>
+	</date>
+</weather>

@@ -1,0 +1,57 @@
+<author>
+Unknown
+	<poem>
+		<name>Bella ciao</name>
+		<date>unknown</date>
+		<content>
+			<paragraph number=1>
+				<sentence number=1>Una mattina mi sono svegliato,</sentence>
+				<sentence number=2>O bella ciao, bella ciao,</sentence>
+				<sentence number=3>Bella ciao, ciao, ciao,</sentence>
+				<sentence number=4>Una mattina mi sono svegliato,</sentence>
+				<sentence number=5>E ho trovato l'invasor.</sentence>
+			</paragraph>
+
+			<paragraph number=2>
+				<sentence number=1>O partigiano portami via,</sentence>
+				<sentence number=2>O bella ciao, bella ciao,</sentence>
+				<sentence number=3>Bella ciao, ciao, ciao,</sentence>
+				<sentence number=4>O partigiano portami via,</sentence>
+				<sentence number=5>Che mi sento di morir.</sentence>
+			</paragraph>
+
+			<paragraph number=3>
+				<sentence number=1>E so io muoio da partigiano,</sentence>
+				<sentence number=2>O bella ciao, bella ciao,</sentence>
+				<sentence number=3>Bella ciao, ciao, ciao,</sentence>
+				<sentence number=4>E so io muoio da partigiano,</sentence>
+				<sentence number=5>Tu mi devi seppellir.</sentence>
+			</paragraph>
+				
+			<paragraph number=4>
+				<sentence number=1>Mi seppellisci lassù in montagna</sentence>
+				<sentence number=2>O bella ciao, bella ciao,</sentence>
+				<sentence number=3>Bella ciao, ciao, ciao,</sentence>
+				<sentence number=4>Mi seppelisci lassù in montagna</sentence>
+				<sentence number=5>Sotto l'ombra di un bel fior.</sentence>
+			</paragraph>
+			
+			<paragraph number=5>
+				<sentence number=1>Tutte le genti che passeranno</sentence>
+				<sentence number=2>O bella ciao, bella ciao,</sentence>
+				<sentence number=3>Bella ciao, ciao, ciao,</sentence>
+				<sentence number=4>Tutte le genti che passeranno</sentence>
+				<sentence number=5>Mi diranno «che bel fior!».</sentence>
+			</paragraph>
+			
+			<paragraph number=6>
+				<sentence number=1>E questo è il fiore del partigiano</sentence>
+				<sentence number=2>O bella ciao, bella ciao,</sentence>
+				<sentence number=3>Bella ciao, ciao, ciao,</sentence>
+				<sentence number=4>E questo è il fiore del partigiano</sentence>
+				<sentence number=5>Morto per la Liberta.</sentence>
+			</paragraph>
+		</content>
+	</poem>
+
+</author>
