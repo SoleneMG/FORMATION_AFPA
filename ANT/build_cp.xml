@@ -8,9 +8,16 @@
 		<mkdir dir="${tp_ant}"/>
 		<touch file="${tp_ant}/r1.zip"/>
 		<mkdir dir="${tp_ant}/r1"/>
-		<touch>
-			<filelist id="doc_files" dir="${tp_ant}/r1" files="tata,ab12,tutu,titi,toto,trivial,t632,tbc2,tnt,t" /> 
-		</touch>
+		<touch file="${tp_ant.r1}/tata"/>
+		<touch file="${tp_ant.r1}/ab12"/>
+		<touch file="${tp_ant.r1}/tutu"/>
+		<touch file="${tp_ant.r1}/titi"/>
+		<touch file="${tp_ant.r1}/toto"/>
+		<touch file="${tp_ant.r1}/trivial"/>
+		<touch file="${tp_ant.r1}/t632"/>
+		<touch file="${tp_ant.r1}/tbc2"/>
+		<touch file="${tp_ant.r1}/tnt"/>
+		<touch file="${tp_ant.r1}/t"/>
 	</target>
 	
 	<target name="copy">
@@ -20,12 +27,8 @@
 		</copy>
 	</target>
 	
-	<target name="clean_tmp_dir">
+	<target name="clean">
 		<delete dir="${env.TMP}/r1"/>
-	</target>
-	
-	<target name="clean_basedir.tp_ant">
-		<delete dir="${tp_ant}"/>
 	</target>
 	
 	<target name="copie_test">
