@@ -2,6 +2,7 @@
 <project default="cree" basedir=".">
 <property name="tp_ant" location="${basedir}/TP_ANT" />
 <property name="tp_ant.r1" location="TP_ANT/r1"/>
+<property environment="env"/>
 
 	<target name="cree">
 		<mkdir dir="${tp_ant}"/>
@@ -20,7 +21,6 @@
 	</target>
 	
 	<target name="copy">
-		<property environment="env"/>
 		<mkdir dir="${env.TMP}/r1"/>
 		<copy todir="${env.TMP}/r1">
 			<fileset dir="${tp_ant.r1}"/>
