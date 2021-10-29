@@ -21,14 +21,13 @@
 	
 	<target name="copy">
 		<property environment="env"/>
-		<echo message="${env.TMP}/TP_ANT"/>
-		<mkdir dir="${env.TMP}/TP_ANT"/>
-		<copy todir="${env.TMP}/TP_ANT">
+		<mkdir dir="${env.TMP}/r1"/>
+		<copy todir="${env.TMP}/r1">
 			<fileset dir="${tp_ant.r1}"/>
 		</copy>
 	</target>
 	
 	<target name="clean">
-	
+		<delete dir="${env.TMP}/r1"/>
 	</target>
 </project>
