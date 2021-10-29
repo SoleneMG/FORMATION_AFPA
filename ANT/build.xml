@@ -30,4 +30,18 @@
 	<target name="clean">
 		<delete dir="${env.TMP}/r1"/>
 	</target>
+	
+	<target name="copie_test">
+		<copy todir="$env.TMP/r1">
+			<fileset dir="${basedir}" includes="TP_ANT/"/>
+		</copy>
+	</target>
+	
+	<target name="copie2">
+		<copy todir="$env.TMP/r1">
+			<fileset dir="${basedir}" casesensitive="yes">
+			<include name="??t*"
+			</fileset>
+		</copy>
+	</target>
 </project>
