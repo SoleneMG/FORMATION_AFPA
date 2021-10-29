@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- Testons les commandes Ant -->
+
+<project name="create" default="make.dir" basedir=".">
+	<target name="make.dir">
+		<mkdir dir="rep1"/>
+	</target>
+	
+	<target name="delete">
+		<delete dir="rep1"/>
+	</target>
+</project>

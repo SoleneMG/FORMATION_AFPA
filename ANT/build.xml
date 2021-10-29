@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project default="cree" basedir=".">
+<property name="tp_ant" location="${basedir}/TP_ANT" />
+<property name="tp_ant.r1" location="TP_ANT/r1"/>
+
+	<target name="cree">
+		<mkdir dir="${tp_ant}"/>
+		<touch file="${tp_ant}/r1.zip"/>
+		<mkdir dir="${tp_ant}/r1"/>
+		<touch file="${tp_ant.r1}/tata"/>
+		<touch file="${tp_ant.r1}/ab12"/>
+		<touch file="${tp_ant.r1}/tutu"/>
+		<touch file="${tp_ant.r1}/titi"/>
+		<touch file="${tp_ant.r1}/toto"/>
+		<touch file="${tp_ant.r1}/trivial"/>
+		<touch file="${tp_ant.r1}/t632"/>
+		<touch file="${tp_ant.r1}/tbc2"/>
+		<touch file="${tp_ant.r1}/tnt"/>
+		<touch file="${tp_ant.r1}/t"/>
+	</target>
+	
+	<target name="copy">
+		<property environment="env"/>
+		<echo message="${env.TMP}/TP_ANT"/>
+		<mkdir dir="${env.TMP}/TP_ANT"/>
+		<copy todir="${env.TMP}/TP_ANT">
+			<fileset dir="${tp_ant.r1}"/>
+		</copy>
+	</target>
+	
+	<target name="clean">
+	
+	</target>
+</project>
