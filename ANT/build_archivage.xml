@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project default="cree" basedir=".">
+
+<property environment="env"/>
+<property name="src" location="${basedir}"/>
+
+	<target name="cree">
+		<mkdir dir="${src}/TP_ANT"/>
+		<mkdir dir="${src}/TP_ANT/r1"/>
+		<touch file="${src}/TP_ANT/r1.zip"/>
+		<touch>
+			<filelist id="create_files_in_r1"
+				dir="${src}/TP_ANT/r1"
+				files="tata.txt
+				ab12.txt
+				tutu.txt
+				titi.txt
+				toto.txt
+				trivial.txt
+				t632.txt
+				tbc2.txt
+				tnt.txt
+				t.txt" />
+		</touch>
+	</target>
+
+	<target name="archive" depends="cree">
+		<zip destfile="${src}/r1.zip"
+			 basedir="${src}/TP_ANT/r1"/>
+	</target>
+	
+	<target name="deploy" depends="archive">
+		<unzip src="${src}/r1.zip" dest="${env.TMP}\backup"/>
+	</target>
+	
+	<target name="clean_project" depends="deploy">
+		<delete dir="${src}/TP_ANT"/>
+		<delete dir="${src}/r1.zip"/>
+		<delete dir="${env.TMP}\backup"/>
+	</target>
+
+</project>
