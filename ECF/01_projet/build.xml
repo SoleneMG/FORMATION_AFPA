@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project default="init" basedir=".">
+
+	<target name="init">
+		<mkdir dir="${basedir}/src"/>
+		<touch file="${basedir}/src/MonApp.java"/>
+		<mkdir dir="${basedir}/build"/>
+		<mkdir dir="${basedir}/build/classes"/>
+		<touch file="${basedir}/build/classes/MonApp.class"/>
+		<mkdir dir="${basedir}/dist"/>
+		<touch file="${basedir}/dist/monapp.jar"/>
+	</target>
+	
+	<target name="clean" depends="init">
+		<delete includeEmptyDirs="true" verbose="true">
+			<fileset dir="${basedir}" excludes="build.xml"/>
+		</delete>
+	</target>
+
+</project>

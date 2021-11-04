@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<catalogue>
+	<marque>
+	Kingston Technology
+		<carte_memoire>
+				<titre>Kingston - SDC4 - Carte Micro SDHC 8 Go (Classe 4) - Adaptateur SD</titre>
+				<photo_produit>xxxxx.jpg</photo_produit>
+				<information>Besoin de conseils pour choisir votre carte mémoire ? Découvrer notre guide</information>
+				<evaluation>
+					<nombreEtoile>4</nombreEtoile>
+					<nombreDeCommentaires>2040</nombreDeCommentaires>
+					<questions_reponses>84</questions_reponses>
+				</evaluation>
+				<prix devise="euros" localisation="france métropolitaine">
+					<montant>6.55</montant>
+					<details>
+						<tva>tous les prix incluent la TVA</tva>
+						<livraison>
+							<gratuite>>25</gratuite>
+							<description>Livraison gratuite dès EUR 25 d'achats en France métropolitaine</description>
+						</livraison>
+					</details>
+				</prix>
+				<disponibilite>En stock</disponibilite>
+		</carte_memoire>
+	</marque>
+</catalogue>
