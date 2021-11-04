@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ <?xml-stylesheet type="text/xsl" href="poeme_transfo_html.xsl"?> 
+<!--<?xml-stylesheet type="text/xsl" href="file:///E/52_ETUDE_HTML_XML_CSS_JavaScript/722_Soluce_Poeme_TransformXSLT/web/poeme_transfo_html.xsl"?>-->
+<poeme> 
+	<titre>Le Dormeur du Val</titre>
+	<auteur>Arthur Rimbaud</auteur>
+	<date>Octobre 1870</date>
+	<strophe>
+		<vers>C'est un trou de verdure où chante une rivière</vers>
+		<vers>Accrochant follement aux herbes des haillons</vers>
+		<vers>D'argent ; où le soleil, de la montagne fière,</vers>
+		<vers>Luit: c'est un petit val qui mousse de rayon</vers>
+	</strophe>
+	<strophe>
+		<vers>Un soldat jeune, Bouche ouverte, Tête nue,</vers>
+		<vers>Et la nuque baignant dans le frais cresson bleu,</vers>
+		<vers>Dort ; il est étendu dans l'herbe, sous la nue,</vers>
+		<vers>Pâle dans son lit vert où la lumière pleut.</vers>
+	</strophe>
+	<strophe>
+		<vers>Les pieds dans les glaïeuls, il dort. Souriant comme</vers>
+		<vers>Sourirait un enfant malade, il fait un somme :</vers>
+		<vers>Nature, berce-le chaudement : il a froid.</vers>
+	</strophe>
+	<strophe>
+		<vers>Les parfums ne font pas frissonner sa narine ;</vers>
+		<vers>Il dort dans le soleil, la main sur sa poitrine</vers>
+		<vers>Tranquille. Il a deux trous rouges au côté droit.</vers>
+	</strophe>
+</poeme>
+
+ 
+
+ 
+
+
