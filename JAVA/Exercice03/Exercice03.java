@@ -17,7 +17,7 @@ public class Exercice03 {
             firstName = sc.returnStringWithoutSpecialCharactersAndNumbers("What is your firstName ? ");
             adress = sc.returnString("What is your adress ? ");
             do{
-                numberOfFNTECard = sc.returnString("What is your number of you're FNTE card ? ");
+                numberOfFNTECard = sc.returnString("What is your number of you're FNTE card ? (Format 0000-A0) ");
                 if(! (numberOfFNTECard.matches("^[0-9]{4}-[a-zA-Z]{1}[0-9]{1}$")) ){
                     System.out.println("Incorrect format of number of FNTE card");
                     numberOfFNTECard = "null";
