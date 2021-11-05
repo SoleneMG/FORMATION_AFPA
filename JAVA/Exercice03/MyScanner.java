@@ -19,8 +19,6 @@ import java.util.Scanner;
                 System.out.println("Only number are permitted. Please retry");
                 sc.nextLine();
                 return returnInt(question);
-            } finally{
-                System.out.println("Finally coucou");
             }
             return answer;
         }
@@ -35,7 +33,7 @@ import java.util.Scanner;
             return answer;
         }
 
-        public String returnAdress(String question){
+        public String returnString(String question){
             System.out.print(question);
             return sc.nextLine();
         }
