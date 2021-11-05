@@ -13,49 +13,51 @@ public class Exercice03 {
         char again;
         
         do{
-            name =  sc.returnStringWithoutSpecialCharactersAndNumbers("What is your name ? ");
-            firstName = sc.returnStringWithoutSpecialCharactersAndNumbers("What is your firstName ? ");
-            adress = sc.returnStringWithoutSpecialCharacters("What is your adress ? ");
-            numberOfFNTECard = sc.returnInt("What is your number of you're FNTE card ? ");
-
+           name =  sc.returnStringWithoutSpecialCharactersAndNumbers("What is your name ? ");
+           firstName = sc.returnStringWithoutSpecialCharactersAndNumbers("What is your firstName ? ");
+           adress = sc.returnAdress("What is your adress ? ");
+           numberOfFNTECard = sc.returnInt("What is your number of you're FNTE card ? ");
+            
             Horse[] horses = new Horse[numberOfFavoriteHorses];
             
-            for (int start=1; start<=numberOfFNTECard; start++){
+            for (int start=1; start<=numberOfFavoriteHorses; start++){
                 String extensionOfNumber="st";
                 String numberIncrement = String.valueOf(start);
-
-
+                
+                
                 ////////////////////////////////////////////////////////
                 // extension 1st 2nd 3rd 4th ....
-                if(numberIncrement.matches("*[1]$")){
-                    extensionOfNumber = "st";
-                }
-                if(numberIncrement.matches("*[2]$")){
-                    extensionOfNumber = "nd";
-                }
-                if(numberIncrement.matches("*[3]$")){
-                    extensionOfNumber = "rd";
-                }
-                if( !(numberIncrement.equals(0)) ){
-                    extensionOfNumber="th";
+                if( !(numberIncrement.equals("0")) ){
+
+                    if(numberIncrement.matches("^*1$")){
+                        extensionOfNumber = "st";
+                    }
+                    if(numberIncrement.matches("^*2$")){
+                        extensionOfNumber = "nd";
+                    }
+                    if(numberIncrement.matches("^*3$")){
+                        extensionOfNumber = "rd";
+                    }
+                } else {
+                    extensionOfNumber="th";  
                 }
                 ///////////////////////////////////////////////////////
-
+                
                 ///////////////////////////////////////////////////////
                 // use typo horse or horses 
                 if(start>1) singularWordHorse = "horses";
                 /////////////////////////////////////////////////////
-
-                String horseName = sc.returnStringWithoutSpecialCharactersAndNumbers(String.format("What is name of the name of the %d%s horse ?", start, extensionOfNumber));
+                
+                String horseName = sc.returnStringWithoutSpecialCharactersAndNumbers(String.format("What is name of the %d%s horse ?", start, extensionOfNumber));
                 horse = new Horse(horseName);
                 horses[start-1]=horse;
             }
-        
+            
             Rider rider = new Rider(name, firstName, adress, numberOfFNTECard, horses);
             System.out.printf("Rider's name is : %s. His firstname is : %s.\n", rider.name, rider.firstName);
             System.out.printf("His adress is %s, his number of FNTE card is %d. \n", rider.adress, rider.numberOfFNTECard);
             System.out.printf("He has %d favorite %s. \n", numberOfFavoriteHorses, singularWordHorse);
-
+            
             if(horses.length!=0){
                 if(horses.length>1){
                     System.out.printf("Their names are : ");
@@ -71,7 +73,7 @@ public class Exercice03 {
                     }
                 }
             }
-           
+            
             again = sc.returnChar("Do you want continue ? Please enter y (yes) or n (no) : ");
         } while(again=='y');
         

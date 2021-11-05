@@ -1,3 +1,4 @@
+package Exercice03;
 import java.io.Closeable;
 import java.util.Scanner;
 
@@ -9,15 +10,19 @@ import java.util.Scanner;
         }
         
         public int returnInt(String question){
+            int answer;
             System.out.print(question);
             try{
-                return sc.nextInt();
-            } catch (Exception exception){
-                System.out.println("Wrong entry please retry");
-                return returnInt(question);
-            } finally {
+                answer = sc.nextInt();
                 sc.nextLine();
+            } catch (Exception exception){
+                System.out.println("Only number are permitted. Please retry");
+                sc.nextLine();
+                return returnInt(question);
+            } finally{
+                System.out.println("Finally coucou");
             }
+            return answer;
         }
         
         public String returnStringWithoutSpecialCharactersAndNumbers(String question){
@@ -30,14 +35,9 @@ import java.util.Scanner;
             return answer;
         }
 
-        public String returnStringWithoutSpecialCharacters(String question){
+        public String returnAdress(String question){
             System.out.print(question);
-            String answer = sc.nextLine();
-            if( !(answer.matches("[a-zA-Z0-9]+")) ){
-                System.out.println("Only alphabetic characters are permitted. Please retry");
-                return returnStringWithoutSpecialCharactersAndNumbers(question);
-            }
-            return answer;
+            return sc.nextLine();
         }
       
         public char returnChar(String question){
@@ -47,7 +47,7 @@ import java.util.Scanner;
                 System.out.println("Wrong entry please retry");
                 return returnChar(question);
             }
-            return sc.next().charAt(0);
+            return sc.nextLine().charAt(0);
         }
         
         @Override
@@ -60,4 +60,4 @@ import java.util.Scanner;
             }
         }
     }
-    
+
