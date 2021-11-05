@@ -1,4 +1,5 @@
-import java.io.Closeable;
+public class MyScanner {
+    import java.io.Closeable;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -54,4 +55,5 @@ public class MyScanner implements Closeable{
         
     }
 
+}
 }
