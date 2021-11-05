@@ -1,4 +1,3 @@
-import java.lang.*;
 import java.util.*;
 
 public class Exercice01{
@@ -19,5 +18,7 @@ public class Exercice01{
 	String chaine = "Bonjour";
 	System.out.println("les 3 premiers caractères d'une chaine :" + chaine.substring(0,3).toUpperCase()); // 0 là où démarre la selection et 3 là où ça se finit mais 4e char non compris.
 	// B = 0 o = 1 n = 2 j = 3 <- non pris !
+
+	sc.close();
 	}
 }
