@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+D:\FORMATION_AFPA\JAVA\TP_JAVA\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1984120412.index
+1488285402.index
+1338931865.index
+851528089.index
