@@ -16,6 +16,8 @@ public class Exo2_02 {
 		int number = askNumber();
 		double numberPowed = power(number, 2);
 		System.out.println("Le carré de " +number +" est " + numberPowed);
+		
+		sc.close();
 	}
 	
 	public static int askNumber() {

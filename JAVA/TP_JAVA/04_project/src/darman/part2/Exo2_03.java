@@ -19,8 +19,9 @@ public static void main(String[] args) {
 		System.out.println("Quel est votre prénom ?");
 		String firstName = sc.nextLine();
 		System.out.println("Bonjour, "+firstName+" !");
-	
 		
+		sc.close();
 	}
+
 
 }

@@ -35,6 +35,8 @@ public class Exo2_04 {
 			System.out.println("Saisie incorrecte");
 			e.printStackTrace();
 		}
+		
+		sc.close();
 
 	}
 
