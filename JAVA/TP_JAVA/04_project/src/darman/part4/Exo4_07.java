@@ -104,7 +104,7 @@ public class Exo4_07 {
 				for (int i =0; i<colorBoard.length; i++) {
 					if(color.equals(colorBoard[i])) {
 						color = colorBoard[--i];
-						continue;
+						break;
 					}
 				}
 			}

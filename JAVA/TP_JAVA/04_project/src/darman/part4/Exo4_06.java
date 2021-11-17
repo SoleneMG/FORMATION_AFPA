@@ -21,6 +21,7 @@ public class Exo4_06 {
 	 */
 
 	public static void main(String[] args) {
+
 		/*
 		 * int scoreCandidate1 = 20; int scoreCandidate2 = 20; int scoreCandidate3 = 10;
 		 * int scoreCandidate4 = 10;
@@ -28,19 +29,21 @@ public class Exo4_06 {
 
 		int percentageScoreCandidate1;
 
-		
-		  System.out.println("Veuillez entrer le score candidat 1 : "); int
-		  scoreCandidate1 = sc.nextInt(); sc.nextLine();
-		  
-		  System.out.println("Veuillez entrer le score candidat 2 : "); int
-		  scoreCandidate2 = sc.nextInt(); sc.nextLine();
-		  
-		  System.out.println("Veuillez entrer le score candidat 3 : "); int
-		  scoreCandidate3 = sc.nextInt(); sc.nextLine();
-		  
-		  System.out.println("Veuillez entrer le score candidat 4 : "); int
-		  scoreCandidate4 = sc.nextInt(); sc.nextLine();
-		 
+		System.out.println("Veuillez entrer le score candidat 1 : ");
+		int scoreCandidate1 = sc.nextInt();
+		sc.nextLine();
+
+		System.out.println("Veuillez entrer le score candidat 2 : ");
+		int scoreCandidate2 = sc.nextInt();
+		sc.nextLine();
+
+		System.out.println("Veuillez entrer le score candidat 3 : ");
+		int scoreCandidate3 = sc.nextInt();
+		sc.nextLine();
+
+		System.out.println("Veuillez entrer le score candidat 4 : ");
+		int scoreCandidate4 = sc.nextInt();
+		sc.nextLine();
 
 		int total = scoreCandidate1 + scoreCandidate2 + scoreCandidate3 + scoreCandidate4;
 
@@ -64,13 +67,14 @@ public class Exo4_06 {
 				}
 			}
 
-			if (max !=-1) {
+			if (max != -1) {
 				System.out.println("Le candidat 1 se retrouve en ballotage favorable.");
 			} else {
 				System.out.println("Le candidat 1 se retrouve en ballotage défavorable.");
 			}
 
 		}
+		sc.close();
 	}
 
 	public static int percentage(int score, int total) {
