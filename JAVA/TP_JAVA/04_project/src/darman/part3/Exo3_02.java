@@ -26,6 +26,8 @@ public class Exo3_02 {
 		} else {
 			System.out.println("Le produit de " + number1 + " et " + number2 + " est un entier négatif");
 		}
+		
+		sc.close();
 
 	}
 }
