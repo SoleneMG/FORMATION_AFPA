@@ -25,7 +25,7 @@ public class Exo4_08 {
 	public static void main(String[] args) {
 		boolean isValid = true;
 		String validDate = "valide";
-				
+
 		System.out.println("Veuillez entrer un numéro de jour : ");
 		int day = sc.nextInt();
 		sc.nextLine();
@@ -37,29 +37,29 @@ public class Exo4_08 {
 		System.out.println("Veuillez entrer une année : ");
 		int year = sc.nextInt();
 		sc.nextLine();
-		
-		if(day >31) {
+
+		if (day > 31 || day < 1 || month > 12 || month < 1) {
 			isValid = false;
 		}
 
 		switch (month) {
-		case 4 | 6 | 9 | 11 :
-			if(day >30) {
+		case 4 | 6 | 9 | 11:
+			if (day > 30) {
 				isValid = false;
 				break;
 			}
-		case 2 :
-			if((year%4 ==0 || year%400 ==0) && !(year%100 ==0)) {
-				if(day>29) {
+		case 2:
+			if ((year % 4 == 0 || year % 400 == 0) && !(year % 100 == 0)) {
+				if (day > 29) {
 					isValid = false;
 				}
 			}
-			if(day>28) {
+			if (day > 28) {
 				isValid = false;
 			}
 		}
-		
-		if(isValid == false) {
+
+		if (isValid == false) {
 			validDate = "invalide";
 		}
 		System.out.printf("La date est %s", validDate);
