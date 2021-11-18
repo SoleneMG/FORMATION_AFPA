@@ -26,8 +26,8 @@ public class Exo4_06 {
 		 * int scoreCandidate1 = 20; int scoreCandidate2 = 20; int scoreCandidate3 = 10;
 		 * int scoreCandidate4 = 10;
 		 */
-
-		int percentageScoreCandidate1;
+		Format format = new DecimalFormat("00.00");
+		double percentageScoreCandidate1;
 
 		System.out.println("Veuillez entrer le score candidat 1 : ");
 		int scoreCandidate1 = sc.nextInt();
@@ -48,19 +48,20 @@ public class Exo4_06 {
 		int total = scoreCandidate1 + scoreCandidate2 + scoreCandidate3 + scoreCandidate4;
 
 		percentageScoreCandidate1 = percentage(scoreCandidate1, total);
+		String percentageScoreCandidate1Formatted = format.format(percentageScoreCandidate1);
 
 		if (percentageScoreCandidate1 > 50) {
 			System.out
-					.println("Le candidat 1 est élu au premier tour avec " + percentageScoreCandidate1 + "% des voix");
+					.println("Le candidat 1 est élu au premier tour avec " + percentageScoreCandidate1Formatted + "% des voix.");
 		} else if (percentageScoreCandidate1 < 12.5) {
 			System.out
-					.println("Avec seulement " + percentageScoreCandidate1 + "% des voix, le candidat 1 n'est pas élu");
+					.println("Avec seulement " + percentageScoreCandidate1Formatted + "% des voix, le candidat 1 n'est pas élu.");
 		} else {
 
-			int[] scoreBoard = { percentageScoreCandidate1, percentage(scoreCandidate2, total),
+			double[] scoreBoard = { percentageScoreCandidate1, percentage(scoreCandidate2, total),
 					percentage(scoreCandidate3, total), percentage(scoreCandidate4, total) };
 
-			int max = percentageScoreCandidate1;
+			double max = percentageScoreCandidate1;
 			for (int i = 0; i < scoreBoard.length; i++) {
 				if (max < scoreBoard[i]) {
 					max = -1;
@@ -68,18 +69,20 @@ public class Exo4_06 {
 			}
 
 			if (max != -1) {
-				System.out.println("Le candidat 1 se retrouve en ballotage favorable.");
+				System.out.println("Le candidat 1 se retrouve en ballotage favorable avec "
+						+ percentageScoreCandidate1Formatted + "% des voix.");
 			} else {
-				System.out.println("Le candidat 1 se retrouve en ballotage défavorable.");
+				System.out.println("Le candidat 1 se retrouve en ballotage défavorable avec "
+						+ percentageScoreCandidate1Formatted + "% des voix.");
 			}
 
 		}
 		sc.close();
 	}
 
-	public static int percentage(int score, int total) {
+	public static double percentage(int score, int total) {
 		if (total != 0) {
-			return (int) ((double) score / (double) total * 100);
+			return (double) score / (double) total * 100;
 		} else {
 			throw new ArithmeticException("fun percentage doesn't work");
 		}
