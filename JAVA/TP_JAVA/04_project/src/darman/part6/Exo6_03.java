@@ -12,7 +12,7 @@ public class Exo6_03 {
 
 	public static void main(String[] args) {
 
-		int length = 3;
+		int length = 9;
 		int[] board = new int[length];
 
 		int i = 0;
