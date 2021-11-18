@@ -1,18 +1,32 @@
 package darman.part6;
 
-
+import java.util.Scanner;
 
 public class Exo6_03 {
-
+	public static Scanner sc = new Scanner(System.in);
 
 	/**
-	 * Ecrire un algorithme qui déclare et remplisse un tableau contenant les six voyelles de l’alphabet latin.
+	 * Ecrire un algorithme qui déclare un tableau de 9 notes, dont on fait ensuite
+	 * saisir les valeurs par l’utilisateur.
 	 */
 
 	public static void main(String[] args) {
-		
-		int[] board = {'a','e','i','o','u','y'};	
-		System.out.printf("Il y a %d valeurs dans le tableau.", board.length);
+
+		int length = 3;
+		int[] board = new int[length];
+
+		int i = 0;
+		do {
+			System.out.println("Entrer une note : ");
+			board[i] = sc.nextInt();
+			sc.nextLine();
+			i++;
+		} while (i < length);
+
+		for (int x = 0; x < board.length; x++) {
+			System.out.print("Note : " + board[x] + "\n");
+
+		}
 	}
 
 }
