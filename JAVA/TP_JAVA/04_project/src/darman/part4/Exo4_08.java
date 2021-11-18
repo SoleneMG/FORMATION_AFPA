@@ -49,12 +49,12 @@ public class Exo4_08 {
 				break;
 			}
 		case 2:
-			if ((year % 4 == 0 || year % 400 == 0) && !(year % 100 == 0)) {
+			if (isBissextile(year)) {
 				if (day > 29) {
 					isValid = false;
 				}
 			}
-			if (day > 28) {
+			if (day > 28 && !(isBissextile(year))) {
 				isValid = false;
 			}
 		}
@@ -63,6 +63,14 @@ public class Exo4_08 {
 			validDate = "invalide";
 		}
 		System.out.printf("La date est %s", validDate);
+	}
+	
+	public static boolean isBissextile(int year) {
+		if ((year % 4 == 0 && !(year % 100 == 0)) || (year % 400 == 0)) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 }
