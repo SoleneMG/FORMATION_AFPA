@@ -2,7 +2,7 @@ package darman.part6;
 
 
 
-public class Exo6_02 {
+public class Exo6_03 {
 
 
 	/**
@@ -11,7 +11,7 @@ public class Exo6_02 {
 
 	public static void main(String[] args) {
 		
-		char[] board = {'a','e','i','o','u','y'};	
+		int[] board = {'a','e','i','o','u','y'};	
 		System.out.printf("Il y a %d valeurs dans le tableau.", board.length);
 	}
 
