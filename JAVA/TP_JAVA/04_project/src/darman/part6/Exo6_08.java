@@ -8,7 +8,7 @@ public class Exo6_08 {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**
-	 * EEcrivez un algorithme permettant à l’utilisateur de saisir un nombre
+	 * Ecrivez un algorithme permettant à l’utilisateur de saisir un nombre
 	 * quelconque de valeurs, qui devront être stockées dans un tableau.
 	 * L’utilisateur doit donc commencer par entrer le nombre de valeurs qu’il
 	 * compte saisir. Il effectuera ensuite cette saisie. Enfin, une fois la saisie
@@ -46,8 +46,8 @@ public class Exo6_08 {
 			}
 		}
 	
-		System.out.printf("Nombres de valeurs positives : %d\n Nombres de valeurs négatives : %d\n", nbValeursPositives, nbValeursNegatives);
-
+		System.out.printf("Nombres de valeurs positives : %d\nNombres de valeurs négatives : %d\n", nbValeursPositives, nbValeursNegatives);
+		sc.close();
 	}
 
 }

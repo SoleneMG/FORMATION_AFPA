@@ -27,6 +27,7 @@ public class Exo6_03 {
 			System.out.print("Note : " + board[x] + "\n");
 
 		}
+		sc.close();
 	}
 
 }

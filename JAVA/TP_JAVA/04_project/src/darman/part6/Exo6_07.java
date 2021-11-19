@@ -31,6 +31,7 @@ public class Exo6_07 {
 		double moyenne = (double) total / (double) length;
 		Format formatter = new DecimalFormat("0.00");
 		System.out.print("Moyenne des notes : " + formatter.format(moyenne) + "\n");
+		sc.close();
 		
 	}
 
