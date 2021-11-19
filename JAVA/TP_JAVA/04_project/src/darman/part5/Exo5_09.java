@@ -43,7 +43,7 @@ public class Exo5_09 {
 		} while (!(number == 0));
 
 		if (position == 0) {
-			System.out.println("Le plus grand de ces nombres est : " + max + " \nC'était le nombre numéro " + position);
+			System.out.println("Le plus grand de ces nombres est : " + max + " \nC'était le nombre numéro " + positionBoard[position]);
 		} else {
 			System.out.println(
 					"Le plus grand de ces nombres est : " + max + " \nIl a été saisi plusieurs fois aux positions :");
