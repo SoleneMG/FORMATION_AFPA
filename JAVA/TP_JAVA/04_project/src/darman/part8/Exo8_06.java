@@ -13,7 +13,7 @@ public class Exo8_06 {
 	public static void main(String[] args) {
 		int nbLignes = 12;
 		int nbColonnes = 8;
-		int[][] board = new int[nbLignes]nbColonnes];
+		int[][] board = new int[nbLignes][nbColonnes];
 		// int[][] board = {{20,4,8}, {0,107,20}, {2,4,10}};
 		int max = 0;
 
