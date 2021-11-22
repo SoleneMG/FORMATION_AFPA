@@ -15,7 +15,7 @@ public class Exo7_02 {
 		int[] board = { 8, 5, 4, 9, 3, 2 };
 		
 		int[] tableauTrieParSelection = triParSelection(board);
-		int[] tableauTrieParBulles = triParSelection(board);
+		int[] tableauTrieParBulles = triParBulle(board);
 		System.out.println("Tri par séléction :");
 		affiche(tableauTrieParSelection);
 		System.out.println("Tri par bulles :");
@@ -41,7 +41,7 @@ public class Exo7_02 {
 		boolean isChanged = true;
 		do {
 			isChanged = false;
-			for (int i = 0; i < board.length; i++) {
+			for (int i = 0; i < board.length-1; i++) {
 				if(board[i] < board[i+1]) {
 					int temp = board[i];
 					board[i]=board[i+1];
