@@ -124,7 +124,8 @@ public class Exo8_07 {
 	}
 
 	public static void affiche(int[][] board, int mouvement, int ligne, int colonne) {
-
+		ligne -= 1;
+		colonne -= 1;
 		switch (mouvement) {
 		case 0:
 			ligne -= 1;
@@ -148,10 +149,10 @@ public class Exo8_07 {
 		for (int l = 0; l < board.length; l++) {
 			System.out.println();
 			for (int c = 0; c < board[l].length; c++) {
-				if (board[l][c] == board[ligne][colonne]) {
-					System.out.print("X");
+				if (l == ligne && c == colonne) {
+					System.out.print(" X ");
 				} else {
-					System.out.print("O");
+					System.out.print(" O ");
 				}
 
 			}
