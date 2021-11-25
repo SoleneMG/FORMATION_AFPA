@@ -12,6 +12,7 @@ public class Exercice01 {
 		
 		char ch = '}';
 		int ascii = ch;
+		
 		System.out.println("\nValeur decimal du charactère '"+ch+"' : "+ascii); // affiche la valeur decimal de la table ascii
 
 		boolean isUpperCase = Character.isUpperCase(ch);
@@ -25,6 +26,26 @@ public class Exercice01 {
 		
 		boolean isJavaIdentifierPart = Character.isJavaIdentifierPart(c);
 		System.out.println("Peut on utiliser '"+c+"' pour nommer une variable (milieu ou fin) ? "+isJavaIdentifierPart);
+		
+		
+		int MIN_VALUE = 0;
+		int MAX_VALUE = 128;
+		int[] asciiTableDecimalValue= new int[MAX_VALUE-MIN_VALUE];
+		String[] asciiTableHexaDecimalValue= new String[MAX_VALUE-MIN_VALUE];
+		char[] asciiTableCharValue=new char[MAX_VALUE-MIN_VALUE];
+		
+		//valeur décimale
+		for(int i =0; i<asciiTableDecimalValue.length;i++) {
+			asciiTableDecimalValue[i]=i;
+			asciiTableHexaDecimalValue[i]=Integer.toHexString(asciiTableDecimalValue[i]);
+			asciiTableCharValue[i]=(char) i;
+			if(i%3==0) {
+				System.out.println();
+			}
+			System.out.print("'"+asciiTableCharValue[i]+"' \t"+asciiTableHexaDecimalValue[i]+"\t"+asciiTableDecimalValue[i]+"\t"+Character.isJavaIdentifierStart(asciiTableCharValue[i])+"\t\t");
+			
+		}
+	
 		
 	
 	}
