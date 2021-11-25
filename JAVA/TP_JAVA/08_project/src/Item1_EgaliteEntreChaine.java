@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Item1 {
+public class Item1_EgaliteEntreChaine {
 	static Scanner sc = new Scanner(System.in);
 	/** Ecrire une application correspondatn à l'algorithme ci-dessous :
 	 * DEBUT
@@ -9,7 +9,6 @@ public class Item1 {
 	 * 			SI les chaines sont égales ALORS afficher "IDENTIQUE"
 	 * 			JUSQU'A ce que l'une des chaines soit "FIN"
 	 * FIN
-	 * @param args
 	 */
 	
 	public static void main(String[] args) {

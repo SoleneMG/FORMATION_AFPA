@@ -1,5 +1,5 @@
 
-public class Exercice01 {
+public class Exercice01_ConversionsCharEnHexadecimal {
 
 	public static void main(String[] args) {
 		char c = '0';

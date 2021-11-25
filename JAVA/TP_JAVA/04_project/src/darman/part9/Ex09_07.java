@@ -15,45 +15,43 @@ public class Ex09_07 {
 	 */
 
 	public static void main(String[] args) {
+		int OFFSET;
+		String sentence, encrypted;
+
 		System.out.println("Entrer une phrase : ");
-		String sentence = sc.nextLine();
-		System.out.println("Choisissez le décalage : ");
-		int rankOffset = sc.nextInt();
-		sc.nextLine();
-		char[] cBoard = sentence.toCharArray();
-		char[] letter = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
-				'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
-		char[]letterEncoded = encode(rankOffset, letter);
-
-		for (int i = 0; i < cBoard.length; i++) {
-
-			for (int j = 0; j < letter.length; j++) {
-				if (Character.toUpperCase(cBoard[i]) == letter[j]) {
-					cBoard[i]=letterEncoded[i];
-				}
+		sentence = sc.nextLine();
+		do {
+			System.out.println("Choisissez le décalage : ");
+			OFFSET = sc.nextInt();
+			sc.nextLine();
+			if(OFFSET == 26) {
+				System.out.println("26 ? Vraiment ? No way...try again");
 			}
+		} while (OFFSET == 26);
 
-		}
-		System.out.println(sentence + "\nLa nouvelle phrase est :\n");
-
-		for (char c : cBoard) {
-			System.out.print(Character.toLowerCase(c));
-		}
+		encrypted = encode(sentence, OFFSET).toString().toLowerCase();
+	
+		System.out.println("Phrase non cryptée : \n" + sentence);
+		System.out.println("Phrase cryptée : \n" + encrypted);
 
 		sc.close();
 	}
 
-	public static char[] encode(int offset, char[] letter) {
-		char[]letterEncoded = new char[letter.length];
-		int j =0;
-		for(int i =0;i<letter.length;i++) {
-			if(j==letter.length-offset) {
-				j=0;
+	public static StringBuilder encode(String s, int OFFSET) {
+		StringBuilder sb = new StringBuilder();
+		String hexaDecimalValue;
+		int decimalValue;
+
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == ' ') {
+				sb.append(s.charAt(i));
+			} else {
+				hexaDecimalValue = Integer.toHexString(s.toUpperCase().charAt(i));
+				decimalValue = Integer.parseInt(hexaDecimalValue, 16);
+				sb.append((char) (decimalValue + OFFSET));
 			}
-			letterEncoded[i]=letter[j+offset];
-			j++;
 		}
-return letterEncoded;
+		return sb;
 	}
 
 }
