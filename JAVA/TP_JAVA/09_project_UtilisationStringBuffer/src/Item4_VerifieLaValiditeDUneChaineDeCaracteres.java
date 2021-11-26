@@ -1,4 +1,3 @@
-import java.io.PrintStream;
 import java.util.Scanner;
 
 public class Item4_VerifieLaValiditeDUneChaineDeCaracteres {
@@ -16,14 +15,10 @@ public class Item4_VerifieLaValiditeDUneChaineDeCaracteres {
 		do {
 			System.out.println("Rentrer une URL valide : ");
 			url = sc.nextLine();
-			isValid = checkValidityCharacterSentence(url);
-			
+			//isValid = checkValidityCharacterSentence(url);
+			isValid = checkWithRegex(url);
 			System.out.println(isValid ? "Le protocole est valide" : "Le protocole est invalide veuillez recommencer");
-//			StringBuilder sb = new StringBuilder();
-//			String hexaDecimalValue;
-//			int decimalValue;
-
-			// numberOfFNTECard.matches("")
+			
 		} while (!isValid);
 		sc.close();
 	}
@@ -48,5 +43,10 @@ public class Item4_VerifieLaValiditeDUneChaineDeCaracteres {
 			}
 		}
 		return false;
+	}
+	
+	public static boolean checkWithRegex(String s) {
+		String regex = "(?<Protocole>[a-zA-Z]+):\\/\\/(?<serveur>\\S+)\\/(?<filesPath>\\S+)";
+		return s.matches(regex) ? true : false;
 	}
 }
