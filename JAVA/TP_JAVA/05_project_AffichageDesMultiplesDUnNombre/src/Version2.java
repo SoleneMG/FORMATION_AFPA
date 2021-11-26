@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Version2 {
@@ -45,10 +46,10 @@ public class Version2 {
 		
 		System.out.println("\nVeuillez renseigner max ? (Saisir un entier positif)");
 		MAX_VALUE = v2.returnInteger();
-//		if(MAX_VALUE < NB_DIV) {
-//			System.out.println("\nmax est plus petit que le multiple. Veuillez renseigner une valeur de max plus grande que "+ NB_DIV);
-//			MAX_VALUE = v2.returnInteger();
-//		}
+		if(MAX_VALUE <= NB_DIV) {
+			System.out.println("\nmax est plus petit que le multiple. Veuillez renseigner une valeur de max plus grande que "+ NB_DIV);
+			MAX_VALUE = v2.returnInteger();
+		}
 		
 		v2.displayTableOfMultiple();
 		
@@ -80,23 +81,23 @@ public class Version2 {
 			}
 		}
 	
-	public int returnInteger() {
-		int integer;
-		try {
-			integer = sc.nextInt();
-			sc.nextLine();
-			if(integer <0) {
-				System.out.println("Veuillez saisir un entier positif :");
+		public int returnInteger() {
+			int integer;
+			try {
+				integer = sc.nextInt();
+				sc.nextLine();
+				if (integer < 0) {
+					System.out.println("Veuillez saisir un entier positif :");
+					return returnInteger();
+				}
+
+			} catch (InputMismatchException e) {
+				sc.nextLine();
+				System.out.println("Mauvaise entrée, veuillez réessayer :");
 				return returnInteger();
 			}
-			
-		} catch (Exception e) {
-			sc.nextLine();
-			System.out.println("Ce n'est pas un entier, veuillez réessayer :");
-			return returnInteger();
+			return integer;
 		}
-		return integer;
-	}
 	
 
 	
