@@ -42,8 +42,13 @@ public class Version2 {
 		
 		System.out.println("\nVeuillez renseigner min ? (Saisir un entier positif)");
 		MIN_VALUE = v2.returnInteger();
+		
 		System.out.println("\nVeuillez renseigner max ? (Saisir un entier positif)");
 		MAX_VALUE = v2.returnInteger();
+//		if(MAX_VALUE < NB_DIV) {
+//			System.out.println("\nmax est plus petit que le multiple. Veuillez renseigner une valeur de max plus grande que "+ NB_DIV);
+//			MAX_VALUE = v2.returnInteger();
+//		}
 		
 		v2.displayTableOfMultiple();
 		
