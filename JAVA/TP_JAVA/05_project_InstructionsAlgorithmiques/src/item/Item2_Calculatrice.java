@@ -2,11 +2,11 @@ package item;
 
 import java.util.Scanner;
 
-public class Item2 {
+public class Item2_Calculatrice {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		Item2 item2 = new Item2();
+		Item2_Calculatrice item2 = new Item2_Calculatrice();
 		int operande;
 		double number1, number2, result;
 

@@ -1,6 +1,9 @@
 package item;
 
-public class Item4 {
+public class Item4_NombresPremiers {
+	/**
+	 * Ecrire une application qui affiche les nombres premiers de 2 à 100.
+	 */
 
 	public static void main(String[] args) {
 		final int MIN_VALUE = 2;

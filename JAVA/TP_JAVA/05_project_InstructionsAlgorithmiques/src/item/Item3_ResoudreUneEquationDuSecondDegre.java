@@ -2,11 +2,11 @@ package item;
 
 import java.util.Scanner;
 
-public class Item3 {
+public class Item3_ResoudreUneEquationDuSecondDegre {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		Item3 item3 = new Item3();
+		Item3_ResoudreUneEquationDuSecondDegre item3 = new Item3_ResoudreUneEquationDuSecondDegre();
 		double a, b, c, x1, x2;
 		boolean isSuccess;
 		do {

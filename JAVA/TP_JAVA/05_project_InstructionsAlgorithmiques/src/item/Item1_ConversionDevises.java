@@ -2,13 +2,13 @@ package item;
 
 import java.util.Scanner;
 
-public class Item1 {
+public class Item1_ConversionDevises {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		float indiceConversionEuroToDollar = 1.13f;
 		String devise = "$";
-		Item1 ex01 = new Item1();
+		Item1_ConversionDevises ex01 = new Item1_ConversionDevises();
 		long amount = ex01.askAnAmountInEuro(sc);
 
 		ex01.conversionDevise(indiceConversionEuroToDollar, amount, devise);
