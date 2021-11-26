@@ -1,3 +1,4 @@
-GitRepositoriesView.GitDirectories=D\:\\FORMATION_AFPA\\.git;
-GitRepositoriesView.GitDirectories.relative=D\:\\FORMATION_AFPA\\.git;
+GitRepositoriesView.GitDirectories=C\:\\Users\\solen\\FORMATION_AFPA\\.git;
+GitRepositoriesView.GitDirectories.relative=C\:\\Users\\solen\\FORMATION_AFPA\\.git;
+core_preferredMergeStrategy=jgit-default-mergeStrategy
 eclipse.preferences.version=1
