@@ -3,6 +3,11 @@ package item;
 import java.util.Scanner;
 
 public class Item1_ConversionDevises {
+
+	/**
+	 * Ecrire une application qui affiche en $, K$ ou M$ une somme saisie par
+	 * l'opérateur et entrée en Euro.
+	 */
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -17,7 +22,7 @@ public class Item1_ConversionDevises {
 
 	public long askAnAmountInEuro(Scanner sc) {
 		System.out.print("Saisissez un montant : ");
-		long result =  sc.nextLong();
+		long result = sc.nextLong();
 		sc.nextLine();
 		return result;
 	}
@@ -37,7 +42,7 @@ public class Item1_ConversionDevises {
 			result = amountAfterConversion;
 			// not a unitOfMeasurement
 		}
-		System.out.printf("Equivaut à %.2f%s %s",  result, unitOfMeasurement, devise);
+		System.out.printf("Equivaut à %.2f%s %s", result, unitOfMeasurement, devise);
 	}
 
 }

@@ -3,6 +3,11 @@ package item;
 import java.util.Scanner;
 
 public class Item2_Calculatrice {
+	/**
+	 * Ecrire une application qui affiche le résultat d'une opération (addition,
+	 * soustraction, mutliplication ou division) à 2 chiffres. L'opérateur choisit
+	 * les opérandes et l'opérateur. Le logiciel fournit le résultat.
+	 */
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -18,13 +23,10 @@ public class Item2_Calculatrice {
 		System.out.print("\nchiffre 2 :");
 		number2 = sc.nextDouble();
 		sc.nextLine();
-		
+
 		result = item2.operation(operande, number1, number2);
-		
-		System.out.println("Resultat de l'opération = "+result);
-		
-		
-	
+
+		System.out.println("Resultat de l'opération = " + result);
 
 	}
 
