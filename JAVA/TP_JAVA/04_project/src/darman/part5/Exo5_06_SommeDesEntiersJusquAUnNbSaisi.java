@@ -2,7 +2,7 @@ package darman.part5;
 
 import java.util.Scanner;
 
-public class Exo5_06 {
+public class Exo5_06_SommeDesEntiersJusquAUnNbSaisi {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**

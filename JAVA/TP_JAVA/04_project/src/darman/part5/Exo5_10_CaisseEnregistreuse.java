@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Exo5_10 {
+public class Exo5_10_CaisseEnregistreuse {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**

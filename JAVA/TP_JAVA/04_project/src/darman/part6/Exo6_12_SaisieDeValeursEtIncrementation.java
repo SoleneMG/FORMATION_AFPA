@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.text.Format;
 import java.util.Scanner;
 
-public class Exo6_12 {
+public class Exo6_12_SaisieDeValeursEtIncrementation {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**

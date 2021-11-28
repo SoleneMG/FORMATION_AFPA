@@ -2,7 +2,7 @@ package darman.part7;
 
 import java.util.Scanner;
 
-public class Exo7_01 {
+public class Exo7_01_ElementsConsecutifs {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**

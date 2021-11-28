@@ -2,7 +2,7 @@ package darman.part7;
 
 import java.util.Scanner;
 
-public class Exo7_06 {
+public class Exo7_06_FusionDeTableaux {
 
 	/**
 	 * Écrivez un algorithme qui fusionne deux tableaux (déjà existants) dans un

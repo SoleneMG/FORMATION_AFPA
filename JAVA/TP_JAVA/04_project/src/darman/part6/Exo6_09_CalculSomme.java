@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.text.Format;
 import java.util.Scanner;
 
-public class Exo6_09 {
+public class Exo6_09_CalculSomme {
 
 	/**
 	 * Ecrivez un algorithme calculant la somme des valeurs d’un tableau (on suppose

@@ -1,35 +1,24 @@
-package darman.part6;
+package darman.part5;
 
-import java.text.DecimalFormat;
-import java.text.Format;
 import java.util.Scanner;
 
-public class Exo6_14 {
+public class Exo5_09_MaxValue {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**
-	 * Ecrivez un algorithme permettant, toujours sur le même principe, à
-	 * l’utilisateur de saisir un nombre déterminé de valeurs. Le programme, une
-	 * fois la saisie terminée, renvoie la plus grande valeur en précisant quelle
-	 * position elle occupe dans le tableau. On prendra soin d’effectuer la saisie
-	 * dans un premier temps, et la recherche de la plus grande valeur du tableau
-	 * dans un second temps.
+	 * Réécrire l’algorithme précédent, mais cette fois-ci on ne connaît pas
+	 * d’avance combien l’utilisateur souhaite saisir de nombres. La saisie des
+	 * nombres s’arrête lorsque l’utilisateur entre un zéro.
 	 */
 
 	public static void main(String[] args) {
-		int lengthBoard;
 		int i = 1;
 		int max = -1;
 		int position = 0;
 		int number = -1;
 		int[] positionBoard = new int[500];
 
-		System.out.println("Entrer un nombre max de valeurs : ");
-		lengthBoard = sc.nextInt();
-		sc.nextLine();
-		int[] numberBoard = new int[lengthBoard];
-
-			do {
+		do {
 			System.out.println("Entrer un nombre :");
 			number = sc.nextInt();
 			sc.nextLine();
@@ -45,8 +34,13 @@ public class Exo6_14 {
 				max = number;
 				positionBoard[position] = i;
 			}
+			
+			
 			i++;
-		} while (i < numberBoard.length+1);
+			if (number != 0) {
+				System.out.println("(Pour terminer la saisie entrer 0)");
+			}
+		} while (!(number == 0));
 
 		if (position == 0) {
 			System.out.println("Le plus grand de ces nombres est : " + max + " \nC'était le nombre numéro " + positionBoard[position]);
@@ -59,6 +53,7 @@ public class Exo6_14 {
 				} else {
 				System.out.print(positionBoard[x] );
 				}
+
 			}
 		}
 		sc.close();

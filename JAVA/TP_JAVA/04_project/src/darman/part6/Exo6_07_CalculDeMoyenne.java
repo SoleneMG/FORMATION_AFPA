@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.text.Format;
 import java.util.Scanner;
 
-public class Exo6_07 {
+public class Exo6_07_CalculDeMoyenne {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**

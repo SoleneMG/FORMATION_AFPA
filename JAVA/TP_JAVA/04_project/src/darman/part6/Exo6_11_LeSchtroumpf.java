@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.text.Format;
 import java.util.Scanner;
 
-public class Exo6_11 {
+public class Exo6_11_LeSchtroumpf {
 
 	/**
 	 * Toujours à partir de deux tableaux précédemment saisis, écrivez un algorithme

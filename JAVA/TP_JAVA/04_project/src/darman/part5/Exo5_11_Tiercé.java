@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import javax.management.NotCompliantMBeanException;
 
-public class Exo5_11 {
+public class Exo5_11_Tiercé {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**

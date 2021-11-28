@@ -2,7 +2,7 @@ package darman.part7;
 
 import java.util.Scanner;
 
-public class Exo7_05 {
+public class Exo7_05_TriParDichotomie {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**

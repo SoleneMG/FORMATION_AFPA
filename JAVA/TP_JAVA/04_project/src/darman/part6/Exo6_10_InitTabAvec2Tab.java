@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.text.Format;
 import java.util.Scanner;
 
-public class Exo6_10 {
+public class Exo6_10_InitTabAvec2Tab {
 
 	/**
 	 * Ecrivez un algorithme constituant un tableau, à partir de deux tableaux de

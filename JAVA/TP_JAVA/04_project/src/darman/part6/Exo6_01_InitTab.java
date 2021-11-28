@@ -2,7 +2,7 @@ package darman.part6;
 
 
 
-public class Exo6_01 {
+public class Exo6_01_InitTab {
 
 
 	/**

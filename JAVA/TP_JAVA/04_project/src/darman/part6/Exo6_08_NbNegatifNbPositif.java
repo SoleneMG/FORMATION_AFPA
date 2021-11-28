@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.text.Format;
 import java.util.Scanner;
 
-public class Exo6_08 {
+public class Exo6_08_NbNegatifNbPositif {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**

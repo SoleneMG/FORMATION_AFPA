@@ -2,7 +2,7 @@ package darman.part6;
 
 import java.util.Scanner;
 
-public class Exo6_03 {
+public class Exo6_03_InitTabAvecScanner {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**

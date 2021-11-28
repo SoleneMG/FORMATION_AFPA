@@ -2,7 +2,7 @@ package darman.part5;
 
 import java.util.Scanner;
 
-public class Exo5_08 {
+public class Exo5_08_MaxValue {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**

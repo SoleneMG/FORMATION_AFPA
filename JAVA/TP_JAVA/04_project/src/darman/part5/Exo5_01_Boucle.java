@@ -2,7 +2,7 @@ package darman.part5;
 
 import java.util.Scanner;
 
-public class Exo5_01 {
+public class Exo5_01_Boucle {
 	public static Scanner sc = new Scanner(System.in);
 
 	/**
