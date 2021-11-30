@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Item3 {
 	/**
@@ -7,11 +8,27 @@ public class Item3 {
 	 * 2.55.06.75.113 <79> est un numéro correct
 	 * 2.55.06.75.113.052 <65> ne l'est pas
 	 */
+	
+	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		long noSS = 2550675113052L;
-		verifieNoSS(noSS);
 		
+		//long noSS = 2550675113052L;
+		long noSS;
+		int key;
+		//verifieNoSS(noSS);
+		System.out.println("Renseigner votre numéro de sécurité sociale");
+		String noSSString = sc.nextLine();
+		for (int i = 0; i < noSSString.length(); i++) {
+			noSSString.replace(".","");
+			if(noSSString.charAt(i)==60) {
+				noSS = Long.parseLong(noSSString.substring(0, i));
+				key = Integer.parseInt(noSSString.substring(i+1, i+2));
+			}
+		}
+		
+		//if(noSSString.length())
+		//verifieNoSS(noSS);
 	}
 	
 	static boolean verifieNoSS (long noSS) {
@@ -20,5 +37,6 @@ public class Item3 {
 		
 		return true;
 	}
+
 
 }
