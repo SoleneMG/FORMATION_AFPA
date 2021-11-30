@@ -6,7 +6,6 @@ public class Item2 {
 	 * 2. Trace une ligne de N tirets.
 	 * 3. Trace une ligne de N caractères quelconques
 	 * 4. Trace une ligne de N caractères quelconques (algorithme récursif)
-	 * @param args
 	 */
 	
 	public static final int NB_TIRETS = 20;
@@ -22,6 +21,8 @@ public class Item2 {
 		i2.tracerLigne(NB_TIRETS, '*');
 		System.out.println("\n4.");
 		i2.tracerLigne(i, NB_TIRETS, '*');
+		
+		
 	}
 
 	public void tracerLigne(int nbTiret) {
