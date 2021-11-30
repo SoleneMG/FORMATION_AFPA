@@ -12,7 +12,7 @@ public class Item3 {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		
+		StringBuilder sb = new StringBuilder();
 		//long noSS = 2550675113052L;
 		long noSS;
 		int key;
@@ -20,7 +20,9 @@ public class Item3 {
 		System.out.println("Renseigner votre numéro de sécurité sociale");
 		String noSSString = sc.nextLine();
 		for (int i = 0; i < noSSString.length(); i++) {
-			noSSString.replace(".","");
+			sb.append(noSSString.replace("2A","19"));
+			sb.append(noSSString.replace("2B","18"));
+			sb.append(noSSString.replace(".",""));
 			if(noSSString.charAt(i)==60) {
 				noSS = Long.parseLong(noSSString.substring(0, i));
 				key = Integer.parseInt(noSSString.substring(i+1, i+2));
@@ -31,11 +33,13 @@ public class Item3 {
 		//verifieNoSS(noSS);
 	}
 	
-	static boolean verifieNoSS (long noSS) {
+	static boolean verifieNoSS (long noSS, int key) {
 		int result = 97 - (int) (noSS % 97);
-		System.out.println(result);
+		if(result==key) {
+			return true;
+		}
 		
-		return true;
+		return false;
 	}
 
 
