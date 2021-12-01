@@ -29,6 +29,7 @@ class MathTest {
 		}
 	}
 
+
 	@Test
 	void testDollarToEuro() {
 		BigDecimal result = new BigDecimal("10");
