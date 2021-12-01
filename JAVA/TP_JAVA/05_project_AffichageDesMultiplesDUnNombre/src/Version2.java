@@ -28,11 +28,12 @@ public class Version2 {
 	 */
 	
 	static Scanner sc = new Scanner(System.in);
-	static int NB_DIV = 7, MIN_VALUE = 0, MAX_VALUE= 100;
+
 	static final int NB_COLUMN = 3;
 	static final int NB_MAX_LINE_DISPLAY = 10;
 	
 	public static void main(String[] args) {
+		int NB_DIV = 7, MIN_VALUE = 0, MAX_VALUE= 100;
 		Version2 v2 = new Version2();
 		System.out.println("**************************************************************");
 		System.out.println("\tAffichage des MULTIPLES de N entre min et max");
@@ -51,12 +52,12 @@ public class Version2 {
 			MAX_VALUE = v2.returnInteger();
 		}
 		
-		v2.displayTableOfMultiple();
+		v2.displayTableOfMultiple(MIN_VALUE, MAX_VALUE, NB_DIV);
 		
 		sc.close();
 	}
 	
-	public void displayTableOfMultiple() {
+	public void displayTableOfMultiple(int MIN_VALUE, int MAX_VALUE, int NB_DIV) {
 		for (int i = MIN_VALUE; i <= MAX_VALUE; i++) {
 			if(i % NB_DIV == 0) {
 				System.out.print("("+ i +")\t");
