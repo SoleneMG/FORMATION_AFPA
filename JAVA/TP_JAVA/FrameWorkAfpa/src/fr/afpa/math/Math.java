@@ -1,6 +1,7 @@
 package fr.afpa.math;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.math.RoundingMode;
 
 public class Math {
@@ -27,6 +28,16 @@ public class Math {
 			return 1L;
 		}
 		return value * factorielle(value - 1);
+
+	}
+	
+	public static BigInteger factorielle(BigInteger value) throws StackOverflowError, IllegalArgumentException {
+		if (value.compareTo(new BigInteger("0"))==-1) {
+			throw new IllegalArgumentException();
+		} else if (value.compareTo(new BigInteger("0")) == 0 || value.compareTo(new BigInteger("1")) == 0) { // = 0 ou = 1
+			return new BigInteger("1");
+		}
+		return value.multiply(factorielle(value.subtract(new BigInteger("1"))));
 
 	}
 }

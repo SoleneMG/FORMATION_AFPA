@@ -1,12 +1,19 @@
 package fr.afpa.util;
 
+import java.math.BigInteger;
+
 import javax.swing.JOptionPane;
+
+import fr.afpa.math.MathBean;
+
+import static fr.afpa.math.Math.factorielle;
 
 public class CalculFactor {
 
 	public static void main(String[] args) {
 		// factorielleAvecBoubleFor();
-		factorielleAvecRecursivite();
+		// factorielleAvecRecursiviteLong();
+		factorielleAvecRecursiviteBigInteger();
 
 	}
 
@@ -50,7 +57,7 @@ public class CalculFactor {
 		} while (isContinue);
 	}
 
-	public static void factorielleAvecRecursivite() {
+	public static void factorielleAvecRecursiviteLong() {
 		Long factorielle = null;
 		boolean isContinue;
 		do {
@@ -59,7 +66,7 @@ public class CalculFactor {
 			if (nbString != null) {
 				try {
 					Long nb = Long.parseLong(nbString);
-					factorielle = fr.afpa.math.Math.factorielle(nb);
+					factorielle = factorielle(nb);
 					JOptionPane.showMessageDialog(null, "" + factorielle, "Résultat", JOptionPane.PLAIN_MESSAGE);
 				} catch (NumberFormatException e) {
 					JOptionPane.showMessageDialog(null, "La saisie est incorrecte", "Paramètres invalides",
@@ -67,6 +74,72 @@ public class CalculFactor {
 					isContinue = true;
 				} catch (IllegalArgumentException e) {
 					JOptionPane.showMessageDialog(null, "Résultat impossible pour ce nombre", "Nombre négatif",
+							JOptionPane.ERROR_MESSAGE);
+					isContinue = true;
+				}
+			}
+		} while (isContinue);
+	}
+
+	public static void factorielleAvecRecursiviteBigInteger() {
+//		  JOptionPane optionPane = new NarrowJOptionPane();
+//		    optionPane.setMessage(msg);
+//		    optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+//		    JDialog dialog = optionPane.createDialog(null, "Width 100");
+//		    dialog.setVisible(true);
+
+		BigInteger factorielle = null;
+		boolean isContinue;
+		do {
+			isContinue = false;
+			String nbString = JOptionPane.showInputDialog("Entrer un nombre : ");
+			if (nbString != null) {
+				try {
+					BigInteger nb = new BigInteger(nbString);
+					factorielle = factorielle(nb);
+					JOptionPane.showMessageDialog(null, "Résultat composé de : " + factorielle.bitLength()+" chiffres", "Résultat",
+							JOptionPane.PLAIN_MESSAGE);
+				} catch (NumberFormatException e) {
+					JOptionPane.showMessageDialog(null, "La saisie est incorrecte", "Paramètres invalides",
+							JOptionPane.ERROR_MESSAGE);
+					isContinue = true;
+				} catch (IllegalArgumentException e) {
+					JOptionPane.showMessageDialog(null, "Résultat impossible pour ce nombre", "Nombre négatif",
+							JOptionPane.ERROR_MESSAGE);
+					isContinue = true;
+				} catch (StackOverflowError e) {
+					JOptionPane.showMessageDialog(null, "Dépassement de capacité", "Out of border",
+							JOptionPane.ERROR_MESSAGE);
+					isContinue = true;
+				}
+			}
+		} while (isContinue);
+	}
+	
+	public static void factorielleAvecRecursiviteBigIntegerAvecMathBean() {
+		MathBean bean = new MathBean();
+
+		BigInteger factorielle = null;
+		boolean isContinue;
+		do {
+			isContinue = false;
+			String nbString = JOptionPane.showInputDialog("Entrer un nombre : ");
+			if (nbString != null) {
+				try {
+					BigInteger nb = new BigInteger(nbString);
+					factorielle = bean.factorielle(nb);
+					JOptionPane.showMessageDialog(null, "Résultat composé de : " + factorielle.bitLength()+" chiffres", "Résultat",
+							JOptionPane.PLAIN_MESSAGE);
+				} catch (NumberFormatException e) {
+					JOptionPane.showMessageDialog(null, "La saisie est incorrecte", "Paramètres invalides",
+							JOptionPane.ERROR_MESSAGE);
+					isContinue = true;
+				} catch (IllegalArgumentException e) {
+					JOptionPane.showMessageDialog(null, "Résultat impossible pour ce nombre", "Nombre négatif",
+							JOptionPane.ERROR_MESSAGE);
+					isContinue = true;
+				} catch (StackOverflowError e) {
+					JOptionPane.showMessageDialog(null, "Dépassement de capacité", "Out of border",
 							JOptionPane.ERROR_MESSAGE);
 					isContinue = true;
 				}
