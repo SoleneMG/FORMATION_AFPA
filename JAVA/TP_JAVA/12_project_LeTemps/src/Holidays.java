@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+import java.util.Locale;
 
 import javax.swing.JOptionPane;
 
@@ -43,22 +44,23 @@ public class Holidays {
 	}
 	
 	public void displayHolidayDuringTheWeekend(LocalDate[] date, int counter) {
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dddd MMMM yyyy");
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd MMMM yyyy");
 		counter+=3; // add fix holiday
-		String year = date[0].getYear;
-		String nbHolidayOutOfTheWeekend = counter;
+		int year = date[0].getYear();
+		int nbHolidayOutOfTheWeekend = counter;
 		StringBuilder sb = new StringBuilder();
 		sb.append("Calendrier français des jours fériés de ").append(year).append(" (")
 		.append(nbHolidayOutOfTheWeekend).append(" jours hors week end):")
 		.append("\nJours fériés fixes :")
-		.append("\n\\\u25A0 Lundi de pâques")
-		.append("\n\\\u25A0 Jeudi de l'ascension")
-		.append("\n\\\u25A0 Lundi de pentecôte)"
+		.append("\n \u25A0 Lundi de pâques")
+		.append("\n \u25A0 Jeudi de l'ascension")
+		.append("\n \u25A0 Lundi de pentecôte")
 		.append("\nJours fériés mobiles :");
 		
 		for (int i = 0; i < date.length; i++) {
-			sb.append("\n\\\\u25A0")
-			.append(dtf.format(date[i]));
+			sb.append("\n \u25A0 ")
+			.append(date[i].getDayOfWeek().name().toLowerCase(Locale.FRANCE)) 
+			.append(" "+dtf.format(date[i]));
 		}
 		
 		JOptionPane.showMessageDialog(null, sb);

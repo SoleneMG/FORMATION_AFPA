@@ -18,7 +18,9 @@ public class Main {
 		
 		Holidays h = new Holidays();
 		String year = h.askYear();
-		LocalDate[] date = h.transformtoLocalDate(year, )
+		LocalDate[] dates = h.transformtoLocalDate(year, h.holidayDay);
+		int dayOfWeek = h.getDayOfWeek(dates);
+		h.displayHolidayDuringTheWeekend(dates, dayOfWeek);
 
 	}
 
