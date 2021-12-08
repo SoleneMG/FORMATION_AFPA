@@ -11,10 +11,14 @@ public class Main {
 
 	public static void main(String[] args) {
 		Main m = new Main();
-		Birthday birthday = new Birthday();
-		LocalDate date = m.returnLocalDateOfBirthday(m.askBirthday(), LocalDate.now());
-		long day = birthday.getDayBetweenBirthdayDateAndNow(date);
-		m.displayNumberOfDayBetweenBirthdayAndNow(day, date);
+//		Birthday birthday = new Birthday();
+//		LocalDate date = m.returnLocalDateOfBirthday(m.askBirthday(), LocalDate.now());
+//		long day = birthday.getDayBetweenBirthdayDateAndNow(date);
+//		m.displayNumberOfDayBetweenBirthdayAndNow(day, date);
+		
+		Holidays h = new Holidays();
+		String year = h.askYear();
+		LocalDate[] date = h.transformtoLocalDate(year, )
 
 	}
 
