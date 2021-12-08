@@ -20,4 +20,5 @@ public class Boisson implements Payable
   {
     return this.prix;
   }
+
 }

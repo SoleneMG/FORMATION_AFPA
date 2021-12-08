@@ -23,6 +23,7 @@ public class Main {
 		System.out.println("Map triée par clef = TreeMap"+directoryTrie);
 		
 		writeToFile(directoryTrie, "file1.txt");
+		@SuppressWarnings("unchecked")
 		TreeMap<String,String> deserialized = (TreeMap<String, String>) readFromFile("file1.txt");
 		System.out.println("Deserialized : " +deserialized);
 
@@ -33,7 +34,7 @@ public class Main {
 		System.out.println("Iteration sur la treeMap : \n");
 		while (it.hasNext()) {
 			String prenom = it.next();
-			System.out.print(prenom + " " + directory.get(prenom));
+			System.out.print(" "+prenom + " " + directory.get(prenom));
 
 		}
 	}
