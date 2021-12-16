@@ -1,12 +1,10 @@
 package bookstore.test;
 
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.TimeZone;
 
 import bookstore.metier.Livre;
+import bookstore.metier.Status;
 import bookstore.metier.Utilisateur;
 
 public class TestUtilisateur {
@@ -31,11 +29,11 @@ public class TestUtilisateur {
 	public static void emprunter(Livre livre, Utilisateur utilisateur, String dateEmprunt) {
 		utilisateur.setLivre(livre);
 		utilisateur.setDateEmprunt(dateEmprunt);
-		livre.setDisponible(false);
+		livre.setDisponible(Status.PRETE);
 	}
 	
 	public static boolean rendre(Utilisateur utilisateur, String dateRendu) {
-		utilisateur.getLivre().setDisponible(true);
+		utilisateur.getLivre().setDisponible(Status.DISPONIBLE);
 		boolean isPretEnRetard = utilisateur.isPretEnRetard(dateRendu);
 		utilisateur.setLivre(null);
 		return isPretEnRetard;

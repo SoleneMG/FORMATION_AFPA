@@ -5,23 +5,40 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-public class Livre {
+public class Livre implements Comparable<Livre> {
 	private String titre, auteur;
 	private int nbPages;
 	private double prix = -1;
-	//private boolean prixFixe=false;
+	// private boolean prixFixe=false;
 	private static Comptable comptable = Comptable.getInstance();
-	private boolean disponible;
+	//private boolean disponible;
 	private LocalDateTime dateAchat;
 	private SimpleDateFormat sdf;
-	
-	
-	public boolean isDisponible() {
-		return disponible;
+	private Status status = Status.DISPONIBLE;
+	private TypeDonneesAnnee anneeParution;
+
+	public TypeDonneesAnnee getAnneeParution() {
+		return anneeParution;
 	}
 
-	public void setDisponible(boolean disponible) {
-		this.disponible = disponible;
+	public void setAnneeParution(TypeDonneesAnnee anneeParution) {
+		this.anneeParution = anneeParution;
+	}
+
+	public Status getStatus() {
+		return status;
+	}
+
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+
+	public Status isDisponible() {
+		return status;
+	}
+
+	public void setDisponible(Status disponibilite) {
+		this.status = disponibilite;
 	}
 
 	public LocalDateTime getDateAchat() {
@@ -42,32 +59,31 @@ public class Livre {
 
 	public double getTotalPrix() {
 		return comptable.getTotalPrix();
-		
+
 	}
 
 //	public boolean isPrixFixe() {
 //		return prixFixe;
 //	}
-	
-	
 
 	public double getPrix() {
 		return prix;
 	}
-	
+
 	public int compare(Livre livre) {
-		if(this.nbPages==livre.nbPages) {
+		if (this.nbPages == livre.nbPages) {
 			return 0;
-		} else if(this.nbPages>livre.nbPages) {
+		} else if (this.nbPages > livre.nbPages) {
 			return 1;
 		} else {
 			return -1;
-		}	
+		}
 	}
 	
+
 	@Override
 	public int hashCode() {
-		return Objects.hash(nbPages, titre);
+		return nbPages;
 	}
 
 	@Override
@@ -79,27 +95,27 @@ public class Livre {
 		if (getClass() != obj.getClass())
 			return false;
 		Livre other = (Livre) obj;
-		return nbPages == other.nbPages && Objects.equals(titre, other.titre);
+		return nbPages == other.nbPages;
 	}
 
 	public int compare(Livre livre1, Livre livre2) {
-		if(livre1.nbPages==livre2.nbPages) {
+		if (livre1.nbPages == livre2.nbPages) {
 			return 0;
-		} else if(livre1.nbPages>livre2.nbPages) {
+		} else if (livre1.nbPages > livre2.nbPages) {
 			return 1;
 		} else {
 			return -1;
-		}	
+		}
 	}
 
 	public void setPrix(double prix) {
-		if(this.prix !=-1) {
-			this.prix = - this.prix;
+		if (this.prix != -1) {
+			this.prix = -this.prix;
 			comptable.comptabilise(this);
 		}
 		if (prix >= 0) {
 			this.prix = prix;
-		//	prixFixe=true;
+			// prixFixe=true;
 			comptable.comptabilise(this);
 		}
 
@@ -114,7 +130,7 @@ public class Livre {
 		}
 		if (prix >= 0) {
 			this.prix = prix;
-		//	prixFixe=true;
+			// prixFixe=true;
 			comptable.comptabilise(this);
 		}
 
@@ -129,7 +145,7 @@ public class Livre {
 		this.titre = titre;
 		this.auteur = auteur;
 	}
-	
+
 	public Livre(String titre) {
 		super();
 		this.titre = titre;
@@ -166,15 +182,23 @@ public class Livre {
 	public String toString() {
 		DecimalFormat df = new DecimalFormat("##0.00");
 		String prixAffichage = "Prix indéterminé";
-		if(prix !=-1) {
-			prixAffichage = df.format(prix)+"€";
+		if (prix != -1) {
+			prixAffichage = df.format(prix) + "€";
 		}
-		return  "\nJe suis un livre "
-				+ "\nMon titre : " + titre 
-				+ "\nMon auteur : " + auteur 
-				+ "\nMon nombres de pages : "+ nbPages
-				+"\nMon prix : "+prixAffichage
-				+"\n\n-----------------------------";
+		return "\n titre : " + titre + "\t auteur : " + auteur + "\t nombres de pages : " + nbPages + "\t prix : "
+				+ prixAffichage;
+	}
+
+	@Override
+	public int compareTo(Livre other) {
+		if (this.nbPages > other.nbPages) {
+			return 1;
+		} else if (this.nbPages == other.nbPages) {
+			return 0;
+		} else {
+			return -1;
+		}
+
 	}
 
 }
