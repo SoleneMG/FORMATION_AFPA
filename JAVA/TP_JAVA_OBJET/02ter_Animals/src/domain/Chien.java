@@ -7,9 +7,18 @@ public class Chien extends Mammifere{
 
 	}
 	
+	
 	@Override
 	public String toString() {
 		return name != null ? "Je suis un chien de nom " + super.name : "Je suis un chien";
 	}
+
+
+	@Override
+	public void parle() {
+		System.out.println("waouf waouf");
+	}
+	
+	
 
 }
