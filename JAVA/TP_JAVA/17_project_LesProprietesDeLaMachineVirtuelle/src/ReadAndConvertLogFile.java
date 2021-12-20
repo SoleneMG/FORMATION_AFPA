@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
@@ -17,15 +16,13 @@ public class ReadAndConvertLogFile {
 	public static void main(String[] args) {
 	String fileName = "in010607.log";
 	ReadAndConvertLogFile read = new ReadAndConvertLogFile();
-	//Path pathStart = Paths.get("C:\\Users\\solen\\FORMATION_AFPA");
-	URL pathStart = ClassLoader.getSystemClassLoader().getResource("in010607.log");
-	System.out.println(pathStart);
-//	try {
-//		read.findFile(pathStart, fileName);
-//	} catch (IOException e) {
-//		// TODO Auto-generated catch block
-//		e.printStackTrace();
-//	}
+	Path pathStart = Paths.get("C:\\Users\\solen\\FORMATION_AFPA");
+	try {
+		read.findFile(pathStart, fileName);
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 //	List<Logs> logs = read.filterByAdressIpHoursAndUri(fileName);
 //	StringBuilder sb = new StringBuilder();
 //	logs.stream().forEach(x -> sb.append(x.ipAdress+x.date+x.uri+"\n"));

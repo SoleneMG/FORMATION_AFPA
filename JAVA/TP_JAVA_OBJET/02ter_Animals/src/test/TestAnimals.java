@@ -1,17 +1,14 @@
 package test;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
 
 import domain.Animal;
+import domain.AnimalException;
 import domain.Chien;
 import domain.Homme;
-import domain.Mammifere;
-import domain.Nommable;
 
 /**
  * TP sur le Polymorphisme
@@ -21,11 +18,27 @@ public class TestAnimals {
 
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
-		Animal[] animaux = returnAnimalTab();
-		testPolymorphisme(animaux);
-		testProgrammationFonctionnelle(animaux);
-		List<Animal> animauxList = testCollectionInsteadOfBoard();
-		triLaCollection(animauxList);
+		Animal[] animaux = null;
+		try {
+			animaux = returnAnimalTab();
+		} catch (AnimalException e) {
+			e.printStackTrace();
+		}
+		if(animaux!=null) {
+			testPolymorphisme(animaux);
+			testProgrammationFonctionnelle(animaux);
+		}
+		
+		List<Animal> animauxList = null;
+		try {
+			animauxList = testCollectionInsteadOfBoard();
+		} catch (AnimalException e) {
+			e.printStackTrace();
+		}
+		if(animauxList!=null) {
+			triLaCollection(animauxList);
+
+		}
 
 	}
 
@@ -48,7 +61,7 @@ public class TestAnimals {
 	 * Question 5
 	 * @author solen
 	 */
-	public static List<Animal> testCollectionInsteadOfBoard() {
+	public static List<Animal> testCollectionInsteadOfBoard() throws AnimalException{
 		System.out.println("**************************************************************************");
 		System.out.println("Utiliser une collection de type \"ensemble ordonné\" à la place du tableau");
 		System.out.println("**************************************************************************");
@@ -56,6 +69,7 @@ public class TestAnimals {
 		animauxList.add(new Animal("Truc"));
 		animauxList.add(new Chien("Medor"));
 		animauxList.add(new Homme("Robert"));
+		animauxList.add(new Homme("Roberto de la Vegas"));
 		return animauxList;
 	}
 	
@@ -92,8 +106,9 @@ public class TestAnimals {
 	/**
 	 * retourne un tableau d'animaux
 	 * @author solen
+	 * @throws AnimalException 
 	 */
-	public static Animal[] returnAnimalTab() {
+	public static Animal[] returnAnimalTab() throws AnimalException {
 		Animal[] animaux = { new Animal("Truc"), new Chien("Medor"), new Homme("Robert") };
 
 		List<Animal> animauxList = Arrays.asList(animaux);

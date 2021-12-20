@@ -1,8 +1,13 @@
 package domain;
 
+/**
+ * classe chien. Dans la hierarchie chien dérive de la classe mammifere qui dérive de la classe animal
+ * @author solen
+ *
+ */
 public class Chien extends Mammifere{
 
-	public Chien(String nom) {
+	public Chien(String nom) throws AnimalException {
 		super(nom);
 
 	}
@@ -14,6 +19,9 @@ public class Chien extends Mammifere{
 	}
 
 
+	/**
+	 * le chien fait waouf waouf
+	 */
 	@Override
 	public void parle() {
 		System.out.println("waouf waouf");

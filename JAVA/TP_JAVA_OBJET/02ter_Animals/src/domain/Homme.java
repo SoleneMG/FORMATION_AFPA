@@ -1,9 +1,14 @@
 package domain;
 
+/**
+ * classe homme. Dans la hierarchie chien dérive de la classe mammifere qui dérive de la classe animal
+ * @author solen
+ *
+ */
 public class Homme extends Mammifere{
 
 
-	public Homme(String nom) {
+	public Homme(String nom) throws AnimalException {
 		super(nom);
 		
 	}

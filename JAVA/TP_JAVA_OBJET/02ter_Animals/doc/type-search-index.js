@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"test","l":"TestAnimals"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"domain","l":"Animal"},{"p":"domain","l":"Chien"},{"p":"domain","l":"Homme"},{"p":"domain","l":"Mammifere"},{"p":"domain","l":"Nommable"}];updateSearchResults();

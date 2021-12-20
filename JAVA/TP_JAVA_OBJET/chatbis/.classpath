@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-16">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/solen/FORMATION_AFPA/JAVA/TP_JAVA_OBJET/MICHEL_GROSJEAN_Solene_animals.jar" sourcepath="lib/MICHEL_GROSJEAN_Solene_animals.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/chatbis/lib/MICHEL_GROSJEAN_Solene_animals.jar!/doc"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="classes"/>
+</classpath>
