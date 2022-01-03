@@ -2,6 +2,7 @@ package bookstore.metier;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -19,7 +20,7 @@ public class Livre implements Comparable<Livre> {
 	private static SimpleDateFormat SDF = new SimpleDateFormat("dd/MM/yyyy");
 	private Status status = Status.DISPONIBLE;
 	private TypeDonneesAnnee anneeParution;
-	private Date dateEmprunt;
+	private LocalDate dateEmprunt;
 	private Utilisateur emprunteur;
 	//private boolean disponible;
 	// private boolean prixFixe=false;
@@ -97,7 +98,7 @@ public class Livre implements Comparable<Livre> {
 	public void setAuteur(String auteur) {
 		this.auteur = auteur;
 	}
-	public void setDateEmprunt(Date dateEmprunt) {
+	public void setDateEmprunt(LocalDate dateEmprunt) {
 		this.dateEmprunt = dateEmprunt;
 	}
 	public void setEmprunteur(Utilisateur emprunteur) {
@@ -132,7 +133,7 @@ public class Livre implements Comparable<Livre> {
 	public TypeDonneesAnnee getAnneeParution() {
 		return anneeParution;
 	}
-	public Date getDateEmprunt() {
+	public LocalDate getDateEmprunt() {
 		return dateEmprunt;
 	}
 	public Utilisateur getEmprunteur() {

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config" status="INFO">
+
+    <Appenders>
+        <!--  Affichage dans la console -->
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%t] %-5p | %-60c | %m (%F:%L)%n" />
+        </Console>
+		
+		<!--  Affichage dans un fichier non tournant -->
+		<!-- <File name="file" fileName="logs.txt">
+            <PatternLayout pattern="[%t] %-5p | %-60c | %m (%F:%L)%n" />
+        </File> -->
+		
+		<!--  Affichage dans un fichier tournant -->
+        <RollingFile name="rollingFile" fileName="logs/logs.txt"
+                     filePattern="logs/logs-%d{yyyy-MM-dd}-%i.txt">
+            <PatternLayout pattern="[%t] %-5p | %-60c | %m (%F:%L)%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        
+        <Root level="info">
+            <AppenderRef ref="stdout" />
+			<!-- <AppenderRef ref="file" /> -->
+			<AppenderRef ref="rollingFile"/>
+        </Root>
+        
+    </Loggers>
+
+</Configuration>

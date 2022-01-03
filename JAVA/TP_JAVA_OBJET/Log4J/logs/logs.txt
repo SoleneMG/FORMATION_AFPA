@@ -1,0 +1,2 @@
+[main] INFO  | domain.MathException                                         | IllegalArgument Exception (MathException.java:17)
+[main] INFO  | domain.MathException                                         | NumberFormat Exception (MathException.java:17)
