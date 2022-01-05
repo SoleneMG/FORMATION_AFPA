@@ -1,4 +1,4 @@
-package presentation;
+package main.java.presentation;
 
 import java.math.BigInteger;
 
@@ -7,8 +7,8 @@ import javax.swing.JOptionPane;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import domain.MathBean;
-import domain.MathException;
+import main.java.domain.MathBean;
+import main.java.domain.MathException;
 
 public class CalculFactor {
 	

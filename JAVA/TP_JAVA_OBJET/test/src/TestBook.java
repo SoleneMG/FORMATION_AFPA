@@ -3,10 +3,6 @@
 import java.time.LocalDate;
 import java.util.Arrays;
 
-import bookstore.metier.Accounting;
-import bookstore.metier.Book;
-import bookstore.metier.User;
-
 /**
  * 
  * @author Sara LIMA BJORCK

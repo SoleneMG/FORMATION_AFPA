@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path=".settings"/>
 	<classpathentry including="fr/" kind="src" path="lib">
 		<attributes>
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/solen/FORMATION_AFPA/JAVA/TP_JAVA_OBJET/chat"/>
@@ -12,6 +12,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/solen/FORMATION_AFPA/JAVA/TP_JAVA_OBJET/chat/animal.jar"/>
+	<classpathentry kind="lib" path="D:/FORMATION_AFPA/JAVA/TP_JAVA_OBJET/02_Chat/animal.jar"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>

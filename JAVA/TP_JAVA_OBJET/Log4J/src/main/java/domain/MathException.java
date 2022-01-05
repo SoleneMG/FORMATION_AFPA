@@ -1,4 +1,4 @@
-package domain;
+package main.java.domain;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
