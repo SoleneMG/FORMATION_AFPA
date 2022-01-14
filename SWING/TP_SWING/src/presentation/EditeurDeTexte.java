@@ -131,9 +131,9 @@ public class EditeurDeTexte extends JFrame {
 		 */
 		listWord = new JList<String>();
 		wordsSet = returnListOfWordFromText(path, 0);
-//		for (String string : wordsSet) {
-//			java.lang.System.out.println(string);
-//		}
+		for (String string : wordsSet) {
+			java.lang.System.out.println(string);
+		}
 		// convert Set to Array
 		String[] wordsTab = new String[wordsSet.size()];
 		wordsTab = wordsSet.toArray(wordsTab);
@@ -225,7 +225,7 @@ public class EditeurDeTexte extends JFrame {
 		try (BufferedReader reader = Files.newBufferedReader(Paths.get(textName),
 				Charset.forName(encodageTab[encodageIndex]))) {
 			String line = null;
-			String splitSeparator = "[\"?,!:.]";
+			String splitSeparator = "[\s\n\"?,!:.]";
 
 			while ((line = reader.readLine()) != null) {
 				String[] infos = line.split(splitSeparator);
