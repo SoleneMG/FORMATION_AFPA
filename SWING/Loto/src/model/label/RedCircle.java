@@ -12,9 +12,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-    public class BlueCircle extends JLabel {
+    public class RedCircle extends JLabel {
 
-        public BlueCircle() {
+        public RedCircle() {
             setOpaque(false);
             setPreferredSize(getPreferredSize());
             setLayout(new BorderLayout());
@@ -40,7 +40,7 @@ import javax.swing.SwingConstants;
             g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
             g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
             g2d.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_PURE);
-            g2d.setColor(new Color(0,162,217));
+            g2d.setColor(new Color(234,57,70));
             g2d.fill(new Ellipse2D.Double(0, 0, 40, 40));
             g2d.dispose();
             super.paintComponent(g);
