@@ -1,0 +1,6 @@
+Classique	0
+Variété étrangère	1
+Jazz	2
+Variété française	3
+Musique du monde	4
+Divers	5

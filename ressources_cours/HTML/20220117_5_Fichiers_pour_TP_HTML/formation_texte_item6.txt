@@ -1,0 +1,12 @@
+Comprendre les modeles UML 
+La modélisation d'un système an analyse avec UML est réalisée par des équipes incluant informaticiens et utilisateurs. 
+Cette mixité des équipes vient de la démarche objet centrée sur les Uses Cases permettant d'impliquer fortenment les 
+utilisateurs finaux dans la défintion du système. 
+Destinée aux chefs de projets ou aux experts metier, ce cours vous permettra de lire et de comprendre un modèle 
+d'analyse UML, ce qui vous permettra de dialoguer avec les anamlystes objets et de valider les modèles produits. 
+Comprendre les concepts objets et reconnaître leur représentation UML. 
+Participer à la rédaction des cas d'utilisation. 
+Comprendre l'utilité des modèles et l'utilité de votre participation à leur élaboration. 
+Lire les diagrammes UML. 
+Dialoguer avec une équipe de projet. 
+1050 2 Paris 3 mai 2009 Paris 9 juin 2009 Paris 22 septembre 20009 Toulouse 5 mai 2009 Toulouse 11 juin 2009 Toulouse 24 septembre
