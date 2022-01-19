@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body{
+	background-color: darkgray;
+}
 
 .subtitle {
 	font-weight: bold;
@@ -26,4 +29,19 @@
 
 .entitled {
 	width: 300px;
+}
+
+th {
+	display: block; /*provoque un retour à la ligne*/
+	width:300px;
+	 float:left;
+	 font-weight: lighter;
+	 text-align: left;
+}
+.largeTextArea {
+	width: 50%;
+}
+
+.development th {
+	width: max-content;
 }

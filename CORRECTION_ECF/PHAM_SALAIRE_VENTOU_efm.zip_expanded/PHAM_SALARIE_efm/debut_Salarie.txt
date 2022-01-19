@@ -1,0 +1,32 @@
+package ventou.metier;
+
+public class Salarie 
+{
+   private static int prochainMatricule = 0; //Evolue au fur et à mesure
+                                             //de la création des objets
+   private static final boolean DEMISSIONNAIRE = false; //Pour etatActivite
+   private static final boolean ACTIF = true;           //Pour etatActivite
+   
+   private String nom;
+   private int matricule;
+   private double salaire;
+   private boolean etatActivite;  //état de l'activité du salarié
+
+   public Salarie(String nom, double sal)
+   {
+      this.nom = nom;
+      salaire = sal;
+      matricule = prochainMatricule++;
+      etatActivite = ACTIF;
+   }
+   
+   public void  demissionne ()
+   {
+      etatActivite = DEMISSIONNAIRE;
+   }
+   
+   public void augmente (double delta) 
+   {
+      salaire += delta;
+   }
+}

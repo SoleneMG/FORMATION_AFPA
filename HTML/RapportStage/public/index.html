@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<title>Stage</title>
-<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Stage</title>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<h1>Rapport de Suivi de la Période en Entreprise</h1>
 	<form action="#" method="get">
@@ -13,41 +15,35 @@
 				<p class="subtitle">Stagiaire</p>
 			</div>
 			<div>
-				<label for=trainee>Nom et Prénom *</label> <input type="text"
-					name="traineeIdentity" id="traineeIdentity">
+				<label for=trainee>Nom et Prénom *</label> <input type="text" name="traineeIdentity"
+					id="traineeIdentity">
 			</div>
 			<div>
-				<label>Formation *</label> <input type="text" name="course"
-					id="course">
+				<label>Formation *</label> <input type="text" name="course" id="course">
 			</div>
 
 			<div>
 				<p class=subtitle>Entreprise</p>
 			</div>
 			<div>
-				<label for=company>Nom *</label> <input type="text"
-					name="companyIdentity" id="companyIdentity">
+				<label for=company>Nom *</label> <input type="text" name="companyIdentity" id="companyIdentity">
 			</div>
 			<div>
 				<label>Adresse *</label>
 				<textarea name="adress" id="adress" class="largeText"></textarea>
 			</div>
 			<div>
-				<label>Nom du tuteur *</label> <input type="text" name="tutor"
-					id="tutor"> <label class="tableLabel">Fonction *</label> <input
-					type="text" name="function" id="function">
+				<label>Nom du tuteur *</label> <input type="text" name="tutor" id="tutor"> <label
+					class="tableLabel">Fonction *</label> <input type="text" name="function" id="function">
 			</div>
 			<div>
-				<label>Tel *</label> <input type="text" name="fixedLine"
-					id="fixedLine"> <label class="tableLabel">Port</label> <input
-					type="text" name="mobilePhoneLine" id="mobilePhoneLine"> <label
-					class="tableLabel">Email</label> <input type="text" name="email"
-					id="email">
+				<label>Tel *</label> <input type="text" name="fixedLine" id="fixedLine"> <label
+					class="tableLabel">Port</label> <input type="text" name="mobilePhoneLine" id="mobilePhoneLine">
+				<label class="tableLabel">Email</label> <input type="text" name="email" id="email">
 			</div>
 			<div>
 				<label>Secteur d'activité *</label>
-				<textarea type="text" name="businessLine" id="businessLine"
-					class="largeText"></textarea>
+				<textarea type="text" name="businessLine" id="businessLine" class="largeText"></textarea>
 			</div>
 		</div>
 		<div>
@@ -55,47 +51,82 @@
 			<div class="radio">
 				<table>
 					<tr>
-						<td><label class="entitled">Objectifs d'acquisitions
-								atteints *</label></td>
-						<td><input type="radio" name="targetAchievment"
-							id="targetAchievmentTotaly"> <label
-							for="targetAchievmentTotaly">totalement</label></td>
-						<td><input type="radio" name="targetAchievment"
-							id="targetAchievmentPartially"> <label
-							for="targetAchievmentPartially">partiellement</label></td>
-						<td><input type="radio" name="targetAchievment"
-							id="targetAchievmentNone"> <label
-							for="targetAchievmentNone" class="radio">non</label></td>
+						<th><label class="entitled">Objectifs d'acquisitions
+								atteints *</label></th>
+						<td><input type="radio" name="targetAchievment" id="targetAchievmentTotaly"> <label
+								for="targetAchievmentTotaly">totalement</label></td>
+						<td><input type="radio" name="targetAchievment" id="targetAchievmentPartially"> <label
+								for="targetAchievmentPartially">partiellement</label></td>
+						<td><input type="radio" name="targetAchievment" id="targetAchievmentNone"> <label
+								for="targetAchievmentNone" class="radio">non</label></td>
 					</tr>
 					<tr>
-						<td><label class="entitled">Comportement en milieu de
-								travail *</label></td>
+						<th><label class="entitled">Comportement en milieu de
+								travail *</label></th>
 						<td><input type="radio" name="behaviorOK" id="behaviorOK">
-							<label for="behaviorOK">adapté</label></td>
-						<td><input type="radio" name="behaviorInProgress"
-							id="behaviorInProgress" targetAchievmentPartially> <label
-							for="behaviorInProgress">en progression</label></td>
-						<td><input type="radio" name="behaviorNOK" id="behaviorNOK"
-							targetAchievmentNone> <label for="behaviorNOK"
-							class="radio">peu adapté</label></td>
+							<label for="behaviorOK">adapté</label>
+						</td>
+						<td><input type="radio" name="behaviorInProgress" id="behaviorInProgress"
+								targetAchievmentPartially> <label for="behaviorInProgress">en progression</label></td>
+						<td><input type="radio" name="behaviorNOK" id="behaviorNOK" targetAchievmentNone> <label
+								for="behaviorNOK" class="radio">peu adapté</label></td>
 					</tr>
-						<tr>
-						<td><label class="entitled">Satisfaction de l'entreprise *</label></td>
+					<tr>
+						<th><label class="entitled">Satisfaction de l'entreprise *</label></th>
 						<td><input type="radio" name="companySatisfactionYes" id="companySatisfactionYes">
-							<label for="companySatisfactionYes">satisfaite</label></td>
-						<td><input type="radio" name="companySatisfactionInProgress"
-							id="companySatisfactionInProgress" targetAchievmentPartially> <label
-							for="companySatisfactionInProgress">peu satisfaite</label></td>
+							<label for="companySatisfactionYes">satisfaite</label>
+						</td>
+						<td><input type="radio" name="companySatisfactionInProgress" id="companySatisfactionInProgress"
+								targetAchievmentPartially> <label for="companySatisfactionInProgress">peu
+								satisfaite</label></td>
 						<td><input type="radio" name="companySatisfactionNo" id="companySatisfactionNo"
-							targetAchievmentNone> <label for="companySatisfactionNo"
-							class="radio">pas satisfaite</label></td>
+								targetAchievmentNone> <label for="companySatisfactionNo" class="radio">pas
+								satisfaite</label></td>
+					</tr>
+				</table>
+				<p>Remarques</p>
+				<textarea class="largeTextArea" name="note" rows="6"></textarea>
+				<table>
+					<tr>
+						<th><label>Perspectives d'embauche *</label></th>
+						<td><input type="checkbox" name="hire"><label for="CDD">C.D.D</label></td>
+						<td><input type="checkbox" name="hire"><label for="CDI">C.D.I</label></td>
+						<td><input type="checkbox" name="hire"><label for="WorkLinkedTraining">Alternance</label></td>
+						<td><input type="checkbox" name="hire"><label for="NoWork">Néant</label></td>
 					</tr>
 				</table>
 			</div>
-
-
+			<div>
+				<p class="subtitle">Informations concernant l'activité de l'entreprise et les possibilités
+					d'intervention</p>
+			</div>
+			<table>
+				<tr>
+					<th><label class="entitled">Taille de l'entreprise</label></th>
+					<td><input type="radio" name="companySize"> <label for="companySize">- 10 pers</label></td>
+					<td><input type="radio" name="companySize"> <label for="companySize">+ 10 pers</label></td>
+					<td><input type="radio" name="companySize"> <label for="companySize" class="radio">+ 50 pers</label>
+					</td>
+					<td><input type="radio" name="companySize"> <label for="companySize" class="radio">+ 100
+							pers</label></td>
+				</tr>
+				<tr>
+					<th><label>L'entreprise a-t-elle des projets de développement</label></th>
+					<td><input type="radio" name="developmentProject"> <label for="developmentProject">oui</label></td>
+					<td><input type="radio" name="developmentProject"> <label for="developmentProject">non</label></td>
+			
+			<p>Remarques</p>
+				<textarea class="largeTextArea" name="note" rows="6"></textarea>
+				
+					<tr>
+						<th><label>Emission d'une fiche Prospect/Client</label></th>
+						<td><input type="radio" name="prospect"> <label for="prospect">oui</label></td>
+						<td><input type="radio" name="prospect"> <label for="prospect">non</label></td>
+						<td><label for="prospect">date</label><input type="text" name="prospect"></td>
+				</table>
 		</div>
 	</form>
 
 </body>
+
 </html>

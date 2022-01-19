@@ -1,0 +1,31 @@
+package achat.metier ;
+public class Fournisseur 
+{
+   private String nom;
+   private float totalAchat;// Montant total des Achats
+   private int noAgr; //numéro d'agrément
+
+   private static int idxAgr = 1001;
+   
+   public Fournisseur(String nom)
+   {
+      this.nom = nom;
+      totalAchat = 0;
+      noAgr = idxAgr++;
+   }
+
+   protected void init()
+   {
+      totalAchat = 0;
+   }
+
+   public void addAchat(float montant) 
+   {
+      totalAchat += montant;
+   }
+   
+   public float getTotalAchat()
+   {
+      return totalAchat;
+   }   
+}

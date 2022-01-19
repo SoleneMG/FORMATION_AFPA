@@ -1,0 +1,50 @@
+body {
+    margin-left: 10px;
+}
+
+#firstSection {
+width: auto;
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content: flex-start; /*axe principal*/
+align-items: flex-start;     /*axe secondaire*/
+}
+
+.firstChild {
+height: max-content;
+margin: 10px;
+}
+
+.firstChild label:not(.last){
+    display : inline-block;
+    width: 150px;
+}
+.subTitle {
+    font-weight: bold;
+    font-size:large;
+}
+
+.secondChild {
+    height: max-content;
+    margin: 6px;
+    }
+
+.xlargeSize {
+    display:inline-block;
+    width:250px;
+}
+.small-size {
+    display:inline-block;
+    width:100px;
+}
+.auto-size {
+    display:inline-block;
+    width:auto;
+}
+.auto-sizeWithMarginRight {
+    display:inline-block;
+    width:auto;
+    margin-right: 10px;
+}
+
