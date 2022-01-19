@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Stage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Rapport de Suivi de la Période en Entreprise</h1>
+	<form action="#" method="get">
+		<div class="trainee">
+			<div>
+				<p class="subtitle">Stagiaire</p>
+			</div>
+			<div>
+				<label for=trainee>Nom et Prénom *</label> <input type="text"
+					name="traineeIdentity" id="traineeIdentity">
+			</div>
+			<div>
+				<label>Formation *</label> <input type="text" name="course"
+					id="course">
+			</div>
+
+			<div>
+				<p class=subtitle>Entreprise</p>
+			</div>
+			<div>
+				<label for=company>Nom *</label> <input type="text"
+					name="companyIdentity" id="companyIdentity">
+			</div>
+			<div>
+				<label>Adresse *</label>
+				<textarea name="adress" id="adress" class="largeText"></textarea>
+			</div>
+			<div>
+				<label>Nom du tuteur *</label> <input type="text" name="tutor"
+					id="tutor"> <label class="tableLabel">Fonction *</label> <input
+					type="text" name="function" id="function">
+			</div>
+			<div>
+				<label>Tel *</label> <input type="text" name="fixedLine"
+					id="fixedLine"> <label class="tableLabel">Port</label> <input
+					type="text" name="mobilePhoneLine" id="mobilePhoneLine"> <label
+					class="tableLabel">Email</label> <input type="text" name="email"
+					id="email">
+			</div>
+			<div>
+				<label>Secteur d'activité *</label>
+				<textarea type="text" name="businessLine" id="businessLine"
+					class="largeText"></textarea>
+			</div>
+		</div>
+		<div>
+			<p class="subtitle">Observation sur le déroulement de la PAE</p>
+			<div class="radio">
+				<table>
+					<tr>
+						<td><label class="entitled">Objectifs d'acquisitions
+								atteints *</label></td>
+						<td><input type="radio" name="targetAchievment"
+							id="targetAchievmentTotaly"> <label
+							for="targetAchievmentTotaly">totalement</label></td>
+						<td><input type="radio" name="targetAchievment"
+							id="targetAchievmentPartially"> <label
+							for="targetAchievmentPartially">partiellement</label></td>
+						<td><input type="radio" name="targetAchievment"
+							id="targetAchievmentNone"> <label
+							for="targetAchievmentNone" class="radio">non</label></td>
+					</tr>
+					<tr>
+						<td><label class="entitled">Comportement en milieu de
+								travail *</label></td>
+						<td><input type="radio" name="behaviorOK" id="behaviorOK">
+							<label for="behaviorOK">adapté</label></td>
+						<td><input type="radio" name="behaviorInProgress"
+							id="behaviorInProgress" targetAchievmentPartially> <label
+							for="behaviorInProgress">en progression</label></td>
+						<td><input type="radio" name="behaviorNOK" id="behaviorNOK"
+							targetAchievmentNone> <label for="behaviorNOK"
+							class="radio">peu adapté</label></td>
+					</tr>
+						<tr>
+						<td><label class="entitled">Satisfaction de l'entreprise *</label></td>
+						<td><input type="radio" name="companySatisfactionYes" id="companySatisfactionYes">
+							<label for="companySatisfactionYes">satisfaite</label></td>
+						<td><input type="radio" name="companySatisfactionInProgress"
+							id="companySatisfactionInProgress" targetAchievmentPartially> <label
+							for="companySatisfactionInProgress">peu satisfaite</label></td>
+						<td><input type="radio" name="companySatisfactionNo" id="companySatisfactionNo"
+							targetAchievmentNone> <label for="companySatisfactionNo"
+							class="radio">pas satisfaite</label></td>
+					</tr>
+				</table>
+			</div>
+
+
+		</div>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.subtitle {
+	font-weight: bold;
+}
+.trainee input, textArea{
+	width: 15em;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.trainee label:not(.tableLabel):not(.radio){
+	display: block; /*provoque un retour à la ligne*/
+	width:150px;
+	 float:left;
+}
+
+.largeText {
+	height: 3em;
+}
+
+.tableLabel {
+	width:20px;
+	text-align: right;
+}
+
+.entitled {
+	width: 300px;
+}

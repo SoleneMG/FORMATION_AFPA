@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Formulaire de contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action="" method="get" class="contact-form">
+		<div class="formulaire">
+			<label for="name">Nom</label> <input type="text" name="name"
+				id="name" required>
+		</div>
+		<div>
+			<label for="email">Mail</label> <input type="email" name="email"
+				id="email" required>
+		</div>
+		<div>
+			<label for="pays">Pays</label> <select name="countryList">
+				<option>France</option>
+				<option>Italie</option>
+				<option>Espagne</option>
+			</select>
+		</div>
+		<div>
+			<label for="typeofMessage">Le motif de votre message</label>
+		</div>
+		<div>
+			<input type="radio" name="typeOfMessage" id="renseignement"
+				value="Renseignement"> <label for="renseignement">Renseignement</label>
+		</div>
+		<div>
+			<input type="radio" name="typeOfMessage" id="pbTechnique"
+				value="Problème technique"> <label for="problème technique">Problème
+				technique</label>
+		</div>
+		<div>
+			<input type="radio" name="typeOfMessage" id="partenariat"
+				value="Partenariat"> <label for="problème technique">Partenariat</label>
+		</div>
+		<div>
+			<label for="message">Votre message</label>
+		</div>
+		<div>
+			<textarea name="message" id="message"></textarea>
+		</div>
+		<div>
+		<button type="submit">Envoyer</button>
+		</div>
+</body>
+</html>
