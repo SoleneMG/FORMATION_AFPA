@@ -48,3 +48,17 @@ margin: 10px;
     margin-right: 10px;
 }
 
+.thirdChild {
+width: auto;
+height: auto;
+display: flex;
+flex-direction: rows;
+justify-content: center; /*axe principal*/
+
+}
+
+.button {
+    width: 100px;
+    margin: 15px;
+}
+
