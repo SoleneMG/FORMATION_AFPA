@@ -1,0 +1,13 @@
+body {
+	background-color: #FFCC66;
+	background-image: url(butterfly.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: 2cm 2cm;
+  
+}
+h1 {
+	color: #990000;
+	background-color: #FC9804;
+}
+

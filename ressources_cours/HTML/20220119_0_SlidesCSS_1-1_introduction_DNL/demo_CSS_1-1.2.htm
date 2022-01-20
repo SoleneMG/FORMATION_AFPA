@@ -1,0 +1,77 @@
+<style>
+/* pour habiller le code css affiché dans les balises <pre>   DN 10/12/2009 */
+pre {
+font-size:120%;
+padding:5px 50px;
+margin-left:30px;
+margin-bottom:5px;
+overflow:auto;
+color:#000000;
+background-color:#FFF3F3;
+border-left:8px ridge blue;
+}
+
+a:hover {
+color:yellow;
+text-decoration:none;
+background-color:black;
+}
+</style>
+<pre>
+a:hover {
+color:yellow;
+text-decoration:none;
+background-color:black; }
+</pre>
+
+<a href="http://www.google.com">Aller vers Google</a> &nbsp; <a href="http://www.yahoo.com">Aller vers Yahoo</a><br/>
+
+<style>
+.test2 a:hover { 
+background-image:url("demo_css-1_fond1.png");
+color:black;
+background-repeat:no-repeat;
+background-color:white;
+}
+</style>
+<br />
+<pre>
+a:hover {
+background-image:url("demo_css-1_fond1.png");
+background-repeat:no-repeat;
+color:black;
+background-color:white; }
+</pre>
+<p class="test2">
+<a href="http://www.google.com">Aller vers Google</a> <br /> 
+<a href="http://www.yahoo.com">Aller vers Yahoo</a><br /> 
+<a href="http://....">Aller vers ...</a></p>
+
+<style>
+.test3 a:hover { 
+background-image:url("demo_css-1_fond1.gif");
+background-repeat:no-repeat;
+color:black;
+background-color:white;
+}
+.test3 a:hover:before { 
+content:" - »» ";
+}
+</style>
+<pre>
+a:hover { 
+background-image:url("demo_css-1_fond1.gif");
+background-repeat:no-repeat;
+color:black;
+background-color:white;
+
+}
+a:hover:before { 
+content:" - »» ";
+}
+</pre>
+<p class="test3">
+<a href="http://www.google.com">Aller vers Google</a> <br /> 
+<a href="http://www.yahoo.com">Aller vers Yahoo</a><br /> 
+<a href="http://....">Aller vers ...</a></p>
+

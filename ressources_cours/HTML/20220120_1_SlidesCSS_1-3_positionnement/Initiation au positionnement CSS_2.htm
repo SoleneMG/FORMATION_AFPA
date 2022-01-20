@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"><head><title>Openweb.eu.org - Initiation au positionnement CSS&nbsp;: 2.position float</title>
+
+  
+    
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="revisit-after" content="15 days">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_2_fichiers/screen_003.css" media="screen" title="Normal">
+    <link rel="stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_2_fichiers/print_002.css" media="print" title="Normal">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_2_fichiers/screen_004.css" media="screen" title="Fond noir">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_2_fichiers/print.css" media="print" title="Fond noir">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_2_fichiers/screen_002.css" media="screen" title="Fond noir/gros caractères">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_2_fichiers/print_005.css" media="print" title="Fond noir/gros caractères">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_2_fichiers/screen_005.css" media="screen" title="Minimal">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_2_fichiers/print_003.css" media="print" title="Minimal">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_2_fichiers/screen.css" media="screen" title="Sans habillage">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_2_fichiers/print_004.css" media="print" title="Sans habillage">
+    <link rel="author" title="Auteurs" href="http://openweb.eu.org/openwebgroup/membres/">
+    <link rel="copyright" title="Conditions de réutilisation" href="http://openweb.eu.org/openwebgroup/licence/">
+    <link rel="start" title="Accueil" href="http://openweb.eu.org/">
+    <link rel="help" title="Politique d'accessibilité" href="http://openweb.eu.org/openwebgroup/demarche_accessibilite/">
+    <link rel="index" title="Carte" href="http://openweb.eu.org/openwebgroup/plan/">
+    <link rel="shortcut icon" type="images/x-icon" href="http://openweb.eu.org/favicon.ico">
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.Publisher" content="OpenWebGroup.eu.org">
+    <link rel="alternate" title="Version Docbook/XML" type="text/xml" href="http://openweb.eu.org/articles/initiation_float/docbook.xml">
+    <link rel="alternate" title="Version brute" type="text/html" href="http://openweb.eu.org/articles/initiation_float/xhtml.xml">
+    <meta name="DC.Language" scheme="RFC3066" content="fr">
+    <meta name="DC.Identifier" content="initiation_float">
+    <meta name="DC.Creator" content="Laurent Denis">
+    <meta name="DC.Date.created" scheme="W3CDTF" content="2003-03-21">
+    <meta name="DC.Date.modified" scheme="W3CDTF" content="2003-03-21">
+    <meta name="DC.Rights" content="Cet article est sous licence Creative Commons Attribution-ShareAlike.">
+    <meta name="DC.Subject" content="expert, mise_en_page, css"></head><body>
+    <div id="page">
+      <div id="accessible">
+        <ul>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/demarche_accessibilite/">Politique
+            d'accessibilité</a>
+          </li>
+          <li>
+            <a href="#texte">Aller au texte</a>
+          </li>
+          <li class="dernier">
+            <a href="#menus">Aller au menu</a>
+          </li>
+        </ul>
+        <form action="/articles/initiation_float/index.php" method="get" id="switcher">
+  <div id="habillage">
+    <label for="set">Choisir un habillage&nbsp;:</label>
+    <select id="set" name="set">
+      <option value="original" selected="selected">Normal</option>
+      <option value="fondnoir">Fond noir</option>
+      <option value="fondnoir_medium">Fond noir/gros caractères</option>
+      <option value="minimale">Minimal</option>
+      <option value="sanshabillage">Sans habillage</option>
+    </select>
+    <input value="Ok" type="submit">
+  </div>
+</form>
+      </div>
+      <div id="moteur">
+        <form id="recherche" method="get" action="/recherche/">
+          <div id="moteurint">
+            <label for="q">Recherche sur ce site&nbsp;:</label>
+            <input name="q" id="q" accesskey="4" value="" class="champs">
+            <input name="Submit" value="Ok" class="valid" type="submit">
+          </div>
+        </form>
+      </div>
+      <div id="logo">
+        <h1>
+          <a href="http://openweb.eu.org/" title="Retour en page d'accueil">
+            <img src="Initiation%20au%20positionnement%20CSS_2_fichiers/logo.png" alt="OpenWeb, pour les standards du web" height="94" width="358">
+          </a>
+        </h1>
+      </div>
+      <div id="texte">
+        <h2>Initiation au positionnement CSS&nbsp;: 2.position float</h2>
+        <div class="abstract">
+          <div class="auteur">
+            <ul>
+              <li>
+                <strong>Profil&nbsp;:</strong> <a href="http://openweb.eu.org/expert/">Expert</a>
+              </li>
+              <li>
+                <strong>Thème&nbsp;:</strong> <a href="http://openweb.eu.org/mise_en_page/">Mise en page</a>
+              </li>
+              <li>
+                <strong>Technologie&nbsp;:</strong> <a href="http://openweb.eu.org/css/">CSS</a>
+              </li>
+              <li>
+                <strong>Auteur&nbsp;:</strong> <a href="mailto:laurent.denis%40openweb.eu.org">Laurent <span class="patronyme">Denis</span></a>
+              </li>
+              <li class="dernier">
+                <strong>Mise à jour&nbsp;:</strong> 21/03/2003</li>
+            </ul>
+          </div>
+          <h3>En bref</h3>
+          <p>La
+position float retire une boîte du flux normal pour la placer le plus à
+droite ou le plus gauche possible dans son conteneur. Comment
+l'utiliser dans une mise en page <acronym title="Cascading Style Sheets" lang="en">CSS</acronym>&nbsp;?</p>
+          <hr>
+        </div>
+        <p>Cet article fait suite à l'<a href="http://openweb.eu.org/articles/initiation_flux/">initiation au positionnement <acronym>CSS</acronym>&nbsp;: 1.Flux et position relative</a>.</p>
+        <p>Une boîte flottante est <strong>retirée du flux normal</strong>, et placée le plus à droite (<code class="token">float: right</code>) ou le plus à gauche (<code class="token">float: left</code>) possible dans son conteneur. <strong>Le contenu suivant cette boîte flottante s'écoule le long de celle-ci</strong>, dans l'espace laissé libre.</p>
+        <h3 id="fonctionnement">Le fonctionnement des flottants</h3>
+        <p>Ajoutons
+aux styles précédents une règle de positionnement flottant à droite et
+une mesure de largeur (facultative, mais utile pour certains
+navigateurs)&nbsp;:</p>
+        <p>En <acronym title="HyperText Markup Language" lang="en">HTML</acronym>:</p>
+        <pre>&lt;p class="jaune"&gt;Une boîte jaune flottant&lt;/p&gt;
+&lt;p class="verte"&gt;Une boîte verte doté d'un contenu plus long…&lt;/p&gt;
+</pre>
+        <p>En <acronym>CSS</acronym>:</p>
+        <pre>.jaune {
+  background-color: #ffff00;
+  float: right;
+  width: 100px;
+  margin: 0;
+}
+.verte {
+  background-color: #00ff00;
+}
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_float/annexes/annexe1.html#ex1">l'exemple 1</a>
+        </p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_2_fichiers/ex5.gif" alt="Le texte de la boîte verte passe à la ligne à hauteur de la boîte jaune">
+        </div>
+        <p>Le navigateur <em>place</em>
+tout d'abord la boîte jaune, alignée sur le bord droit de cette partie
+de notre page, puis reprend le cours normal du flux dans l'espace
+laissé libre à sa gauche pour afficher la boîte verte. Le flux occupe
+tout l'espace disponible: la boîte verte reprend donc toute la largeur
+de la page sitôt <em>passée</em> la limite inférieure de la boîte flottante jaune.</p>
+        <p>Dans
+les navigateurs n'appliquant pas la feuille de style (navigateurs texte
+ou non conformes aux standards…), la boîte flottante sera simplement
+inscrite en flux normal avant la boîte qui la suit.</p>
+        <h3 id="deuxcolonnes">Première utilisation&nbsp;: une mise en page à deux colonnes</h3>
+        <p>La
+combinaison de la position flottante et du flux permet de réaliser
+aisément une mise en page à deux colonnes (un contenu et un menu)&nbsp;:</p>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>.content {
+  float: left;
+  width: 70%;
+}
+.menu {
+  margin-left: 80%;
+  border: 1px solid #000000;
+  padding: 1em;
+}
+    </pre>
+        <p>Et en <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>…
+&lt;body&gt;
+  &lt;div class="content"&gt;
+    …
+  &lt;/div&gt;
+  &lt;div class="menu"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;lien_1&lt;/li&gt;
+      &lt;li&gt;lien_2&lt;/li&gt;
+      &lt;li&gt;lien_3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_float/annexes/annexe2.html">la page-exemple 1</a>
+        </p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_2_fichiers/ex15.gif" alt="Un menu dans la colonne droite flanquant le contenu de la page">
+        </div>
+        <h3 id="troiscolonnes">Seconde utilisation&nbsp;: une mise en page à trois colonnes et plus</h3>
+        <p>Mais on peut tout aussi bien multiplier les flottants pour créer autant de colonnes que voulu&nbsp;:</p>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>body {
+  margin: 0;
+  padding: 0;
+}
+.float {
+  float: left;
+  width: 25%;
+  margin: 1em 0;
+}
+p,h1,h2 {
+  margin: 1em;
+}
+    </pre>
+        <p>Et en <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>…
+&lt;body&gt;
+  …
+  &lt;div class="float"&gt;
+    …
+  &lt;/div&gt;
+  &lt;div class="float"&gt;
+    …
+  &lt;/div&gt;
+  &lt;div class="float"&gt;
+    …
+  &lt;/div&gt;
+  &lt;div class="float"&gt;
+    …
+  &lt;/div&gt;
+&lt;/body&gt;
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_float/annexes/annexe3.html">la page-exemple 2</a>&nbsp;:</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_2_fichiers/ex17.gif" alt="Sous le titre, 4 colonnes d'égale largeur.">
+        </div>
+        <h3 id="spacer">Débordement et <em>spacer</em>
+        </h3>
+        <h4 id="probleme">Le probleme du débordement</h4>
+        <p>Reprenons
+notre exemple, mais inversons les contenus: celui de la boîte flottante
+jaune est à présent plus long que celui de la boîte verte&nbsp;:</p>
+        <p>En <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>&lt;p class="jaune"&gt;
+  Une boîte jaune flottant doté d'un contenu plus long…
+&lt;/p&gt;
+&lt;p class="verte"&gt;
+  Une boîte verte
+&lt;/p&gt;
+      </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_float/annexes/annexe1.html#ex2">l'exemple 2</a>&nbsp;:</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_2_fichiers/ex6.gif" alt="La boîte jaune déborde vers le bas au-delà de la boîte verte">
+        </div>
+        <p>La boîte flottante, plus longue que la boîte verte, <em>déborde</em> verticalement plus bas que celle-ci.</p>
+        <h4 id="solution">La solution&nbsp;: le <em>spacer</em>
+        </h4>
+        <p>Pour éviter cet effet parfois disgracieux, la solution la plus répandue est le <em>spacer</em> de <a href="http://www.alistapart.com/stories/practicalcss/">Mark Newhouse</a>&nbsp;: elle consiste à inclure dans la boîte verte un élément bloc au contenu fictif (l'espace insécable <code class="token">&amp;nbsp;</code>), doté de la propriété <code class="token">clear</code> qui lui interdit d'être adjacent à une boîte flottante.</p>
+        <p>En <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>&lt;div class="verte5"&gt;
+  &lt;p class="jaune5"&gt;
+    Une boîte jaune flottant doté d'un contenu plus long…
+  &lt;/p&gt;
+  &lt;p&gt;
+    Une boîte verte
+  &lt;/p&gt;
+  &lt;div class="spacer"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+      </pre>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>.jaune {
+  background-color: #ffff00;
+  float: right;
+  width: 100px;
+  text-align: center;
+  margin: 0;
+}
+.verte {
+  width: 100%;
+  background-color: #00ff00;
+}
+.spacer {
+  clear: both;
+}
+      </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_float/annexes/annexe1.html#ex3">l'exemple 3</a>
+        </p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_2_fichiers/ex7.gif" alt="La boîte jaune ne déborde plus vers le bas au-delà de la boîte verte">
+        </div>
+        <p>Le bloc <em>spacer</em>, ne pouvant se placer <em>à côté</em> du bloc flottant, se trouve décalé <em>plus bas</em> que celui-ci.</p>
+        <div class="note">
+          <strong>Note&nbsp;:&nbsp;—</strong>
+          <p>
+            <acronym>IE</acronym>
+a parfois quelques difficultés à représenter correctement les
+arrières-plans et les bordures dans les combinaisons intégrant des
+boîtes flottantes à droite et des séparateurs dotés de la propriété <code class="token">clear: both</code>.</p>
+        </div>
+        <h4 id="vignettes">Les vignettes&nbsp;: une utilisation du <em>spacer</em> et des flottantes</h4>
+        <p>
+          <a href="http://www.alistapart.com/stories/practicalcss/">Mark Newhouse</a>
+appliquait en particulier cette solution à une série de boîtes
+flottantes placées dans une boîte conteneur dont le contenu propre se
+réduit au spacer&nbsp;: elle ne sert qu'à créer une boîte délimitant
+l'espace visuel où s'affichent les boîtes flottantes.</p>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>.flottante {
+  background-color: #00ff00;
+  border: 2px dotted #ffff00;
+  margin: 2px;
+  float: left;
+  width: 100px;
+  text-align: center;
+}
+.conteneur {
+  width: 100%;
+}
+.spacer {
+  clear: both;
+}
+      </pre>
+        <p>En <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>&lt;div&gt;
+  &lt;p class="flottante"&gt;boîte verte 1&lt;/p&gt;
+  &lt;p class="flottante"&gt;boîte verte 2&lt;/p&gt;
+  &lt;p class="flottante"&gt;boîte verte 3&lt;/p&gt;
+  …etc…
+  &lt;div class="spacer"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+      </pre>
+        <p>On
+obtient une série de vignettes pouvant accueillir par exemple des
+images, les liens d'un menu de navigation, etc. ou encore permettant de
+réaliser une mise en page en colonnes… Elle s'adapte automatiquement à
+la largeur d'affichage disponible&nbsp;: faute de place à <em>droite</em>, une boîte flottante sera replacée <em>à la ligne</em>.</p>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_float/annexes/annexe1.html#ex4">l'exemple 4</a>
+        </p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_2_fichiers/ex8.gif" alt="6 vignettes alignées de gauche à droite sur deux lignes">
+        </div>
+        <h4 id="hr">Une variante du <em>spacer</em>&nbsp;: <code class="token">&lt;hr /&gt;</code>
+        </h4>
+        <p>Le défaut du <em>spacer</em> est d'introduire dans le code <acronym>HTML</acronym> un contenu fictif à des fins de présentation…</p>
+        <p>Lorsque
+la boîte adjacente à la boîte flottante est suivie d'une coupure
+logique dans votre page (nouvelle section de texte…), il est préférable
+d'associer la propriété <code class="token">clear</code> à un contenu réel. La ligne horizontale créée par la balise <code class="token">&lt;hr /&gt;</code> peut jouer avantageusement ce rôle&nbsp;:</p>
+        <p>En <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>&lt;p class="jaune"&gt;
+  Une boîte jaune flottant doté d'un contenu plus long…
+&lt;/p&gt;
+&lt;p class="verte"&gt;
+  Une boîte verte
+&lt;/p&gt;
+&lt;hr /&gt;
+      </pre>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>.jaune {
+  background-color: #ffff00;
+  float: right;
+  width: 100px;
+  margin: 0;
+}
+.verte {
+  background-color: #00ff00;
+}
+hr {
+  clear: both;
+}
+      </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_float/annexes/annexe1.html#ex5">l'exemple 5</a>
+        </p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_2_fichiers/ex9.gif" alt="La ligne horizontale en bas de la boîte verte empêche le débordement de la boîte jaune">
+        </div>
+        <p>La
+ligne de séparation s'avère très utile pour les utilisateurs de
+navigateurs qui ne tiendront pas compte de la feuille de style
+(navigateurs textes, navigateurs périmés…) Il est possible de leur en
+réserver l'affichage, en le supprimant dans les navigateurs qui
+appliqueront la feuille de style, à l'aide de la propriété <code class="token">visibility: hidden;</code>: celle-ci rend un élément invisible, tout en le laissant agir sur le flux.</p>
+        <pre>hr {
+  clear: both;
+  visibility: hidden;
+}
+      </pre>
+        <p>Le résultat (figure ci-dessous et <a href="http://openweb.eu.org/articles/initiation_float/annexes/annexe1.html#ex6">exemple 6</a>) est visuellement identique au <em>spacer</em> précédent.</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_2_fichiers/ex7.gif" alt="La boîte jaune ne déborde plus vers le bas au-delà de la boîte verte">
+        </div>
+        <p>Et
+appliqué à la série de vignettes flottantes, le résultat, illustré par
+la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_float/annexes/annexe1.html#ex7">l'exemple 7</a>&nbsp;:</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_2_fichiers/ex8.gif" alt="6 vignettes alignées de gauche à droite sur deux lignes">
+        </div>
+        <p>Nous aborderons les derniers types de positionnement <acronym>CSS</acronym> dans <a href="http://openweb.eu.org/articles/initiation_absolue/">initiation au positionnement <acronym>CSS</acronym>&nbsp;: 3.position absolue et fixe</a>.</p>
+        <hr>
+                <p class="reaction">Une question, une remarque&nbsp;? Écrivez à l'auteur à 
+      <a href="mailto:laurent.denis%40openweb.eu.org">laurent.denis@openweb.eu.org</a>.
+    </p>
+      </div>
+      <div id="menus">
+        <div id="profil">
+          <h2>Consultez ce site selon <em>votre profil</em>
+          </h2>
+          <ul>
+            <li>
+              <a href="http://openweb.eu.org/expert/">Expert</a>
+            </li>
+            <li>
+              <a href="http://openweb.eu.org/debutant/">Débutant</a>
+            </li>
+            <li>
+              <a href="http://openweb.eu.org/decideur/">Décideur</a>
+            </li>
+            <li>
+              <a href="http://openweb.eu.org/gourou/">Gourou</a>
+            </li>
+          </ul>
+        </div>
+        <div id="sectionmenus">
+          <div id="accueil">
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/">Accueil</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/openwebgroup/openwebgroup/">Présentation</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/humeurs/">Humeur</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/actualite/">Actualité</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/articles/">Articles</a>
+              </li>
+            </ul>
+          </div>
+          <div id="technologie">
+            <h2>Technologie</h2>
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/xhtml/">(X)HTML</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/rss/">RSS</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/css/">CSS</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/dom/">DOM</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/png/">PNG</a>
+              </li>
+            </ul>
+          </div>
+          <div id="theme">
+            <h2>Thème</h2>
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/pages_dynamiques/">Pages dynamiques</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/navigateurs/">Navigateurs</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/accessibilite/">Accessibilité</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/etude_cas/">Études de cas</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/mise_en_page/">Mise en page</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/multimedia/">Multimédia</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/structure/">Structure</a>
+              </li>
+            </ul>
+          </div>
+          <div id="ressources">
+            <h2>Ressources</h2>
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/ressources/validation/">Outils</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/ressources/specifications/">Spécifications</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="ours">
+        <ul>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/plan/">Plan de site</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/contact/">Contacts</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/membres/">Le collectif et ses
+            membres</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/demarche_confidentialite/">Politique de
+            confidentialité</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/licence/">Conditions de
+            réutilisation</a>
+          </li>
+          <li class="dernier">
+            <a href="http://openweb.eu.org/openwebgroup/contribution/">Proposer vos contributions</a>
+          </li>
+        </ul>
+        <p>Page valide <a href="http://validator.w3.org/check/referer" title="Vérifier la validité de cette page">XHTML 1 Strict</a>, 
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Vérifier la validité de la feuille de styles">CSS2</a> et
+        <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" title="W3C Web accessibility initiative">accessible AA</a>.
+        <br>
+        Ce site s'affiche mieux dans un navigateur conforme aux standards, 
+        <a href="http://openweb.eu.org/openwebgroup/demarche_standard/">voici pourquoi</a>.
+        <br>
+        Site hébergé par l'<a href="http://www.apinc.org/">
+            <acronym title="Association pour l'Internet Non Commercial" xml:lang="fr">APINC</acronym>
+          </a>
+          <img src="Initiation%20au%20positionnement%20CSS_2_fichiers/apinc.png" alt="" title="" height="15" width="16">
+        et actualités dopées par <a href="http://dotclear.net/">Dotclear</a>.</p>
+      </div>
+    </div>
+  </body></html>

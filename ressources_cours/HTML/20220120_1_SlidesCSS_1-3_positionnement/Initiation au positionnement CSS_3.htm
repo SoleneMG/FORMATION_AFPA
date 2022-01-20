@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"><head><title>Openweb.eu.org - Initiation au positionnement CSS&nbsp;: 3. position absolue et fixe</title>
+
+  
+    
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="revisit-after" content="15 days">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_3_fichiers/screen_003.css" media="screen" title="Normal">
+    <link rel="stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_3_fichiers/print_002.css" media="print" title="Normal">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_3_fichiers/screen_005.css" media="screen" title="Fond noir">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_3_fichiers/print.css" media="print" title="Fond noir">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_3_fichiers/screen_002.css" media="screen" title="Fond noir/gros caractères">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_3_fichiers/print_005.css" media="print" title="Fond noir/gros caractères">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_3_fichiers/screen_004.css" media="screen" title="Minimal">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_3_fichiers/print_003.css" media="print" title="Minimal">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_3_fichiers/screen.css" media="screen" title="Sans habillage">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_3_fichiers/print_004.css" media="print" title="Sans habillage">
+    <link rel="author" title="Auteurs" href="http://openweb.eu.org/openwebgroup/membres/">
+    <link rel="copyright" title="Conditions de réutilisation" href="http://openweb.eu.org/openwebgroup/licence/">
+    <link rel="start" title="Accueil" href="http://openweb.eu.org/">
+    <link rel="help" title="Politique d'accessibilité" href="http://openweb.eu.org/openwebgroup/demarche_accessibilite/">
+    <link rel="index" title="Carte" href="http://openweb.eu.org/openwebgroup/plan/">
+    <link rel="shortcut icon" type="images/x-icon" href="http://openweb.eu.org/favicon.ico">
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.Publisher" content="OpenWebGroup.eu.org">
+    <link rel="alternate" title="Version Docbook/XML" type="text/xml" href="http://openweb.eu.org/articles/initiation_absolue/docbook.xml">
+    <link rel="alternate" title="Version brute" type="text/html" href="http://openweb.eu.org/articles/initiation_absolue/xhtml.xml">
+    <meta name="DC.Language" scheme="RFC3066" content="fr">
+    <meta name="DC.Identifier" content="initiation_absolue">
+    <meta name="DC.Creator" content="Laurent Denis">
+    <meta name="DC.Date.created" scheme="W3CDTF" content="2003-03-21">
+    <meta name="DC.Date.modified" scheme="W3CDTF" content="2003-03-24">
+    <meta name="DC.Rights" content="Cet article est sous licence Creative Commons Attribution-ShareAlike.">
+    <meta name="DC.Subject" content="expert, mise_en_page, css"></head><body>
+    <div id="page">
+      <div id="accessible">
+        <ul>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/demarche_accessibilite/">Politique
+            d'accessibilité</a>
+          </li>
+          <li>
+            <a href="#texte">Aller au texte</a>
+          </li>
+          <li class="dernier">
+            <a href="#menus">Aller au menu</a>
+          </li>
+        </ul>
+        <form action="/articles/initiation_absolue/index.php" method="get" id="switcher">
+  <div id="habillage">
+    <label for="set">Choisir un habillage&nbsp;:</label>
+    <select id="set" name="set">
+      <option value="original" selected="selected">Normal</option>
+      <option value="fondnoir">Fond noir</option>
+      <option value="fondnoir_medium">Fond noir/gros caractères</option>
+      <option value="minimale">Minimal</option>
+      <option value="sanshabillage">Sans habillage</option>
+    </select>
+    <input value="Ok" type="submit">
+  </div>
+</form>
+      </div>
+      <div id="moteur">
+        <form id="recherche" method="get" action="/recherche/">
+          <div id="moteurint">
+            <label for="q">Recherche sur ce site&nbsp;:</label>
+            <input name="q" id="q" accesskey="4" value="" class="champs">
+            <input name="Submit" value="Ok" class="valid" type="submit">
+          </div>
+        </form>
+      </div>
+      <div id="logo">
+        <h1>
+          <a href="http://openweb.eu.org/" title="Retour en page d'accueil">
+            <img src="Initiation%20au%20positionnement%20CSS_3_fichiers/logo.png" alt="OpenWeb, pour les standards du web" height="94" width="358">
+          </a>
+        </h1>
+      </div>
+      <div id="texte">
+        <h2>Initiation au positionnement CSS&nbsp;: 3. position absolue et fixe</h2>
+        <div class="abstract">
+          <div class="auteur">
+            <ul>
+              <li>
+                <strong>Profil&nbsp;:</strong> <a href="http://openweb.eu.org/expert/">Expert</a>
+              </li>
+              <li>
+                <strong>Thème&nbsp;:</strong> <a href="http://openweb.eu.org/mise_en_page/">Mise en page</a>
+              </li>
+              <li>
+                <strong>Technologie&nbsp;:</strong> <a href="http://openweb.eu.org/css/">CSS</a>
+              </li>
+              <li>
+                <strong>Auteur&nbsp;:</strong> <a href="mailto:laurent.denis%40openweb.eu.org">Laurent <span class="patronyme">Denis</span></a>
+              </li>
+              <li class="dernier">
+                <strong>Mise à jour&nbsp;:</strong> 24/03/2003</li>
+            </ul>
+          </div>
+          <h3>En bref</h3>
+          <p>La
+position absolue et la position fixe permettent de placer une boîte par
+rapport aux limites de la zone d'affichage ou du conteneur. Comment les
+utiliser dans une mise en page <acronym title="Cascading Style Sheets" lang="en">CSS</acronym> ?</p>
+          <hr>
+        </div>
+        <p>Cet article fait suite à l'<a href="http://openweb.eu.org/articles/initiation_float/">initiation au positionnement <acronym>CSS</acronym>: 2.position float</a>.</p>
+        <p>Une boîte en positionnement absolu peut être placée n'importe-où dans le code <acronym title="HyperText Markup Language" lang="en">HTML</acronym> et s'afficher à l'endroit de votre choix. Ceci s'avère très utile en particulier pour&nbsp;:</p>
+        <ul>
+          <li>placer les menus de navigation en fin de page, pour améliorer <a href="http://www.la-grange.net/accessibilite/day_10.html">l'accessibilité</a>
+de votre site en donnant un accès immédiat à son contenu dans les
+navigateurs textes, tout en les faisant apparaître en haut de page ou
+encore dans une colonne pour les navigateurs graphiques&nbsp;;</li>
+          <li>créer plusieurs colonnes au positionnement indépendant de l'ordre dans lequel elles se trouvent en <acronym>HTML</acronym>.</li>
+        </ul>
+        <h3 id="absolue">Le fonctionnement de la position absolue</h3>
+        <p>Le
+positionnement absolu «&nbsp;retire&nbsp;» totalement du flux le
+contenu concerné&nbsp;: sa position est déterminée par référence aux
+limites du conteneur. Celui-ci peut-être&nbsp;:</p>
+        <ul>
+          <li>une boîte <strong>elle-même positionnée</strong> (position relative ou absolue)&nbsp;;</li>
+          <li>le bloc conteneur initial, à défaut de boîte positionnée, c'est à dire en pratique le plus souvent la fenêtre du navigateur.</li>
+        </ul>
+        <p>Définissons un conteneur verte en position relative&nbsp;:</p>
+        <pre>.verte {
+  position: relative;
+  background-color: #00ff00;
+  width: 15em;
+}
+    </pre>
+        <p>Et un positionnement absolu jaune&nbsp;:</p>
+        <pre>.jaune {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: #ffff00;
+}
+    </pre>
+        <p>Et appliquons ces styles&nbsp;:</p>
+        <pre>&lt;div class="verte"&gt;
+  &lt;p&gt;
+    …
+  &lt;/p&gt;
+  &lt;p class="jaune"&gt;
+    Boîte jaune en position absolue
+  &lt;/p&gt;
+&lt;/div&gt;
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_absolue/annexes/annexe1.html#ex1">l'exemple 1</a>&nbsp;</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_3_fichiers/ex10.gif" alt="La boîte jaune recouvre une partie du contenu de la boîte verte">
+        </div>
+        <h3 id="remplissage">Ménager un espace pour la boîte en position absolue</h3>
+        <p>Inévitablement,
+la boîte en position absolue recouvre le contenu de notre paragraphe.
+Pour l'éviter, dotons la boîte conteneur verte d'un remplissage
+supérieur suffisant&nbsp;:</p>
+        <pre>.verte {
+  padding-top: 5em;
+}
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_absolue/annexes/annexe1.html#ex2">l'exemple 2</a>
+        </p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_3_fichiers/ex11.gif" alt="La boîte jaune occupe l'espace libre en haut de la boîte verte">
+        </div>
+        <p>Nous
+pourrions aussi bien fixer la largeur de la boîte jaune et doter le
+texte de la boîte verte d'un remplissage à droite&nbsp;:</p>
+        <pre>.verte {
+  padding-right: 7em;
+}
+.jaune {
+  width: 4em;
+}
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_absolue/annexes/annexe1.html#ex3">l'exemple 3</a>
+        </p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_3_fichiers/ex12.gif" alt="La boîte jaune occupe l'espace libre à droite de la boîte verte">
+        </div>
+        <h3 id="troiscolonnes">Utilisation&nbsp;: une mise en page à trois colonnes</h3>
+        <p>La
+position absolue offre donc une alternative aux flottants pour réaliser
+des mises en pages à plusieurs colonnes. Le cas typique est celui des
+trois colonnes dont voici le code&nbsp;:</p>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>centre {
+  margin: 1em 25%;
+}
+.gauche {
+  position: absolute;
+  top: 1em;
+  left: 1%;
+  width: 18%;
+}
+.droite {
+  position: absolute;
+  top: 1em;
+  right: 1%;
+  width: 18%;
+}
+    </pre>
+        <p>En <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>&lt;body&gt;
+  &lt;div class="centre"&gt;
+    …
+  &lt;/div&gt;
+  &lt;div class="gauche"&gt;
+    …
+  &lt;/div&gt;
+  &lt;div class="droite"&gt;
+    …
+  &lt;/div&gt;
+&lt;/body&gt;
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_absolue/annexes/annexe7.html">la page-exemple 1</a>&nbsp;:</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_3_fichiers/ex19.gif" alt="Trois colonnes dans la largeur de la page">
+        </div>
+        <h3 id="fixe">La position fixe</h3>
+        <p>Comme
+dans un positionnement absolu, le contenu concerné est retiré
+totalement du flux. Mais il est cette fois positionné uniquement par
+rapport aux limites de la zone de visualisation, autrement dit la
+fenêtre du navigateur. Le défilement de la page n'a aucun effet sur un
+contenu en position fixe.</p>
+        <p>Le positionnement fixe
+n'étant pas reconnu par Internet Explorer 5 et 6 Windows, un
+positionnement absolu doit s'y substituer dans ce navigateur. Ce
+résultat peut être atteint grâce à diverses formulations des styles
+jouant sur des syntaxes <acronym>CSS2</acronym> ignorées par <acronym title="MicroSoft Internet Explorer" lang="en">MSIE</acronym>. Par exemple&nbsp;:</p>
+        <pre>.fixe {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+html&gt;body .fixe {
+  position: fixed;
+}
+    </pre>
+        <p>
+          <acronym>MSIE</acronym> Windows ne lira que la première définition de .fixe et ignorera la seconde car il ne comprend pas la syntaxe <code class="token">html&gt;body</code>.
+Les navigateurs supportant la position fixe liront les deux
+positionnements, mais le second se substituera au premier car il est
+placé <em>après</em> celui-ci dans la feuille de style.</p>
+        <p>Notons que <a href="http://arcok.ujevangelizacio.hu/bubu/examples/ie-fixed.html">ie-fixed.htc, un hack <acronym>CSS</acronym> dû à Gellért Gyuris</a>, permet cependant de corriger l'absence de support de la position fixe dans <acronym>MSIE</acronym> Windows, grâce au <acronym title="Document Object Model" lang="en">DOM</acronym>.</p>
+        <p>Tout
+comme le positionnement absolu, le positionnement fixe est susceptible
+de provoquer des chevauchements. On employera donc des méthodes
+similaires pour l'exploiter.</p>
+        <h3 id="menufixe">Utilisation&nbsp;: un menu fixe en colonne</h3>
+        <p>Pour
+fixer un menu de navigation dans une colonne vide à gauche du contenu,
+on définira les largeurs du contenu et du menu&nbsp;:</p>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>.content {
+  width: 65%;
+  border: 1px solid #000000;
+  padding: 1em 1%;
+}
+.menu {
+  position: absolute;
+  top: 1em;
+  right: 1%;
+  border: 1px solid #000000;
+  padding: 1em;
+  width: 20%;
+}
+html&gt;body .menu {
+  position: fixed;
+}
+    </pre>
+        <p>En <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>&lt;body&gt;
+  &lt;div class="content"&gt;
+  …
+  &lt;/div&gt;
+  &lt;div class="menu"&gt;
+  …
+  &lt;/div&gt;
+&lt;/body&gt;
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_absolue/annexes/annexe3.html">la page-exemple 2</a>
+        </p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_3_fichiers/ex15.gif" alt="Un menu fixe dans la colonne droite flanquant le contenu de la page">
+        </div>
+        <h3 id="barrefixe">Utilisation&nbsp;: une barre de menu fixe</h3>
+        <p>Lorsqu'il
+s'agit de créer une mise en page avec contenu et menus, la position
+fixe a l'inconvénient apparent de sacrifier une partie de la largeur
+d'affichage disponible, pour éviter les chevauchements.</p>
+        <p>En fait, cet inconvénient disparaît sitôt qu'on tire profit du chevauchement au lieu de chercher à l'éviter, à la manière d'<a href="http://emmanuel.clement.free.fr/">Emmanuel Clément</a>
+(notre designer d'OpenWeb). Imaginons une barre de menu horizontale,
+fixée en permanence en haut de la fenêtre d'affichage&nbsp;:</p>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>.menufixe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid #000000;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  background-color: #ffffff;
+  line-height: 2em;
+}
+html&gt;body .menufixe {
+  position: fixed
+}
+.content {
+  z-index: 1;
+  padding-top: 3em;
+}
+    </pre>
+        <p>En <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>&lt;body&gt;
+  &lt;div class="content"&gt;
+    …
+  &lt;/div&gt;
+  &lt;p class="menufixe"&gt;
+    …
+  &lt;/p&gt;
+&lt;/body&gt;
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_absolue/annexes/annexe6.html">la page-exemple 3</a>&nbsp;:</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_3_fichiers/ex18.gif" alt="Une barre de menu fixe en permanence en haut de la fenêtre du navigateur">
+        </div>
+        <h3 id="fixeabsolue">Combinaisons des positions fixe et absolue</h3>
+        <p>Imaginons à présent deux menus différents, tous deux placés dans la même colonne&nbsp;:</p>
+        <ul>
+          <li>le premier sera fixe en haut de la colonne&nbsp;;</li>
+          <li>le second sera en position absolue plus bas dans la même colonne.</li>
+        </ul>
+        <p>La propriété <code class="token">CSS</code>
+          <code class="token">z-index</code> permet de spécifier le <em>niveau d'empilement</em> de chaque menu&nbsp;: avec un <code class="token">z-index</code>
+supérieur à celui du menu fixe et un arrière-plan opaque, le menu en
+position absolue masquera temporairement celui-ci lors du défilement de
+la page. Le code nécessaire est&nbsp;:</p>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>.content {
+  width: 65%;
+  border: 1px solid #000000;
+  padding: 1em 1%;
+}
+.menufixe {
+  position: absolute;
+  top: 1em;
+  right: 2%;
+  border: 1px solid #000000;
+  padding: 1em;
+  width: 18%;
+  z-index: 2;
+}
+html&gt;body .menufixe {
+  position: fixed;
+}
+.menuabsolu {
+  position: absolute;
+  top: 15em;
+  right: 1%;
+  border: 1px solid #000000;
+  padding: 1em;
+  width: 20%;
+  background-color: #ffffff;
+  z-index: 3;
+}
+    </pre>
+        <p>En <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>&lt;body&gt;
+  &lt;div class="content"&gt;
+    …
+  &lt;/div&gt;
+  &lt;div class="menu"&gt;
+    …
+  &lt;/div&gt;
+&lt;/body&gt;
+    </pre>
+        <p>Le point délicat est, bien-sûr, le choix de la valeur donnée à la propriété <code class="token">top</code> du menu en position absolu, afin d'être sûr qu'il n'empiète pas sur l'espace du menu en position fixe.</p>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_absolue/annexes/annexe4.html">la page-exemple 4</a>&nbsp;:</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_3_fichiers/ex16.gif" alt="Un menu fixe et un menu absolu dans la colonne droite flanquant le contenu de la page">
+        </div>
+        <h3 id="conclusion">Conclusion</h3>
+        <p>Le positionnement <acronym>CSS</acronym>
+donne donc toute liberté dans la mise en page. Comparée à l'utilisation
+des tableaux, cette technique offre des avantages essentiels&nbsp;:</p>
+        <ul>
+          <li>gestion de la présentation à partir d'un document unique pour un nombre quelconque de pages&nbsp;;</li>
+          <li>stricte séparation du contenu et de la présentation, d'où un contenu mieux structuré, dénué de balisage superflu&nbsp;;</li>
+          <li>meilleure
+accessibilité, le contenu pouvant être organisé correctement dans les
+navigateurs non graphiques, tout en étant librement disposé dans les
+navigateurs graphiques&nbsp;;</li>
+          <li>
+            <em>elasticité</em>
+des mises en page obtenues, qui s'adaptent plus facilement aux
+différentes configurations des utilisateurs (taille de la zone
+d'affichage, règlages de tailles de caractères…)&nbsp;;</li>
+          <li>effets graphiques nouveaux, tels le recouvrement en position fixe/absolue.</li>
+        </ul>
+        <hr>
+                <p class="reaction">Une question, une remarque&nbsp;? Écrivez à l'auteur à 
+      <a href="mailto:laurent.denis%40openweb.eu.org">laurent.denis@openweb.eu.org</a>.
+    </p>
+      </div>
+      <div id="menus">
+        <div id="profil">
+          <h2>Consultez ce site selon <em>votre profil</em>
+          </h2>
+          <ul>
+            <li>
+              <a href="http://openweb.eu.org/expert/">Expert</a>
+            </li>
+            <li>
+              <a href="http://openweb.eu.org/debutant/">Débutant</a>
+            </li>
+            <li>
+              <a href="http://openweb.eu.org/decideur/">Décideur</a>
+            </li>
+            <li>
+              <a href="http://openweb.eu.org/gourou/">Gourou</a>
+            </li>
+          </ul>
+        </div>
+        <div id="sectionmenus">
+          <div id="accueil">
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/">Accueil</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/openwebgroup/openwebgroup/">Présentation</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/humeurs/">Humeur</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/actualite/">Actualité</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/articles/">Articles</a>
+              </li>
+            </ul>
+          </div>
+          <div id="technologie">
+            <h2>Technologie</h2>
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/xhtml/">(X)HTML</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/rss/">RSS</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/css/">CSS</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/dom/">DOM</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/png/">PNG</a>
+              </li>
+            </ul>
+          </div>
+          <div id="theme">
+            <h2>Thème</h2>
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/pages_dynamiques/">Pages dynamiques</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/navigateurs/">Navigateurs</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/accessibilite/">Accessibilité</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/etude_cas/">Études de cas</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/mise_en_page/">Mise en page</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/multimedia/">Multimédia</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/structure/">Structure</a>
+              </li>
+            </ul>
+          </div>
+          <div id="ressources">
+            <h2>Ressources</h2>
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/ressources/validation/">Outils</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/ressources/specifications/">Spécifications</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="ours">
+        <ul>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/plan/">Plan de site</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/contact/">Contacts</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/membres/">Le collectif et ses
+            membres</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/demarche_confidentialite/">Politique de
+            confidentialité</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/licence/">Conditions de
+            réutilisation</a>
+          </li>
+          <li class="dernier">
+            <a href="http://openweb.eu.org/openwebgroup/contribution/">Proposer vos contributions</a>
+          </li>
+        </ul>
+        <p>Page valide <a href="http://validator.w3.org/check/referer" title="Vérifier la validité de cette page">XHTML 1 Strict</a>, 
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Vérifier la validité de la feuille de styles">CSS2</a> et
+        <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" title="W3C Web accessibility initiative">accessible AA</a>.
+        <br>
+        Ce site s'affiche mieux dans un navigateur conforme aux standards, 
+        <a href="http://openweb.eu.org/openwebgroup/demarche_standard/">voici pourquoi</a>.
+        <br>
+        Site hébergé par l'<a href="http://www.apinc.org/">
+            <acronym title="Association pour l'Internet Non Commercial" xml:lang="fr">APINC</acronym>
+          </a>
+          <img src="Initiation%20au%20positionnement%20CSS_3_fichiers/apinc.png" alt="" title="" height="15" width="16">
+        et actualités dopées par <a href="http://dotclear.net/">Dotclear</a>.</p>
+      </div>
+    </div>
+  </body></html>

@@ -1,0 +1,9 @@
+#picture {
+	float:left;
+	width: 160px;
+}
+
+.floatstop  {
+	clear:both;
+}
+
