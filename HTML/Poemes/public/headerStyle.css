@@ -1,10 +1,59 @@
 @charset "ISO-8859-1";
 
+body {
+	background-color:whitesmoke;
+}
+
 li {
 	display:inline-block;
+}
+
+header {
+	background-color: chocolate;
+	margin:-10px;
 }
 
 nav {
 	float:right;
 	width:auto;
+	margin-right: 10px;
+	font-size: large;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+div img {
+	max-width: 80px;
+	max-height: 80px;
+}
+
+.x {
+	width: fit-content;
+}
+
+.grid {
+
+	display: grid;
+	margin-top: 300px;
+	
+	grid-gap: 10px;
+	border: 10px;
+	justify-content: center;
+	align-items: center;
+	
+  }
+  .one {
+	grid-column: 1;
+	grid-row: 1;
+	text-align: center;
+  }
+  .two {
+	grid-column: 2;
+	grid-row: 1;
+	text-align: center;
+  }
+  .three {
+	grid-column: 3;
+	grid-row: 1;
+	text-align: center;
+  }
+
+  

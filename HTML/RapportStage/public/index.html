@@ -2,130 +2,140 @@
 <html lang="fr">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Stage</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Stage</title>
+    <link rel="stylesheet" href="flexbox.css">
 </head>
 
 <body>
-	<h1>Rapport de Suivi de la Période en Entreprise</h1>
-	<form action="#" method="get">
-		<div class="trainee">
-			<div>
-				<p class="subtitle">Stagiaire</p>
-			</div>
-			<div>
-				<label for=trainee>Nom et Prénom *</label> <input type="text" name="traineeIdentity"
-					id="traineeIdentity">
-			</div>
-			<div>
-				<label>Formation *</label> <input type="text" name="course" id="course">
-			</div>
+    <div>
+        <p class=subTitle>Stagiaire</p>
+    </div>
+    <div id="firstSection">
+        <div class="firstChild">
+            <label for="identity">Nom et Prénom *</label>
+            <input type="text" name="identity" required>
+        </div>
+        <div class="firstChild">
+            <label for="course">Formation *</label>
+            <input type="text" name="course" required>
+        </div>
+        <div>
+            <p class=subTitle>Entreprise</p>
+        </div>
+        <div class="firstChild">
+            <label for="companyIdentity">Nom *</label>
+            <input type="text" name="companyIdentity" required>
+        </div>
+        <div class="firstChild">
+            <label for="adress">Adresse *</label>
+            <input type="textArea" name="adress" required>
+        </div>
+        <div class="firstChild">
+            <label for="tutor">Nom du tuteur *</label>
+            <input type="text" name="tutor" required>
+            <label for="FunctionOfTutor">Fonction *</label>
+            <input type="text" name="FunctionOfTutor" required>
+        </div>
+        <div class="firstChild">
+            <label for="fixedLine">Tel *</label>
+            <input type="text" name="fixedLine" required>
+            <label for="mobilePhoneLine">Port </label>
+            <input type="text" name="mobilePhoneLine">
+            <label for="email">Email</label>
+            <input type="text" name="email">
+        </div>
+        <div class="firstChild">
+            <label for="businessLine">Secteur d'activité *</label>
+            <input type="text" name="businessLine" required>
+        </div>
+        <div>
+            <p class=subTitle>Observation sur le déroulement de la PAE</p>
+        </div>
+        <div class="secondChild">
+            <label class="xlargeSize">Objectifs d'acquisitions atteints *</label>
+            <input type="radio" name="targetAchievment">
+            <label class="small-size" for="targetAchievmentTotaly">totalement</label>
+            <input type="radio" name="targetAchievment">
+            <label class="small-size" for="targetAchievmentPartially">partiellement</label>
+            <input type="radio" name="targetAchievment">
+            <label class="small-size" for="targetAchievmentNone">non</label>
+        </div>
+        <div class="secondChild">
+            <label class="xlargeSize">Comportement en milieu de travail *</label>
+            <input type="radio" name="behaviorOK">
+            <label class="small-size" for="behaviorOK">adapté</label>
+            <input type="radio" name="behaviorInProgress">
+            <label class="small-size" for="behaviorInProgress">en progression</label>
+            <input type="radio" name="behaviorNOK">
+            <label class="small-size" for="behaviorNOK">peu adapté</label>
+        </div>
+        <div class="secondChild">
+            <label class="xlargeSize">Satisfaction de l'entreprise *</label>
+            <input type="radio" name="companySatisfactionYes">
+            <label class="small-size" for="companySatisfactionYes">satisfaite</label>
+            <input type="radio" name="companySatisfactionInProgress">
+            <label class="small-size" for="companySatisfactionInProgress">peu satisfaite</label>
+            <input type="radio" name="companySatisfactionNo">
+            <label class="small-size" for="companySatisfactionNo" class="radio">pas satisfaite</label>
+        </div>
+        <p>Remarques</p>
+        <textarea class="largeTextArea" name="note" rows="4" cols="63"></textarea>
+        <div class="secondChild">
+            <label class="auto-size">Perspectives d'embauche *</label>
+            <input type="checkbox" name="hire"><label for="CDD">C.D.D</label>
+            <input type="checkbox" name="hire"><label for="CDI">C.D.I</label>
+            <input type="checkbox" name="hire"><label for="WorkLinkedTraining">Alternance</label>
+            <input type="checkbox" name="hire"><label for="NoWork">Néant</label>
+        </div>
+        <div class="secondChild">
+            <p class=subTitle>Informations concernant l'activité de l'entreprise et les possibilités d'intervention
+            </p>
+        </div>
+        <div class="secondChild">
+            <label class="auto-size">Taille de l'entreprise</label>
+            <input type="radio" name="companySize"> <label for="companySize">- 10 pers</label>
+            <input type="radio" name="companySize"> <label for="companySize">+ 10 pers</label>
+            <input type="radio" name="companySize"> <label for="companySize" class="radio">+ 50 pers</label>
+            <input type="radio" name="companySize"> <label for="companySize" class="radio">+ 100 pers</label>
+        </div>
+        <div class="secondChild">
+            <label class="auto-size">L'entreprise a-t-elle des projets de développement</label>
+            <input type="radio" name="developmentProject"> <label for="developmentProject">oui</label>
+            <input type="radio" name="developmentProject"> <label for="developmentProject">non</label>
+        </div>
+        <p>Remarques</p>
+        <textarea class="largeTextArea" name="note" rows="4" cols="63"></textarea>
+        <div class="secondChild">
+            <label class="auto-size">Emission d'une fiche Prospect/Client</label>
+            <input type="radio" name="prospect"> <label for="prospect">oui</label>
+            <input type="radio" name="prospect"> <label for="prospect">non</label>
+            <label margin-right="10px;" for="prospect">date</label> <input type="text" name="prospect">
+        </div>
+        <p>Formateur</p>
+        <div class="firstChild">
+            <label for="identityTrainer">Nom et Prénom *</label>
+            <input type="text" name="identityTrainer" required>
+            </div>
+            <div class="firstChild">
+                <label for="visitDate">Date de la visite</label>
+                <input type="text" name="visitDate">
+                <label class="last" for="phoneContactDate">Date du contact téléphonique</label>
+                <input type="text" name="phoneContactDate">
+            </div>
+            <div class="thirdChild">
+                <button class="button" type="submit" name="submit">
+                <label>Soumettre</label>
+                <button class="button" type="reset" name="reset">
+                <label>Reset</label>
+            </div>
+        </div>
+        <!--firtSection End-->
 
-			<div>
-				<p class=subtitle>Entreprise</p>
-			</div>
-			<div>
-				<label for=company>Nom *</label> <input type="text" name="companyIdentity" id="companyIdentity">
-			</div>
-			<div>
-				<label>Adresse *</label>
-				<textarea name="adress" id="adress" class="largeText"></textarea>
-			</div>
-			<div>
-				<label>Nom du tuteur *</label> <input type="text" name="tutor" id="tutor"> <label
-					class="tableLabel">Fonction *</label> <input type="text" name="function" id="function">
-			</div>
-			<div>
-				<label>Tel *</label> <input type="text" name="fixedLine" id="fixedLine"> <label
-					class="tableLabel">Port</label> <input type="text" name="mobilePhoneLine" id="mobilePhoneLine">
-				<label class="tableLabel">Email</label> <input type="text" name="email" id="email">
-			</div>
-			<div>
-				<label>Secteur d'activité *</label>
-				<textarea type="text" name="businessLine" id="businessLine" class="largeText"></textarea>
-			</div>
-		</div>
-		<div>
-			<p class="subtitle">Observation sur le déroulement de la PAE</p>
-			<div class="radio">
-				<table>
-					<tr>
-						<th><label class="entitled">Objectifs d'acquisitions
-								atteints *</label></th>
-						<td><input type="radio" name="targetAchievment" id="targetAchievmentTotaly"> <label
-								for="targetAchievmentTotaly">totalement</label></td>
-						<td><input type="radio" name="targetAchievment" id="targetAchievmentPartially"> <label
-								for="targetAchievmentPartially">partiellement</label></td>
-						<td><input type="radio" name="targetAchievment" id="targetAchievmentNone"> <label
-								for="targetAchievmentNone" class="radio">non</label></td>
-					</tr>
-					<tr>
-						<th><label class="entitled">Comportement en milieu de
-								travail *</label></th>
-						<td><input type="radio" name="behaviorOK" id="behaviorOK">
-							<label for="behaviorOK">adapté</label>
-						</td>
-						<td><input type="radio" name="behaviorInProgress" id="behaviorInProgress"
-								targetAchievmentPartially> <label for="behaviorInProgress">en progression</label></td>
-						<td><input type="radio" name="behaviorNOK" id="behaviorNOK" targetAchievmentNone> <label
-								for="behaviorNOK" class="radio">peu adapté</label></td>
-					</tr>
-					<tr>
-						<th><label class="entitled">Satisfaction de l'entreprise *</label></th>
-						<td><input type="radio" name="companySatisfactionYes" id="companySatisfactionYes">
-							<label for="companySatisfactionYes">satisfaite</label>
-						</td>
-						<td><input type="radio" name="companySatisfactionInProgress" id="companySatisfactionInProgress"
-								targetAchievmentPartially> <label for="companySatisfactionInProgress">peu
-								satisfaite</label></td>
-						<td><input type="radio" name="companySatisfactionNo" id="companySatisfactionNo"
-								targetAchievmentNone> <label for="companySatisfactionNo" class="radio">pas
-								satisfaite</label></td>
-					</tr>
-				</table>
-				<p>Remarques</p>
-				<textarea class="largeTextArea" name="note" rows="6"></textarea>
-				<table>
-					<tr>
-						<th><label>Perspectives d'embauche *</label></th>
-						<td><input type="checkbox" name="hire"><label for="CDD">C.D.D</label></td>
-						<td><input type="checkbox" name="hire"><label for="CDI">C.D.I</label></td>
-						<td><input type="checkbox" name="hire"><label for="WorkLinkedTraining">Alternance</label></td>
-						<td><input type="checkbox" name="hire"><label for="NoWork">Néant</label></td>
-					</tr>
-				</table>
-			</div>
-			<div>
-				<p class="subtitle">Informations concernant l'activité de l'entreprise et les possibilités
-					d'intervention</p>
-			</div>
-			<table>
-				<tr>
-					<th><label class="entitled">Taille de l'entreprise</label></th>
-					<td><input type="radio" name="companySize"> <label for="companySize">- 10 pers</label></td>
-					<td><input type="radio" name="companySize"> <label for="companySize">+ 10 pers</label></td>
-					<td><input type="radio" name="companySize"> <label for="companySize" class="radio">+ 50 pers</label>
-					</td>
-					<td><input type="radio" name="companySize"> <label for="companySize" class="radio">+ 100
-							pers</label></td>
-				</tr>
-				<tr>
-					<th><label>L'entreprise a-t-elle des projets de développement</label></th>
-					<td><input type="radio" name="developmentProject"> <label for="developmentProject">oui</label></td>
-					<td><input type="radio" name="developmentProject"> <label for="developmentProject">non</label></td>
-			
-			<p>Remarques</p>
-				<textarea class="largeTextArea" name="note" rows="6"></textarea>
-				
-					<tr>
-						<th><label>Emission d'une fiche Prospect/Client</label></th>
-						<td><input type="radio" name="prospect"> <label for="prospect">oui</label></td>
-						<td><input type="radio" name="prospect"> <label for="prospect">non</label></td>
-						<td><label for="prospect">date</label><input type="text" name="prospect"></td>
-				</table>
-		</div>
-	</form>
+
+
+
+
 
 </body>
 
