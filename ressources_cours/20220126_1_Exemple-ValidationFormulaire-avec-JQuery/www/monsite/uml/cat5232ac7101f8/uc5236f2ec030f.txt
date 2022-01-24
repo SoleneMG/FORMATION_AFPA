@@ -1,0 +1,7 @@
+nom : Consulter les stats
+Acteur principal : Responsable
+Acteurs secondaires :
+événement déclencheur  :Volonté de consulter les stats, une prise de décision
+rôle du use case :
+Consulter les statistisques spécifiques
+terminaison du use case : Statististiques consultées

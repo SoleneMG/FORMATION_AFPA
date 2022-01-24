@@ -1,0 +1,7 @@
+nom : Consulter l'état des retards
+Acteur principal : Responsable
+Acteurs secondaires : Adhérent
+événement déclencheur  : Livre en retard
+rôle du use case :
+Consulter la liste des livres en retard
+terminaison du use case : 

@@ -1,0 +1,2 @@
+nom: RoleEmploye
+Description:le role d'un employé ex: responsable

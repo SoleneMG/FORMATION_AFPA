@@ -1,0 +1,2 @@
+nom : Status
+description: Classe Enum regroupe les differentes status possible disponible, preté ou supprimé

@@ -1,0 +1,468 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<!-- Mirrored from fr.html.net/tutorials/css/lesson13.php by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 29 Mar 2012 09:27:13 GMT -->
+<head>
+
+	<title>Leçon 13: Les éléments flottants (les flottants) - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Leçon 13: Les éléments flottants (les flottants) - HTML.net" />
+	<meta name="description" content="Leçon 13: Les éléments flottants (les flottants) - Tutoriels sur HTML et CSS - Construisez votre propre site Web" />
+	<meta name="keywords" content="HTML, CSS, XHTML, Tutoriel HTML, Tutoriel CSS, Forums, , " />
+	<meta name="language" content="fr" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Leçon 13: Les éléments flottants (les flottants) - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="lesson13.html" />
+	<meta property="og:image" content="../../../html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='../../../html.net/site/style/default.screen.css' type='text/css' media='screen' /><link rel='stylesheet' href='../../../html.net/site/style/default.print.css' type='text/css' media='print' />
+	<script type="text/javascript">
+			
+		function toggleVisibility(objectID, imageID) {
+		vis = document.getElementById(objectID).style;
+		state = vis.display;
+		if (state == 'none') {
+			vis.display = 'block';	
+			document.getElementById(imageID).value = '▲ Réduire';
+			}
+		else {		
+			if (state == 'block') {
+				vis.display = 'none';
+				document.getElementById(imageID).value = '▼ Agrandir';
+				}	
+			else {
+				vis.display = 'block'; 
+				document.getElementById(imageID).value = '▲ Réduire';
+				}
+		}}
+
+		//-->
+	</script>
+
+	<script type="text/javascript">
+	// <![CDATA[
+		var jump_page = '{LA_JUMP_PAGE}:';
+		var on_page = '{ON_PAGE}';
+		var per_page = '{PER_PAGE}';
+		var base_url = '{A_BASE_URL}';
+		var style_cookie = 'phpBBstyle';
+		var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+		var onload_functions = new Array();
+		var onunload_functions = new Array();
+
+		/**
+		* Find a member
+		*/
+		function find_username(url)
+		{
+			popup(url, 760, 570, '_usersearch');
+			return false;
+		}
+
+		/**
+		* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+		*/
+		window.onload = function()
+		{
+			for (var i = 0; i < onload_functions.length; i++)
+			{
+				eval(onload_functions[i]);
+			}
+		}
+
+		window.onunload = function()
+		{
+			for (var i = 0; i < onunload_functions.length; i++)
+			{
+				eval(onunload_functions[i]);
+			}
+		}
+
+	// ]]>
+	</script>
+
+	<script type="text/javascript" src="../../../html.net/forums/styles/prosilver/template/forum_fn.js"></script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-6716118-1']);
+	  _gaq.push(['_setDomainName', '.html.net']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+	
+</head>
+
+<body>	
+
+	<div id="login">
+		
+		<div><a href='http://fr.html.net/forums/ucp.php?mode=login'>Connexion</a> | <a href='http://fr.html.net/forums/ucp.php?mode=register'>Inscription</a> | <a href='http://fr.html.net/forums/faq.php'>FAQ</a></div><img src='../../site/graphics/user.png' />		
+	</div>
+
+	<div id="header">
+			
+		<ul>
+			<li><a href='http://fr.html.net/'>Accueil</a></li>
+			<li class='selected'><a href='http://fr.html.net/tutorials/'>Tutoriels</a></li>
+			<li><a href='http://fr.html.net/forums/'>Forums</a></li>
+			<li><a href='http://fr.html.net/about/'>À propos</a></li>
+		</ul>
+		<form method="get" action="http://fr.html.net/search/" id="cse-search-box">
+		<div id="searchbar">
+			<span>
+			
+				<input type="text" name="q" id="query" value="" /><input type="submit" id="submit" value="Rechercher" />
+				 <input type="hidden" name="cx" value="002160260272865772965:d4fb4jd-jh0" />
+				<input type="hidden" name="cof" value="FORID:11;NB:1" />
+				<input type="hidden" name="ie" value="UTF-8" />	
+				<input type="hidden" name="lr" value="lang_fr" />	
+				<input type="hidden" name="hl" value="fr" />	
+			
+			</span>
+		</div>
+		</form>
+		
+		<div id="ad_leaderboard">
+	<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_Leaderboard_728x90");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_Leaderboard_728x90 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_fr_tutorials_Leaderboard_728x90");
+	</script>
+</div>
+
+	</div>
+
+	
+		<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='http://fr.html.net/'>Accueil</a> &#187; <a href='http://fr.html.net/tutorials/'>Tutoriels</a> &#187; <a href='index.html'>CSS</a> &#187; Leçon 13: Les éléments flottants (les flottants)</div>
+			<div id="socialBookmarks">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a>
+				<span id="FbCont"></span>
+				<g:plusone size="medium"></g:plusone>
+								
+			</div>
+			<!-- google_ad_section_start -->
+		
+		<div id='tutorials'>	<h1>Leçon 13 : Les éléments flottants (les flottants)</h1>
+	<p>Un élément peut avoir une position flottante à droite ou à gauche avec la propriété <code>float</code>. C'est-à-dire que la
+	boîte et son contenu peut flotter soit à droite, soit à gauche dans un document (ou dans la boîte conteneur),
+	cf. la description du modèle des boîtes dans la <a href="lesson9.html">leçon 9</a>. La figure suivante illustre le principe :</p>
+
+	<p><img src="figure015.fr.gif" alt="Une boîte flottant à gauche" /></p>
+
+	<p>Si par exemple nous voulions qu'un texte s'enroule autour d'une image, le résultant serait le suivant :</p>
+	<p><img src="figure016.gif" alt="Une boîte flottant à gauche avec une image et du texte enroulé autour" /></p>
+
+	<h2>Comment ça fonctionne ?</h2>
+	<p>Voici le code HTML de l'exemple précédent :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	&lt;div id=&quot;picture&quot;&gt;
+		&lt;img src=&quot;bill.jpg&quot; alt=&quot;Bill Gates&quot;&gt;
+	&lt;/div&gt;
+
+	&lt;p&gt;causas naturales et antecedentes, 
+	idciro etiam nostrarum voluntatum...&lt;/p&gt;
+	</code>
+	</pre>
+	</div>
+
+	<p>Pour que l'image flotte à gauche et que le texte l'entoure, il suffit de définir la largeur de la boîte entourant l'image puis
+	de donner à la propriété <code>float</code> la valeur "left" :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	#picture {
+		<strong>float:left;
+		width: 100px;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson13_ex1.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2>Un autre exemple avec des colonnes</h2>
+	<p>Les flottants peuvent aussi servir pour le colonnage d'un document. Pour créer les colonnes, il suffit de les structurer dans
+	le code HTML avec des éléments <code>&lt;div&gt;</code> de la façons suivante :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	&lt;div id=&quot;column1&quot;&gt;
+		&lt;p&gt;Haec disserens qua de re agatur
+		et in quo causa consistat non videt...&lt;/p&gt;
+	&lt;/div&gt;
+
+	&lt;div id=&quot;column2&quot;&gt;
+		&lt;p&gt;causas naturales et antecedentes, 
+		idciro etiam nostrarum voluntatum...&lt;/p&gt;
+	&lt;/div&gt;
+
+	&lt;div id=&quot;column3&quot;&gt;
+		&lt;p&gt;nam nihil esset in nostra 
+		potestate si res ita se haberet...&lt;/p&gt;
+	&lt;/div&gt;
+	</code>
+	</pre>
+	</div>
+
+	<p>Une fois fixée la largeur des colonnes (par exemple à 33%), on fait simplement flotter chaque colonne à gauche en définissant
+	la propriété <code>float</code> :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	#column1 {
+		<strong>float:left;
+		width: 33%;</strong>
+	}
+
+	#column2 {
+		<strong>float:left;
+		width: 33%;</strong>
+	}
+
+	#column3 {
+		<strong>float:left;
+		width: 33%;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson13_ex2.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<p>La propriété <code>float</code> admet les valeurs "<strong>left</strong>", "<strong>right</strong>" ou "<strong>none</strong>".</p>
+
+	<h2>La propriété clear</h2>
+	<p>la propriété <code>clear</code> sert à contrôler le comportement des éléments qui viennent après les éléments flottants dans le document.</p>
+	<p>Par défaut, les éléments à suivre remontent pour combler l'espace dispobible libéré lorsqu'une boîte flotte d'un côté.
+	Examinez l'exemple précédent dans lequel le texte se place automatiquement sous la photo de Bill Gates.</p>
+	<p>La propriété <code>clear</code> admet les valeurs "<strong>left</strong>", "<strong>right</strong>", "<strong>both</strong>"
+	ou "<strong>none</strong>". Le principe est tel que, par exemple, si la valeur de <code>clear</code> d'une boîte est fixée à "both",
+	la bordure supérieure de la marge de cette boîte se trouvera toujours sous la bordure de la marge inférieure des boîtes flottantes
+	éventuelles venant du dessus.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	&lt;div id=&quot;picture&quot;&gt;
+		&lt;img src=&quot;bill.jpg&quot; alt=&quot;Bill Gates&quot;&gt;
+	&lt;/div&gt;
+
+	&lt;h1&gt;Bill Gates&lt;/h1&gt;
+
+	&lt;p <strong>class=&quot;floatstop&quot;</strong>&gt;causas naturales et antecedentes, 
+	idciro etiam nostrarum voluntatum...&lt;/p&gt;
+	</code>
+	</pre>
+	</div>
+
+	<p>Pour empêcher que le texte ne flotte à côté de l'image, nous pouvons ajouter le code CSS suivant :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	#picture {
+		float:left;
+		width: 100px;
+	}
+
+	.floatstop {
+		<strong>clear:both;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson13_ex3.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2>Résumé</h2>
+	<p>Les flottants sont très utiles dans beaucoup de situations, et on les utilisera souvent en même temps qu'un positionnement.
+	Dans la <a href="lesson14.html">leçon suivante</a>, nous étudierons comment placer une boîte en position relative ou bien absolue.</p>
+	
+	<hr /><div id="ad_rectangle">
+	<!--
+	<span style="margin-right:10px;float:left">
+	-->
+	<span>
+		<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+		</script>
+		<script type='text/javascript'>
+		GS_googleAddAdSenseService("ca-pub-0941946313210493");
+		GS_googleEnableAllServices();
+		</script>
+		<script type='text/javascript'>
+		GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_LargeRectangle_336x280");
+		</script>
+		<script type='text/javascript'>
+		GA_googleFetchAds();
+		</script>
+
+		<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_LargeRectangle_336x280 -->
+		<script type='text/javascript'>
+		GA_googleFillSlot("HTML_NET_fr_tutorials_LargeRectangle_336x280");
+		</script>
+	</span>
+
+	
+</div><hr /><p class='previous'><a href='lesson12.html'>&lt;&lt; Leçon 12: Le modèle des boîtes : la hauteur et la largeur</a></p><p class='next'><a href='lesson14.html'>Leçon 14: Le positionnement des éléments >></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+
+		<div id="ad_skyscraper">
+	<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_WideSkyscraper_160x600");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_WideSkyscraper_160x600 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_fr_tutorials_WideSkyscraper_160x600");
+	</script>
+
+</div>
+
+
+
+
+	</div>
+
+	<div id="sidebar">
+					<h1>Tutoriels</h1>
+			<ul>
+			<li><a href='http://fr.html.net/tutorials/html/'>Tutoriel HTML</a></li><li><strong><a href='index.html'>Tutoriel CSS</a></strong><ul><li><a href='introduction.html'>Introduction</a></li><li><a href='lesson1.html'>Qu'est-ce que CSS ?</a></li><li><a href='lesson2.html'>Comment CSS fonctionne-t-il ?</a></li><li><a href='lesson3.html'>Les couleurs et les arrières-plans</a></li><li><a href='lesson4.html'>Les polices</a></li><li><a href='lesson5.html'>Le texte</a></li><li><a href='lesson6.html'>Les liens</a></li><li><a href='lesson7.html'>L'identification et le regroupement d'éléments (class et id)</a></li><li><a href='lesson8.html'>Le regroupement d'éléments (span et div)</a></li><li><a href='lesson9.html'>Le modèle des boîtes</a></li><li><a href='lesson10.html'>Le modèle des boîtes : margin & padding</a></li><li><a href='lesson11.html'>Le modèle des boîtes : les bordures</a></li><li><a href='lesson12.html'>Le modèle des boîtes : la hauteur et la largeur</a></li><li class='selected'><a href='lesson13.html'>Les éléments flottants (les flottants)</a></li><li><a href='lesson14.html'>Le positionnement des éléments</a></li><li><a href='lesson15.html'>Une couche sur une couche avec z-index (les couches)</a></li><li><a href='lesson16.html'>Les standards du Web et la validation</a></li></ul></li><li><a href='http://fr.html.net/tutorials/php/'>Tutoriel PHP</a></li>			</ul>
+			
+		<!-- google_ad_section_start(weight=ignore) -->
+		<h2>Langue</h2>
+		
+		<form method="post" action="http://fr.html.net/redirect.php">
+			<p>
+			<select name="location">
+				
+				<option value='http://ar.html.net/tutorials/css/lesson13.php'>العربية</option>
+				<option value='http://de.html.net/tutorials/css/lesson13.php'>Deutsch</option>
+				<option value='http://html.net/tutorials/css/lesson13.php'>English</option>
+				<option value='http://es.html.net/tutorials/css/lesson13.php'>Español</option>
+				<option selected='selected' value='http://fr.html.net/tutorials/css/lesson13.php'>Français</option>
+				<option value='http://he.html.net/tutorials/css/lesson13.php'>עברית</option>
+				<option value='http://it.html.net/tutorials/css/lesson13.php'>Italiano</option>
+				<option value='http://pl.html.net/tutorials/css/lesson13.php'>Polski</option>
+				<option value='http://pt-br.html.net/tutorials/css/lesson13.php'>Português (Brasil)</option>
+				<option value='http://ru.html.net/tutorials/css/lesson13.php'>Русский</option>
+				<option value='http://zh.html.net/tutorials/css/lesson13.php'>中文</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+		
+		
+		<h2>La présentation</h2>
+		<form method='post' action='http://fr.html.net/tutorials/css/lesson13.php'>			<p>
+			<select name="strCSS">
+				
+				<option value='1'>Default</option>
+				<option value='2'>Default - Blue</option>
+				<option value='3'>No CSS</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+
+		<h2>Traducteur:</h2> <p><a href='http://www.yoyodesign.org/scripts/message.php'>Jean Jacques Solari</a></p>
+		
+			
+
+		
+
+	</div>
+
+	<div id="footer">
+
+		<hr />
+
+		
+		<h1>Qui est en ligne ?:</h1>
+		<p>Au total, il y a <strong>172</strong> utilisateurs en ligne :: 2 inscrits, 0 invisible et 170 invités</p> 
+		<p>Le nombre maximum d’utilisateurs en ligne simultanément a été de <strong>338</strong> le Mar Sep 28, 2010 9:13 am</p> 
+		<p id="userlist"><br />Utilisateurs inscrits : <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Google Adsense [Bot]</span></p>
+		
+		<h1>Statistiques:</h1>
+		<p>Messages au total <strong>6247</strong> - <strong>2592</strong> sujets au total</p><p><strong>6795</strong> membres au total - Notre membre le plus récent est <strong><a href='http://fr.html.net/forums/memberlist.php?mode=viewprofile&amp;u=9869'>Hsd265gbu7</a></strong></p>
+		<p><br /><a href="http://fr.html.net/forums/memberlist.php">Visualiser la liste complète des membres</a></p>
+		
+
+		<h1>Langue:</h1>
+		<p><span>
+		<a href='http://ar.html.net/tutorials/css/lesson13.php'>العربية</a> | <a href='http://de.html.net/tutorials/css/lesson13.php'>Deutsch</a> | <a href='http://html.net/tutorials/css/lesson13.php'>English</a> | <a href='http://es.html.net/tutorials/css/lesson13.php'>Español</a> | Français | <a href='http://he.html.net/tutorials/css/lesson13.php'>עברית</a> | <a href='http://it.html.net/tutorials/css/lesson13.php'>Italiano</a> | <a href='http://pl.html.net/tutorials/css/lesson13.php'>Polski</a> | <a href='http://pt-br.html.net/tutorials/css/lesson13.php'>Português (Brasil)</a> | <a href='http://ru.html.net/tutorials/css/lesson13.php'>Русский</a> | <a href='http://zh.html.net/tutorials/css/lesson13.php'>中文</a> | 		</span></p>
+
+		
+	</div>
+
+	<!-- google_ad_section_end -->
+
+<script type='text/javascript' language='Javascript' src='../../../s1.lqcdn.com/m.min2d33.js?dt=2.3.110104.1'></script>
+	
+<script type="text/javascript" src="../../../apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="../../../platform.twitter.com/widgets.js"></script>
+<script src="../../../connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var fb = document.createElement('fb:like'); 
+fb.setAttribute("href",""); 
+fb.setAttribute("layout","button_count");
+fb.setAttribute("show_faces","false");
+fb.setAttribute("width","");
+fb.setAttribute("style","position:relative; top:-3px;");
+document.getElementById("FbCont").appendChild(fb);
+//--><!]]>
+</script>
+
+
+</body>
+
+<!-- Mirrored from fr.html.net/tutorials/css/lesson13.php by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 29 Mar 2012 09:27:14 GMT -->
+</html>

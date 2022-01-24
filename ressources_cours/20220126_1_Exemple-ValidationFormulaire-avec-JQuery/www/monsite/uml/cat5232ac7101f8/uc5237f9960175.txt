@@ -1,0 +1,6 @@
+nom : Modifier un livre
+Acteur principal : gestionnaire de fonds
+Acteurs secondaires : 
+événement déclencheur  : Modifier un livre
+rôle du use case : Modifier un livre
+terminaison du use case :  Modifier un livre

@@ -1,0 +1,1061 @@
+﻿@import url("http://www.buvetteetudiants.com/web/common/public/common.css");
+
+/** 
+ *constitution des blocs 
+ */
+html, body
+{
+	font-family: "Lucida grande",'trebuchet MS', times, helvetica, georgia, verdana, arial, sans-serif;
+	font-size: 11px;
+	margin: 0pt;
+}
+
+#container 
+{
+	width: 990px;
+	margin: 0 auto;
+	padding-top:10px;
+	text-align: left;
+}
+
+#header #bloc_entete 
+{
+	height: 150px;
+	width:990px;
+	background:url(http://www.buvetteetudiants.com/images/accueil/extremite_arrondie.png) no-repeat #f2f2f2;
+} 
+
+#header 
+{
+	clear:both;
+}
+
+#ariane strong, #ariane em
+{
+	font-weight :normal;
+}
+
+#mainContent 
+{ 
+	font-size: 13px;
+	overflow:auto;
+	padding: 10px;
+	background:#FFFFFF;
+	border:3px solid #777777;
+	border-bottom:none;
+	border-top:none;
+	margin-bottom: -10px;	
+}
+
+#footer 
+{
+	width: 990px;
+	margin-bottom:20px;
+	border-bottom: solid 20px #f2f2f2;
+	margin-top:3px;
+} 
+
+/*========================== Boîte pour espace membre ==========================*/
+div.boite
+{
+	width: 250px;
+	float:right;
+	height:100px;
+	margin-top:6px;
+	margin-right:22px;
+	font-family: Arial;
+}
+
+div.boite img 
+{
+	display: block;
+}
+
+div.boite h3
+{
+	background-color: #000000;
+	font-size:16px;
+	font-weight:lighter;
+	text-align:center;
+	width: 248px;
+	clear:both;
+	display:block;
+	margin:0pt;
+	padding:0pt;
+	padding-bottom: 10px;
+	font-weight:bold;
+	color: #CCC;
+}
+
+div.boite h3 a /* otherwise we will get a blue color */
+{
+	color: #CCC;
+}
+
+div.items
+{
+	width:246px;
+	height:275px;
+	border-right:1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;	
+	line-height: 1.2em;
+	height:auto;
+	border-bottom:none
+}
+
+div.items a
+{
+	display:block;
+	padding-left:10px;
+	line-height:20pt;
+	text-decoration:none;
+	border-bottom:#CCCCCC 1px dotted;
+	background-color: #f5f6f9;
+}
+
+div.items a:hover
+{
+	background-color: #CCCCCC;
+	color:#000000;
+}
+
+div.items a:visited
+{
+	color:#990000;
+}
+
+div.items a img /* icônes connexion, espace membre etc. */
+{
+	vertical-align:middle; 
+	display:inline;
+}
+/*========================== Boîte pour espace membre ==========================*/
+
+/*========================== les deux menus juxtaposés dans le header ==========================*/
+#barre_gauche 
+{
+	float:left;
+	margin-bottom:2px;
+}
+
+#barre_gauche form, #barre_gauche form div 
+{
+	display:inline;
+}
+
+form .input_texte 
+{
+	width:130px;
+	border:#D6D7D9 1px solid;
+}
+
+form .input_button
+{
+	border:#D6D7D9 1px solid;
+	width: 60px;color:#545556;
+	background:#ECECEC;
+	font-size:85%;
+	position:relative;
+	bottom:1px;
+}
+
+#barre_droite 
+{
+	float:right;
+	position:relative;
+	right: 10px;
+	top: 6px;
+}
+/*========================== les deux menus juxtaposés dans le header ==========================*/
+
+/*========================== logo et slogan ==========================*/
+#logo 
+{
+	margin-left: 10px; 
+	margin-top:3px
+}
+
+#slogan 
+{
+	font-style:italic;
+	font-size:16px;
+	color:#990000;
+	margin-left:6px;
+}
+/*========================== logo et slogan ==========================*/
+
+
+/*========================== Elts du footer (liens, copyright etc.)  ==========================*/
+#fade_footer 
+{
+	background: url(http://www.buvetteetudiants.com/images/accueil/fade_footer.png) repeat-x;
+	height:100px;
+	width: 990px;
+	text-align:left;
+}
+
+#liens_footer table
+{
+	width:100%; 
+	text-align:center;
+}
+
+#liens_footer table, #liens_footer table tr, #liens_footer table tr td
+{
+	border: none;
+}
+
+#fade_footer .rightbar
+{
+	border-left: 
+	solid 1px #999;
+}
+/* table is used in footer
+.liste_liens
+{
+	list-style:none;  
+	float:left; 
+	border-right: #999999 1px dotted; 
+	padding-right:10px;
+}
+
+.liste_liens li
+{
+	display:block;
+	margin:0;
+}
+*/
+
+#copyright 
+{
+	clear:both; 
+	margin:auto; 
+	width:260px; 
+	padding:0px; 
+	display: block;
+}
+
+.pub_g
+{	
+	text-align: center; 
+	margin-bottom: 4px; 
+	padding-bottom: 4px; 
+}
+/*========================== Elts du footer (liens, copyright etc.)  ==========================*/
+
+
+/** 
+ *************************constitution des blocs*************************
+ */
+
+
+/*========================== formatage texte etc.  ==========================*/
+abbr, acronym 
+{
+	cursor:help;
+}
+
+.important 
+{
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.left 
+{
+	float: left;
+	margin-right:6px;
+}
+
+.right 
+{
+	float: right;
+	margin-left:6px;
+}
+
+.centrer  
+{
+	text-align:center;
+}
+
+.gras 
+{
+	font-weight:bold;
+}
+
+.bloc 
+{
+	display: block;
+}
+
+.inline 
+{
+	display: inline;
+}
+
+.lien1 
+{
+	font-size:16px;
+	text-align:left;
+	margin:0px;
+}
+
+.lien2 
+{
+	font-size:14px;
+	text-align:left;
+	margin:0px;
+}
+
+.lien3 
+{
+	font-size:12px;
+	text-align:left;
+	margin:0px;
+}
+
+.preformat 
+{
+	white-space:-pre-wrap;;
+}
+
+th
+{
+	vertical-align:middle;
+	text-align:center;
+}
+
+.lettrine 
+{
+	float: left; /* la premire  lettre flottera  gauche */
+	text-transform: uppercase; /* lettrine toujours en majuscule, trs util au cas
+	o on a oubli de mettre la premire lettre en majuscule*/ 
+	margin-right: 5px; /* pour que le contenu voisin ne soit pas coll  la lettrine */
+	font-size: 3em; /* l'hauteur de la police sera de l'ordre de 3 lignes */ 
+	font-weight: bold; /* lettrine en gras */ 
+}
+
+.separateur_leger /* pour un séparateur léger en dessous des tittres H4 (années) en archives etc. */
+{
+	border-bottom:dotted 1px #CCCCCC; 
+	width:80%;
+}
+/*========================== formatage texte etc.  ==========================*/
+
+
+/*========================== forums et assimiliés  ==========================*/	
+.signature 
+{
+	max-width: 445px;
+	overflow: hidden;
+	font-size:0.8em;
+	margin-top:20px;
+	clear: both;
+	height: 100px;
+}
+
+.signature hr 
+{
+	margin-bottom: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+.h1_moderate /* les headers contenant des descriptions (description des cours, des topics des forums etc.) */
+{
+	font-size:115%;
+	color:#003399;
+}
+
+.italic_gris
+{
+	font-style:italic;
+	color:#666666;
+}
+
+.h1_desc /* h1 inline pour description des catégories des forums (description entre crochets) */
+{
+	display:inline;
+	font-size: 100%;
+	color: #003366
+}
+
+.fond_cat /* (fond catégorie) réglage de l'arrière plan des titres et descriptions des catégories des forums (jaune) */
+{
+	background-image:url(http://www.buvetteetudiants.com/images/forum_icons/fade_post_it.png);
+	background-repeat:repeat-x;
+	background-color:#f3fa80;
+}
+
+.forum /* les forums propreent dit (xbox, playstation etc.) : applicable à h1 */
+{
+	display:inline;
+	font-size: 106%;
+}
+.forum a
+{
+	color: #003333;
+}
+
+.forum_desc /* applicable à h1 (description entre crochets) */
+{
+	font-size: 78%;
+	display:inline;
+	color: #666666;
+}
+
+.forum_desc strong a
+{
+	color: #666666;
+}
+
+.header_forums /* applicable au premier tr du tableau (forums thématiques et ceux de l'école) */
+{
+	text-align:center;
+	background:url(http://www.buvetteetudiants.com/images/forum_icons/fade_th.png);
+	background-repeat:repeat-x;
+	background-color:#adcbc9;
+}
+
+.header td /* applicable au premier tr du tableau (tableau des topics et celui des posts) mais effet sur td_children */
+{
+	background:url(http://www.buvetteetudiants.com/images/forum_icons/fade_th.png) #d0d4d2;
+	color:#003300;
+	font-size:110%;
+}
+
+.properties /* dans les posts : âge, sexe etc. */
+{
+	font-size: 86%;
+}
+
+.post_header /* le header de chaque post dans les forums (ecoles et thèmes) |<tr>| */
+{
+	background-image:url(http://www.buvetteetudiants.com/images/forum_icons/fade_post_it.png);
+}
+
+.mess_content /* les tds contenant les messages (post ou topic) |<td>| */
+{
+	vertical-align:top;
+	padding-left:2px;
+}
+
+.cesure /* résoudre le problème de cesure lié aux icônes (post-it, résolu, lu etc.) */
+{
+	width:1%;
+}
+
+.bloc_tags
+{
+	padding:3px 6px; 
+}
+
+.bloc_tags p
+{
+	color:#060;
+	font-size:1.1em;
+}
+
+.bloc_catdesc /* ths bloc of category's description */
+{
+	border:dashed #999 1px; 
+	padding:3px 6px; 
+	width: 90%; 
+	margin: auto; 
+	margin-bottom:20px; 
+	color: green; 
+	font-size:1em	
+}
+
+.topic_desc
+{
+	font-size:80%;
+	color: #666666;
+}
+
+.post_it /* pour les topics épinglés */
+{
+	background:url(http://www.buvetteetudiants.com/images/forum_icons/fade_post_it.png) repeat-x #f3fa80;
+}
+
+.comments /* style des commentaires (albums, blogs etc.) */
+{
+	font-style: italic;
+	font-size: 70%;
+	color:#996600;
+}
+
+/*
+.tr_1 td		==>alterner les fonds des topics 
+{
+	background:url(http://www.buvetteetudiants.com/images/forum_icons/fade_tr_1.png) repeat-x #adcbc9;
+}
+
+.tr_2 td /*		==>alterner les fonds des topics
+{
+	background: url(http://www.buvetteetudiants.com/images/forum_icons/fade_tr_2.png) repeat-x #b3b6c6;
+}
+*/
+/*========================== bloc ms  ==========================*/
+.bloc_ms 
+{
+	border: 1px solid #777777;
+	margin-bottom:30px;
+}
+
+.notes_right 
+{
+	text-align:right;
+	font-style: italic;
+	font-size: 100%;
+	color: #006600;
+	padding:3px;
+}
+
+.title_ms 
+{
+	background:#f2f2f2 url(http://www.buvetteetudiants.com/images/accueil/fade_title_ms.png);
+	border-bottom:1px #777777 solid;
+	color: #666666;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	font-size:160%;
+}
+
+.content_ms 
+{
+	padding: 2px 4px;
+}
+/*========================== bloc ms  ==========================*/
+
+/*========================== éléments pour accueil ==========================*/
+.div_arrondi
+{
+    margin: 0 0 10px 0;
+    padding:4px;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-top: 6px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px; 
+    border-radius: 6px; 
+    behavior: url(http://www.buvetteetudiants.com/web/common/public/PIE.htc); 
+}
+
+.div_arrondi h3
+{
+    color: #990000;
+    padding: 5px 0;
+    margin: 0 0 5px 0;
+    font: 13px Arial, sans-serif;
+    font-weight: bold;
+    text-indent: 5px;
+	text-align:left;
+}
+
+.div_arrondi h1
+{
+    color: #000099;
+    padding: 5px 0 5px 0;
+    margin: 0 0 5px 0;
+    font: 12px Arial, sans-serif;
+    font-weight: bold;
+    text-indent: 5px;
+	text-align:left;
+}
+
+.div_arrondi h1 a
+{
+    color: #000099;
+}
+
+.div_arrondi h3 a
+{
+    color: #990000;
+}
+
+.footer_accueil 
+{
+	clear:both;
+	margin:4px;
+}
+
+.tar /* text-align:right; */
+{
+	text-align:right;
+}
+/*========================== éléments pour accueil ==========================*/
+
+/*========================== bazar  ==========================*/
+.separateur /*separateur pour cours*/
+{ 
+	border:3px #0033CC double;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.fade1  /* classe applicable aux éléments tr */
+{
+	background: url(http://www.buvetteetudiants.com/images/accueil/fade1.png) repeat-x;
+	border-bottom:1px #777777 solid;
+	color: #000000;
+	text-align:center;
+}
+
+.fade2  /* classe applicable aux éléments tr (index des cours, talks etc.) */
+{
+	text-align:center;
+	background: url(http://www.buvetteetudiants.com/images/accueil/fade2.png) repeat-x;
+	height:32px;
+}
+
+.fade2 h1  /* éviter des colonnes trop grandes (généralement fade2 contient un h1) */ 
+{
+	padding:0px;
+	color: #000000;
+	margin:0px;
+}
+
+#message_redirection /* messages d'informations et d'erreur */
+{
+	border: 1px solid #0000CC;	
+	width:70%; 
+	margin: auto; 
+	margin-top:40px; 
+	font-size:1.3em
+}
+
+#message_redirection div /* ce deuxième div sert à ajouter de la marge entre le div parent et le contenu du message */
+{
+	margin: 10px;
+}
+
+#message_redirection .msg_infos /* message d'infos */
+{
+	color: #009933;
+	text-decoration:underline;
+}
+
+#message_redirection .msg_error /* message d'erreur */
+{
+	color: #FF0000;
+	text-decoration:underline;
+}
+
+.link_message_redirection /* ne pas attendre et Précédent */
+{
+	text-align:right; 
+	position:relative; 
+	top:8px; 
+	left:14px;
+}
+
+.fiche /* des blocs avec une extrêmité pliée */
+{
+	background: #b6b6b6 url(http://www.buvetteetudiants.com/images/accueil/fiche.png) no-repeat right bottom;
+	width:300px; 
+	height: 206px; 
+	padding: 4px 3px 2px 14px; 
+	float:right; 
+	margin-bottom:20px;  
+	position:relative; 
+	left:-45px
+}
+
+.fiche h4
+{
+	color: #663300;
+}
+
+.infos /* la classe infos sera appliquée aux tableaux représentants des informations : auteurs etc. */
+{
+	border:1px #CCCCCC solid;
+}
+
+.infos .image /* classe .image à l'intérieur de classe .infos */
+{
+	padding-left:12px;
+}
+
+.infos ul /* la liste UL à l'intérieur de la classe infos */
+{
+	list-style:none;
+	border-left: 1px #999999 dotted;
+	padding-left:12px;
+	margin-left: 12px;
+	padding-right:12px;
+}
+
+.infos td /* cette propriété à pour effet de supprimer l'effet des selecteurs CSS : table et td */
+{
+	border: none;
+}
+
+.tag1
+{
+	font-size:100%;
+}
+
+.tag2
+{
+	font-size:125%;
+}
+
+.tag3
+{
+	font-size:140%; 
+	font-weight:bold;
+}
+/*========================== bazar ==========================*/
+
+/*========================== commentaires (blogs, albums etc.) ==========================*/
+.container_comments 
+{
+	border: 1px #CCCCCC solid;
+}
+
+.bloc_comments 
+{
+	padding-left:10px;
+}
+
+.infos_comments 
+{
+	color: #006600;
+	font-style: italic;
+	text-align:right;
+	margin:0;
+	padding:0;
+	border-top:1px #CCCCCC solid;
+	padding-left:10px;
+	background: url(http://www.buvetteetudiants.com/images/accueil/fade_title_ms.png) repeat-x; /*le fade gris*/
+	padding-right:6px;
+}
+/*========================== commentaires (blogs, albums etc.) ==========================*/
+
+/*======== pour énumérer des éléments d'une liste flottante à droite (catégories des blogs) =============*/
+#sidebar_liste 
+{
+	width : 190px;
+	float : right;
+	font-size : 0.9em;
+	overflow: auto;
+}
+
+#sidebar_liste .liste_items div 
+{
+	border-top : 1px solid #aaa;
+	background : #e4e4e4;
+	border-bottom : 1px dotted #ccc;
+	margin-bottom: 10px;
+}
+
+#sidebar_liste h2 
+{
+	font-size : 1.2em;
+	background : #ccc;
+	margin : 0 0 10px 0;
+	padding : 3px 10px 0 15px;
+	border-top : 2px solid #bbb;
+	border-bottom : 1px dotted #bbb;
+}
+
+#sidebar_liste ul 
+{
+	padding : 0 15px 10px 15px;
+	list-style:none;
+	margin: 0 0 0 2px;
+}
+
+#sidebar_liste li 
+{
+	border-bottom : 1px dotted #bbb; /* séparateurs pointillés*/
+}
+
+#sidebar_liste a 
+{
+	color : #222;
+	text-decoration:none;
+}
+/*======== pour énumérer des éléments d'une liste flottante à droite (catégories des blogs) =============*/
+
+/*======================================== les styles CSS pour les onglets ========================================*/
+ul.tabs 
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px; /*--Set height of tabs--*/
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	width: 100%;
+}
+
+ul.tabs li 
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 31px; /*--Subtract 1px from the height of the unordered list--*/
+	line-height: 31px; /*--Vertically aligns the text within the tab--*/
+	border: 1px solid #999;
+	border-left: none;
+	margin-bottom: -1px; /*--Pull the list item down 1px--*/
+	overflow: hidden;
+	position: relative;
+	background: #e0e0e0;
+}
+
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 1.2em;
+	padding: 0 20px;
+	border: 1px solid #fff; /*--Gives the bevel look with a 1px white border inside the list item--*/
+	outline: none;
+}
+
+ul.tabs li a:hover 
+{
+	background: #ccc;
+}
+
+html ul.tabs li.active, html ul.tabs li.active a:hover  
+{ /*--Makes sure that the active tab does not listen to the hover properties--*/
+	background: #fff;
+	border-bottom: 1px solid #fff; /*--Makes the active tab look like it's connected with its content--*/
+}
+
+.tab_container 
+{
+	border: 1px solid #999;
+	border-top: none;
+	overflow: hidden;
+	clear: both;
+	float: left; width: 100%;
+	background: #fff;
+}
+
+.tab_content 
+{
+	padding: 20px;
+	font-size: 1.2em;
+}
+/*======================================== les styles CSS pour les onglets en dico ========================================*/
+
+.pointer /* dans dico pour ñ á é í ó ú  */
+{
+	cursor: pointer;
+	color: #3399FF;
+	font-size :1.2em;
+}
+
+/*======================================== les styles CSS pour les forums ========================================*/
+
+table.forum_topics tr td 
+{
+	border: none;
+	border-top: 1px solid #EEEEEE;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table.forum_topics 
+{
+	width: 99%;
+	border: 2px solid #CCCCCC;
+	border-collapse: collapse;
+}
+
+/*
+pour les td enveloppant le titre et les tags des topics
+!important : in order to cancel the table.forum_topics tr td -> text-align: center;
+*/
+.td_title_tags 
+{
+	text-align:left !important; 
+	vertical-align: middle;
+}
+
+/* this div wraps the tags */
+.td_title_tags  div a
+{
+	font-size: 0.9em;
+	color: #666;
+}
+
+.topic_title  
+{
+	color:#00C;
+	text-align:left;
+	font-size:1.2em;
+}
+
+.etatf
+{ /* etat du forum pour les icones */
+	vertical-align:middle;
+	text-align:center;
+	width:1%;
+}
+
+.h1_title /* h1 inline pour titre des catégories des forums */
+{
+	display: inline;
+	font-size: 120%;
+}
+
+.stats_forums /* applicable à <p> : statistiques : nb_topics etc. */
+{
+	font-size: 90%;
+	margin: 1px;
+	color: #000000
+}
+
+.stats_forums strong
+{
+	font-size:100%;
+	font-style:italic;
+	text-decoration:underline;
+	color: #999999;
+}
+
+.stats_forums a
+{
+	font-size:110%;
+	font-style:italic;
+	text-decoration:underline;
+	color:#CC0000;
+}
+
+.stats_forums img /* actuellement non utilisée */
+{
+	vertical-align:middle;
+}
+
+table.forum_topic_posts 
+{
+	width: 99%;
+	border: 2px solid #CCCCCC;
+	border-collapse: collapse;
+	background-color: #FFFFFF;
+}
+
+table.forum_topic_posts td 
+{
+	border:1px solid #CCCCCC;
+}
+
+#list_cats, #list_cats ul
+{
+	list-style: none;
+}
+
+/* categories listing : display_categories.php */
+.clickable_image
+{
+	vertical-align:middle; 
+	cursor:pointer;	
+}
+
+.link_style
+{
+	color: blue;
+	cursor:pointer;	
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#display_members /* school's members | member's friends ==> div */
+{
+	overflow: scroll; 
+	height: 500px; 
+	margin : auto; 
+	padding-right: 80px;
+}
+
+#display_members table, #display_members tr, #display_members td
+{
+	border: none;
+}
+
+#display_members td
+{
+	padding-left: 10px;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+#display_members img
+{
+	width: 70px;
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.links_with_big_icons h3 img
+{
+	margin-right: 20px;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ constant chat $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#constant_chat_div
+{
+	position: fixed; 
+	bottom: 0px; 
+	right: 201px; 
+	border: solid 1px #CCC; 
+	width: 400px; 
+	height: 300px; 
+	background: url(http://www.buvetteetudiants.com/images/accueil/whitepixel.png);
+	display: none;	
+	font-size: 1.2em;
+}
+
+#constant_message_div
+{
+	margin: 4px 6px; 
+	height: 87%; 
+	overflow: auto;	
+}
+
+#constant_message_input
+{
+	position: fixed; 
+	bottom: 4px; 
+	right: 220px; 
+	width: 360px; 
+	border:1px solid #999;
+}
+
+#constant_connected_users
+{
+	position: fixed; 
+	overflow: auto; 
+	bottom: 0px; 
+	right: 0px; 
+	width: 200px; 
+	height: 300px; 
+	border: solid 1px #CCC;
+	background: url(http://www.buvetteetudiants.com/images/accueil/whitepixel.png);
+	font-size: 1.1em;
+}
+
+#hide_extend_constant_connected_users
+{
+	position: fixed; 
+	bottom: 304px; 
+	right: 2px;	
+}
+
+#hide_extend_constant_chat_div
+{
+	position: fixed; 
+	bottom: 308px; 
+	right: 208px; 
+	display: none;
+}

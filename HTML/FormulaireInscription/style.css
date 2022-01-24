@@ -1,0 +1,23 @@
+form {
+    border: 2px solid black;
+}
+
+h1, .center {
+    text-align: center;
+}
+
+
+.block {
+    display: block;
+}
+
+input {
+    margin: 5px;
+}
+
+#cmdValidate {
+   margin: 20px;
+   padding: 10px;
+   font-size: 18px;
+
+}

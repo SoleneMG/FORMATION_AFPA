@@ -1,0 +1,32 @@
+<!---------------------------------------------------------->
+<!-- DEMO selecteur ancetre descendant et itération each  -->
+<head><script type="text/javascript" src="jquery-1.3.2.js" /></script></head>
+<body>
+
+<p id="exemple">Ceci est un exemple</p>
+<p>
+<form>
+	<label class="lblinput">Nom</label><input type="text"/><br />
+	<label class="lblinput">Prénom</label><input type="text"/><br />
+	<label>Cliquer sur envoi</label> <input type="submit" value="Envoi" class="btnEnvoi">
+</form>
+</p>
+
+<style>span{border:1px solid black;margin:2px;padding:2px}</style>
+<span></span><span></span><span></span><span></span><span></span><span></span>                  
+
+<script type='text/javascript'>
+/* Exemple 1 */
+alert("#exemple\n" + $('#exemple').text());
+alert("nombre de label\n" + $('label').length);
+alert("nombre d'éléments avec la classe input\n" + $('.lblinput').length);
+alert("nombre d'éléments input avec la classe btnEnvoi\n" + $('input.btnEnvoi').length);
+
+/* Exemple 2 */
+   $("span").each(function(index){
+      $(this).html(index + 1);
+    });
+
+</script>
+</body>
+

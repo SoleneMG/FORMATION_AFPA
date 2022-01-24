@@ -1,0 +1,2 @@
+DSS : Exception 5a:nombre d'emprunt atteint
+le nombre d'emprunts (exemplaire) autorisé est trois pour un adherent s'il depesse le systeme lance une exception

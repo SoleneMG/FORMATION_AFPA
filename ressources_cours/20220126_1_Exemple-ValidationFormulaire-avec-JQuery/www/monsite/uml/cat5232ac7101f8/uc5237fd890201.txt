@@ -1,0 +1,6 @@
+nom : Gerer les emplacements
+Acteur principal : gestionnaireDefonds
+Acteurs secondaires : 
+événement déclencheur  : le gestionnaire ajoute ,modifie ou supprime un Thème
+rôle du use case : gerer les emplacements: ajout , suppression modification
+terminaison du use case :  Thèeme gérer

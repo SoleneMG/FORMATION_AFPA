@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <title>Créez un formulaire de style Digg - Club d'entraide des d&#233;veloppeurs francophones</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta name="generator" content="developpez-com" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./article.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./code.css" />
+  <script src="js/fonctions-kit.js" type="text/javascript"></script>
+  
+  <style type="text/css">
+<!--
+body {
+	background-color : #DDEEFF;
+	background: #DDEEFF;
+	font: normal;
+    font-family: Verdana;
+    font-weight: normal;    
+    margin: 0
+}
+
+img {
+    border:0
+}
+form {
+    margin : 0
+}
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size : 10pt;
+	font-weight: normal;
+}
+td.iongl {
+	width : 1px;
+}
+td.bgongl {
+	background-image : url(./images/kitint.gif);
+	text-align : center;
+}
+td.bgmarron{
+    background-image : url(./images/kitMarronInt.gif);
+    background-repeat: repeat-x;  
+    text-align : center;
+
+}
+td.bgjaune{
+    background-image : url(./images/kitJauneInt.gif);
+    background-repeat: repeat-x;
+    text-align : center;
+}
+td.bgvert{
+    background-image : url(./images/kitVertInt.gif);
+    background-repeat: repeat-x;  
+    text-align : center;
+}
+
+.ntdrub:link {
+	color : #000000;
+	font-weight : bold;
+    font-size : 8pt;
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.ntdrub:visited {
+    color : #000000;
+    font-weight : bold;
+    font-size : 8pt;
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.ntdrub:active {
+	color : #000000;
+	font-weight : bold;
+    font-size : 8pt;
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.ntdrub:hover {
+    color : #FF0000;
+    font-weight : bold;
+	font-size : 8pt;
+	text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+td.trbleu {
+	background-color:#6389D8;
+	text-align : center;
+    margin: 0 ;
+	border: 0;
+	padding-top : 3px;
+	padding-bottom : 3px;
+	height : 34px;
+}
+td.fondart {
+    background-color:#FFFFFF;
+    
+}
+
+table.tbnoir{
+	background-color:#000000;
+}
+.titrepied {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size : 10pt;
+	font: normal;
+	font-weight: normal
+}
+
+-->
+</style>
+  
+  
+</head>
+<body>
+<table width="100%" cellspacing="4">
+	<tr>
+	<td align="center">
+		<table width="100%" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+				  <table width="100%" cellspacing="11">
+					<tr>
+						<td>
+						<a href="http://www.developpez.com"><img src="images/kitlogo.gif" alt="Accueil" /></a>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+
+  				<tr>
+    				<td>
+    					<table class="cachee" cellpadding="0" cellspacing="0" width="100%">
+    						<tr>
+								<td class="iongl"><img src="images/kitMarronBg.gif" alt="" /></td>
+								<td class="bgmarron"><a href="http://blog.developpez.com/?blog=18" class="ntdrub">Club</a></td>
+								<td class="iongl"><img src="images/kitMarronBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitMarronBg.gif" alt="" /></td>
+								<td class="bgmarron"><a href="http://emploi.developpez.com" class="ntdrub">Emploi</a></td>
+								<td class="iongl"><img src="images/kitMarronBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitMarronBg.gif" alt="" /></td>
+								<td class="bgmarron"><a href="http://blog.developpez.com" class="ntdrub">Blogs</a></td>
+								<td class="iongl"><img src="images/kitMarronBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitMarronBg.gif" alt="" /></td>
+								<td class="bgmarron"><a href="http://www.developpez.tv" class="ntdrub">&nbsp;&nbsp;TV&nbsp;&nbsp;</a></td>
+								<td class="iongl"><img src="images/kitMarronBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://web.developpez.com" class="ntdrub">Dév.&nbsp;Web</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://php.developpez.com" class="ntdrub">PHP</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://xml.developpez.com" class="ntdrub">XML</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://python.developpez.com" class="ntdrub">Python</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://general.developpez.com/cours/" class="ntdrub">Autres</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitVertBg.gif" alt="" /></td>
+								<td class="bgvert"><a href="http://jeux.developpez.com" class="ntdrub">2D-3D-Jeux</a></td>
+								<td class="iongl"><img src="images/kitVertBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitVertBg.gif" alt="" /></td>
+								<td class="bgvert"><a href="http://securite.developpez.com" class="ntdrub">Sécurité</a></td>
+								<td class="iongl"><img src="images/kitVertBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitVertBg.gif" alt="" /></td>
+								<td class="bgvert"><a href="http://windows.developpez.com" class="ntdrub">Windows</a></td>
+								<td class="iongl"><img src="images/kitVertBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitVertBg.gif" alt="" /></td>
+								<td class="bgvert"><a href="http://linux.developpez.com" class="ntdrub">Linux</a></td>
+								<td class="iongl"><img src="images/kitVertBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitVertBg.gif" alt="" /></td>
+								<td class="bgvert"><a href="http://hardware.developpez.com" class="ntdrub">PC</a></td>
+								<td class="iongl"><img src="images/kitVertBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitVertBg.gif" alt="" /></td>
+								<td class="bgvert"><a href="http://mac.developpez.com" class="ntdrub">Mac</a></td>
+								<td class="iongl"><img src="images/kitVertBd.gif" alt="" /></td>
+   							</tr>
+   						</table>
+   					</td>	
+   				</tr>
+   				<tr>
+   					<td>
+    					<table class="cachee" cellpadding="0" cellspacing="0" width="100%">
+  							<tr>
+								<td class="iongl"><img src="images/kitMarronBg.gif" alt="" /></td>
+								<td class="bgmarron"><a href="http://www.developpez.com" class="ntdrub">Accueil</a></td>
+								<td class="iongl"><img src="images/kitMarronBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://conception.developpez.com" class="ntdrub">Conception</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://java.developpez.com" class="ntdrub">Java</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://dotnet.developpez.com" class="ntdrub">DotNET</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://vb.developpez.com" class="ntdrub">Visual&nbsp;Basic</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://c.developpez.com" class="ntdrub">&nbsp;C&nbsp;</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://cpp.developpez.com" class="ntdrub">C++</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://delphi.developpez.com" class="ntdrub">Delphi</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://eclipse.developpez.com" class="ntdrub">Eclipse</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://office.developpez.com" class="ntdrub">MS-Office</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://sgbd.developpez.com" class="ntdrub">SQL&nbsp;&amp;&nbsp;SGBD</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://oracle.developpez.com" class="ntdrub">Oracle</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://4d.developpez.com" class="ntdrub">&nbsp;4D&nbsp;</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+								<td class="iongl"><img src="images/kitJauneBg.gif" alt="" /></td>
+								<td class="bgjaune"><a href="http://Business-Intelligence.developpez.com" class="ntdrub">Business&nbsp;Intelligence</a></td>
+								<td class="iongl"><img src="images/kitJauneBd.gif" alt="" /></td>
+  							</tr>
+   						</table>
+   					</td>
+   				</tr>
+
+				<tr>
+					<td class="trbleu">
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td valign="top" class="fondart">
+						<table cellspacing="1" width="100%" class="tbnoir">
+							<tr>
+								<td class="fondart">
+									<div style="text-align:center;">
+									<table class="cadrearticle" width="90%" cellpadding="10" cellspacing="0">
+										<tr>
+											<td align="center" style="text-align:left">
+
+		<br/><h1>Créez un formulaire de style Digg</h1><p class="dateArticle">Date de publication : 16 février 2009</p><p style="text-align: center;">
+		Par
+		<a class="auteur" href="http://www.designshack.co.uk/">Janko Jovanovic</a> <a class="homepage" href="http://www.designshack.co.uk/"> (Design Shack)</a><br/>&nbsp;<a class="auteur" href="http://www.developpez.net/forums/u243304/bovino/">Didier Mouronval</a> <a class="homepage" href="http://dmouronval.developpez.com/"> (traducteur)</a><br/>&nbsp;</p><div class="synopsis">
+		<div class="paragraph">
+			Traduction de l'article <b>Creating a Digg style sign up form</b> disponible <img src="./images/kiten.jpg" alt="en"/>&nbsp;<a href="http://www.designshack.co.uk/tutorials/creating-a-digg-style-sign-up-form" target="_blank" class="lienArticle">ici</a>.
+		</div>
+		<div class="paragraph">
+		  <a href="http://digg.com/" target="_blank" class="lienArticle">Digg.com</a> est l'un des sites sociaux 
+		  les plus appréciés. Il vous permet de partager des ressources sur le Web. 
+		  Dans ce tutoriel, nous allons recréer leur formulaire d'inscription avec des fonctionnalités uniques 
+		  comme les informations sur le champ que vous êtes en train de remplir. 
+		  La même approche sera utilisée pour afficher les messages d'erreur.
+		</div>
+		<div class="paragraph">
+			Avant de commencer, vous pouvez voir <a href="./fichiers/exemple.html" class="lienArticle">une démonstration</a> du résultat final.
+		</div>
+	</div>
+		<br /><a class="summaryIndent0" href="#LI">Comment fonctionne ce formulaire ?</a>
+			
+			
+			
+		
+			<br /><a class="summaryIndent0" href="#LII">Commençons</a>
+				
+			
+			
+
+
+			
+			<br /><a class="summaryIndent0" href="#LIII">Ajoutons un peu d'interactivité</a>
+				
+			
+			
+
+			
+
+			
+			
+
+			
+			
+			<br /><a class="summaryIndent0" href="#LIV">Conclusion</a>
+				
+			
+			
+			
+	<br/><br/>
+		<br /><h1 class="TitreSection0" id="LI">Comment fonctionne ce formulaire ?</h1>
+			
+			<div class="paragraph">
+				Lorsqu'un champ reçoit le focus, une information sur ce champ est affichée en dessous avec une icone bleue. 
+				De la même manière, si un champ n'est pas valide, un message d'erreur est affiché au même endroit. 
+				Vous pouvez voir ces deux cas sur l'image ci-dessous :
+			</div><br/>
+			<div class="image" style="text-align:center;"><img src="./images/digg-field.png" alt=""/></div>
+		
+			<br /><h1 class="TitreSection0" id="LII">Commençons</h1>
+				
+			<div class="paragraph">
+				Nous n'allons pas recréer tout le formulaire, seulement quelques champs significatifs pour comprendre comment cela fonctionne. 
+				Regardez bien l'exemple de code. Chaque champ a un élément <i>label</i>, un <i>input</i> de type texte, 
+				un message d'information et un message d'erreur. Vous pouvez voir ci-dessous la structure HTML et les classes CSS associées.
+			</div><br/>
+			<div class="paragraph">
+				Notez que par défaut, les messages ne sont pas affichés, ce qui est déclaré dans la classe CSS <i>tooltipContainer</i>.
+			</div>
+<div style="text-align:center;"><table style="width:90%;margin:10px auto;border-collapse: collapse; " id="codeTabled0e186"><tr><td class="titre_code"/></tr><tr><td class="code"><div id="codeWrapperd0e186" class="codeWrapper"><div id="codeOverflowd0e186" style="overflow: auto;"><pre><code id="contenuCoded0e186" class="contenuCode">
+<code class="markup">&lt;</code><code class="markup">fieldset</code><code class="markup"> </code><code class="markup">class</code><code class="operator">=</code><code class="literal1">"</code><code class="literal1">formContainer</code><code class="literal1">"</code><code class="markup">&gt;</code>
+    <code class="markup">&lt;</code><code class="markup">h3</code><code class="markup">&gt;</code>Inscrivez-vous ! C'est simple et facile.<code class="markup">&lt;</code><code class="markup">/</code><code class="markup">h3</code><code class="markup">&gt;</code>
+    <code class="markup">&lt;</code><code class="markup">div</code><code class="markup"> </code><code class="markup">class</code><code class="operator">=</code><code class="literal1">"</code><code class="literal1">rowContainer</code><code class="literal1">"</code><code class="markup">&gt;</code>
+        <code class="markup">&lt;</code><code class="markup">label</code><code class="markup"> </code><code class="markup">for</code><code class="operator">=</code><code class="literal1">"</code><code class="literal1">txtFirstname</code><code class="literal1">"</code><code class="markup">&gt;</code>Nom d'utilisateur<code class="markup">&lt;</code><code class="markup">/</code><code class="markup">label</code><code class="markup">&gt;</code>
+        <code class="markup">&lt;</code><code class="markup">input</code><code class="markup"> </code><code class="markup">id</code><code class="operator">=</code><code class="literal1">"</code><code class="literal1">txtFirstname</code><code class="literal1">"</code><code class="markup"> </code><code class="markup">type</code><code class="operator">=</code><code class="literal1">"</code><code class="literal1">text</code><code class="literal1">"</code><code class="markup"> </code><code class="markup">/</code><code class="markup">&gt;</code>
+        <code class="markup">&lt;</code><code class="markup">div</code><code class="markup"> </code><code class="markup">class</code><code class="operator">=</code><code class="literal1">"</code><code class="literal1">tooltipContainer</code><code class="literal1"> </code><code class="literal1">info</code><code class="literal1">"</code><code class="markup">&gt;</code>Votre nom doit contenir entre 4 et 15 caract<code class="literal2">&amp;</code><code class="literal2">egrave</code><code class="literal2">;</code>res.<code class="markup">&lt;</code><code class="markup">/</code><code class="markup">div</code><code class="markup">&gt;</code>
+        <code class="markup">&lt;</code><code class="markup">div</code><code class="markup"> </code><code class="markup">class</code><code class="operator">=</code><code class="literal1">"</code><code class="literal1">tooltipContainer</code><code class="literal1"> </code><code class="literal1">error</code><code class="literal1">"</code><code class="markup">&gt;</code>Attention! Votre nom doit contenir entre 4 et 15 caract<code class="literal2">&amp;</code><code class="literal2">egrave</code><code class="literal2">;</code>res.<code class="markup">&lt;</code><code class="markup">/</code><code class="markup">div</code><code class="markup">&gt;</code>
+    <code class="markup">&lt;</code><code class="markup">/</code><code class="markup">div</code><code class="markup">&gt;</code>
+    // D'autres champs ici
+<code class="markup">&lt;</code><code class="markup">/</code><code class="markup">fieldset</code><code class="markup">&gt;</code>
+</code></pre></div></div></td></tr></table></div>
+<div style="text-align:center;"><table style="width:90%;margin:10px auto;border-collapse: collapse; " id="codeTabled0e402"><tr><td class="titre_code"/></tr><tr><td class="code"><div id="codeWrapperd0e402" class="codeWrapper"><div id="codeOverflowd0e402" style="overflow: auto;"><pre><code id="contenuCoded0e402" class="contenuCode">
+body<code class="operator">{</code>
+    <code class="keyword2">font-family</code><code class="operator">:</code>Arial, Sans-Serif;
+    <code class="keyword2">font-size</code><code class="operator">:</code><code class="digit">83%</code>;
+<code class="operator">}</code>
+.formContainer
+<code class="operator">{</code>
+    <code class="keyword2">background-color</code><code class="operator">:</code> <code class="literal2">#</code><code class="literal2">F5EFC9</code>;
+    <code class="keyword2">border</code><code class="operator">:</code><code class="keyword3">none</code>;
+    <code class="keyword2">padding</code><code class="operator">:</code><code class="digit">30px</code>;
+<code class="operator">}</code>
+.formContainer h3
+<code class="operator">{</code>
+    <code class="keyword2">margin</code><code class="operator">:</code><code class="digit">0px</code>;
+    <code class="keyword2">padding</code><code class="operator">:</code><code class="digit">0px</code> <code class="digit">0px</code> <code class="digit">10px</code> <code class="digit">0px</code>;
+    <code class="keyword2">font-size</code><code class="operator">:</code><code class="digit">135%</code>;
+<code class="operator">}</code>
+.rowContainer
+<code class="operator">{</code>
+    <code class="keyword2">width</code><code class="operator">:</code><code class="digit">100%</code>;
+    <code class="keyword2">overflow</code><code class="operator">:</code><code class="keyword3">hidden</code>;
+    <code class="keyword2">padding-bottom</code><code class="operator">:</code><code class="digit">5px</code>;
+    <code class="keyword2">height</code><code class="operator">:</code><code class="digit">34px</code>;
+<code class="operator">}</code>
+.rowContainer label
+<code class="operator">{</code>
+    <code class="keyword2">width</code><code class="operator">:</code><code class="digit">140px</code>;
+    <code class="keyword2">float</code><code class="operator">:</code><code class="keyword2">left</code>;
+    <code class="keyword2">color</code><code class="operator">:</code> <code class="literal2">#</code><code class="literal2">758656</code>;
+    <code class="keyword2">font-weight</code><code class="operator">:</code><code class="keyword3">bold</code>;
+<code class="operator">}</code>
+.rowContainer input[type=“<code class="keyword3">text</code>”]
+<code class="operator">{</code>
+    <code class="keyword2">width</code><code class="operator">:</code><code class="digit">200px</code>;
+<code class="operator">}</code>
+.tooltipContainer
+<code class="operator">{</code>
+    <code class="keyword2">height</code><code class="operator">:</code><code class="digit">16px</code>;
+    <code class="keyword2">font-size</code><code class="operator">:</code><code class="digit">11px</code>;
+    <code class="keyword2">color</code><code class="operator">:</code> <code class="literal2">#</code><code class="literal2">666666</code>;
+    <code class="keyword2">display</code><code class="operator">:</code><code class="keyword3">none</code>;
+    <code class="keyword2">float</code><code class="operator">:</code><code class="keyword3">none</code>;
+    <code class="keyword2">background-repeat</code><code class="operator">:</code><code class="keyword3">no-repeat</code>;
+    <code class="keyword2">background-position</code><code class="operator">:</code><code class="keyword2">left</code> <code class="keyword3">center</code>;
+    <code class="keyword2">padding</code><code class="operator">:</code><code class="digit">0px</code> <code class="digit">20px</code>;
+<code class="operator">}</code>
+.info
+<code class="operator">{</code>
+    <code class="keyword2">background-image</code><code class="operator">:</code><code class="keyword3">url</code>(<code class="literal1">‘</code><code class="literal1">info</code><code class="literal1">.</code><code class="literal1">gif</code><code class="literal1">'</code>);
+<code class="operator">}</code>
+.error
+<code class="operator">{</code>
+    <code class="keyword2">background-image</code><code class="operator">:</code><code class="keyword3">url</code>(<code class="literal1">‘</code><code class="literal1">error</code><code class="literal1">.</code><code class="literal1">gif</code><code class="literal1">'</code>);
+<code class="operator">}</code> 
+</code></pre></div></div></td></tr></table></div>
+			
+			<br /><h1 class="TitreSection0" id="LIII">Ajoutons un peu d'interactivité</h1>
+				
+			<div class="paragraph">
+				Jusque là, nous avons une structure HTML fixe et des messages cachés qui n'attendent qu'à être affichés. 
+				Nous devons écrire quelques lignes de code pour pouvoir les afficher et les masquer. 
+				Bien entendu, nous pourrions le faire en JavaScript pur, mais autant utiliser jQuery. 
+				La raison en est simple : moins de code !
+			</div><br/>
+			<div class="paragraph">
+				Comme je l'ai indiqué au début, un message d'information doit être affiché lorsqu'un champ prend le focus 
+				et masqué lorsqu'il le perd. Voici ce que cela donne avec jQuery :
+			</div>
+<div style="text-align:center;"><table style="width:90%;margin:10px auto;border-collapse: collapse; " id="codeTabled0e707"><tr><td class="titre_code"/></tr><tr><td class="code"><div id="codeWrapperd0e707" class="codeWrapper"><div id="codeOverflowd0e707" style="overflow: auto;"><pre><code id="contenuCoded0e707" class="contenuCode">
+$(document)<code class="javascript_operator">.</code><code class="javascript_function">ready</code>(<code class="javascript_keyword1">function</code>()<code class="javascript_operator">{</code>
+    $(”<code class="javascript_operator">.</code>formContainer input<code class="javascript_operator">[</code>type<code class="javascript_operator">=</code>text<code class="javascript_operator">]</code>”)<code class="javascript_operator">.</code><code class="javascript_function">focus</code>(<code class="javascript_keyword1">function</code>()<code class="javascript_operator">{</code>
+        $(<code class="javascript_literal2">this</code>)<code class="javascript_operator">.</code><code class="javascript_function">parent</code>()<code class="javascript_operator">.</code><code class="javascript_function">find</code>(”<code class="javascript_operator">.</code>info”)<code class="javascript_operator">.</code><code class="javascript_function">css</code>(“display”<code class="javascript_operator">,</code> “block”)<code class="javascript_operator">;</code>
+    <code class="javascript_operator">}</code>)<code class="javascript_operator">.</code><code class="javascript_function">blur</code>(<code class="javascript_keyword1">function</code>()<code class="javascript_operator">{</code>
+        $(<code class="javascript_literal2">this</code>)<code class="javascript_operator">.</code><code class="javascript_function">parent</code>()<code class="javascript_operator">.</code><code class="javascript_function">find</code>(”<code class="javascript_operator">.</code>info”)<code class="javascript_operator">.</code><code class="javascript_function">css</code>(“display”<code class="javascript_operator">,</code> “none”)<code class="javascript_operator">;</code>
+    <code class="javascript_operator">}</code>)<code class="javascript_operator">;</code>
+<code class="javascript_operator">}</code>)<code class="javascript_operator">;</code> 
+</code></pre></div></div></td></tr></table></div>
+			<div class="paragraph">
+				Plutôt simple, non ? Maintenant, occupons-nous des messages d'erreur. 
+				Nous allons créer une validation factice pour faire fonctionner l'exemple de ce tutoriel. 
+				Nous allons encore utiliser jQuery :
+			</div>
+<div style="text-align:center;"><table style="width:90%;margin:10px auto;border-collapse: collapse; " id="codeTabled0e827"><tr><td class="titre_code"/></tr><tr><td class="code"><div id="codeWrapperd0e827" class="codeWrapper"><div id="codeOverflowd0e827" style="overflow: auto;"><pre><code id="contenuCoded0e827" class="contenuCode">
+<code class="javascript_keyword1">function</code> <code class="javascript_function">validateForm</code>()
+<code class="javascript_operator">{</code>
+    $(”<code class="javascript_operator">.</code>formContainer input<code class="javascript_operator">[</code>type<code class="javascript_operator">=</code>text<code class="javascript_operator">]</code>”)<code class="javascript_operator">.</code><code class="javascript_function">each</code>(<code class="javascript_keyword1">function</code>()<code class="javascript_operator">{</code>
+        <code class="javascript_keyword1">var</code> text <code class="javascript_operator">=</code> $(<code class="javascript_literal2">this</code>)<code class="javascript_operator">.</code><code class="javascript_function">attr</code>(“value”)<code class="javascript_operator">;</code>
+        <code class="javascript_keyword1">if</code> (text <code class="javascript_operator">=</code><code class="javascript_operator">=</code> “”)
+        <code class="javascript_operator">{</code>
+            $(<code class="javascript_literal2">this</code>)<code class="javascript_operator">.</code><code class="javascript_function">parent</code>()<code class="javascript_operator">.</code><code class="javascript_function">find</code>(”<code class="javascript_operator">.</code>error”)<code class="javascript_operator">.</code><code class="javascript_function">css</code>(“display”<code class="javascript_operator">,</code> “block”)<code class="javascript_operator">;</code>
+        <code class="javascript_operator">}</code>
+    <code class="javascript_operator">}</code>)<code class="javascript_operator">;</code>
+<code class="javascript_operator">}</code> 
+</code></pre></div></div></td></tr></table></div>
+			<div class="paragraph">
+				Ce bout de code montre le message d'erreur si le champ est vide. 
+                Rappelez-vous qu'il ne s'agit pas d'une vraie validation, cela simule juste ce qui se passe si un champ est erroné. 
+                Vous devrez créer vos propres validations, comme par exemple le bon format des champs ou la validité d'une adresse mail.
+			</div><br/>
+			<div class="paragraph">
+				Donc, après avoir valider le formulaire, les messages sont affichés. 
+				Sur Digg.com, ces messages sont cachés et remplacés par les messages d'information lorsque l'utilisateur les modifie. 
+				Il nous manque donc un bout de code pour masquer les messages d'erreur lorsqu'un champ reprend le focus.
+			</div>
+<div style="text-align:center;"><table style="width:90%;margin:10px auto;border-collapse: collapse; " id="codeTabled0e935"><tr><td class="titre_code"/></tr><tr><td class="code"><div id="codeWrapperd0e935" class="codeWrapper"><div id="codeOverflowd0e935" style="overflow: auto;"><pre><code id="contenuCoded0e935" class="contenuCode">
+$(document)<code class="javascript_operator">.</code><code class="javascript_function">ready</code>(<code class="javascript_keyword1">function</code>()<code class="javascript_operator">{</code>
+    $(”<code class="javascript_operator">.</code>formContainer input<code class="javascript_operator">[</code>type<code class="javascript_operator">=</code>text<code class="javascript_operator">]</code>”)<code class="javascript_operator">.</code><code class="javascript_function">focus</code>(<code class="javascript_keyword1">function</code>()<code class="javascript_operator">{</code>
+        $(<code class="javascript_literal2">this</code>)<code class="javascript_operator">.</code><code class="javascript_function">parent</code>()<code class="javascript_operator">.</code><code class="javascript_function">find</code>(”<code class="javascript_operator">.</code>error”)<code class="javascript_operator">.</code><code class="javascript_function">css</code>(“display”<code class="javascript_operator">,</code> “none”)<code class="javascript_operator">;</code>
+        $(<code class="javascript_literal2">this</code>)<code class="javascript_operator">.</code><code class="javascript_function">parent</code>()<code class="javascript_operator">.</code><code class="javascript_function">find</code>(”<code class="javascript_operator">.</code>info”)<code class="javascript_operator">.</code><code class="javascript_function">css</code>(“display”<code class="javascript_operator">,</code> “block”)<code class="javascript_operator">;</code>
+    <code class="javascript_operator">}</code>)<code class="javascript_operator">.</code><code class="javascript_function">blur</code>(<code class="javascript_keyword1">function</code>()<code class="javascript_operator">{</code>
+        $(<code class="javascript_literal2">this</code>)<code class="javascript_operator">.</code><code class="javascript_function">parent</code>()<code class="javascript_operator">.</code><code class="javascript_function">find</code>(”<code class="javascript_operator">.</code>info”)<code class="javascript_operator">.</code><code class="javascript_function">css</code>(“display”<code class="javascript_operator">,</code> “none”)<code class="javascript_operator">;</code>
+    <code class="javascript_operator">}</code>)<code class="javascript_operator">;</code>
+<code class="javascript_operator">}</code>)<code class="javascript_operator">;</code>
+</code></pre></div></div></td></tr></table></div>
+			<div class="paragraph">
+				Voilà, maintenant, nous avons complètement recréé le formulaire de Digg.com. 
+				Vous pouvez le voir sur <a href="./fichiers/exemple.html" class="lienArticle">cette page de démonstration</a> 
+				ou télécharger <a href="./fichiers/jqueryform1.zip" class="lienArticle">l'archive de l'exemple</a>.
+			</div><br/>
+			
+			<br /><h1 class="TitreSection0" id="LIV">Conclusion</h1>
+				
+			<div class="paragraph">
+				Nous avons vu comment recréer le formulaire d'inscription de Digg.com avec juste 
+				du code CSS et jQuery. Cependant, j'aimerais vous donner quelques conseils par rapport à ce formulaire :
+			</div><br/>
+			<ul style="list-style-type: disc;">
+				<li>Evitez de surcharger le formulaire. Il est inutile d'afficher une information comme "Entrez vos nom et prénom" pour un champ "Nom et prénom". Préférez plutôt mettre un message utile sur les contraintes du champ, par exemple : "Maximum 35 caractères"</li>
+				<li>Utilisez des couleurs différentes pour le texte et les messages. Essayez de cliquer sur "Continuer" sur Digg.com sans remplir les champs. Vous verrez que le formulaire devient très compliqué à lire et il est difficile de voir les séparations entre les champs.</li>
+			</ul>
+			
+	<br/><hr/><p class="licence">Les sources présentés sur cette page sont libres de droits,
+			et vous pouvez les utiliser à votre convenance. Par contre cette page de présentation de ces sources constitue une oeuvre intellectuelle protégée par les droits d'auteurs. Copyright &copy;2009 Design Shack.
+			Aucune reproduction, même partielle, ne peut être faite de ce site et de l'ensemble de son contenu :
+			textes, documents, images, etc sans l'autorisation expresse de l'auteur. Sinon vous encourez selon la loi jusqu'à 3 ans de prison et jusqu'à 300 000 E de dommages et intérêts.
+			Droits de diffusion permanents accordés à Developpez LLC. Cette page est déposée à la <a href="http://www.sacd.fr/" >SACD</a>.</p>
+												</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<table width="100%" cellpadding="4" class="cachee">
+				<tr>
+					<td class="titrepied">
+			  Vos questions techniques : <b><a href="http://www.developpez.net/forums/" >forum d'entraide Accueil</a></b> - Publiez vos articles, tutoriels, cours
+			  et rejoignez-nous dans l'&eacute;quipe de r&eacute;daction du club d'entraide des d&eacute;veloppeurs francophones. <a href="http://club.developpez.com/contacts/">Nous contacter</a>
+	
+			  - Copyright 2000..2005 www.developpez.com
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+	

@@ -1,0 +1,7 @@
+nom : Envoyer une lettre de rappel
+Acteur principal : Responsable
+Acteurs secondaires : Adhérent
+événement déclencheur  : Retard sur retour de livre
+rôle du use case :
+Envoyer une lettre de relance
+terminaison du use case :  Lettre envoyée à l'adhérent n'ayant pas rendu le livre à temps

@@ -1,0 +1,2 @@
+nom: Etat
+Description: Classe Enum regoupe les differents Etat du livre emprunté; Propre,dechire,perdu

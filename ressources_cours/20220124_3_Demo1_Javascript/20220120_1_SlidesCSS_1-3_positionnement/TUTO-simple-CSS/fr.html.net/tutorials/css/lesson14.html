@@ -1,0 +1,445 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<!-- Mirrored from fr.html.net/tutorials/css/lesson14.php by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 29 Mar 2012 09:27:14 GMT -->
+<head>
+
+	<title>Leçon 14: Le positionnement des éléments - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Leçon 14: Le positionnement des éléments - HTML.net" />
+	<meta name="description" content="Leçon 14: Le positionnement des éléments - Tutoriels sur HTML et CSS - Construisez votre propre site Web" />
+	<meta name="keywords" content="HTML, CSS, XHTML, Tutoriel HTML, Tutoriel CSS, Forums, , " />
+	<meta name="language" content="fr" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Leçon 14: Le positionnement des éléments - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="lesson14.html" />
+	<meta property="og:image" content="../../../html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='../../../html.net/site/style/default.screen.css' type='text/css' media='screen' /><link rel='stylesheet' href='../../../html.net/site/style/default.print.css' type='text/css' media='print' />
+	<script type="text/javascript">
+			
+		function toggleVisibility(objectID, imageID) {
+		vis = document.getElementById(objectID).style;
+		state = vis.display;
+		if (state == 'none') {
+			vis.display = 'block';	
+			document.getElementById(imageID).value = '▲ Réduire';
+			}
+		else {		
+			if (state == 'block') {
+				vis.display = 'none';
+				document.getElementById(imageID).value = '▼ Agrandir';
+				}	
+			else {
+				vis.display = 'block'; 
+				document.getElementById(imageID).value = '▲ Réduire';
+				}
+		}}
+
+		//-->
+	</script>
+
+	<script type="text/javascript">
+	// <![CDATA[
+		var jump_page = '{LA_JUMP_PAGE}:';
+		var on_page = '{ON_PAGE}';
+		var per_page = '{PER_PAGE}';
+		var base_url = '{A_BASE_URL}';
+		var style_cookie = 'phpBBstyle';
+		var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+		var onload_functions = new Array();
+		var onunload_functions = new Array();
+
+		/**
+		* Find a member
+		*/
+		function find_username(url)
+		{
+			popup(url, 760, 570, '_usersearch');
+			return false;
+		}
+
+		/**
+		* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+		*/
+		window.onload = function()
+		{
+			for (var i = 0; i < onload_functions.length; i++)
+			{
+				eval(onload_functions[i]);
+			}
+		}
+
+		window.onunload = function()
+		{
+			for (var i = 0; i < onunload_functions.length; i++)
+			{
+				eval(onunload_functions[i]);
+			}
+		}
+
+	// ]]>
+	</script>
+
+	<script type="text/javascript" src="../../../html.net/forums/styles/prosilver/template/forum_fn.js"></script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-6716118-1']);
+	  _gaq.push(['_setDomainName', '.html.net']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+	
+</head>
+
+<body>	
+
+	<div id="login">
+		
+		<div><a href='http://fr.html.net/forums/ucp.php?mode=login'>Connexion</a> | <a href='http://fr.html.net/forums/ucp.php?mode=register'>Inscription</a> | <a href='http://fr.html.net/forums/faq.php'>FAQ</a></div><img src='../../site/graphics/user.png' />		
+	</div>
+
+	<div id="header">
+			
+		<ul>
+			<li><a href='http://fr.html.net/'>Accueil</a></li>
+			<li class='selected'><a href='http://fr.html.net/tutorials/'>Tutoriels</a></li>
+			<li><a href='http://fr.html.net/forums/'>Forums</a></li>
+			<li><a href='http://fr.html.net/about/'>À propos</a></li>
+		</ul>
+		<form method="get" action="http://fr.html.net/search/" id="cse-search-box">
+		<div id="searchbar">
+			<span>
+			
+				<input type="text" name="q" id="query" value="" /><input type="submit" id="submit" value="Rechercher" />
+				 <input type="hidden" name="cx" value="002160260272865772965:d4fb4jd-jh0" />
+				<input type="hidden" name="cof" value="FORID:11;NB:1" />
+				<input type="hidden" name="ie" value="UTF-8" />	
+				<input type="hidden" name="lr" value="lang_fr" />	
+				<input type="hidden" name="hl" value="fr" />	
+			
+			</span>
+		</div>
+		</form>
+		
+		<div id="ad_leaderboard">
+	<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_Leaderboard_728x90");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_Leaderboard_728x90 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_fr_tutorials_Leaderboard_728x90");
+	</script>
+</div>
+
+	</div>
+
+	
+		<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='http://fr.html.net/'>Accueil</a> &#187; <a href='http://fr.html.net/tutorials/'>Tutoriels</a> &#187; <a href='index.html'>CSS</a> &#187; Leçon 14: Le positionnement des éléments</div>
+			<div id="socialBookmarks">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a>
+				<span id="FbCont"></span>
+				<g:plusone size="medium"></g:plusone>
+								
+			</div>
+			<!-- google_ad_section_start -->
+		
+		<div id='tutorials'>	<h1>Leçon 14 : Le positionnement des éléments</h1>
+	<p>Le positionnement CSS permet de placer un élément exactement où l'on veut dans la page. Avec les flottants
+	(cf. la <a href="lesson13.html">leçon 13</a>), le positionnement offre de nombreuses possibilités pour concevoir
+	une présentation complexe et précise.</p>
+	<p>Cette leçon abordera les sujets suivants :</p>
+	<ul>
+		<li><a href="#s1">Le principe du positionnement CSS</a></li>
+		<li><a href="#s2">Le positionnement absolu</a></li>
+		<li><a href="#s3">Le positionnement relatif</a></li>
+	</ul>
+
+	<h2 id="s1">Le principe du positionnement CSS</h2>
+	<p>Imaginons la fenêtre du navigateur comme un système de coordonnées :</p>
+
+	<p><img src="figure017.gif" alt="Une fenêtre de navigateur avec des coordonnées" /></p>
+
+	<p>Le principe du positionnement CSS fait que l'on peut positionner une boîte n'importe où dans le système de coordonnées.</p>
+	<p>Supposons que nous voulions positionner un titre. D'après le modèle des boîtes (cf. la <a href="lesson9.html">leçon 9</a>),
+	le titre apparaîtra de cette façon:</p>
+
+	<p><img src="figure018.gif" alt="Un titre dans une boîte" /></p>
+
+	<p>Si nous voulons positionner ce titre à 100px du haut et à 200px de la gauche du document, notre code CSS pourrait être le suivant :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {
+		position:absolute;
+		<strong>top: 100px;
+		left: 200px;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<p>Le résultat sera le suivant :</p>
+
+	<p><img src="figure019.gif" alt="Un titre positionné dans la fenêtre du navigateur" /></p>
+
+	<p>Comme vous pouvez le constater, le positionnement CSS est une technique de placement très précise des éléments. Elle est beaucoup
+	plus facile que l'utilisation de tables, d'images transparentes ou autres choses.</p>
+
+	<h2 id="s2">Le positionnement absolu</h2>
+	<p>Un élément en position absolue ne reçoit aucune place dans le document. Cela signifie qu'il ne laisse aucun espace vide après qu'il est positionné.</p>
+	<p>On place un élément en position absolue en fixant la valeur de la propriété <code>position</code> à "<strong>absolute</strong>".
+	On peut alors utiliser les propriétés <strong>left</strong>, <strong>right</strong>, <strong>top</strong> et <strong>bottom</strong>
+	pour placer la boîte.</p>
+	<p>Comme exemple de positionnement absolu, nous avons choisi de placer quatre boîtes à chaque coin du document :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	#box1 {
+		<strong>position:absolute;</strong>
+		top: 50px;
+		left: 50px;
+	}
+
+	#box2 {
+		<strong>position:absolute;</strong>
+		top: 50px;
+		right: 50px;
+	}
+
+	#box3 {
+		<strong>position:absolute;</strong>
+		bottom: 50px;
+		right: 50px;
+	}
+
+	#box4 {
+		<strong>position:absolute;</strong>
+		bottom: 50px;
+		left: 50px;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson14_ex1.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2 id="s3">Le positionnement relatif</h2>
+	<p>On place un élément en position relative en fixant la valeur de la propriété <code>position</code> à "<strong>relative</strong>".
+	La différence entre position absolue et position relative tient à la façon dont la position est calculée.</p>
+	<p>Pour un élément en position relative, elle est <strong>calculée d'après sa position originale dans le document</strong>.
+	Cela signifie que l'on déplace l'élément vers la droite, la gauche, le haut ou le bas. Ainsi, l'élément obtient toujours un espace
+	dans le document après qu'il est positionné.</p>
+	<p>Comme exemple de positionnement relatif, nous pouvons positionner trois photos relativement à leur position originale
+	dans la page. Remarquez les espaces vides laissés par elles à leurs positions originales dans le document :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	#dog1 {
+		position:relative;
+		left: 350px;
+		bottom: 150px;
+	}
+	#dog2 {
+		position:relative;
+		left: 150px;
+		bottom: 500px;
+	}
+
+	#dog3 {
+		position:relative;
+		left: 50px;
+		bottom: 700px;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson14_ex2.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2>Résumé</h2>
+	<p>Dans les deux leçons précédentes, vous avez appris à faire flotter et à positionner les éléments. Ces deux méthodes offrent
+	beaucoup de possibilités de construction des pages sans utiliser les méthodes démodées avec des tables et des images transparentes
+	de HTML. Utilisez CSS à la place : c'est plus précis, plus avantageux et aussi plus facile d'entretien.</p>
+	
+	<hr /><div id="ad_rectangle">
+	<!--
+	<span style="margin-right:10px;float:left">
+	-->
+	<span>
+		<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+		</script>
+		<script type='text/javascript'>
+		GS_googleAddAdSenseService("ca-pub-0941946313210493");
+		GS_googleEnableAllServices();
+		</script>
+		<script type='text/javascript'>
+		GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_LargeRectangle_336x280");
+		</script>
+		<script type='text/javascript'>
+		GA_googleFetchAds();
+		</script>
+
+		<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_LargeRectangle_336x280 -->
+		<script type='text/javascript'>
+		GA_googleFillSlot("HTML_NET_fr_tutorials_LargeRectangle_336x280");
+		</script>
+	</span>
+
+	
+</div><hr /><p class='previous'><a href='lesson13.html'>&lt;&lt; Leçon 13: Les éléments flottants (les flottants)</a></p><p class='next'><a href='lesson15.html'>Leçon 15: Une couche sur une couche avec z-index (les couches) >></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+
+		<div id="ad_skyscraper">
+	<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_WideSkyscraper_160x600");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_WideSkyscraper_160x600 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_fr_tutorials_WideSkyscraper_160x600");
+	</script>
+
+</div>
+
+
+
+
+	</div>
+
+	<div id="sidebar">
+					<h1>Tutoriels</h1>
+			<ul>
+			<li><a href='http://fr.html.net/tutorials/html/'>Tutoriel HTML</a></li><li><strong><a href='index.html'>Tutoriel CSS</a></strong><ul><li><a href='introduction.html'>Introduction</a></li><li><a href='lesson1.html'>Qu'est-ce que CSS ?</a></li><li><a href='lesson2.html'>Comment CSS fonctionne-t-il ?</a></li><li><a href='lesson3.html'>Les couleurs et les arrières-plans</a></li><li><a href='lesson4.html'>Les polices</a></li><li><a href='lesson5.html'>Le texte</a></li><li><a href='lesson6.html'>Les liens</a></li><li><a href='lesson7.html'>L'identification et le regroupement d'éléments (class et id)</a></li><li><a href='lesson8.html'>Le regroupement d'éléments (span et div)</a></li><li><a href='lesson9.html'>Le modèle des boîtes</a></li><li><a href='lesson10.html'>Le modèle des boîtes : margin & padding</a></li><li><a href='lesson11.html'>Le modèle des boîtes : les bordures</a></li><li><a href='lesson12.html'>Le modèle des boîtes : la hauteur et la largeur</a></li><li><a href='lesson13.html'>Les éléments flottants (les flottants)</a></li><li class='selected'><a href='lesson14.html'>Le positionnement des éléments</a></li><li><a href='lesson15.html'>Une couche sur une couche avec z-index (les couches)</a></li><li><a href='lesson16.html'>Les standards du Web et la validation</a></li></ul></li><li><a href='http://fr.html.net/tutorials/php/'>Tutoriel PHP</a></li>			</ul>
+			
+		<!-- google_ad_section_start(weight=ignore) -->
+		<h2>Langue</h2>
+		
+		<form method="post" action="http://fr.html.net/redirect.php">
+			<p>
+			<select name="location">
+				
+				<option value='http://ar.html.net/tutorials/css/lesson14.php'>العربية</option>
+				<option value='http://de.html.net/tutorials/css/lesson14.php'>Deutsch</option>
+				<option value='http://html.net/tutorials/css/lesson14.php'>English</option>
+				<option value='http://es.html.net/tutorials/css/lesson14.php'>Español</option>
+				<option selected='selected' value='http://fr.html.net/tutorials/css/lesson14.php'>Français</option>
+				<option value='http://he.html.net/tutorials/css/lesson14.php'>עברית</option>
+				<option value='http://it.html.net/tutorials/css/lesson14.php'>Italiano</option>
+				<option value='http://pl.html.net/tutorials/css/lesson14.php'>Polski</option>
+				<option value='http://pt-br.html.net/tutorials/css/lesson14.php'>Português (Brasil)</option>
+				<option value='http://ru.html.net/tutorials/css/lesson14.php'>Русский</option>
+				<option value='http://zh.html.net/tutorials/css/lesson14.php'>中文</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+		
+		
+		<h2>La présentation</h2>
+		<form method='post' action='http://fr.html.net/tutorials/css/lesson14.php'>			<p>
+			<select name="strCSS">
+				
+				<option value='1'>Default</option>
+				<option value='2'>Default - Blue</option>
+				<option value='3'>No CSS</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+
+		<h2>Traducteur:</h2> <p><a href='http://www.yoyodesign.org/scripts/message.php'>Jean Jacques Solari</a></p>
+		
+			
+
+		
+
+	</div>
+
+	<div id="footer">
+
+		<hr />
+
+		
+		<h1>Qui est en ligne ?:</h1>
+		<p>Au total, il y a <strong>173</strong> utilisateurs en ligne :: 2 inscrits, 0 invisible et 171 invités</p> 
+		<p>Le nombre maximum d’utilisateurs en ligne simultanément a été de <strong>338</strong> le Mar Sep 28, 2010 9:13 am</p> 
+		<p id="userlist"><br />Utilisateurs inscrits : <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Google Adsense [Bot]</span></p>
+		
+		<h1>Statistiques:</h1>
+		<p>Messages au total <strong>6247</strong> - <strong>2592</strong> sujets au total</p><p><strong>6795</strong> membres au total - Notre membre le plus récent est <strong><a href='http://fr.html.net/forums/memberlist.php?mode=viewprofile&amp;u=9869'>Hsd265gbu7</a></strong></p>
+		<p><br /><a href="http://fr.html.net/forums/memberlist.php">Visualiser la liste complète des membres</a></p>
+		
+
+		<h1>Langue:</h1>
+		<p><span>
+		<a href='http://ar.html.net/tutorials/css/lesson14.php'>العربية</a> | <a href='http://de.html.net/tutorials/css/lesson14.php'>Deutsch</a> | <a href='http://html.net/tutorials/css/lesson14.php'>English</a> | <a href='http://es.html.net/tutorials/css/lesson14.php'>Español</a> | Français | <a href='http://he.html.net/tutorials/css/lesson14.php'>עברית</a> | <a href='http://it.html.net/tutorials/css/lesson14.php'>Italiano</a> | <a href='http://pl.html.net/tutorials/css/lesson14.php'>Polski</a> | <a href='http://pt-br.html.net/tutorials/css/lesson14.php'>Português (Brasil)</a> | <a href='http://ru.html.net/tutorials/css/lesson14.php'>Русский</a> | <a href='http://zh.html.net/tutorials/css/lesson14.php'>中文</a> | 		</span></p>
+
+		
+	</div>
+
+	<!-- google_ad_section_end -->
+
+<script type='text/javascript' language='Javascript' src='../../../s1.lqcdn.com/m.min2d33.js?dt=2.3.110104.1'></script>
+	
+<script type="text/javascript" src="../../../apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="../../../platform.twitter.com/widgets.js"></script>
+<script src="../../../connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var fb = document.createElement('fb:like'); 
+fb.setAttribute("href",""); 
+fb.setAttribute("layout","button_count");
+fb.setAttribute("show_faces","false");
+fb.setAttribute("width","");
+fb.setAttribute("style","position:relative; top:-3px;");
+document.getElementById("FbCont").appendChild(fb);
+//--><!]]>
+</script>
+
+
+</body>
+
+<!-- Mirrored from fr.html.net/tutorials/css/lesson14.php by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 29 Mar 2012 09:27:17 GMT -->
+</html>

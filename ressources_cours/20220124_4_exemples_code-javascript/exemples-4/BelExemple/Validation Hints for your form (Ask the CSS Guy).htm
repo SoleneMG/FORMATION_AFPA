@@ -1,0 +1,633 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0073)http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html -->
+<HTML id=sixapart-standard xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Validation Hints for your form (Ask the CSS Guy)</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.6000.16809" name=GENERATOR><LINK 
+media=screen,projection 
+href="Validation%20Hints%20for%20your%20form%20(Ask%20the%20CSS%20Guy)_fichiers/styles.css" 
+type=text/css rel=stylesheet><LINK media=print 
+href="Validation%20Hints%20for%20your%20form%20(Ask%20the%20CSS%20Guy)_fichiers/print.css" 
+type=text/css rel=stylesheet><LINK title=Atom 
+href="http://www.askthecssguy.com/atom.xml" type=application/atom+xml 
+rel=alternate><LINK title="RSS 2.0" href="http://www.askthecssguy.com/index.xml" 
+type=application/rss+xml rel=alternate><LINK title=Home 
+href="http://www.askthecssguy.com/" rel=start><LINK 
+title="Shawn asks the CSS Guy about styling disabled text inputs" 
+href="http://www.askthecssguy.com/2007/05/shawn_asks_the_css_guy_about_s_1.html" 
+rel=prev><LINK 
+title="Brett asks the CSS Guy if the Row Locking with Checkboxes is fixed" 
+href="http://www.askthecssguy.com/2007/05/brett_asks_the_css_guy_if_the.html" 
+rel=next><!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html"
+    trackback:ping="http://www.askthecssguy.com/cgi-bin/mt/mt-tb.cgi/34"
+    dc:title="Validation Hints for your form"
+    dc:identifier="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html"
+    dc:subject="popcorn"
+    dc:description="Stijn writes: Now I ran into a site a while ago that had a basic form with a gray border, if I would enter a correct contents the outline would be green, if I would enter something like: fake@fakemail as..."
+    dc:creator=""
+    dc:date="2007-05-11T15:07:35-06:00" />
+</rdf:RDF>
+-->
+<SCRIPT 
+src="Validation%20Hints%20for%20your%20form%20(Ask%20the%20CSS%20Guy)_fichiers/mt-site.js" 
+type=text/javascript></SCRIPT>
+</HEAD>
+<BODY id=www-askthecssguy-com>
+<DIV id=wrap>
+<H1><A href="http://www.askthecssguy.com/"><SPAN>Ask the CSS Guy</SPAN></A></H1>
+<DIV id=main>
+<DIV class="entry entryDecorpopcorn" id=entry-34>
+<H2>Validation Hints for your form</H2>
+<P>Stijn writes:</P>
+<BLOCKQUOTE>
+  <P>Now I ran into a site a while ago that had a basic form with a gray border, 
+  if I would enter a correct contents the outline would be green, if I would 
+  enter something like: fake@fakemail as the contact mail address the outline 
+  would be red. I really like this effect but can’t seem to find a tutorial on 
+  it. Maybe you have a good solution?</P></BLOCKQUOTE>
+<P>I'm not sure if we can check if the email address is a <EM>real</EM> email 
+address on the fly, but I think I get what you're asking.</P>
+<P>As someone is typing an in an input field, it would be nice give feedback to 
+the user as they are typing if they have satisfied that field's validation 
+criteria. This article will explain one way of achieving this effect using 
+JavaScript and CSS.</P>
+<P><IMG alt="" 
+src="Validation%20Hints%20for%20your%20form%20(Ask%20the%20CSS%20Guy)_fichiers/070511_validationhints.gif"></P>
+<P><STRONG>Go straight to the <A 
+href="http://www.askthecssguy.com/examples/validationhints/formfieldhints.html">final 
+example</A></STRONG> to see it in action, and to download a zip of the html, 
+css, js, and images used.</P>
+<P>Stijn's question asked about changing the border color of the text input. I'm 
+going to describe a different feedback mechanism here (changing the fieldset) 
+because some browsers, namely Safari, don't care much for borders on text 
+inputs.</P>
+<H3>Start at the beginning - testing for length</H3>
+<P>Let's start with field for creating a username.</P><PRE><CODE class=html>&lt;fieldset&gt;
+  &lt;label for="username"&gt;Create a Username:&lt;/label&gt;
+  &lt;input
+    type="text"
+    id="username"
+    maxlength="16" /&gt;
+&lt;/fieldset&gt;</CODE></PRE>
+<P>For our form, in order for the <EM>username</EM> to be valid, it should be at 
+least 8 characters long, and no more than 16 characters. The 
+<CODE>maxlength</CODE> attribute in the HTML takes care of the high limit. As 
+for the low limit, that's where we can introduce some JavaScript.</P>
+<H3>JavaScript</H3>
+<P>In English: The function tests to see if the length of what I typed is 
+greater than 7 characters. If so, do something. If not, do something else.</P><PRE><CODE>function checkUsername(whatYouTyped) {
+  var txt = whatYouTyped.value;
+  if (txt.length &gt; 7) {
+    ... do something to indicate job well done ...
+  } else {
+    ... do something else ...
+  }
+}</CODE></PRE>
+<P>As for what to do, what if we took the containing <CODE>fieldset</CODE> and 
+changed it's class to something like "welldone"?</P><PRE><CODE>function checkUsername(whatYouTyped) {
+  <STRONG>var fieldset = whatYouTyped.parentNode;</STRONG>
+  var txt = stringinput.value;
+  if (txt.length &gt; 7) {
+    <STRONG>fieldset.className = "welldone";</STRONG>
+  } else {
+    <STRONG>fieldset.className = "";</STRONG>
+  }
+}</CODE></PRE>
+<P>The class can be defined in the CSS to assign a background color to the 
+fieldset.</P><PRE><CODE class=css>fieldset.welldone {
+  background:green;
+}</CODE></PRE>
+<P>We need to check for this validation on every keystroke, so we attach it to 
+the HTML using <CODE>onkeyup</CODE>, like so:</P><PRE><CODE class=html>&lt;fieldset&gt;
+  &lt;label for="username"&gt;Create a Username:&lt;/label&gt;
+  &lt;input
+    type="text"
+    id="username"
+    maxlength="16"
+    <STRONG>onkeyup="checkUsername(this);"</STRONG> /&gt;
+&lt;/fieldset&gt;</CODE></PRE>
+<P><A 
+href="http://www.askthecssguy.com/examples/validationhints/inputlength.html">View 
+Example 1</A> - checking for input length.</P>
+<H3>A step further to indicate "almost there".</H3>
+<P>We'll also have people create a password. We're a good company, so we let 
+them create a password with as little as 4 characters. But we also feel a sense 
+of responsibility to <EM>encourage</EM> (not <EM>impose upon</EM>) people to use 
+longer passwords, at least 8 characters, as a security measure.</P>
+<P>The HTML for the password field will look like this:</P><PRE><CODE>&lt;fieldset&gt;
+  &lt;label for="password"&gt;Create a password:&lt;/label&gt;
+  &lt;input
+    type="password"
+    id="password"
+    onkeyup="checkPassword(this);" /&gt;
+&lt;/fieldset&gt;</CODE></PRE>
+<P>The JavaScript will be modified to serve an additional outcome based on 
+length.</P>
+<UL>
+  <LI>If the password is at least 4 characters long, that's good enough to 
+  continue. 
+  <LI>If the password is at least 8 characters long, that's even better, because 
+  it's oh-so-very secure. </LI></UL><PRE><CODE class=js>function checkPassword(whatYouTyped) {
+  var fieldset = whatYouTyped.parentNode;
+  var txt = whatYouTyped.value;
+  if (txt.length &gt; 4 &amp;&amp; txt.length &lt; 9) {
+    fieldset.className = "almostthere";
+  }
+  else if (txt.length &gt; 8) {
+    fieldset.className = "welldone";
+  }
+  else {
+    fieldset.className = "";
+  }
+}</CODE></PRE>
+<P><A 
+href="http://www.askthecssguy.com/examples/validationhints/inputlength2.html">View 
+Example 2</A>: checking for various input lengths.</P>
+<H3>Validating against regular expressions</H3>
+<P>If your password required letters AND numbers AND special characters, things 
+get a little more complicated. You can't just test for length anymore, you have 
+to match the input to a certain pattern.</P>
+<P>Same for email addresses, which follow a certain pattern: blah@blah.blah.</P>
+<P>Now I'm no regular expression expert. The one I'm about to use in the next 
+example is not necessarily one I put my stamp of approval on. Basically, I did a 
+quick google search and pulled up the first regular expressions that worked to 
+get the point across.</P>
+<P>Here's the HTML for the email input:</P><PRE><CODE class=html>&lt;fieldset&gt;
+  &lt;label for="email"&gt;Enter your email address:&lt;/label&gt;
+  &lt;input
+    type="text"
+    id="email"
+    onkeyup="checkEmail(this);" /&gt;
+&lt;/fieldset&gt;</CODE></PRE>
+<P>And here's the JavaScript, which matches the input text to a regular 
+expression, and changes our fieldset class accordingly.</P><PRE><CODE class=js>function checkEmail(whatYouTyped) {
+  var fieldset = whatYouTyped.parentNode;
+  var txt = whatYouTyped.value;
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(txt)) {
+    fieldset.className = "welldone";
+  } else {
+    fieldset.className = "";
+  }
+}</CODE></PRE>
+<P><A 
+href="http://www.askthecssguy.com/examples/validationhints/emailvalidation.html">View 
+Example 3</A>: testing against a regular expression.</P>
+<H3>Make it prettier</H3>
+<P>We've shown some butt ugly validation hints so far - it'd be nice to do 
+something a little prettier. Remember <A 
+href="http://www.askthecssguy.com/2007/03/form_field_hints_with_css_and.html">Form 
+Field Hints</A>? Here's an <A 
+href="http://www.askthecssguy.com/examples/validationhints/formfieldhints.html">example</A> 
+to show how the validation hint concept can build nicely upon the Form Field 
+Hints concept.</P>
+<P><A 
+href="http://www.askthecssguy.com/examples/validationhints/formfieldhints.html">View 
+Final Example</A>: Validation Hints with Form Field Hints</P>
+<P class=entry-footer><A class=permalink title=Permalink 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html">#</A> 
+<SPAN class=postDate>May 11, 2007 3:07 PM</SPAN> </P></DIV>
+<DIV class=comments id=comments>
+<H3 class=comments-header>Comments (35)</H3><A id=c002556></A>
+<DIV class=comment id=comment-2556>
+<P class=comment-header><A href="http://www.phoenyx.net/" rel=nofollow>Karen in 
+Wichita</A> said: </P>
+<DIV class=comment-content>
+<P>Alas, it'd fail on my perfectly-legit primary email account (I suppose we'll 
+see if it works in the comment field). '+' *is* valid in the username side of 
+things, though not many form designers seem to believe it.</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-2556">#</A> 
+<SPAN>May 11, 2007 3:22 PM</SPAN> </P></DIV><A id=c002558></A>
+<DIV class="comment authorcomment" id=comment-2558><IMG class=imgauthcomment 
+alt="" 
+src="Validation%20Hints%20for%20your%20form%20(Ask%20the%20CSS%20Guy)_fichiers/laughingElephant.jpg"> 
+
+<P class=comment-header>CSS Guy said: </P>
+<DIV class=comment-content>
+<P>@Karen:</P>
+<P>So it does. I blame the regular expression, which I just borrowed from some 
+other source and I don't endorse.</P>
+<P>I realize that very few designers will read the part of the article that says 
+"i don't endorse this regular expression", so if there are any regular 
+expression experts out there who can offer one to use for email (and note - it 
+should allow a "+" sign for that first part of the pattern), please share and 
+I'll include that with the zip.</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-2558">#</A> 
+<SPAN>May 11, 2007 3:34 PM</SPAN> </P></DIV><A id=c002564></A>
+<DIV class=comment id=comment-2564>
+<P class=comment-header><A href="http://blueonionsoftware.com/Blog.aspx" 
+rel=nofollow>Mike</A> said: </P>
+<DIV class=comment-content>
+<P>Me likes very much some cool CSS!</P>
+<P>Thanks for the great post!</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-2564">#</A> 
+<SPAN>May 12, 2007 7:32 AM</SPAN> </P></DIV><A id=c002601></A>
+<DIV class=comment id=comment-2601>
+<P class=comment-header>Jimahauck said: </P>
+<DIV class=comment-content>
+<P>help me fix this up</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-2601">#</A> 
+<SPAN>May 14, 2007 8:53 PM</SPAN> </P></DIV><A id=c002602></A>
+<DIV class=comment id=comment-2602>
+<P class=comment-header><A href="http://www.phoenyx.net/" rel=nofollow>Karen in 
+Wichita</A> said: </P>
+<DIV class=comment-content>
+<P>Yeah, unfortunately it seems like everybody has copied the same regex (and 
+not just in the Javascript sometimes).</P>
+<P>Unfortunately, RFCx822 is darn permissive when it comes to email addresses, 
+and there is no simple regex for the user side. Better to ask for a confirmation 
+version of the address and just trust that the user knows what their address is 
+(minus any obviously SQL-injectish things). Even in Perl, arguably the most 
+powerful regexes you can get, it's an ugly thing... go look at the source here 
+and scroll down to the $RFC822PAT bit. Just be prepared to run screaming from 
+the room.</P>
+<P><A 
+href="http://search.cpan.org/src/RJBS/Email-Valid-0.179/lib/Email/Valid.pm" 
+rel=nofollow>http://search.cpan.org/src/RJBS/Email-Valid-0.179/lib/Email/Valid.pm</A><BR></P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-2602">#</A> 
+<SPAN>May 14, 2007 9:24 PM</SPAN> </P></DIV><A id=c002648></A>
+<DIV class=comment id=comment-2648>
+<P class=comment-header><A href="http://www.palmerh.com/" rel=nofollow>Palmer 
+Huang</A> said: </P>
+<DIV class=comment-content>
+<P>Thanks guy for this great post!<BR>I am developing forms for my company and 
+this post has been very helpful. </P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-2648">#</A> 
+<SPAN>May 18, 2007 12:54 PM</SPAN> </P></DIV><A id=c002683></A>
+<DIV class=comment id=comment-2683>
+<P class=comment-header><A href="http://www.barelyfitz.com/" 
+rel=nofollow>Patrick Fitzgerald</A> said: </P>
+<DIV class=comment-content>
+<P>Very nice! Also when you have two fields that must contain the same value 
+(such as a confirmation field for changing your password) it's good to show the 
+user when both fields match.</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-2683">#</A> 
+<SPAN>May 23, 2007 12:13 AM</SPAN> </P></DIV><A id=c002778></A>
+<DIV class=comment id=comment-2778>
+<P class=comment-header>Skud said: </P>
+<DIV class=comment-content>
+<P>Nicely done!</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-2778">#</A> 
+<SPAN>May 31, 2007 10:31 AM</SPAN> </P></DIV><A id=c002900></A>
+<DIV class=comment id=comment-2900>
+<P class=comment-header><A href="http://survivingpython.blogspot.com/" 
+rel=nofollow>konrads</A> said: </P>
+<DIV class=comment-content>
+<P>There is a small "bug" - when the text in the hint is only one line, the 
+background image is not displayed fully. A min-height of say 30px will do 
+it.<BR></P><PRE><BR>
+min-height: 30px;<BR>
+_height: expression(document.body.clientWidth &lt; 30? "30px"  : "auto");<BR>
+</PRE>
+<P></P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-2900">#</A> 
+<SPAN>June 21, 2007 11:09 AM</SPAN> </P></DIV><A id=c002924></A>
+<DIV class=comment id=comment-2924>
+<P class=comment-header>Tim Case said: </P>
+<DIV class=comment-content>
+<P>/^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-2924">#</A> 
+<SPAN>June 25, 2007 1:02 PM</SPAN> </P></DIV><A id=c003064></A>
+<DIV class=comment id=comment-3064>
+<P class=comment-header>Patrice Grimard said: </P>
+<DIV class=comment-content>
+<P>Hello,</P>
+<P>This site is really nice. But, i love this code, and i think this tip can be 
+used on professionnal website.</P>
+<P>What's the license of the code?</P>
+<P>I have try to find a license, or restriction on the wevsite.. without 
+response... anyone have idea?</P>
+<P>Thank, Patrice Grimard</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-3064">#</A> 
+<SPAN>July 14, 2007 9:55 PM</SPAN> </P></DIV><A id=c003157></A>
+<DIV class="comment authorcomment" id=comment-3157><IMG class=imgauthcomment 
+alt="" 
+src="Validation%20Hints%20for%20your%20form%20(Ask%20the%20CSS%20Guy)_fichiers/laughingElephant.jpg"> 
+
+<P class=comment-header>CSS Guy said: </P>
+<DIV class=comment-content>
+<P>Patrice,</P>
+<P>You are free to use the code however you wish.</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-3157">#</A> 
+<SPAN>July 24, 2007 2:38 PM</SPAN> </P></DIV><A id=c003231></A>
+<DIV class=comment id=comment-3231>
+<P class=comment-header>3LINKseo said: </P>
+<DIV class=comment-content>
+<P>You are free to use the code however you wish.</P>
+<P><BR><A href="http://www.23799298.com/" rel=nofollow>搬屋公司</A><BR><A>中秋節</A> 
+<BR><A>Shopping"&gt;http://www.recyclebag.net/&gt;Shopping 
+Bag<BR><A>av"&gt;http://www.av-oscar.com/av-system-projector.htm&gt;av</A><BR><A 
+href="http://www.toy-match.com/tomica.html" rel=nofollow>Tomy</A><BR><A 
+href="http://www.firstratelogistic.com/containers/" 
+rel=nofollow>containers</A><BR><A href="http://www.firstratelogistic.com/" 
+rel=nofollow>Warehouse</A></P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-3231">#</A> 
+<SPAN>July 30, 2007 4:16 AM</SPAN> </P></DIV><A id=c003322></A>
+<DIV class=comment id=comment-3322>
+<P class=comment-header>Alan Talbot said: </P>
+<DIV class=comment-content>
+<P>How would you apply this method to fieldsets containing radio buttons or 
+checkboxes?</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-3322">#</A> 
+<SPAN>August 4, 2007 3:42 AM</SPAN> </P></DIV><A id=c003428></A>
+<DIV class=comment id=comment-3428>
+<P class=comment-header><A href="http://no.com/" rel=nofollow>Brian</A> said: 
+</P>
+<DIV class=comment-content>
+<P>Great work as always, I am just starting off as a developer/webmaster and 
+your articals are helping me gain some valuable ideas and skills.</P>
+<P>You are the best.</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-3428">#</A> 
+<SPAN>August 10, 2007 2:22 PM</SPAN> </P></DIV><A id=c004857></A>
+<DIV class=comment id=comment-4857>
+<P class=comment-header>Brad said: </P>
+<DIV class=comment-content>
+<P>When I quickly enter an email address into the form field I get a slow script 
+warning.</P>
+<P>Can you suggest any possible solutions?</P>
+<P>Great tutorial by the way!</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-4857">#</A> 
+<SPAN>November 5, 2007 12:12 AM</SPAN> </P></DIV><A id=c005112></A>
+<DIV class=comment id=comment-5112>
+<P class=comment-header><A href="http://www.zible.com/" rel=nofollow>Jake</A> 
+said: </P>
+<DIV class=comment-content>
+<P>Very good demonstration.</P>
+<P>But I don't think you should place each field into a fieldset. 
+&lt;fieldset&gt; was created as a container for multiple fields so that related 
+fields can be logically grouped to improve usability. Instead of using 
+&lt;fieldset&gt;, you could consider &lt;div&gt;.</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-5112">#</A> 
+<SPAN>November 17, 2007 7:29 AM</SPAN> </P></DIV><A id=c005927></A>
+<DIV class=comment id=comment-5927>
+<P class=comment-header><A href="http://dobrywypoczynek.eu/" 
+rel=nofollow>Wypoczynek</A> said: </P>
+<DIV class=comment-content>
+<P>Cool :-)</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-5927">#</A> 
+<SPAN>December 16, 2007 2:38 PM</SPAN> </P></DIV><A id=c007233></A>
+<DIV class=comment id=comment-7233>
+<P class=comment-header><A href="http://www.moleskinsoft.com/" 
+rel=nofollow>David Jacques-Louis</A> said: </P>
+<DIV class=comment-content>
+<P>Wow. Good for me.</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-7233">#</A> 
+<SPAN>February 23, 2008 4:04 PM</SPAN> </P></DIV><A id=c007418></A>
+<DIV class=comment id=comment-7418>
+<P class=comment-header>Ryan Ballard said: </P>
+<DIV class=comment-content>
+<P>Nice guide.</P>
+<P>Looking at your final example, its great that once a field is completed to 
+meet the validation requirements a green tick stays next to the field. But what 
+about when the field isnt completed? The form just seems to accept it.</P>
+<P>Could the code be modified to leave the blue icon (or some sort of red cross) 
+for a field that is incomplete or doesnt meet the validation 
+requirements?</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-7418">#</A> 
+<SPAN>March 8, 2008 10:25 AM</SPAN> </P></DIV><A id=c007748></A>
+<DIV class=comment id=comment-7748>
+<P class=comment-header>shwe said: </P>
+<DIV class=comment-content>
+<P>This code did help. but for the validation (suppose name field where no 
+digits or special characters are allowed) it doesnt work.</P>
+<P>i mentioned in regular exp tht if the input keystroke is a digit or a special 
+character then an alert box should pop up and should not allow the user to enter 
+anything apart from the letters.</P>
+<P>but, it takes up the value of a keystroke the second time i.e if i enter "1" 
+the first time, then it allows it to be entered in the name field and when i hit 
+another key then it shows up alert box coz of the "1" that i entered 
+earlier.</P>
+<P>I dont know how to get over it. </P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-7748">#</A> 
+<SPAN>March 26, 2008 5:35 AM</SPAN> </P></DIV><A id=c007799></A>
+<DIV class=comment id=comment-7799>
+<P class=comment-header><A href="http://www.puntofape.com/" 
+rel=nofollow>Fape</A> said: </P>
+<DIV class=comment-content>
+<P>Doesn't work to me!</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-7799">#</A> 
+<SPAN>March 28, 2008 12:31 PM</SPAN> </P></DIV><A id=c007907></A>
+<DIV class=comment id=comment-7907>
+<P class=comment-header><A href="http://www.cirugia-laser.net/" 
+rel=nofollow>Vista laser</A> said: </P>
+<DIV class=comment-content>
+<P>This Post is very good, just i am lokking</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-7907">#</A> 
+<SPAN>April 2, 2008 7:00 PM</SPAN> </P></DIV><A id=c007949></A>
+<DIV class=comment id=comment-7949>
+<P class=comment-header><A href="http://www.ashisoft.com/" 
+rel=nofollow>Duplicate File Finder</A> said: </P>
+<DIV class=comment-content>
+<P>Great work as always</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-7949">#</A> 
+<SPAN>April 6, 2008 12:12 PM</SPAN> </P></DIV><A id=c009086></A>
+<DIV class=comment id=comment-9086>
+<P class=comment-header><A href="http://www.studentbunk.com/" 
+rel=nofollow>student accommodation</A> said: </P>
+<DIV class=comment-content>
+<P>This worked great for me. I'm implementing it on my new design and fits 
+nicely. Many thanks.</P>
+<P>John</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-9086">#</A> 
+<SPAN>June 12, 2008 3:35 AM</SPAN> </P></DIV><A id=c009226></A>
+<DIV class=comment id=comment-9226>
+<P class=comment-header>Anonymous said: </P>
+<DIV class=comment-content>
+<P>ljksdjklsdf89(*&amp;89jklmsdlk !!!KLjklsej</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-9226">#</A> 
+<SPAN>June 18, 2008 3:37 PM</SPAN> </P></DIV><A id=c009630></A>
+<DIV class=comment id=comment-9630>
+<P class=comment-header>Anonymous said: </P>
+<DIV class=comment-content>
+<P>I am so dumb. How do I add this to a onsubmit checking event if there is an 
+error?</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-9630">#</A> 
+<SPAN>July 4, 2008 3:40 AM</SPAN> </P></DIV><A id=c010134></A>
+<DIV class=comment id=comment-10134>
+<P class=comment-header><A href="http://www.interize.com/" 
+rel=nofollow>Dafin</A> said: </P>
+<DIV class=comment-content>
+<P>@Fape, please give us more info<BR>@Brad, Do you have other javascripts 
+running on that page?</P>
+<P>b.t.w. great work cssguy!</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-10134">#</A> 
+<SPAN>July 25, 2008 5:08 AM</SPAN> </P></DIV><A id=c010627></A>
+<DIV class=comment id=comment-10627>
+<P class=comment-header><A href="http://www.rinoplastia.org.es/" 
+rel=nofollow>rinoplastia</A> said: </P>
+<DIV class=comment-content>
+<P>Thank you for this important information</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-10627">#</A> 
+<SPAN>August 21, 2008 9:17 PM</SPAN> </P></DIV><A id=c010628></A>
+<DIV class=comment id=comment-10628>
+<P class=comment-header><A href="http://www.rinoplastia.org.es/" 
+rel=nofollow>traductor</A> said: </P>
+<DIV class=comment-content>
+<P>Thanks you very much for this important information.</P>
+<P>I realy needed this</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-10628">#</A> 
+<SPAN>August 21, 2008 9:24 PM</SPAN> </P></DIV><A id=c010629></A>
+<DIV class=comment id=comment-10629>
+<P class=comment-header><A href="http://www.traductor.es/" 
+rel=nofollow>traductor</A> said: </P>
+<DIV class=comment-content>
+<P>Tranlate any thing </P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-10629">#</A> 
+<SPAN>August 21, 2008 9:31 PM</SPAN> </P></DIV><A id=c010630></A>
+<DIV class=comment id=comment-10630>
+<P class=comment-header><A href="http://www.sanidad.es/" 
+rel=nofollow>sanidad</A> said: </P>
+<DIV class=comment-content>
+<P>Good<BR>La sanidad y la salud son muy importantes para vivir</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-10630">#</A> 
+<SPAN>August 21, 2008 9:37 PM</SPAN> </P></DIV><A id=c010950></A>
+<DIV class=comment id=comment-10950>
+<P class=comment-header><A href="http://www.ashisoft.com/" rel=nofollow>John</A> 
+said: </P>
+<DIV class=comment-content>
+<P>Very good demonstration.</P>
+<P>Thank you</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-10950">#</A> 
+<SPAN>September 14, 2008 1:44 PM</SPAN> </P></DIV><A id=c010951></A>
+<DIV class=comment id=comment-10951>
+<P class=comment-header><A href="http://www.ashisoft.com/" rel=nofollow>John</A> 
+said: </P>
+<DIV class=comment-content>
+<P>Very good demonstration.</P>
+<P>Thank you</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-10951">#</A> 
+<SPAN>September 14, 2008 1:45 PM</SPAN> </P></DIV><A id=c011964></A>
+<DIV class=comment id=comment-11964>
+<P class=comment-header><A href="http://www.impresoras.nom.es/" 
+rel=nofollow>Impresora</A> said: </P>
+<DIV class=comment-content>
+<P>Very good demonstration, but I don't know why you should put each field in a 
+field set. You can consider the div.</P></DIV>
+<P class=comment-footer><A class=permalink title="Permalink to this comment" 
+href="http://www.askthecssguy.com/2007/05/validation_hints_for_your_form_1.html#comment-11964">#</A> 
+<SPAN>November 15, 2008 10:25 AM</SPAN> </P></DIV>&nbsp; 
+<FORM id=comments_form name=comments_form 
+action=http://www.askthecssguy.com/cgi-bin/mt/mt-ommentscay.cgi 
+method=post><INPUT type=hidden value=1 name=static> <INPUT type=hidden value=34 
+name=entry_id> 
+<H3>Post a comment</H3>
+<P><LABEL for=comment-author>Name:</LABEL> <INPUT class=text id=comment-author 
+name=author> </P>
+<P id=comments-open-challenge><INPUT id=commchallenge_beacon type=hidden value=1 
+name=commchallenge_beacon><LABEL for=commchallenge_answer>Human? What is the 
+last letter of the alphabet? (required):</LABEL><INPUT class=textfield 
+id=commchallenge_answer name=commchallenge_answer></P>
+<SCRIPT type=text/javascript>
+<!--    
+if (commenter_name) { hideDocumentElement('comments-open-challenge'); } else { showDocumentElement('comments-open-challenge'); } 
+// -->
+</SCRIPT>
+
+<P><LABEL for=comment-email>Email Address:</LABEL> <INPUT class=text 
+id=comment-email name=email> </P>
+<P><LABEL for=comment-url>URL:</LABEL> <INPUT class=text id=comment-url 
+name=url> </P>
+<P><LABEL for=comment-text>Comments: (Caution: HTML is allowed, so watch your 
+&lt;'s and &gt;'s)</LABEL> <TEXTAREA id=comment-text name=text rows=15 cols=50></TEXTAREA> </P>
+<P class=buttons><INPUT class=button id=comment-preview type=submit value=Preview name=preview> 
+<INPUT class=button id=comment-post type=submit value=Post name=post> 
+</P></FORM></DIV></DIV><!-- end #main -->
+<DIV id=sidebar>
+<DIV class=module>
+<P class=aboutLinkAndFeed><A 
+href="http://www.askthecssguy.com/2006/10/about_this_site.html">About</A> | <A 
+href="http://www.askthecssguy.com/atom.xml">Feed</A> | <A 
+href="http://twitter.com/askthecssguy">Twitter</A><BR>Send questions, including 
+links or code, to <A 
+href="mailto:askthecssguy@gmail.com">askthecssguy@gmail.com</A>.</P></DIV>
+<DIV class=module>
+<H3>Search</H3>
+<FORM action=http://www.askthecssguy.com/cgi-bin/mt/mt-search.cgi 
+method=get><INPUT type=hidden value=1 name=IncludeBlogs> <LABEL 
+for=search>Search:</LABEL> <INPUT class=textfield id=search name=search> <INPUT class=button type=submit value=Search> </FORM></DIV>
+<DIV class="module moduleRecommended">
+<P><A class="addLink addLink1" 
+href="http://themeforest.net/?ref=askthecssguy"><IMG alt="Theme Forest" 
+src="Validation%20Hints%20for%20your%20form%20(Ask%20the%20CSS%20Guy)_fichiers/ad_themeforest_125x125.jpg"></A> 
+<A class="addLink addLink2" 
+href="http://www.amazon.com/gp/product/1590595335?ie=UTF8&amp;tag=atcg-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1590595335"><IMG 
+alt="DOM Scripting at Amazon.com" 
+src="Validation%20Hints%20for%20your%20form%20(Ask%20the%20CSS%20Guy)_fichiers/ad_domscripting_125x125.jpg"> 
+</A><IMG 
+style="MARGIN: 0px; BORDER-TOP-STYLE: none! important; BORDER-RIGHT-STYLE: none! important; BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important" 
+height=1 alt="" 
+src="Validation%20Hints%20for%20your%20form%20(Ask%20the%20CSS%20Guy)_fichiers/ir.gif" 
+width=1 border=0> </P></DIV>
+<DIV class=module>
+<H3>About</H3>
+<P>This entry was posted May 11, 2007. <BR><A 
+title="Shawn asks the CSS Guy about styling disabled text inputs" 
+href="http://www.askthecssguy.com/2007/05/shawn_asks_the_css_guy_about_s_1.html">Previous 
+Entry</A> | <A 
+title="Brett asks the CSS Guy if the Row Locking with Checkboxes is fixed" 
+href="http://www.askthecssguy.com/2007/05/brett_asks_the_css_guy_if_the.html">Next 
+Entry</A> <BR><A href="http://www.askthecssguy.com/">Home</A> | <A 
+href="http://www.askthecssguy.com/archives.html">Archives</A></P></DIV>
+<DIV class="module moduleGoogleAds">
+<SCRIPT type=text/javascript><!--
+google_ad_client = "pub-9917855966676215";
+/* 234x60, askTheCSSGuy Blog, created 1/16/09 */
+google_ad_slot = "3018305467";
+google_ad_width = 234;
+google_ad_height = 60;
+//-->
+</SCRIPT>
+
+<SCRIPT 
+src="Validation%20Hints%20for%20your%20form%20(Ask%20the%20CSS%20Guy)_fichiers/show_ads.js" 
+type=text/javascript>
+</SCRIPT>
+</DIV></DIV><!-- end #sidebar --></DIV><!-- end #wrap -->
+<P class=copyright>©2009 AskTheCSSGuy.com</P>
+<SCRIPT 
+src="Validation%20Hints%20for%20your%20form%20(Ask%20the%20CSS%20Guy)_fichiers/urchin.js" 
+type=text/javascript>
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+_uacct = "UA-856645-1";
+urchinTracker();
+</SCRIPT>
+</BODY></HTML>

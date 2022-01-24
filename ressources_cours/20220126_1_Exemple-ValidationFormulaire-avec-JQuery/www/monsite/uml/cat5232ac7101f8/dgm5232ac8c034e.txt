@@ -1,0 +1,20 @@
+Nom : Application de gestion des livres d'une bibliothèque
+Acteurs principaux : Adhérent, employé: bibliothécaire et responsable,gestionnaire de fonds
+Cas d'utilisation :
+- Adhérent : 
+ + Payer Adhésion ;
+ + Consulter livre  ;
+ +  Emprunter livre ;
+ +  Rendre un livre ;
+- Salariés :
+ +   S'identifier ;
+ +  Consulter un livre ;
+ +  Emprunter un livre ;
+- Bibliothécaire :
+ +  Enregsitrer Nouveaux Livrees ;
+ + Stocker les emprunts anciens ; 
+- Responsable
+ + Consulter l'état des retards ;
+ +  Envoyer lettre de retards ;
+ +  Consulter les statistiques.
+

@@ -1,0 +1,10 @@
+nom : Payer une adhésion
+Acteur principal : Le bibliothécaire
+Acteurs secondaires : L'adhérent
+événement déclencheur  :
+fin d'adhésion, volonté d'emprunter un livre
+rôle du use case :
+Enregistrer l'adhésion
+Encaisser l'adhérent
+Editer une carte d'adhésion ou mettre à jour la carte
+terminaison du use case :  Adhérent avec sa carte à jour

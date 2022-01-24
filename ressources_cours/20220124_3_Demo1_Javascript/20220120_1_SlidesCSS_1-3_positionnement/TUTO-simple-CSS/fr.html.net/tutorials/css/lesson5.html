@@ -1,0 +1,476 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<!-- Mirrored from fr.html.net/tutorials/css/lesson5.php by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 29 Mar 2012 09:27:00 GMT -->
+<head>
+
+	<title>Leçon 5: Le texte - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Leçon 5: Le texte - HTML.net" />
+	<meta name="description" content="Leçon 5: Le texte - Tutoriels sur HTML et CSS - Construisez votre propre site Web" />
+	<meta name="keywords" content="HTML, CSS, XHTML, Tutoriel HTML, Tutoriel CSS, Forums, , " />
+	<meta name="language" content="fr" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Leçon 5: Le texte - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="lesson5.html" />
+	<meta property="og:image" content="../../../html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='../../../html.net/site/style/default.screen.css' type='text/css' media='screen' /><link rel='stylesheet' href='../../../html.net/site/style/default.print.css' type='text/css' media='print' />
+	<script type="text/javascript">
+			
+		function toggleVisibility(objectID, imageID) {
+		vis = document.getElementById(objectID).style;
+		state = vis.display;
+		if (state == 'none') {
+			vis.display = 'block';	
+			document.getElementById(imageID).value = '▲ Réduire';
+			}
+		else {		
+			if (state == 'block') {
+				vis.display = 'none';
+				document.getElementById(imageID).value = '▼ Agrandir';
+				}	
+			else {
+				vis.display = 'block'; 
+				document.getElementById(imageID).value = '▲ Réduire';
+				}
+		}}
+
+		//-->
+	</script>
+
+	<script type="text/javascript">
+	// <![CDATA[
+		var jump_page = '{LA_JUMP_PAGE}:';
+		var on_page = '{ON_PAGE}';
+		var per_page = '{PER_PAGE}';
+		var base_url = '{A_BASE_URL}';
+		var style_cookie = 'phpBBstyle';
+		var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+		var onload_functions = new Array();
+		var onunload_functions = new Array();
+
+		/**
+		* Find a member
+		*/
+		function find_username(url)
+		{
+			popup(url, 760, 570, '_usersearch');
+			return false;
+		}
+
+		/**
+		* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+		*/
+		window.onload = function()
+		{
+			for (var i = 0; i < onload_functions.length; i++)
+			{
+				eval(onload_functions[i]);
+			}
+		}
+
+		window.onunload = function()
+		{
+			for (var i = 0; i < onunload_functions.length; i++)
+			{
+				eval(onunload_functions[i]);
+			}
+		}
+
+	// ]]>
+	</script>
+
+	<script type="text/javascript" src="../../../html.net/forums/styles/prosilver/template/forum_fn.js"></script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-6716118-1']);
+	  _gaq.push(['_setDomainName', '.html.net']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+	
+</head>
+
+<body>	
+
+	<div id="login">
+		
+		<div><a href='http://fr.html.net/forums/ucp.php?mode=login'>Connexion</a> | <a href='http://fr.html.net/forums/ucp.php?mode=register'>Inscription</a> | <a href='http://fr.html.net/forums/faq.php'>FAQ</a></div><img src='../../site/graphics/user.png' />		
+	</div>
+
+	<div id="header">
+			
+		<ul>
+			<li><a href='http://fr.html.net/'>Accueil</a></li>
+			<li class='selected'><a href='http://fr.html.net/tutorials/'>Tutoriels</a></li>
+			<li><a href='http://fr.html.net/forums/'>Forums</a></li>
+			<li><a href='http://fr.html.net/about/'>À propos</a></li>
+		</ul>
+		<form method="get" action="http://fr.html.net/search/" id="cse-search-box">
+		<div id="searchbar">
+			<span>
+			
+				<input type="text" name="q" id="query" value="" /><input type="submit" id="submit" value="Rechercher" />
+				 <input type="hidden" name="cx" value="002160260272865772965:d4fb4jd-jh0" />
+				<input type="hidden" name="cof" value="FORID:11;NB:1" />
+				<input type="hidden" name="ie" value="UTF-8" />	
+				<input type="hidden" name="lr" value="lang_fr" />	
+				<input type="hidden" name="hl" value="fr" />	
+			
+			</span>
+		</div>
+		</form>
+		
+		<div id="ad_leaderboard">
+	<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_Leaderboard_728x90");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_Leaderboard_728x90 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_fr_tutorials_Leaderboard_728x90");
+	</script>
+</div>
+
+	</div>
+
+	
+		<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='http://fr.html.net/'>Accueil</a> &#187; <a href='http://fr.html.net/tutorials/'>Tutoriels</a> &#187; <a href='index.html'>CSS</a> &#187; Leçon 5: Le texte</div>
+			<div id="socialBookmarks">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a>
+				<span id="FbCont"></span>
+				<g:plusone size="medium"></g:plusone>
+								
+			</div>
+			<!-- google_ad_section_start -->
+		
+		<div id='tutorials'>	<h1>Leçon 5 : Le texte</h1>
+	<p>Formater et ajouter du style au texte est primordial pour tout concepteur Web. Cette leçon vous introduira aux possibilités
+	étonnantes offertes par CSS pour la présentation du texte. Les propriétés suivantes seront décrites :</p>
+	<ul>
+		<li><a href="#s1">text-indent</a></li>
+		<li><a href="#s2">text-align</a></li>
+		<li><a href="#s3">text-decoration</a></li>
+		<li><a href="#s4">letter-spacing</a></li>
+		<li><a href="#s5">text-transform</a></li>
+	</ul>
+
+	<h2 id="s1">L'indentation du texte [text-indent]</h2>
+	<p>La propriété <code>text-indent</code> permet d'ajouter une touche d'élégance aux paragraphes de texte en appliquant une indentation
+	à la première ligne du paragraphe. Dans l'exemple suivant, un alinéa de <strong>30px</strong> est appliqué à tous les paragraphes
+	balisés par un élément <code>&lt;p&gt;</code> :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	p {
+		text-indent: 30px;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson5_ex1.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2 id="s2">L'alignement du texte [text-align]</h2>
+	<p>La propriété CSS <code>text-align</code> correspond à l'attribut align utilisé dans les versions anciennes de HTML. Le texte
+	peut être aligné à gauche (<strong>left</strong>), à droite (<strong>right</strong>) ou centré (<strong>center</strong>).
+	Outre cela, la valeur <strong>justify</strong> étirera chaque ligne de sorte que les marges à gauche et à droite soient droites
+	toutes les deux. Cette mise en page est courante, par exemple, dans les journaux et les magazines.</p>
+	<p>Dans l'exemple suivant, le texte des titres du tableau <code>&lt;th&gt;</code> est aligné à droite, tandis que les
+	données du tableau <code>&lt;td&gt;</code> sont centrées. Enfin, les paragraphes de texte normaux sont justifiés : </p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	th {
+		text-align: <strong>right;</strong>
+	}
+
+	td {
+		text-align: <strong>center;</strong>
+	}
+
+	p {
+		text-align: <strong>justify;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson5_ex2.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2 id="s3">La décoration du texte [text-decoration]</h2>
+	<p>La propriété <code>text-decoration</code> permet d'ajouter des « décorations » ou « effets » différents au texte. Par exemple,
+	on peut souligner le texte, le barrer, ou tracer un trait au-dessus, etc. Dans l'exemple suivant, les éléments <code>&lt;h1&gt;</code>
+	sont des titres soulignés, les éléments <code>&lt;h2&gt;</code> sont des titres avec un trait au-dessus et les éléments <code>&lt;h3&gt;</code>
+	des titres barrés.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {
+		text-decoration: <strong>underline</strong>;
+	}
+
+	h2 {
+		text-decoration: <strong>overline</strong>;
+	}
+
+	h3 {
+		text-decoration: <strong>line-through</strong>;
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson5_ex3.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2 id="s4">L'espacement des lettres [letter-spacing]</h2>
+	<p>L'espacement entre les caractères du texte peut être défini avec la propriété <code>letter-spacing</code>. La valeur de la
+	propriété est simplement celle de l'espacement désiré. Par exemple, si vous voulez un espacement de <strong>3px</strong> entre
+	les lettres d'un paragraphe de texte <code>&lt;p&gt;</code>, et de <strong>6px</strong> entre les lettres des titres <code>&lt;h1&gt;</code>,
+	voici le code à utiliser :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {
+		letter-spacing: <strong>6px;</strong>
+	}
+
+	p {
+		letter-spacing: <strong>3px;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson5_ex4.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2 id="s5">La transformation du texte [text-transform]</h2>
+	<p>La propriété <code>text-transform</code> contrôle la capitalisation du texte. On peut choisir une <strong>capitalisation initiale</strong>,
+	une <strong>mise en majuscules</strong> ou une <strong>mise en minuscules</strong>, indépendamment de l'aspect du texte original
+	dans le code HTML.</p>
+	<p>Voici un exemple avec le mot « titre » que l'on peut présenter à l'utilisateur comme « TITRE » ou « Titre ».
+	La propriété <code>text-transform</code> admet quatre valeurs possibles :</p>
+
+	<dl>
+		<dt>capitalize</dt>
+		<dd>Elle capitalise la première lettre de chaque mot. Par exemple, « marcel dupond » deviendra « Marcel Dupond ».</dd>
+		<dt>uppercase</dt>
+		<dd>Elle convertit toutes les lettres en majuscules. Par exemple, « marcel dupond » deviendra « MARCEL DUPOND ».</dd>
+		<dt>lowercase</dt>
+		<dd>Elle convertit toutes les lettres en minuscules. Par exemple, « MARCEL DUPOND » deviendra « marcel dupond ».</dd>
+		<dt>none</dt>
+		<dd>Aucune transformation, et le texte se présente tel qu'il apparaît dans le code HTML.</dd>
+	</dl>
+
+	<p>Pour exemple, nous utiliserons une liste de noms, balisés avec des éléments <code>&lt;li&gt;</code> (list-item).
+	Disons que nous voulons que les noms soient capitalisés et les titres soient en lettres majuscules.</p>
+	<p>Examinez le code HTML de cet exemple et vous constaterez que le texte est en fait en minuscules.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {
+		text-transform: <strong>uppercase;</strong>
+	}
+
+	li {
+		text-transform: <strong>capitalize;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson5_ex5.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2>Résumé</h2>
+	<p>Avec les trois dernières leçons, nous avons déjà appris beaucoup de propriétés CSS, mais il y a plus encore. Dans la
+	<a href="lesson6.html">leçon suivante</a>, nous aborderons les liens.</p>
+	
+	<hr /><div id="ad_rectangle">
+	<!--
+	<span style="margin-right:10px;float:left">
+	-->
+	<span>
+		<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+		</script>
+		<script type='text/javascript'>
+		GS_googleAddAdSenseService("ca-pub-0941946313210493");
+		GS_googleEnableAllServices();
+		</script>
+		<script type='text/javascript'>
+		GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_LargeRectangle_336x280");
+		</script>
+		<script type='text/javascript'>
+		GA_googleFetchAds();
+		</script>
+
+		<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_LargeRectangle_336x280 -->
+		<script type='text/javascript'>
+		GA_googleFillSlot("HTML_NET_fr_tutorials_LargeRectangle_336x280");
+		</script>
+	</span>
+
+	
+</div><hr /><p class='previous'><a href='lesson4.html'>&lt;&lt; Leçon 4: Les polices</a></p><p class='next'><a href='lesson6.html'>Leçon 6: Les liens >></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+
+		<div id="ad_skyscraper">
+	<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_WideSkyscraper_160x600");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_WideSkyscraper_160x600 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_fr_tutorials_WideSkyscraper_160x600");
+	</script>
+
+</div>
+
+
+
+
+	</div>
+
+	<div id="sidebar">
+					<h1>Tutoriels</h1>
+			<ul>
+			<li><a href='http://fr.html.net/tutorials/html/'>Tutoriel HTML</a></li><li><strong><a href='index.html'>Tutoriel CSS</a></strong><ul><li><a href='introduction.html'>Introduction</a></li><li><a href='lesson1.html'>Qu'est-ce que CSS ?</a></li><li><a href='lesson2.html'>Comment CSS fonctionne-t-il ?</a></li><li><a href='lesson3.html'>Les couleurs et les arrières-plans</a></li><li><a href='lesson4.html'>Les polices</a></li><li class='selected'><a href='lesson5.html'>Le texte</a></li><li><a href='lesson6.html'>Les liens</a></li><li><a href='lesson7.html'>L'identification et le regroupement d'éléments (class et id)</a></li><li><a href='lesson8.html'>Le regroupement d'éléments (span et div)</a></li><li><a href='lesson9.html'>Le modèle des boîtes</a></li><li><a href='lesson10.html'>Le modèle des boîtes : margin & padding</a></li><li><a href='lesson11.html'>Le modèle des boîtes : les bordures</a></li><li><a href='lesson12.html'>Le modèle des boîtes : la hauteur et la largeur</a></li><li><a href='lesson13.html'>Les éléments flottants (les flottants)</a></li><li><a href='lesson14.html'>Le positionnement des éléments</a></li><li><a href='lesson15.html'>Une couche sur une couche avec z-index (les couches)</a></li><li><a href='lesson16.html'>Les standards du Web et la validation</a></li></ul></li><li><a href='http://fr.html.net/tutorials/php/'>Tutoriel PHP</a></li>			</ul>
+			
+		<!-- google_ad_section_start(weight=ignore) -->
+		<h2>Langue</h2>
+		
+		<form method="post" action="http://fr.html.net/redirect.php">
+			<p>
+			<select name="location">
+				
+				<option value='http://ar.html.net/tutorials/css/lesson5.php'>العربية</option>
+				<option value='http://de.html.net/tutorials/css/lesson5.php'>Deutsch</option>
+				<option value='http://html.net/tutorials/css/lesson5.php'>English</option>
+				<option value='http://es.html.net/tutorials/css/lesson5.php'>Español</option>
+				<option selected='selected' value='http://fr.html.net/tutorials/css/lesson5.php'>Français</option>
+				<option value='http://he.html.net/tutorials/css/lesson5.php'>עברית</option>
+				<option value='http://it.html.net/tutorials/css/lesson5.php'>Italiano</option>
+				<option value='http://pl.html.net/tutorials/css/lesson5.php'>Polski</option>
+				<option value='http://pt-br.html.net/tutorials/css/lesson5.php'>Português (Brasil)</option>
+				<option value='http://ru.html.net/tutorials/css/lesson5.php'>Русский</option>
+				<option value='http://zh.html.net/tutorials/css/lesson5.php'>中文</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+		
+		
+		<h2>La présentation</h2>
+		<form method='post' action='http://fr.html.net/tutorials/css/lesson5.php'>			<p>
+			<select name="strCSS">
+				
+				<option value='1'>Default</option>
+				<option value='2'>Default - Blue</option>
+				<option value='3'>No CSS</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+
+		<h2>Traducteur:</h2> <p><a href='http://www.yoyodesign.org/scripts/message.php'>Jean Jacques Solari</a></p>
+		
+			
+
+		
+
+	</div>
+
+	<div id="footer">
+
+		<hr />
+
+		
+		<h1>Qui est en ligne ?:</h1>
+		<p>Au total, il y a <strong>172</strong> utilisateurs en ligne :: 2 inscrits, 0 invisible et 170 invités</p> 
+		<p>Le nombre maximum d’utilisateurs en ligne simultanément a été de <strong>338</strong> le Mar Sep 28, 2010 9:13 am</p> 
+		<p id="userlist"><br />Utilisateurs inscrits : <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Google Adsense [Bot]</span></p>
+		
+		<h1>Statistiques:</h1>
+		<p>Messages au total <strong>6247</strong> - <strong>2592</strong> sujets au total</p><p><strong>6795</strong> membres au total - Notre membre le plus récent est <strong><a href='http://fr.html.net/forums/memberlist.php?mode=viewprofile&amp;u=9869'>Hsd265gbu7</a></strong></p>
+		<p><br /><a href="http://fr.html.net/forums/memberlist.php">Visualiser la liste complète des membres</a></p>
+		
+
+		<h1>Langue:</h1>
+		<p><span>
+		<a href='http://ar.html.net/tutorials/css/lesson5.php'>العربية</a> | <a href='http://de.html.net/tutorials/css/lesson5.php'>Deutsch</a> | <a href='http://html.net/tutorials/css/lesson5.php'>English</a> | <a href='http://es.html.net/tutorials/css/lesson5.php'>Español</a> | Français | <a href='http://he.html.net/tutorials/css/lesson5.php'>עברית</a> | <a href='http://it.html.net/tutorials/css/lesson5.php'>Italiano</a> | <a href='http://pl.html.net/tutorials/css/lesson5.php'>Polski</a> | <a href='http://pt-br.html.net/tutorials/css/lesson5.php'>Português (Brasil)</a> | <a href='http://ru.html.net/tutorials/css/lesson5.php'>Русский</a> | <a href='http://zh.html.net/tutorials/css/lesson5.php'>中文</a> | 		</span></p>
+
+		
+	</div>
+
+	<!-- google_ad_section_end -->
+
+<script type='text/javascript' language='Javascript' src='../../../s1.lqcdn.com/m.min2d33.js?dt=2.3.110104.1'></script>
+	
+<script type="text/javascript" src="../../../apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="../../../platform.twitter.com/widgets.js"></script>
+<script src="../../../connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var fb = document.createElement('fb:like'); 
+fb.setAttribute("href",""); 
+fb.setAttribute("layout","button_count");
+fb.setAttribute("show_faces","false");
+fb.setAttribute("width","");
+fb.setAttribute("style","position:relative; top:-3px;");
+document.getElementById("FbCont").appendChild(fb);
+//--><!]]>
+</script>
+
+
+</body>
+
+<!-- Mirrored from fr.html.net/tutorials/css/lesson5.php by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 29 Mar 2012 09:27:02 GMT -->
+</html>

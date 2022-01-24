@@ -1,0 +1,12 @@
+Scenario Nominal du Cas d'Utilisation "EnregistrerUnEmprunt"
+1- Le Bibliothécaire entre les idenifiants du demandeur.
+2- Le système vérifie si le demandeur peut emprunter :
+ - la catégorie du demandeur : employé ou adhérent
+ - l'adhérent est à jour de son adhésion ;
+ - l'adhérent est à jour dans ses retours ;
+3- Le système affiche l'interface de saisie du reference du livre
+4- Le bibliothécaire enregistre l'emprunt
+5- Le Système vérifie que le nombre d'emprunt est respecté ou non 
+6- Le système valide l'emprunt et affiche" Emprunt enregistré"
+Exceptions : 2a,5a
+Extension : 6-4a

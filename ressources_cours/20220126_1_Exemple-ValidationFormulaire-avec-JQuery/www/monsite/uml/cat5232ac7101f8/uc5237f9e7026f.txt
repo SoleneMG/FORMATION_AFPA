@@ -1,0 +1,6 @@
+nom : Modifier un Exemplaire
+Acteur principal : gestionnaire de fonds
+Acteurs secondaires : 
+événement déclencheur  : modifier un exemplaire
+rôle du use case : modifier un exemplaire
+terminaison du use case :  modifier un exemplaire

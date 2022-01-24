@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"><head><title>Openweb.eu.org - Initiation au positionnement CSS&nbsp;: 1.flux et position relative</title>
+
+  
+    
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="revisit-after" content="15 days">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_1_fichiers/screen_003.css" media="screen" title="Normal">
+    <link rel="stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_1_fichiers/print_002.css" media="print" title="Normal">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_1_fichiers/screen_005.css" media="screen" title="Fond noir">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_1_fichiers/print.css" media="print" title="Fond noir">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_1_fichiers/screen_002.css" media="screen" title="Fond noir/gros caractères">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_1_fichiers/print_005.css" media="print" title="Fond noir/gros caractères">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_1_fichiers/screen_004.css" media="screen" title="Minimal">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_1_fichiers/print_003.css" media="print" title="Minimal">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_1_fichiers/screen.css" media="screen" title="Sans habillage">
+    <link rel="alternate stylesheet" type="text/css" href="Initiation%20au%20positionnement%20CSS_1_fichiers/print_004.css" media="print" title="Sans habillage">
+    <link rel="author" title="Auteurs" href="http://openweb.eu.org/openwebgroup/membres/">
+    <link rel="copyright" title="Conditions de réutilisation" href="http://openweb.eu.org/openwebgroup/licence/">
+    <link rel="start" title="Accueil" href="http://openweb.eu.org/">
+    <link rel="help" title="Politique d'accessibilité" href="http://openweb.eu.org/openwebgroup/demarche_accessibilite/">
+    <link rel="index" title="Carte" href="http://openweb.eu.org/openwebgroup/plan/">
+    <link rel="shortcut icon" type="images/x-icon" href="http://openweb.eu.org/favicon.ico">
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.Publisher" content="OpenWebGroup.eu.org">
+    <link rel="alternate" title="Version Docbook/XML" type="text/xml" href="http://openweb.eu.org/articles/initiation_flux/docbook.xml">
+    <link rel="alternate" title="Version brute" type="text/html" href="http://openweb.eu.org/articles/initiation_flux/xhtml.xml">
+    <meta name="DC.Language" scheme="RFC3066" content="fr">
+    <meta name="DC.Identifier" content="initiation_flux">
+    <meta name="DC.Creator" content="Laurent Denis">
+    <meta name="DC.Date.created" scheme="W3CDTF" content="2003-03-21">
+    <meta name="DC.Date.modified" scheme="W3CDTF" content="2003-03-21">
+    <meta name="DC.Rights" content="Cet article est sous licence Creative Commons Attribution-ShareAlike.">
+    <meta name="DC.Subject" content="expert, mise_en_page, css"></head><body>
+    <div id="page">
+      <div id="accessible">
+        <ul>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/demarche_accessibilite/">Politique
+            d'accessibilité</a>
+          </li>
+          <li>
+            <a href="#texte">Aller au texte</a>
+          </li>
+          <li class="dernier">
+            <a href="#menus">Aller au menu</a>
+          </li>
+        </ul>
+        <form action="/articles/initiation_flux/index.php" method="get" id="switcher">
+  <div id="habillage">
+    <label for="set">Choisir un habillage&nbsp;:</label>
+    <select id="set" name="set">
+      <option value="original" selected="selected">Normal</option>
+      <option value="fondnoir">Fond noir</option>
+      <option value="fondnoir_medium">Fond noir/gros caractères</option>
+      <option value="minimale">Minimal</option>
+      <option value="sanshabillage">Sans habillage</option>
+    </select>
+    <input value="Ok" type="submit">
+  </div>
+</form>
+      </div>
+      <div id="moteur">
+        <form id="recherche" method="get" action="/recherche/">
+          <div id="moteurint">
+            <label for="q">Recherche sur ce site&nbsp;:</label>
+            <input name="q" id="q" accesskey="4" value="" class="champs">
+            <input name="Submit" value="Ok" class="valid" type="submit">
+          </div>
+        </form>
+      </div>
+      <div id="logo">
+        <h1>
+          <a href="http://openweb.eu.org/" title="Retour en page d'accueil">
+            <img src="Initiation%20au%20positionnement%20CSS_1_fichiers/logo.png" alt="OpenWeb, pour les standards du web" height="94" width="358">
+          </a>
+        </h1>
+      </div>
+      <div id="texte">
+        <h2>Initiation au positionnement CSS&nbsp;: 1.flux et position relative</h2>
+        <div class="abstract">
+          <div class="auteur">
+            <ul>
+              <li>
+                <strong>Profil&nbsp;:</strong> <a href="http://openweb.eu.org/expert/">Expert</a>
+              </li>
+              <li>
+                <strong>Thème&nbsp;:</strong> <a href="http://openweb.eu.org/mise_en_page/">Mise en page</a>
+              </li>
+              <li>
+                <strong>Technologie&nbsp;:</strong> <a href="http://openweb.eu.org/css/">CSS</a>
+              </li>
+              <li>
+                <strong>Auteur&nbsp;:</strong> <a href="mailto:laurent.denis%40openweb.eu.org">Laurent <span class="patronyme">Denis</span></a>
+              </li>
+              <li class="dernier">
+                <strong>Mise à jour&nbsp;:</strong> 21/03/2003</li>
+            </ul>
+          </div>
+          <h3>En bref</h3>
+          <p>Par
+défaut, les navigateurs affichent les boîtes issues du document html
+dans l'ordre du flux normal. En position relative, un élément peut être
+décalé verticalement et/ou horizontalement.</p>
+          <hr>
+        </div>
+        <p>Pour représenter le positionnement en flux normal, on peut imaginer le navigateur parcourant (logiquement) la page de code <acronym title="HyperText Markup Language" lang="en">HTML</acronym>
+du début à la fin et retranscrivant son contenu au fur et à mesure des
+balises rencontrées. Comme dans la lecture d'un texte, il procède
+verticalement, commençant en «&nbsp;haut&nbsp;» de l'écran pour aller
+jusqu'en «&nbsp;bas&nbsp;», et horizontalement de gauche à droite, sur
+la totalité de l'espace disponible et nécessaire en largeur comme en
+hauteur.</p>
+        <h3 id="fluxbloc">Boîte de type bloc en flux normal</h3>
+        <p>Par
+défaut, les boîtes de type bloc seront affichées dans une succession
+verticale. Prenons par exemple deux blocs différenciés par leur
+couleur&nbsp;:</p>
+        <p>En <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>&lt;p class="jaune"&gt;Une boîte jaune&lt;/p&gt;
+&lt;p class="verte"&gt;Une boîte verte&lt;/p&gt;
+    </pre>
+        <p>En <acronym title="Cascading Style Sheets" lang="en">CSS</acronym>&nbsp;:</p>
+        <pre>.jaune {
+  background-color: #ffff00;
+}
+.verte {
+  background-color: #00ff00;
+}
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_flux/annexes/annexe1.html#ex1">l'exemple 1</a>&nbsp;:</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_1_fichiers/ex1.gif" alt="L'un au dessus de l'autre, la boîte bloc rectangulaire jaune et la boîte rectangulaire verte">
+        </div>
+        <p>Le
+navigateur traite successivement les deux éléments rencontrés. Comme il
+s'agit d'éléments de type bloc, il aligne la marge gauche de chaque
+élément sur la marge gauche de l'élément conteneur, c'est à dire ici le
+bloc conteneur initial.</p>
+        <p>Les principaux éléments créant des boîtes bloc sont&nbsp;:</p>
+        <ul>
+          <li>l'élément <code class="token">div</code>&nbsp;;</li>
+          <li>les titres <code class="token">h1</code>, <code class="token">h2</code>, <code class="token">h3</code>, <code class="token">h4</code>,     <code class="token">h5</code>, <code class="token">h6</code>&nbsp;;</li>
+          <li>le paragraphe <code class="token">p</code>&nbsp;;</li>
+          <li>Les listes et éléments de liste <code class="token">ul</code>, <code class="token">ol</code>, <code class="token">li</code>, <code class="token">dl</code>, <code class="token">dd</code>&nbsp;;</li>
+          <li>Le bloc de citation <code class="token">blockquote</code>&nbsp;;</li>
+          <li>Le texte pré-formaté <code class="token">pre</code>&nbsp;;</li>
+          <li>L'adresse <code class="token">address</code>.</li>
+        </ul>
+        <h3 id="fluxligne">Boîte de type en-ligne</h3>
+        <p>Par
+défaut, les boîtes de type en-ligne sont affichées dans une succession
+horizontale. Prenons par exemple deux portions de texte différenciées
+par leur couleur&nbsp;:</p>
+        <p>En <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>&lt;p&gt;
+  &lt;span class="jaune"&gt;Une boîte jaune&lt;/span&gt;
+  &lt;span class="verte"&gt;Une boîte verte&lt;/span&gt;
+&lt;/p&gt;
+</pre>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>.jaune {
+  background-color: #ffff00;
+}
+.verte {
+  background-color: #00ff00;
+}
+</pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_flux/annexes/annexe1.html#ex2">l'exemple 2</a>&nbsp;:</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_1_fichiers/ex2.gif" alt="De gauche à droite, la boîte rectangulaire jaune et la boîte rectangulaire verte">
+        </div>
+        <p>Les principaux éléments créant des boîtes en ligne sont&nbsp;:</p>
+        <ul>
+          <li>l'élément <code class="token">span</code>&nbsp;;</li>
+          <li>le lien <code class="token">a</code>&nbsp;;</li>
+          <li>L'image <code class="token">img</code>&nbsp;;</li>
+          <li>Les emphases <code class="token">em</code> et <code class="token">strong</code>&nbsp;;</li>
+          <li>La citation <code class="token">q</code>&nbsp;;</li>
+          <li>La citation <code class="token">cite</code>&nbsp;;</li>
+          <li>L'élément <code class="token">code</code>&nbsp;;</li>
+          <li>Le texte entré par l'utilisateur <code class="token">kbd</code>&nbsp;;</li>
+          <li>L'exemple <code class="token">samp</code>&nbsp;;</li>
+          <li>La variable <code class="token">var</code>&nbsp;;</li>
+          <li>Les abréviations et acronymes <code class="token">abbr</code>, <code class="token">acronym</code>&nbsp;;      </li>
+          <li>Le texte inséré <code class="token">ins</code>&nbsp;;</li>
+          <li>Le texte supprimé <code class="token">del</code>.</li>
+        </ul>
+        <p>Pour
+résumer le flux normal&nbsp;: c'est un traitement linéaire du contenu
+de la page. L'alignement des boîtes bloc est vertical&nbsp;;
+l'alignement des éléments en-ligne dans les boîtes bloc est horizontal.</p>
+        <p>Reportez-vous à notre article <a href="http://openweb.eu.org/articles/initiation_display/">Boîtes bloc, boîtes en ligne et propriété display,</a> pour en savoir plus sur l'utilisation de la proprieté <code class="token">display</code> des boîtes bloc et en ligne…</p>
+        <h3 id="relative">La position relative</h3>
+        <p>Le
+positionnement relatif permet d'inscrire un contenu en flux normal,
+puis de le décaler horizontalement et/ou verticalement. Le contenu
+suivant n'est pas affecté par ce déplacement, qui peut donc entraîner
+des chevauchements.</p>
+        <p>Soit par exemple un positionnement
+relatif indice qui stipule un décalage vers le haut de 5 pixels et un
+arrière-plan jaune&nbsp;:</p>
+        <p>En <acronym>HTML</acronym>&nbsp;:</p>
+        <pre>&lt;p&gt;
+  Lorem
+  &lt;span class="jaune"&gt;
+    boîte en position relative
+  &lt;/span&gt;
+  ipsum dolor.
+&lt;/p&gt;
+    </pre>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>.jaune {
+  position: relative;
+  bottom: 5px;
+  background-color: #ffff00;
+}
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_flux/annexes/annexe1.html#ex3">l'exemple 3</a>&nbsp;:</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_1_fichiers/ex3.gif" alt="Le texte de la boîte jaune se décale de 5 pixels vers le haut par rapport au reste du paragraphe">
+        </div>
+        <p>Pour illustrer le risque de chevauchement, ajoutons un décalage vers la droite&nbsp;:</p>
+        <p>En <acronym>CSS</acronym>&nbsp;:</p>
+        <pre>.jaune {
+  position: relative;
+  bottom: 5px;
+  left: 3em;
+  background-color: #ffff00;
+}
+    </pre>
+        <p>Le résultat, illustré par la figure ci-dessous, peut être observé également dans <a href="http://openweb.eu.org/articles/initiation_flux/annexes/annexe1.html#ex4">l'exemple 4</a>&nbsp;:</p>
+        <div>
+          <img src="Initiation%20au%20positionnement%20CSS_1_fichiers/ex4.gif" alt="Le texte de la boîte jaune se décale de 5 pixels en haut et de 3em à droite : il déborde sur le texte qui suit">
+        </div>
+        <p>Nous aborderons le second type de positionnement <acronym>CSS</acronym> dans <a href="http://openweb.eu.org/articles/initiation_float/">initiation au positionnement CSS&nbsp;: 2.position float</a>.</p>
+        <hr>
+                <p class="reaction">Une question, une remarque&nbsp;? Écrivez à l'auteur à 
+      <a href="mailto:laurent.denis%40openweb.eu.org">laurent.denis@openweb.eu.org</a>.
+    </p>
+      </div>
+      <div id="menus">
+        <div id="profil">
+          <h2>Consultez ce site selon <em>votre profil</em>
+          </h2>
+          <ul>
+            <li>
+              <a href="http://openweb.eu.org/expert/">Expert</a>
+            </li>
+            <li>
+              <a href="http://openweb.eu.org/debutant/">Débutant</a>
+            </li>
+            <li>
+              <a href="http://openweb.eu.org/decideur/">Décideur</a>
+            </li>
+            <li>
+              <a href="http://openweb.eu.org/gourou/">Gourou</a>
+            </li>
+          </ul>
+        </div>
+        <div id="sectionmenus">
+          <div id="accueil">
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/">Accueil</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/openwebgroup/openwebgroup/">Présentation</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/humeurs/">Humeur</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/actualite/">Actualité</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/articles/">Articles</a>
+              </li>
+            </ul>
+          </div>
+          <div id="technologie">
+            <h2>Technologie</h2>
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/xhtml/">(X)HTML</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/rss/">RSS</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/css/">CSS</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/dom/">DOM</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/png/">PNG</a>
+              </li>
+            </ul>
+          </div>
+          <div id="theme">
+            <h2>Thème</h2>
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/pages_dynamiques/">Pages dynamiques</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/navigateurs/">Navigateurs</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/accessibilite/">Accessibilité</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/etude_cas/">Études de cas</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/mise_en_page/">Mise en page</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/multimedia/">Multimédia</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/structure/">Structure</a>
+              </li>
+            </ul>
+          </div>
+          <div id="ressources">
+            <h2>Ressources</h2>
+            <ul>
+              <li>
+                <a href="http://openweb.eu.org/ressources/validation/">Outils</a>
+              </li>
+              <li>
+                <a href="http://openweb.eu.org/ressources/specifications/">Spécifications</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="ours">
+        <ul>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/plan/">Plan de site</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/contact/">Contacts</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/membres/">Le collectif et ses
+            membres</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/demarche_confidentialite/">Politique de
+            confidentialité</a>
+          </li>
+          <li>
+            <a href="http://openweb.eu.org/openwebgroup/licence/">Conditions de
+            réutilisation</a>
+          </li>
+          <li class="dernier">
+            <a href="http://openweb.eu.org/openwebgroup/contribution/">Proposer vos contributions</a>
+          </li>
+        </ul>
+        <p>Page valide <a href="http://validator.w3.org/check/referer" title="Vérifier la validité de cette page">XHTML 1 Strict</a>, 
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Vérifier la validité de la feuille de styles">CSS2</a> et
+        <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" title="W3C Web accessibility initiative">accessible AA</a>.
+        <br>
+        Ce site s'affiche mieux dans un navigateur conforme aux standards, 
+        <a href="http://openweb.eu.org/openwebgroup/demarche_standard/">voici pourquoi</a>.
+        <br>
+        Site hébergé par l'<a href="http://www.apinc.org/">
+            <acronym title="Association pour l'Internet Non Commercial" xml:lang="fr">APINC</acronym>
+          </a>
+          <img src="Initiation%20au%20positionnement%20CSS_1_fichiers/apinc.png" alt="" title="" height="15" width="16">
+        et actualités dopées par <a href="http://dotclear.net/">Dotclear</a>.</p>
+      </div>
+    </div>
+  </body></html>

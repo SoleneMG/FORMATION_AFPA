@@ -1,0 +1,882 @@
+Main
+../webviewer/26.jpg
+dgm5232ac72011d.htm
+
+
+
+(
+)
+Bibliothèque
+../webviewer/26.jpg
+dgm5232ac8c034e.htm
+dgm5232ac8c034e.txt
+
+
+(
+)
+<<Actor>> adherent
+../webviewer/41.jpg
+class52384ef00306.htm
+class52384ef00306.txt
+
+
+(
+theConsulterUnLivre ( ConsulterUnLivre )
+../webviewer/82.jpg
+../looseends/role52384f2a029b.htm
+
+
+
+)
+<<Actor>> Bibliothécaire
+../webviewer/41.jpg
+class5236f39b03da.htm
+class5236f39b03da.txt
+
+
+(
+theEnregistrerUnEmprunt ( EnregistrerUnEmprunt )
+../webviewer/82.jpg
+../looseends/role5237f789036b.htm
+
+
+
+theGérerLesAdhésions ( GérerLesAdhésions )
+../webviewer/82.jpg
+../looseends/role52384f790087.htm
+
+
+
+theEnregistrerUnRetour ( EnregistrerUnRetour )
+../webviewer/82.jpg
+../looseends/role52385a330345.htm
+
+
+
+)
+<<Actor>> Employé
+../webviewer/41.jpg
+class52386b240259.htm
+
+
+
+(
+theS'Authentifier ( S'Authentifier )
+../webviewer/82.jpg
+../looseends/role52386b8402d8.htm
+
+
+
+)
+<<Actor>> GestionnaireDeFonds
+../webviewer/41.jpg
+class5237f62a0107.htm
+class5237f62a0107.txt
+
+
+(
+theGérerLesEmplacements ( GérerLesEmplacements )
+../webviewer/82.jpg
+../looseends/role5237f75f0203.htm
+
+
+
+theSupprimerUnLivre ( SupprimerUnLivre )
+../webviewer/82.jpg
+../looseends/role52385aa801ee.htm
+
+
+
+theModifierUnLivre ( ModifierUnLivre )
+../webviewer/82.jpg
+../looseends/role52385aac02ad.htm
+
+
+
+theEnregistrerUnLivre ( EnregistrerUnLivre )
+../webviewer/82.jpg
+../looseends/role52385ab40246.htm
+
+
+
+theSupprimerUnExemplaire ( SupprimerUnExemplaire )
+../webviewer/82.jpg
+../looseends/role52385acf03b3.htm
+
+
+
+theEnregistrerUnExemplaire ( EnregistrerUnExemplaire )
+../webviewer/82.jpg
+../looseends/role52385ad700a6.htm
+
+
+
+theModifierUnExemplaire ( ModifierUnExemplaire )
+../webviewer/82.jpg
+../looseends/role52385ae00181.htm
+
+
+
+theGérerLesPénalités ( GérerLesPénalités )
+../webviewer/82.jpg
+../looseends/role52385d450343.htm
+
+
+
+theGérerLesThèmes ( GérerLesThèmes )
+../webviewer/82.jpg
+../looseends/role523aad86018e.htm
+
+
+
+)
+<<Actor>> Responsable
+../webviewer/41.jpg
+class5236f2ae006f.htm
+class5236f2ae006f.txt
+
+
+(
+theConsulterEtatDesRetards ( ConsulterEtatDesRetards )
+../webviewer/82.jpg
+../looseends/role5236f436039d.htm
+
+
+
+theConsulterStatistiques ( ConsulterStatistiques )
+../webviewer/82.jpg
+../looseends/role5236f43c0159.htm
+
+
+
+theEditerLettreDeRappel ( EditerLettreDeRappel )
+../webviewer/82.jpg
+../looseends/role5236f61d012c.htm
+
+
+
+)
+ConsulterEtatDesRetards
+../webviewer/42.jpg
+uc5236f2fa01a7.htm
+uc5236f2fa01a7.txt
+
+
+(
+theResponsable ( Responsable )
+../webviewer/82.jpg
+../looseends/role5236f436039b.htm
+
+
+
+)
+(
+)
+ConsulterStatistiques
+../webviewer/42.jpg
+uc5236f2ec030f.htm
+uc5236f2ec030f.txt
+
+
+(
+theResponsable ( Responsable )
+../webviewer/82.jpg
+../looseends/role5236f43c014a.htm
+
+
+
+)
+(
+)
+ConsulterUnLivre
+../webviewer/42.jpg
+uc5232ae3d02d1.htm
+uc5232ae3d02d1.txt
+
+
+(
+theadherent ( adherent )
+../webviewer/82.jpg
+../looseends/role52384f2a0299.htm
+
+
+
+)
+(
+)
+EditerLettreDeRappel
+../webviewer/42.jpg
+uc5236f57402ff.htm
+uc5236f57402ff.txt
+
+
+(
+theResponsable ( Responsable )
+../webviewer/82.jpg
+../looseends/role5236f61d012a.htm
+
+
+
+)
+(
+)
+EnregistrerUnEmprunt
+../webviewer/42.jpg
+uc5237f8ae031a.htm
+uc5237f8ae031a.txt
+
+
+(
+theBibliothécaire ( Bibliothécaire )
+../webviewer/82.jpg
+../looseends/role5237f7890369.htm
+
+
+
+)
+(
+DSS : Exception 5a : Nombre d'emprunts atteint
+../webviewer/22.jpg
+dgm5238429d017f.htm
+dgm5238429d017f.txt
+
+
+(
+)
+DSS : Extension 6-4a: Plusieurs Emprunts
+../webviewer/22.jpg
+dgm523810440125.htm
+dgm523810440125.txt
+
+
+(
+)
+DSS: Exception 2a : L'adhérent ne peut pas emprunter
+../webviewer/22.jpg
+dgm52384c2401ed.htm
+dgm52384c2401ed.txt
+
+
+(
+)
+DSS:Nominal
+../webviewer/22.jpg
+dgm523804730177.htm
+dgm523804730177.txt
+
+
+(
+)
+)
+EnregistrerUnExemplaire
+../webviewer/42.jpg
+uc5237f9ea00e8.htm
+uc5237f9ea00e8.txt
+
+
+(
+theGestionnaireDeFonds ( GestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385ad700a4.htm
+
+
+
+)
+(
+)
+EnregistrerUnLivre
+../webviewer/42.jpg
+uc5237f96a01d2.htm
+uc5237f96a01d2.txt
+
+
+(
+theGestionnaireDeFonds ( GestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385ab40244.htm
+
+
+
+)
+(
+)
+EnregistrerUnRetour
+../webviewer/42.jpg
+uc5237f8c301f2.htm
+uc5237f8c301f2.txt
+
+
+(
+theBibliothécaire ( Bibliothécaire )
+../webviewer/82.jpg
+../looseends/role52385a330343.htm
+
+
+
+)
+(
+)
+GérerLesAdhésions
+../webviewer/42.jpg
+uc5232ae5901b8.htm
+uc5232ae5901b8.txt
+
+
+(
+theBibliothécaire ( Bibliothécaire )
+../webviewer/82.jpg
+../looseends/role52384f790085.htm
+
+
+
+)
+(
+)
+GérerLesEmplacements
+../webviewer/42.jpg
+uc5232af4101a8.htm
+uc5232af4101a8.txt
+
+
+(
+theGestionnaireDeFonds ( GestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role5237f75f0201.htm
+
+
+
+)
+(
+)
+GérerLesPénalités
+../webviewer/42.jpg
+uc52385cd30247.htm
+uc52385cd30247.txt
+
+
+(
+theGestionnaireDeFonds ( GestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385d450341.htm
+
+
+
+)
+(
+)
+GérerLesThèmes
+../webviewer/42.jpg
+uc5237fd890201.htm
+uc5237fd890201.txt
+
+
+(
+theGestionnaireDeFonds ( GestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role523aad86018c.htm
+
+
+
+)
+(
+)
+ModifierUnExemplaire
+../webviewer/42.jpg
+uc5237f9e7026f.htm
+uc5237f9e7026f.txt
+
+
+(
+theGestionnaireDeFonds ( GestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385ae0017f.htm
+
+
+
+)
+(
+)
+ModifierUnLivre
+../webviewer/42.jpg
+uc5237f9960175.htm
+uc5237f9960175.txt
+
+
+(
+theGestionnaireDeFonds ( GestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385aac02ab.htm
+
+
+
+)
+(
+)
+S'Authentifier
+../webviewer/42.jpg
+uc52386b7100e2.htm
+uc52386b7100e2.txt
+
+
+(
+theEmployé ( Employé )
+../webviewer/82.jpg
+../looseends/role52386b8402d6.htm
+
+
+
+)
+(
+DSS:Extension 1-2a: erreur login ou password
+../webviewer/22.jpg
+dgm523ab62d0105.htm
+
+
+
+(
+)
+DSS:Nominal
+../webviewer/22.jpg
+dgm523ab4dd0192.htm
+dgm523ab4dd0192.txt
+
+
+(
+)
+State/Activity Model2
+../webviewer/86.jpg
+stm523ab7b00059.htm
+
+
+
+(
+autentification
+../webviewer/87.jpg
+dgm523ab7b0006a.htm
+
+
+
+(
+)
+--Not Named--
+../webviewer/93.jpg
+stv523ab7c702ab.htm
+
+
+
+(
+)
+entrer dans le system
+../webviewer/92.jpg
+stv523ab7c40088.htm
+
+
+
+(
+)
+saisir login et password
+../webviewer/91.jpg
+stv523ab8280182.htm
+
+
+
+(
+)
+)
+)
+SupprimerUnExemplaire
+../webviewer/42.jpg
+uc5237f9e50117.htm
+uc5237f9e50117.txt
+
+
+(
+theGestionnaireDeFonds ( GestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385acf03b1.htm
+
+
+
+)
+(
+)
+SupprimerUnLivre
+../webviewer/42.jpg
+uc5237f978005b.htm
+uc5237f978005b.txt
+
+
+(
+theGestionnaireDeFonds ( GestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385aa801ec.htm
+
+
+
+)
+(
+)
+State/Activity Model
+../webviewer/86.jpg
+stm523803ad005b.htm
+
+
+
+(
+NewDiagram2
+../webviewer/87.jpg
+dgm523803ad006c.htm
+
+
+
+(
+)
+)
+Associations
+../webviewer/assoccat.gif
+
+
+
+
+(
+Association (theConsulterEtatDesRetards:ConsulterEtatDesRetards) (theResponsable:Responsable)
+../webviewer/81.jpg
+../looseends/ass5236f43502ef.htm
+
+
+
+(
+ConsulterEtatDesRetards ( theConsulterEtatDesRetards )
+../webviewer/82.jpg
+../looseends/role5236f436039b.htm
+
+
+
+Responsable ( theResponsable )
+../webviewer/82.jpg
+../looseends/role5236f436039d.htm
+
+
+
+)
+Association (theConsulterStatistiques:ConsulterStatistiques) (theResponsable:Responsable)
+../webviewer/81.jpg
+../looseends/ass5236f43a037c.htm
+
+
+
+(
+ConsulterStatistiques ( theConsulterStatistiques )
+../webviewer/82.jpg
+../looseends/role5236f43c014a.htm
+
+
+
+Responsable ( theResponsable )
+../webviewer/82.jpg
+../looseends/role5236f43c0159.htm
+
+
+
+)
+Association (theEditerLettreDeRappel:EditerLettreDeRappel) (theResponsable:Responsable)
+../webviewer/81.jpg
+../looseends/ass5236f61b01d6.htm
+
+
+
+(
+EditerLettreDeRappel ( theEditerLettreDeRappel )
+../webviewer/82.jpg
+../looseends/role5236f61d012a.htm
+
+
+
+Responsable ( theResponsable )
+../webviewer/82.jpg
+../looseends/role5236f61d012c.htm
+
+
+
+)
+Association (theGérerLesEmplacements:GérerLesEmplacements) (theGestionnaireDeFonds:GestionnaireDeFonds)
+../webviewer/81.jpg
+../looseends/ass5237f75d0201.htm
+
+
+
+(
+GérerLesEmplacements ( theGérerLesEmplacements )
+../webviewer/82.jpg
+../looseends/role5237f75f0201.htm
+
+
+
+GestionnaireDeFonds ( theGestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role5237f75f0203.htm
+
+
+
+)
+Association (theEnregistrerUnEmprunt:EnregistrerUnEmprunt) (theBibliothécaire:Bibliothécaire)
+../webviewer/81.jpg
+../looseends/ass5237f7880194.htm
+
+
+
+(
+EnregistrerUnEmprunt ( theEnregistrerUnEmprunt )
+../webviewer/82.jpg
+../looseends/role5237f7890369.htm
+
+
+
+Bibliothécaire ( theBibliothécaire )
+../webviewer/82.jpg
+../looseends/role5237f789036b.htm
+
+
+
+)
+Association (theConsulterUnLivre:ConsulterUnLivre) (theadherent:adherent)
+../webviewer/81.jpg
+../looseends/ass52384f280316.htm
+
+
+
+(
+ConsulterUnLivre ( theConsulterUnLivre )
+../webviewer/82.jpg
+../looseends/role52384f2a0299.htm
+
+
+
+adherent ( theadherent )
+../webviewer/82.jpg
+../looseends/role52384f2a029b.htm
+
+
+
+)
+Association (theGérerLesAdhésions:GérerLesAdhésions) (theBibliothécaire:Bibliothécaire)
+../webviewer/81.jpg
+../looseends/ass52384f770122.htm
+
+
+
+(
+GérerLesAdhésions ( theGérerLesAdhésions )
+../webviewer/82.jpg
+../looseends/role52384f790085.htm
+
+
+
+Bibliothécaire ( theBibliothécaire )
+../webviewer/82.jpg
+../looseends/role52384f790087.htm
+
+
+
+)
+Association (theEnregistrerUnRetour:EnregistrerUnRetour) (theBibliothécaire:Bibliothécaire)
+../webviewer/81.jpg
+../looseends/ass52385a3201cc.htm
+
+
+
+(
+EnregistrerUnRetour ( theEnregistrerUnRetour )
+../webviewer/82.jpg
+../looseends/role52385a330343.htm
+
+
+
+Bibliothécaire ( theBibliothécaire )
+../webviewer/82.jpg
+../looseends/role52385a330345.htm
+
+
+
+)
+Association (theSupprimerUnLivre:SupprimerUnLivre) (theGestionnaireDeFonds:GestionnaireDeFonds)
+../webviewer/81.jpg
+../looseends/ass52385aa70271.htm
+
+
+
+(
+SupprimerUnLivre ( theSupprimerUnLivre )
+../webviewer/82.jpg
+../looseends/role52385aa801ec.htm
+
+
+
+GestionnaireDeFonds ( theGestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385aa801ee.htm
+
+
+
+)
+Association (theModifierUnLivre:ModifierUnLivre) (theGestionnaireDeFonds:GestionnaireDeFonds)
+../webviewer/81.jpg
+../looseends/ass52385aab0211.htm
+
+
+
+(
+ModifierUnLivre ( theModifierUnLivre )
+../webviewer/82.jpg
+../looseends/role52385aac02ab.htm
+
+
+
+GestionnaireDeFonds ( theGestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385aac02ad.htm
+
+
+
+)
+Association (theEnregistrerUnLivre:EnregistrerUnLivre) (theGestionnaireDeFonds:GestionnaireDeFonds)
+../webviewer/81.jpg
+../looseends/ass52385ab1026e.htm
+
+
+
+(
+EnregistrerUnLivre ( theEnregistrerUnLivre )
+../webviewer/82.jpg
+../looseends/role52385ab40244.htm
+
+
+
+GestionnaireDeFonds ( theGestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385ab40246.htm
+
+
+
+)
+Association (theSupprimerUnExemplaire:SupprimerUnExemplaire) (theGestionnaireDeFonds:GestionnaireDeFonds)
+../webviewer/81.jpg
+../looseends/ass52385ace0324.htm
+
+
+
+(
+SupprimerUnExemplaire ( theSupprimerUnExemplaire )
+../webviewer/82.jpg
+../looseends/role52385acf03b1.htm
+
+
+
+GestionnaireDeFonds ( theGestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385acf03b3.htm
+
+
+
+)
+Association (theEnregistrerUnExemplaire:EnregistrerUnExemplaire) (theGestionnaireDeFonds:GestionnaireDeFonds)
+../webviewer/81.jpg
+../looseends/ass52385ad501ec.htm
+
+
+
+(
+EnregistrerUnExemplaire ( theEnregistrerUnExemplaire )
+../webviewer/82.jpg
+../looseends/role52385ad700a4.htm
+
+
+
+GestionnaireDeFonds ( theGestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385ad700a6.htm
+
+
+
+)
+Association (theModifierUnExemplaire:ModifierUnExemplaire) (theGestionnaireDeFonds:GestionnaireDeFonds)
+../webviewer/81.jpg
+../looseends/ass52385ade02e7.htm
+
+
+
+(
+ModifierUnExemplaire ( theModifierUnExemplaire )
+../webviewer/82.jpg
+../looseends/role52385ae0017f.htm
+
+
+
+GestionnaireDeFonds ( theGestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385ae00181.htm
+
+
+
+)
+Association (theGérerLesPénalités:GérerLesPénalités) (theGestionnaireDeFonds:GestionnaireDeFonds)
+../webviewer/81.jpg
+../looseends/ass52385d4402a4.htm
+
+
+
+(
+GérerLesPénalités ( theGérerLesPénalités )
+../webviewer/82.jpg
+../looseends/role52385d450341.htm
+
+
+
+GestionnaireDeFonds ( theGestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role52385d450343.htm
+
+
+
+)
+Association (theS'Authentifier:S'Authentifier) (theEmployé:Employé)
+../webviewer/81.jpg
+../looseends/ass52386b820305.htm
+
+
+
+(
+S'Authentifier ( theS'Authentifier )
+../webviewer/82.jpg
+../looseends/role52386b8402d6.htm
+
+
+
+Employé ( theEmployé )
+../webviewer/82.jpg
+../looseends/role52386b8402d8.htm
+
+
+
+)
+Association (theGérerLesThèmes:GérerLesThèmes) (theGestionnaireDeFonds:GestionnaireDeFonds)
+../webviewer/81.jpg
+../looseends/ass523aad8502ab.htm
+
+
+
+(
+GérerLesThèmes ( theGérerLesThèmes )
+../webviewer/82.jpg
+../looseends/role523aad86018c.htm
+
+
+
+GestionnaireDeFonds ( theGestionnaireDeFonds )
+../webviewer/82.jpg
+../looseends/role523aad86018e.htm
+
+
+
+)
+)

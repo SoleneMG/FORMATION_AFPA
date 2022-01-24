@@ -1,0 +1,10 @@
+Nom : Enregistrer un retour
+Acteur principal : Bibliothécaire
+Acteurs secondaires : Adhérent, Salarié
+événement déclencheur  : Adhérent ou salarié voulant rendre un exemplaire
+rôle du use case : 
+- Le demandeur (L'adhérent ou un salarié) retourne un emprunt ; 
+- Le bibliothécaire enregistre le retour
+- Le bibliotécaire range ll'exemplaire
+
+terminaison du use case : Exemplaire disponible et rangé

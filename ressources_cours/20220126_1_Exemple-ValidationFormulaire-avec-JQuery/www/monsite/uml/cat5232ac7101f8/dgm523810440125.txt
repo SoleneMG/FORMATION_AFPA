@@ -1,0 +1,3 @@
+DSS : Extension5-4a: PlusieursEmprunts
+1- Le bibliothécaire enregistre un emprunt ;
+2- Le système affiche "Emprunt enregistré

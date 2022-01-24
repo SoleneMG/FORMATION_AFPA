@@ -1,0 +1,21 @@
+<head><script type="text/javascript" src="jquery-1.3.2.js" /></script></head>
+<body>
+
+<div id="monDiv1">Coucou c'est moi 1 </div>
+<div id="monDiv2">Coucou c'est moi 2 <div> &nbsp; ici un autre texte</div></div>
+<div id="monDiv3">Coucou c'est moi 3</div>
+
+<br>La méthode jQuery <b>.html()</b> récupère le contenu HTML du noeud et de tous les noeud enfants
+<br>Pour récuperer le contenu texte du noeud et de tous les noeud enfants utiliser la méthode <b>text()</b>
+
+<script type='text/javascript'>
+alert( $('#monDiv2').html() + "\n" + $('#monDiv2').text() );
+// Attention ; $ de jQuery ne ramène pas vraiment un élément DOM !!
+var x= $('#monDiv2');
+var y = document.getElementById("monDiv2"); // Utilisation du DOM
+alert("x[0].firstChild.nodeValue\n" + x[0].firstChild.nodeValue);
+alert("y.firstChild.nodeValue\n" + y.firstChild.nodeValue);
+
+
+</script>
+</body>

@@ -1,0 +1,60 @@
+<!-- Demo de lightbox maison -->
+<style>
+#fond_ecran_gris
+{
+	background-color: #CCCCFF;
+	opacity: .75;	filter: alpha(opacity=75);
+
+	position: absolute;
+	left: 0px;	top: 0px;
+	width: 100%;height: 100%;
+
+	/* Pour recouvrir d'éventuelles zones */
+	z-index: 100;
+}
+
+#ma_lightbox
+{
+	position: absolute;
+
+	/* pourrait dynamiquement être modifié par javascript */
+	left: 150px;top: 150px;
+
+	width: 200px;height: 150px;
+	background-color: lightblue;
+
+	/* Pour être sur l'&cran gris*/
+	z-index: 101;  
+}
+
+</style>
+
+<body>
+
+<div id="fond_ecran_gris" style="visibility:hidden;"></div>
+
+<div id="ma_lightbox" style="visibility:hidden;">
+	<h3>Contenu de<br>ma belle LightBox !</h3>
+	<a href='#' onclick="fermer_boite();return false;">Fermer</a>
+</div>
+
+<a href='#' onclick="montrer_boite();return false;">
+	Faire afficher la LightBox en cliquant ici.</a>
+
+</body>
+
+<script type="text/javascript" >
+function montrer_boite()
+{
+	document.getElementById('fond_ecran_gris').style.visibility='visible';
+	document.getElementById('ma_lightbox').style.visibility='visible';
+}
+
+function fermer_boite()
+{
+	document.getElementById('fond_ecran_gris').style.visibility='hidden';
+	document.getElementById('ma_lightbox').style.visibility='hidden';
+}
+</script>
+
+

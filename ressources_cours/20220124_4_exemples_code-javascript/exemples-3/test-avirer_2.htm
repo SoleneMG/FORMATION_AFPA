@@ -1,0 +1,19 @@
+<script type="text/javascript">
+function popUp(winURL) { window.open(winURL,"popup","width=800,height=600"); }
+
+function prepareLink(id) {
+
+var link = document.getElementById("popup");
+link.onclick=function()
+	{
+	popUp(this.getAttribute("href"));
+	return false;
+	}
+}
+
+window.onload = function ()
+{ prepareLink("popup"); }
+
+</script>
+
+<a id="popup" href = "http://www.google.fr"> Google </a>

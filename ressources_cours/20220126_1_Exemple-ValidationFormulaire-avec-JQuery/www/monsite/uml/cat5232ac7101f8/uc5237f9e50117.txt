@@ -1,0 +1,6 @@
+nom : Supprimer un Exemplaire
+Acteur principal : gestionnaire de fonds
+Acteurs secondaires : 
+événement déclencheur  : supprimer un exemplaire
+rôle du use case : supprimer un exemplaire
+terminaison du use case :  supprimer un exemplaire

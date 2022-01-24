@@ -1,0 +1,36 @@
+<style>
+a.lien_ext:link
+{    background: url(icon.gif) no-repeat 100% 0;   padding: 0 20px 0 0; }
+a.lien_ext:visited
+{	background: url(icon.gif) no-repeat 100% -100px;	padding: 0 20px 0 0; }
+a:hover {           background-color:#FFFFCC;      }
+	
+</style>
+
+<script type="text/javascript">
+function open_ext_link()
+{
+	var liens = document.getElementsByTagName('a');
+	//  les liens (<a>) du document sont placés dans un tableau "liens".
+	for (var i = 0 ; i < liens.length ; ++i)  {
+		if (liens[i].className == 'lien_ext')  {
+			// Affectation de l'évènement
+			liens[i].onclick = function()  {
+				window.open(this.href,'', "width=800,height=600");
+				return false; // désactivation du lien puisque l'action a eu lieu
+			};
+		}
+	}
+}
+window.onload = open_ext_link;
+// Au chargement de la page, on appelle la fonction.
+
+</script>
+
+<a class="lien_ext" href = "http://www.google.fr"> Google </a><br/>
+<a  href = "http://www.google.fr"> Google </a><br/>
+<a class="lien_ext" href = "http://www.google.fr"> Google </a><br/>
+<a  href = "http://www.google.fr"> Google </a><br/>
+<a  href = "http://www.yahoo.fr"> yahoo </a><br/>
+
+

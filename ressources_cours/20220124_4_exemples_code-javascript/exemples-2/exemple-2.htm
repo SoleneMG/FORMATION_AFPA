@@ -1,0 +1,24 @@
+<script language="javascript">
+
+function Vehicule(unNom)
+{
+this.nom = unNom; this.etat='';
+this.demarrer = function()
+	{	document.write('Vroum vroum <br>'); this.etat='ok';	}
+this.arreter = function()
+	{ document.write( this.nom + ' en arrêt<br>');  this.etat='ko';	}
+	
+}
+Vehicule.prototype.recapitulatif = function()
+ {
+ var info =  'Nom : ' + this.nom;
+ info    +=  ' | Moteur : ' + this.typeMoteur;
+ if (this.etat == 'ok' ) info += ' | Etat : Démarré';
+ else					 info += ' | Etat : Arrété';
+ document.write( info );
+ } 
+Vehicule.prototype.typeMoteur='mécanique';
+vehicule = new Vehicule('Titine');
+vehicule.demarrer();vehicule.recapitulatif();
+	
+</script>

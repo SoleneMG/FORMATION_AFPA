@@ -1,0 +1,3 @@
+DSS : Exception 2a: l'adhérent ne peut pas emprunter
+1- Le system ne valide pas l'emprunt ;
+

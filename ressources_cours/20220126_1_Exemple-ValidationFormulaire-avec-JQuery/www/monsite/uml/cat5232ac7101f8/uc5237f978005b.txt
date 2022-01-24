@@ -1,0 +1,6 @@
+nom : Supprimer un livre
+Acteur principal : gestionnaire de fonds
+Acteurs secondaires : 
+événement déclencheur  : supprimer un livre
+rôle du use case : supprimer un livre
+terminaison du use case :  supprimer un livre

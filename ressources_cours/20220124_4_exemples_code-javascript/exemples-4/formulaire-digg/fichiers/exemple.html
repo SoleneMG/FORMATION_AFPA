@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Cr&eacute;ez un formulaire du style Digg</title>
+    <style type="text/css">
+        body{
+            font-family:Arial, Sans-Serif;
+            font-size:83%;
+        }
+        .formContainer
+        {
+        	background-color: #F5EFC9;
+        	border:none;
+        	padding:30px;
+        	width: 600px;
+        }
+        .formContainer h3
+        {
+        	margin:0px;
+            padding:0px 0px 10px 0px;
+            font-size:135%;
+        }
+        .rowContainer
+        {
+        	width:100%;
+        	overflow:hidden;
+        	padding-bottom:5px;
+        	height:34px;
+        }
+        .rowContainer label
+        {
+        	width:180px;
+        	float:left;
+        	color: #758656;
+        	font-weight:bold;
+        }
+        .rowContainer input[type="text"]
+        {
+        	width:200px;
+        }
+        .tooltipContainer
+        {
+        	height:16px;
+        	font-size:11px;
+        	color: #666666;
+        	display:none;
+        	float:none;
+        	background-repeat:no-repeat;
+        	background-position:left center;
+        	padding:0px 20px;
+        }
+        .info
+        {
+        	background-image:url('info.gif');
+        }
+        .error
+        {
+        	background-image:url('error.gif');
+        	color: #990000;
+        }
+        #content {
+        padding: 23px;
+        padding-top:0;
+        }
+        h1 {color: #99723b; font-size: 25px; font-family: "Lucida Fax", Georgia, Times, "Times New Roman", Helvetica, Verdana; font-weight:normal; margin:0; padding:0;}
+        a {color: #62791d; text-decoration:none;}
+.grey {color: #999999; text-decoration:none;}
+a:hover {text-decoration: none; text-decoration:underline;}
+a.img:hover {background-color: #ffffff;}
+    </style>
+    <script type="text/javascript" src="jquery-1.2.6.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".formContainer input[type=text]").focus(function(){
+                $(this).parent().find(".error").css("display", "none");
+                $(this).parent().find(".info").css("display", "block");
+            }).blur(function(){
+                $(this).parent().find(".info").css("display", "none");
+            });
+        });
+        
+        function validateForm()
+        {
+            $(".formContainer input[type=text]").each(function(){
+                var text = $(this).attr("value");
+                if (text == "")
+                {
+                    $(this).parent().find(".error").css("display", "block");
+                }
+            });
+        }
+        
+        function clearForm()
+        {
+            $(".formContainer input[type=text]").each(function(){
+                $(this).parent().find(".error").css("display", "none");
+            });
+       }
+    </script>
+</head>
+<body>
+
+<a href="http://www.designshack.co.uk"><img src="http://www.designshack.co.uk/images/logo.jpg" border="0" alt="logo" /></a><br /><br /><br />
+
+<div id="content">
+
+	<h1>Cr&eacute;ez un formulaire du style Digg | <a href="../">Retour &agrave; l'article</a>
+    </h1><br /><br />
+    <fieldset class="formContainer">
+        <h3>Inscrivez-vous ! C'est simple et facile.</h3>
+        <div class="rowContainer">
+            <label for="txtFirstname">Nom d'utilisateur</label>
+            <input id="txtFirstname" type="text" />
+            <div class="tooltipContainer info">Votre nom doit contenir entre 4 et 15 caract&egrave;res.</div>
+			<div class="tooltipContainer error">Attention ! Votre nom doit contenir entre 4 et 15 caract&egrave;res.</div>
+        </div>
+        <div class="rowContainer">
+            <label for="txtLastname">Adresse e-mail</label>
+            <input id="txtLastname" type="text" />
+            <div class="tooltipContainer info">Indiquez une adresse e-mail valide. Nous devons vous envoyer un e-mail pour confirmer votre inscription.</div>
+            <div class="tooltipContainer error">Attention ! Votre adresse e-mail n'est pas valide !</div>
+        </div>
+        <div class="rowContainer">
+            <label for="txtEmail">Votre mot de passe</label>
+            <input id="txtEmail" type="text" />
+            <div class="tooltipContainer info">Le mot de passe doit contenir au moins 6 caractères.</div>
+            <div class="tooltipContainer error">Attention ! Les mots de passe doivent contenir au moins 6 caractères alphanum&eacute;riques.</div>
+        </div>
+        <div class="rowContainer">
+            <label for="txtEmail">Confirmez le mot de passe</label>
+            <input id="txtRetypePassword" type="text" />
+            <div class="tooltipContainer info">Saisissez une nouvelle fois votre mot de passe.</div>
+        </div>
+        <div class="rowContainer">
+            <label for="txtAddress">Nom et pr&eacute;nom</label>
+            <input id="txtAddress" type="text" />
+            <div class="tooltipContainer info">Entrez vos nom et pr&eacute;nom. Maximum 35 caract&egrave;res.</div>
+            <div class="tooltipContainer error">Attention ! Entrez votre nom complet.</div>
+        </div>
+        <div class="rowContainer">
+            Et ainsi de suite avec d'autres champs...
+        </div>
+        <input type="button" id="btnSubmit" value="Simulez l'inscription" onclick="validateForm()" />
+    </fieldset><br />
+ </div>   
+
+</body>
+</html>

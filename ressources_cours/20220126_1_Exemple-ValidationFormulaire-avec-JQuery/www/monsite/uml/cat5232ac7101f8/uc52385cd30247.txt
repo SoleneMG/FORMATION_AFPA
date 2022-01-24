@@ -1,0 +1,6 @@
+nom : Gerer les pénalités
+Acteur principal : gestionnaire de fonds
+Acteurs secondaires : 
+événement déclencheur  : le gestionnaire de fond decide d'ajouter ,modifier ou supprimer une pénalité
+rôle du use case : gerer les emplacements: ajout , suppression modification
+terminaison du use case :  pénalité gérer

@@ -1,0 +1,503 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<!-- Mirrored from fr.html.net/tutorials/css/lesson4.php by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 29 Mar 2012 09:26:58 GMT -->
+<head>
+
+	<title>Leçon 4: Les polices - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Leçon 4: Les polices - HTML.net" />
+	<meta name="description" content="Leçon 4: Les polices - Tutoriels sur HTML et CSS - Construisez votre propre site Web" />
+	<meta name="keywords" content="HTML, CSS, XHTML, Tutoriel HTML, Tutoriel CSS, Forums, , " />
+	<meta name="language" content="fr" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Leçon 4: Les polices - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="lesson4.html" />
+	<meta property="og:image" content="../../../html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='../../../html.net/site/style/default.screen.css' type='text/css' media='screen' /><link rel='stylesheet' href='../../../html.net/site/style/default.print.css' type='text/css' media='print' />
+	<script type="text/javascript">
+			
+		function toggleVisibility(objectID, imageID) {
+		vis = document.getElementById(objectID).style;
+		state = vis.display;
+		if (state == 'none') {
+			vis.display = 'block';	
+			document.getElementById(imageID).value = '▲ Réduire';
+			}
+		else {		
+			if (state == 'block') {
+				vis.display = 'none';
+				document.getElementById(imageID).value = '▼ Agrandir';
+				}	
+			else {
+				vis.display = 'block'; 
+				document.getElementById(imageID).value = '▲ Réduire';
+				}
+		}}
+
+		//-->
+	</script>
+
+	<script type="text/javascript">
+	// <![CDATA[
+		var jump_page = '{LA_JUMP_PAGE}:';
+		var on_page = '{ON_PAGE}';
+		var per_page = '{PER_PAGE}';
+		var base_url = '{A_BASE_URL}';
+		var style_cookie = 'phpBBstyle';
+		var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+		var onload_functions = new Array();
+		var onunload_functions = new Array();
+
+		/**
+		* Find a member
+		*/
+		function find_username(url)
+		{
+			popup(url, 760, 570, '_usersearch');
+			return false;
+		}
+
+		/**
+		* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+		*/
+		window.onload = function()
+		{
+			for (var i = 0; i < onload_functions.length; i++)
+			{
+				eval(onload_functions[i]);
+			}
+		}
+
+		window.onunload = function()
+		{
+			for (var i = 0; i < onunload_functions.length; i++)
+			{
+				eval(onunload_functions[i]);
+			}
+		}
+
+	// ]]>
+	</script>
+
+	<script type="text/javascript" src="../../../html.net/forums/styles/prosilver/template/forum_fn.js"></script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-6716118-1']);
+	  _gaq.push(['_setDomainName', '.html.net']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+	
+</head>
+
+<body>	
+
+	<div id="login">
+		
+		<div><a href='http://fr.html.net/forums/ucp.php?mode=login'>Connexion</a> | <a href='http://fr.html.net/forums/ucp.php?mode=register'>Inscription</a> | <a href='http://fr.html.net/forums/faq.php'>FAQ</a></div><img src='../../site/graphics/user.png' />		
+	</div>
+
+	<div id="header">
+			
+		<ul>
+			<li><a href='http://fr.html.net/'>Accueil</a></li>
+			<li class='selected'><a href='http://fr.html.net/tutorials/'>Tutoriels</a></li>
+			<li><a href='http://fr.html.net/forums/'>Forums</a></li>
+			<li><a href='http://fr.html.net/about/'>À propos</a></li>
+		</ul>
+		<form method="get" action="http://fr.html.net/search/" id="cse-search-box">
+		<div id="searchbar">
+			<span>
+			
+				<input type="text" name="q" id="query" value="" /><input type="submit" id="submit" value="Rechercher" />
+				 <input type="hidden" name="cx" value="002160260272865772965:d4fb4jd-jh0" />
+				<input type="hidden" name="cof" value="FORID:11;NB:1" />
+				<input type="hidden" name="ie" value="UTF-8" />	
+				<input type="hidden" name="lr" value="lang_fr" />	
+				<input type="hidden" name="hl" value="fr" />	
+			
+			</span>
+		</div>
+		</form>
+		
+		<div id="ad_leaderboard">
+	<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_Leaderboard_728x90");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_Leaderboard_728x90 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_fr_tutorials_Leaderboard_728x90");
+	</script>
+</div>
+
+	</div>
+
+	
+		<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='http://fr.html.net/'>Accueil</a> &#187; <a href='http://fr.html.net/tutorials/'>Tutoriels</a> &#187; <a href='index.html'>CSS</a> &#187; Leçon 4: Les polices</div>
+			<div id="socialBookmarks">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a>
+				<span id="FbCont"></span>
+				<g:plusone size="medium"></g:plusone>
+								
+			</div>
+			<!-- google_ad_section_start -->
+		
+		<div id='tutorials'>	<h1>Leçon 4 : Les polices</h1>
+	<p>Dans cette leçon, vous apprendrez ce que sont les polices et comment les appliquer avec CSS. Nous étudierons également comment
+	contourner le problème des polices spécifiques choisies pour un site Web qui ne sont visibles que si elles sont installées sur
+	l'ordinateur utilisé pour accéder au site Web. Les propriétés CSS suivantes seront décrites :</p>
+	<ul>
+		<li><a href="#s1">font-family</a></li>
+		<li><a href="#s2">font-style</a></li>
+		<li><a href="#s3">font-variant</a></li>
+		<li><a href="#s4">font-weight</a></li>
+		<li><a href="#s5">font-size</a></li>
+		<li><a href="#s6">font</a></li>
+	</ul>
+
+	<h2 id="s1">La famille de polices [font-family]</h2>
+	<p>La propriété <code>font-family</code> sert à indiquer la liste prioritaire des polices à utiliser pour l'affichage d'un élément donné
+	ou d'une page Web. Si la première police de la liste n'est pas disponible sur l'ordinateur utilisé pour accéder au site,
+	la police suivante est essayée et ainsi de suite jusqu'à ce qu'il y en ait une qui convienne.</p>
+	<p>Il y a deux types de noms pour catégoriser les polices : les noms de familles et les familles génériques.
+	Les deux termes sont expliqués ci-dessous.</p>
+
+	<dl>
+	<dt>Le nom de famille</dt>
+	<dd>Comme exemples de noms de familles (souvent appelées « polices »), on trouve &quot;Arial&quot;,
+	&quot;Times New Roman&quot; ou &quot;Tahoma&quot;.</dd>
+
+	<dt>La famille générique</dt>
+	<dd>On peut décrire les familles génériques comme des groupes de noms de familles ayant des aspects uniformes.
+	Un exemple est celui de la famille sans sérif, qui est un ensemble de polices sans « empattement ».</dd>
+	</dl>
+
+	<p>On peut illustrer cette différence comme ceci :</p>
+
+	<p><img src="figure005.fr.png" alt="Trois exemples de familles génériques et quelques uns de leurs membres" /></p>
+
+	<p>Lorsqu'on liste des polices pour un site Web, on commence naturellement par la police préférée suivie par des polices de remplacement.
+	Il est recommandé de terminer la liste par une famille générique. Ainsi, la page s'affichera au moins avec une police de la même
+	famille si aucune des polices indiquées n'était disponible.</p>
+	<p>Un exemple de liste prioritaire de polices ressemblerait à ceci :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {font-family: arial, verdana, sans-serif;}
+	h2 {font-family: &quot;Times New Roman&quot;, serif;}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson4_ex1.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<p>Les titres marqués par des éléments <code>&lt;h1&gt;</code> s'afficheront dans la police &quot;Arial&quot;. Si elle n'est pas installée
+	dans l'ordinateur de l'utilisateur, la police &quot;Verdana&quot; sera utilisée à la place. Si ces deux polices sont indisponibles,
+	les titres s'afficheront dans une police de la famille <strong>sans-serif</strong>.</p>
+	<p>Remarquez que le nom de la police &quot;Times New Roman&quot; contient des espaces, et elle est donc listée entre des guillemets.</p>
+
+	<h2 id="s2">Le style des polices [font-style]</h2>
+	<p>La propriété <code>font-style</code> définit si le style de la police concernée doit être <strong>normal</strong>,
+	<strong>italic</strong> ou <strong>oblique</strong>. Dans l'exemple à suivre, tous les titres balisés par des
+	éléments <code>&lt;h2&gt;</code> s'afficheront en italiques.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {font-family: arial, verdana, sans-serif;}
+	h2 {font-family: &quot;Times New Roman&quot;, serif; <strong>font-style: italic;</strong>}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson4_ex2.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2 id="s3">Les variantes de polices [font-variant]</h2>
+	<p>La propriété <code>font-variant</code> sert à choisir entre les variantes <strong>normal</strong> ou <strong>small-caps</strong>
+	(N.d.T. petites capitales) d'une police. Une police <strong>small-caps</strong> utilise des lettres en capitales de taille réduite
+	à la place des lettres en minuscules. Embrouillé ? Étudiez ces exemples :</p>
+
+	<p><img src="figure006.gif" alt="Quatre exemples de polices en petites capitales" /></p>
+
+	<p>Si la propriété <code>font-variant</code> vaut <strong>small-caps</strong> et qu'aucune police en petites capitales n'est disponible,
+	le navigateur affichera très probablement le texte en capitales à la place.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {font-variant: small-caps;}
+	h2 {font-variant: normal;}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson4_ex3.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2 id="s4">La graisse des polices [font-weight]</h2>
+	<p>La propriété <code>font-weight</code> décrit avec quel degré de graisse (ou de « noir ») présenter la police. Elle peut avoir
+	une graisse <strong>normal</strong> ou <strong>bold</strong> (N.d.T. caractères gras). Certains navigateurs permettent même
+	d'utiliser des nombres entre 100 et 900 (les centaines) pour décrire la graisse de la police.</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	p {font-family: arial, verdana, sans-serif;}
+	td {font-family: arial, verdana, sans-serif; <strong>font-weight: bold;</strong>}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson4_ex4.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<h2 id="s5">Le corps des polices [font-size]</h2>
+	<p>Le corps d'une police se règle par la propriété <code>font-size</code>.</p>
+	<p>On peut choisir parmi beaucoup d'unités différentes (par exemple, pixels et pourcentages) pour décrire les corps des polices.
+	Dans ce tutoriel, nous nous concentrerons sur les unités les plus courantes et appropriées. Les exemples comprennent :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	h1 {font-size: <strong>30px</strong>;}
+	h2 {font-size: <strong>12pt</strong>;}
+	h3 {font-size: <strong>120%</strong>;}
+	p {font-size: <strong>1em;</strong>}
+	</code>
+	</pre>
+	</div>
+
+	<ul class="examplelinklist">
+		<li><a href="lesson4_ex5.html" title="Illustrer le code précédent">Afficher un exemple</a></li>
+	</ul>
+
+	<p>Il existe une différence essentielle entre les quatre unités précédentes. Les unités « <strong>px</strong> » et
+	« <strong>pt</strong> » font que le corps de la police est absolu, tandis que « <strong>%</strong> » et « <strong>em</strong> »
+	permettent à l'utilisateur de l'ajuster si nécessaire. Beaucoup d'utilisateurs ont des handicaps, sont âgés ou simplement pâtissent
+	d'une mauvaise vue ou de la piètre qualité de leur moniteur. <strong>Pour rendre votre site Web accessible</strong> à tous,
+	vous devriez utiliser des unités ajustables telles que « <strong>%</strong> » ou « <strong>em</strong> ». </p>
+	<p>Voici une illustration de la façon d'ajuster la taille du texte dans Mozilla Firefox et dans Internet Explorer. Essayez vous-même
+	(super, n'est-ce pas ?)</p>
+
+	<p><img src="figure007.gif" alt="" /></p>
+
+	<h2 id="s6">Concision [font]</h2>
+	<p>Avec la propriété raccourcie <code>font</code>, il est possible de couvrir toutes les différentes propriétés de police en un coup.</p>
+	<p>Par exemple, prenons ces quatre lignes de code servant à décrire les propriétés de police de <code>&lt;p&gt;</code> :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	p {
+		<strong>font-style: italic;
+		font-weight: bold;
+		font-size: 30px;
+		font-family: arial, sans-serif;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<p>Avec la propriété raccourcie, on peut simplifier le code :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	p {
+		<strong>font: italic bold 30px arial, sans-serif;</strong>
+	}
+	</code>
+	</pre>
+	</div>
+
+	<p>L'ordre des valeurs de la propriété <code>font</code> est le suivant :</p>
+	<p><code>font-style</code> | <code>font-variant</code> | <code>font-weight</code> | <code>font-size</code> | <code>font-family</code></p>
+
+	<h2>Résumé</h2>
+	<p>Vous venez d'apprendre quelques-unes des possibilités liées aux polices. Rappelez-vous que l'un des avantages majeurs de CSS
+	pour définir les polices est que vous pouvez, à tout moment, changer les polices d'un site Web entier. CSS fait gagner du temps
+	et facilite la vie. Dans la <a href="lesson5.html">leçon suivante</a>, nous verrons le texte.</p>
+	
+	<hr /><div id="ad_rectangle">
+	<!--
+	<span style="margin-right:10px;float:left">
+	-->
+	<span>
+		<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+		</script>
+		<script type='text/javascript'>
+		GS_googleAddAdSenseService("ca-pub-0941946313210493");
+		GS_googleEnableAllServices();
+		</script>
+		<script type='text/javascript'>
+		GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_LargeRectangle_336x280");
+		</script>
+		<script type='text/javascript'>
+		GA_googleFetchAds();
+		</script>
+
+		<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_LargeRectangle_336x280 -->
+		<script type='text/javascript'>
+		GA_googleFillSlot("HTML_NET_fr_tutorials_LargeRectangle_336x280");
+		</script>
+	</span>
+
+	
+</div><hr /><p class='previous'><a href='lesson3.html'>&lt;&lt; Leçon 3: Les couleurs et les arrières-plans</a></p><p class='next'><a href='lesson5.html'>Leçon 5: Le texte >></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+
+		<div id="ad_skyscraper">
+	<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_WideSkyscraper_160x600");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_WideSkyscraper_160x600 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_fr_tutorials_WideSkyscraper_160x600");
+	</script>
+
+</div>
+
+
+
+
+	</div>
+
+	<div id="sidebar">
+					<h1>Tutoriels</h1>
+			<ul>
+			<li><a href='http://fr.html.net/tutorials/html/'>Tutoriel HTML</a></li><li><strong><a href='index.html'>Tutoriel CSS</a></strong><ul><li><a href='introduction.html'>Introduction</a></li><li><a href='lesson1.html'>Qu'est-ce que CSS ?</a></li><li><a href='lesson2.html'>Comment CSS fonctionne-t-il ?</a></li><li><a href='lesson3.html'>Les couleurs et les arrières-plans</a></li><li class='selected'><a href='lesson4.html'>Les polices</a></li><li><a href='lesson5.html'>Le texte</a></li><li><a href='lesson6.html'>Les liens</a></li><li><a href='lesson7.html'>L'identification et le regroupement d'éléments (class et id)</a></li><li><a href='lesson8.html'>Le regroupement d'éléments (span et div)</a></li><li><a href='lesson9.html'>Le modèle des boîtes</a></li><li><a href='lesson10.html'>Le modèle des boîtes : margin & padding</a></li><li><a href='lesson11.html'>Le modèle des boîtes : les bordures</a></li><li><a href='lesson12.html'>Le modèle des boîtes : la hauteur et la largeur</a></li><li><a href='lesson13.html'>Les éléments flottants (les flottants)</a></li><li><a href='lesson14.html'>Le positionnement des éléments</a></li><li><a href='lesson15.html'>Une couche sur une couche avec z-index (les couches)</a></li><li><a href='lesson16.html'>Les standards du Web et la validation</a></li></ul></li><li><a href='http://fr.html.net/tutorials/php/'>Tutoriel PHP</a></li>			</ul>
+			
+		<!-- google_ad_section_start(weight=ignore) -->
+		<h2>Langue</h2>
+		
+		<form method="post" action="http://fr.html.net/redirect.php">
+			<p>
+			<select name="location">
+				
+				<option value='http://ar.html.net/tutorials/css/lesson4.php'>العربية</option>
+				<option value='http://de.html.net/tutorials/css/lesson4.php'>Deutsch</option>
+				<option value='http://html.net/tutorials/css/lesson4.php'>English</option>
+				<option value='http://es.html.net/tutorials/css/lesson4.php'>Español</option>
+				<option selected='selected' value='http://fr.html.net/tutorials/css/lesson4.php'>Français</option>
+				<option value='http://he.html.net/tutorials/css/lesson4.php'>עברית</option>
+				<option value='http://it.html.net/tutorials/css/lesson4.php'>Italiano</option>
+				<option value='http://pl.html.net/tutorials/css/lesson4.php'>Polski</option>
+				<option value='http://pt-br.html.net/tutorials/css/lesson4.php'>Português (Brasil)</option>
+				<option value='http://ru.html.net/tutorials/css/lesson4.php'>Русский</option>
+				<option value='http://zh.html.net/tutorials/css/lesson4.php'>中文</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+		
+		
+		<h2>La présentation</h2>
+		<form method='post' action='http://fr.html.net/tutorials/css/lesson4.php'>			<p>
+			<select name="strCSS">
+				
+				<option value='1'>Default</option>
+				<option value='2'>Default - Blue</option>
+				<option value='3'>No CSS</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+
+		<h2>Traducteur:</h2> <p><a href='http://www.yoyodesign.org/scripts/message.php'>Jean Jacques Solari</a></p>
+		
+			
+
+		
+
+	</div>
+
+	<div id="footer">
+
+		<hr />
+
+		
+		<h1>Qui est en ligne ?:</h1>
+		<p>Au total, il y a <strong>170</strong> utilisateurs en ligne :: 2 inscrits, 0 invisible et 168 invités</p> 
+		<p>Le nombre maximum d’utilisateurs en ligne simultanément a été de <strong>338</strong> le Mar Sep 28, 2010 9:13 am</p> 
+		<p id="userlist"><br />Utilisateurs inscrits : <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Google Adsense [Bot]</span></p>
+		
+		<h1>Statistiques:</h1>
+		<p>Messages au total <strong>6247</strong> - <strong>2592</strong> sujets au total</p><p><strong>6795</strong> membres au total - Notre membre le plus récent est <strong><a href='http://fr.html.net/forums/memberlist.php?mode=viewprofile&amp;u=9869'>Hsd265gbu7</a></strong></p>
+		<p><br /><a href="http://fr.html.net/forums/memberlist.php">Visualiser la liste complète des membres</a></p>
+		
+
+		<h1>Langue:</h1>
+		<p><span>
+		<a href='http://ar.html.net/tutorials/css/lesson4.php'>العربية</a> | <a href='http://de.html.net/tutorials/css/lesson4.php'>Deutsch</a> | <a href='http://html.net/tutorials/css/lesson4.php'>English</a> | <a href='http://es.html.net/tutorials/css/lesson4.php'>Español</a> | Français | <a href='http://he.html.net/tutorials/css/lesson4.php'>עברית</a> | <a href='http://it.html.net/tutorials/css/lesson4.php'>Italiano</a> | <a href='http://pl.html.net/tutorials/css/lesson4.php'>Polski</a> | <a href='http://pt-br.html.net/tutorials/css/lesson4.php'>Português (Brasil)</a> | <a href='http://ru.html.net/tutorials/css/lesson4.php'>Русский</a> | <a href='http://zh.html.net/tutorials/css/lesson4.php'>中文</a> | 		</span></p>
+
+		
+	</div>
+
+	<!-- google_ad_section_end -->
+
+<script type='text/javascript' language='Javascript' src='../../../s1.lqcdn.com/m.min2d33.js?dt=2.3.110104.1'></script>
+	
+<script type="text/javascript" src="../../../apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="../../../platform.twitter.com/widgets.js"></script>
+<script src="../../../connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var fb = document.createElement('fb:like'); 
+fb.setAttribute("href",""); 
+fb.setAttribute("layout","button_count");
+fb.setAttribute("show_faces","false");
+fb.setAttribute("width","");
+fb.setAttribute("style","position:relative; top:-3px;");
+document.getElementById("FbCont").appendChild(fb);
+//--><!]]>
+</script>
+
+
+</body>
+
+<!-- Mirrored from fr.html.net/tutorials/css/lesson4.php by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 29 Mar 2012 09:27:00 GMT -->
+</html>

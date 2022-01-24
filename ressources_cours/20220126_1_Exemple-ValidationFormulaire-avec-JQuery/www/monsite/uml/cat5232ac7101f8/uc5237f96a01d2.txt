@@ -1,0 +1,6 @@
+nom : Enregistrer un Livre
+Acteur principal : gestionnaire de fonds
+Acteurs secondaires : 
+événement déclencheur  : enregistrer un livre
+rôle du use case : enregistrer un livre
+terminaison du use case :  ajouter un livre

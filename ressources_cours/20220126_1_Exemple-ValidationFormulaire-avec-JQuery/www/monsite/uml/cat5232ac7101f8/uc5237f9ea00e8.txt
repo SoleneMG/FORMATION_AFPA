@@ -1,0 +1,6 @@
+nom : Enregistrer un Exemplaire
+Acteur principal : gestionnaire de fonds
+Acteurs secondaires : 
+événement déclencheur  : enregistrer un exemplaire
+rôle du use case : ajouter un exemplaire
+terminaison du use case :  ajouter un exemplaire

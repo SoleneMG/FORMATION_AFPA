@@ -1,0 +1,488 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<!-- Mirrored from fr.html.net/tutorials/css/lesson2.php by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 29 Mar 2012 09:26:52 GMT -->
+<head>
+
+	<title>Leçon 2: Comment CSS fonctionne-t-il ? - HTML.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Leçon 2: Comment CSS fonctionne-t-il ? - HTML.net" />
+	<meta name="description" content="Leçon 2: Comment CSS fonctionne-t-il ? - Tutoriels sur HTML et CSS - Construisez votre propre site Web" />
+	<meta name="keywords" content="HTML, CSS, XHTML, Tutoriel HTML, Tutoriel CSS, Forums, , " />
+	<meta name="language" content="fr" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.classify.org/safesurf/" l gen true for "http://html.net/" r (SS~~000 1))' />
+	<meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://html.net" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://html.net" r (n 0 s 0 v 0 l 0))' /> 
+	<meta property="og:title" content="Leçon 2: Comment CSS fonctionne-t-il ? - HTML.net" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="lesson2.html" />
+	<meta property="og:image" content="../../../html.net/avatar.png" />
+	<meta property="og:site_name" content="HTML.net" />
+	<meta property="fb:admins" content="610699221" />
+	<link rel='stylesheet' href='../../../html.net/site/style/default.screen.css' type='text/css' media='screen' /><link rel='stylesheet' href='../../../html.net/site/style/default.print.css' type='text/css' media='print' />
+	<script type="text/javascript">
+			
+		function toggleVisibility(objectID, imageID) {
+		vis = document.getElementById(objectID).style;
+		state = vis.display;
+		if (state == 'none') {
+			vis.display = 'block';	
+			document.getElementById(imageID).value = '▲ Réduire';
+			}
+		else {		
+			if (state == 'block') {
+				vis.display = 'none';
+				document.getElementById(imageID).value = '▼ Agrandir';
+				}	
+			else {
+				vis.display = 'block'; 
+				document.getElementById(imageID).value = '▲ Réduire';
+				}
+		}}
+
+		//-->
+	</script>
+
+	<script type="text/javascript">
+	// <![CDATA[
+		var jump_page = '{LA_JUMP_PAGE}:';
+		var on_page = '{ON_PAGE}';
+		var per_page = '{PER_PAGE}';
+		var base_url = '{A_BASE_URL}';
+		var style_cookie = 'phpBBstyle';
+		var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+		var onload_functions = new Array();
+		var onunload_functions = new Array();
+
+		/**
+		* Find a member
+		*/
+		function find_username(url)
+		{
+			popup(url, 760, 570, '_usersearch');
+			return false;
+		}
+
+		/**
+		* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+		*/
+		window.onload = function()
+		{
+			for (var i = 0; i < onload_functions.length; i++)
+			{
+				eval(onload_functions[i]);
+			}
+		}
+
+		window.onunload = function()
+		{
+			for (var i = 0; i < onunload_functions.length; i++)
+			{
+				eval(onunload_functions[i]);
+			}
+		}
+
+	// ]]>
+	</script>
+
+	<script type="text/javascript" src="../../../html.net/forums/styles/prosilver/template/forum_fn.js"></script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-6716118-1']);
+	  _gaq.push(['_setDomainName', '.html.net']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+	
+</head>
+
+<body>	
+
+	<div id="login">
+		
+		<div><a href='http://fr.html.net/forums/ucp.php?mode=login'>Connexion</a> | <a href='http://fr.html.net/forums/ucp.php?mode=register'>Inscription</a> | <a href='http://fr.html.net/forums/faq.php'>FAQ</a></div><img src='../../site/graphics/user.png' />		
+	</div>
+
+	<div id="header">
+			
+		<ul>
+			<li><a href='http://fr.html.net/'>Accueil</a></li>
+			<li class='selected'><a href='http://fr.html.net/tutorials/'>Tutoriels</a></li>
+			<li><a href='http://fr.html.net/forums/'>Forums</a></li>
+			<li><a href='http://fr.html.net/about/'>À propos</a></li>
+		</ul>
+		<form method="get" action="http://fr.html.net/search/" id="cse-search-box">
+		<div id="searchbar">
+			<span>
+			
+				<input type="text" name="q" id="query" value="" /><input type="submit" id="submit" value="Rechercher" />
+				 <input type="hidden" name="cx" value="002160260272865772965:d4fb4jd-jh0" />
+				<input type="hidden" name="cof" value="FORID:11;NB:1" />
+				<input type="hidden" name="ie" value="UTF-8" />	
+				<input type="hidden" name="lr" value="lang_fr" />	
+				<input type="hidden" name="hl" value="fr" />	
+			
+			</span>
+		</div>
+		</form>
+		
+		<div id="ad_leaderboard">
+	<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_Leaderboard_728x90");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_Leaderboard_728x90 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_fr_tutorials_Leaderboard_728x90");
+	</script>
+</div>
+
+	</div>
+
+	
+		<div id="main">
+		<div id="content">
+			<div id="breadcrumb"><a href='http://fr.html.net/'>Accueil</a> &#187; <a href='http://fr.html.net/tutorials/'>Tutoriels</a> &#187; <a href='index.html'>CSS</a> &#187; Leçon 2: Comment CSS fonctionne-t-il ?</div>
+			<div id="socialBookmarks">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal"></a>
+				<span id="FbCont"></span>
+				<g:plusone size="medium"></g:plusone>
+								
+			</div>
+			<!-- google_ad_section_start -->
+		
+		<div id='tutorials'>	<h1>Leçon 2 : Comment CSS fonctionne-t-il ?</h1>
+	<p>Dans cette leçon, vous apprendrez à fabriquer votre première feuille de style. Vous saurez ce qu'est le modèle CSS de base et
+	quels sont les codes nécessaires pour utiliser CSS dans un document HTML.</p>
+	<p>Beaucoup de propriétés des feuilles de style en cascade (CSS) sont similaires à celles de HTML. Si vous avez l'habitude
+	d'utiliser HTML pour la présentation, vous reconnaîtrez donc beaucoup de ces codes. Voyons un exemple concret.</p>
+
+	<h2>La syntaxe CSS de base</h2>
+	<p>Supposons que nous voulions que le fond d'une page Web soit d'un beau rouge :</p>
+	<p>Avec <strong>HTML</strong>, nous l'aurions fait comme ceci :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	&lt;body bgcolor=&quot;#FF0000&quot;&gt;
+	</code>
+	</pre>
+	</div>
+
+	<p>Avec <strong>CSS</strong>, on peut obtenir le même résultat comme cela :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>
+	<strong>body {background-color: #FF0000;}</strong>
+	</code>
+	</pre>
+	</div>
+
+	<p>Comme vous l'aurez remarqué, les codes sont plus ou moins identiques pour HTML et CSS. Cet exemple illustre également
+	le modèle fondamental de CSS :</p>
+
+	<p><img src="figure001.fr.png" alt="Une figure expliquant ce qu'est un sélecteur, une propriété et une valeur" /></p>
+
+	<p>Mais où place-t-on le code CSS ? C'est précisément ce que nous allons voir maintenant.</p>
+
+	<h2>Appliquer CSS à un document HTML</h2>
+
+	<p>Il y a trois façons d'appliquer le style CSS à un document HTML. Elles sont toutes expliquées ci-dessous. Nous vous recommandons
+	d'examiner la troisième méthode, c'est-à-dire celle externe.</p>
+
+	<h3>Méthode 1 : Dans la ligne (l'attribut style)</h3>
+
+	<p>Une façon d'appliquer du style CSS à HTML est celle avec l'attribut HTML <code>style</code>. En reprenant l'exemple précédent
+	avec l'arrière-plan rouge, on peut l'appliquer ainsi :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>&lt;html&gt;</code>
+	  <code>&lt;head&gt;</code>
+		<code>&lt;title&gt;Exemple&lt;/title&gt;</code>
+	  <code>&lt;/head&gt;</code>
+	  <code><strong>&lt;body style=&quot;background-color: #FF0000;&quot;&gt;</strong></code>
+		<code>&lt;p&gt;Cette page est rouge&lt;/p&gt;</code>
+	  <code>&lt;/body&gt;</code>
+	<code>&lt;/html&gt;</code>
+	</pre>
+	</div>
+
+	<h3>Méthode 2 : Interne (l'élément style)</h3>
+
+	<p>Une autre méthode consiste à inclure le code CSS avec la balise HTML <code>&lt;style&gt;</code>. Par exemple, comme ceci :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>&lt;html&gt;</code>
+	  <code>&lt;head&gt;</code>
+		<code>&lt;title&gt;Exemple&lt;/title&gt;</code>
+		<code><strong>&lt;style type=&quot;text/css&quot;&gt;</strong></code>
+		  <code><strong>body {background-color: #FF0000;}</strong></code>
+		<code><strong>&lt;/style&gt;</strong></code>
+	  <code>&lt;/head&gt;</code>
+	  <code>&lt;body&gt;</code>
+		<code>&lt;p&gt;Cette page est rouge&lt;/p&gt;</code>
+	  <code>&lt;/body&gt;</code>
+	<code>&lt;/html&gt;</code>
+	</pre>
+	</div>
+
+	<h3>Méthode 3 : Externe (un lien vers une feuille de style)</h3>
+
+	<p>La méthode recommandée est celle avec un lien vers ladite feuille de style externe. Pour le reste de ce tutoriel,
+	nous utiliserons cette méthode pour tous les exemples.</p>
+
+	<p>Une feuille de style externe est simplement un fichier texte ayant l'extension « <strong>.css</strong> ».
+	Comme n'importe quel fichier, la feuille de style peut être rangée sur un serveur Web ou sur un disque dur.</p>
+
+	<p>Par exemple, disons que votre feuille de style se nomme « <strong>style.css</strong> » et se trouve dans un dossier
+	appelé « <strong>style</strong> ». On peut illustrer cette situation comme ceci :</p>
+
+	<p><img src="figure002.png" alt="Le dossier &quot;style&quot; contenant le fichier &quot;style.css&quot;" /></p>
+
+	<p>L'astuce consiste à créer un lien depuis le document HTML (default.htm) vers la feuille de style (style.css).
+	Ce lien peut être créé en une ligne de code HTML :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; <strong>href=&quot;style/style.css&quot;</strong> /&gt;</code>
+	</pre>
+	</div>
+
+	<p>Remarquez comment on indique le chemin de la feuille de style avec l'attribut <code>href</code>.</p>
+
+	<p>La ligne de code doit s'inscrire dans la section d'en-tête du code HTML, c'est-à-dire entre les balises <code>&lt;head&gt;</code>
+	et <code>&lt;/head&gt;</code>. Comme ceci :</p>
+
+	<div class="codebox">
+	<pre>
+	<code>&lt;html&gt;</code>
+	  <code>&lt;head&gt;</code>
+		<code>&lt;title&gt;Mon document&lt;/title&gt;</code>
+		<code><strong>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style/style.css&quot; /&gt;</strong></code>
+	  <code>&lt;/head&gt;</code>
+	  <code>&lt;body&gt;</code>
+	  ...
+	</pre>
+	</div>
+
+	<p>Ce lien instruit le navigateur d'utiliser la présentation du fichier CSS pour afficher le fichier HTML.<br />
+	Ce qui est vraiment fûté, c'est que plusieurs documents HTML peuvent être reliés à la même feuille de style. En d'autres termes,
+	on peut utiliser un seul fichier CSS pour contrôler la présentation de plusieurs documents HTML.</p>
+
+	<p><img src="figure003.fr.png" alt="Une figure montrant plusieurs documents HTML reliés à la même feuille de style" /></p>
+
+	<p>Cette technique est susceptible d'économiser beaucoup d'efforts. Par exemple, si vous voulez changer la couleur d'arrière-plan
+	d'un site Web contenant 100 pages, une feuille de style peut vous épargner la modification manuelle des 100 documents HTML. Avec CSS,
+	le modification peut intervenir en quelques secondes en changeant juste une seule ligne de code de la feuille de style centrale.</p>
+
+	<p>Mettons donc en pratique ce que nous venons d'apprendre.</p>
+
+	<h2>Essayez vous-même</h2>
+
+	<p>Lancez Bloc-notes (ou votre éditeur de texte habituel) et créez deux fichiers, un fichier HTML et un fichier CSS, avec
+	les contenus suivants :</p>
+
+	<h3>default.htm</h3>
+
+	<div class="codebox">
+	<pre>
+	<code>&lt;html&gt;</code>
+	  <code>&lt;head&gt;</code>
+		<code>&lt;title&gt;Mon document&lt;/title&gt;</code>
+		<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&gt;</code>
+	  <code>&lt;/head&gt;</code>
+	  <code>&lt;body&gt;</code>
+		<code>&lt;h1&gt;Ma première feuille de style&lt;/h1&gt;</code>
+	  <code>&lt;/body&gt;</code>
+	<code>&lt;/html&gt;</code>
+	</pre>
+	</div>
+
+	<h3>style.css</h3>
+
+	<div class="codebox">
+	<pre>
+	<code>body {</code>
+	  <code>background-color: #FF0000;</code>
+	<code>}</code>
+	</pre>
+	</div>
+
+	<p>Placez maintenant les deux fichiers dans le même dossier. Songez à sauvegarder les fichiers avec les bonnes extensions
+	(respectivement « .htm » et « .css »)</p>
+
+	<p>Ouvrez « <strong>default.htm</strong> » dans votre navigateur et constatez le fond rouge de la page. Félicitations !
+	Vous avez fabriqué votre première feuille de style !</p>
+
+	<p>Vite à la <a href="lesson3.html">leçon suivante</a> où nous étudierons quelques propriétés CSS.</p>
+
+	<hr /><div id="ad_rectangle">
+	<!--
+	<span style="margin-right:10px;float:left">
+	-->
+	<span>
+		<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+		</script>
+		<script type='text/javascript'>
+		GS_googleAddAdSenseService("ca-pub-0941946313210493");
+		GS_googleEnableAllServices();
+		</script>
+		<script type='text/javascript'>
+		GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_LargeRectangle_336x280");
+		</script>
+		<script type='text/javascript'>
+		GA_googleFetchAds();
+		</script>
+
+		<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_LargeRectangle_336x280 -->
+		<script type='text/javascript'>
+		GA_googleFillSlot("HTML_NET_fr_tutorials_LargeRectangle_336x280");
+		</script>
+	</span>
+
+	
+</div><hr /><p class='previous'><a href='lesson1.html'>&lt;&lt; Leçon 1: Qu'est-ce que CSS ?</a></p><p class='next'><a href='lesson3.html'>Leçon 3: Les couleurs et les arrières-plans >></a></p></div>  		<!-- google_ad_section_end -->
+
+		</div>
+
+		<div id="ad_skyscraper">
+	<script type='text/javascript' src='../../../partner.googleadservices.com/gampad/google_service.js'>
+	</script>
+	<script type='text/javascript'>
+	GS_googleAddAdSenseService("ca-pub-0941946313210493");
+	GS_googleEnableAllServices();
+	</script>
+	<script type='text/javascript'>
+	GA_googleAddSlot("ca-pub-0941946313210493", "HTML_NET_fr_tutorials_WideSkyscraper_160x600");
+	</script>
+	<script type='text/javascript'>
+	GA_googleFetchAds();
+	</script>
+
+	<!-- ca-pub-0941946313210493/HTML_NET_fr_tutorials_WideSkyscraper_160x600 -->
+	<script type='text/javascript'>
+	GA_googleFillSlot("HTML_NET_fr_tutorials_WideSkyscraper_160x600");
+	</script>
+
+</div>
+
+
+
+
+	</div>
+
+	<div id="sidebar">
+					<h1>Tutoriels</h1>
+			<ul>
+			<li><a href='http://fr.html.net/tutorials/html/'>Tutoriel HTML</a></li><li><strong><a href='index.html'>Tutoriel CSS</a></strong><ul><li><a href='introduction.html'>Introduction</a></li><li><a href='lesson1.html'>Qu'est-ce que CSS ?</a></li><li class='selected'><a href='lesson2.html'>Comment CSS fonctionne-t-il ?</a></li><li><a href='lesson3.html'>Les couleurs et les arrières-plans</a></li><li><a href='lesson4.html'>Les polices</a></li><li><a href='lesson5.html'>Le texte</a></li><li><a href='lesson6.html'>Les liens</a></li><li><a href='lesson7.html'>L'identification et le regroupement d'éléments (class et id)</a></li><li><a href='lesson8.html'>Le regroupement d'éléments (span et div)</a></li><li><a href='lesson9.html'>Le modèle des boîtes</a></li><li><a href='lesson10.html'>Le modèle des boîtes : margin & padding</a></li><li><a href='lesson11.html'>Le modèle des boîtes : les bordures</a></li><li><a href='lesson12.html'>Le modèle des boîtes : la hauteur et la largeur</a></li><li><a href='lesson13.html'>Les éléments flottants (les flottants)</a></li><li><a href='lesson14.html'>Le positionnement des éléments</a></li><li><a href='lesson15.html'>Une couche sur une couche avec z-index (les couches)</a></li><li><a href='lesson16.html'>Les standards du Web et la validation</a></li></ul></li><li><a href='http://fr.html.net/tutorials/php/'>Tutoriel PHP</a></li>			</ul>
+			
+		<!-- google_ad_section_start(weight=ignore) -->
+		<h2>Langue</h2>
+		
+		<form method="post" action="http://fr.html.net/redirect.php">
+			<p>
+			<select name="location">
+				
+				<option value='http://ar.html.net/tutorials/css/lesson2.php'>العربية</option>
+				<option value='http://de.html.net/tutorials/css/lesson2.php'>Deutsch</option>
+				<option value='http://html.net/tutorials/css/lesson2.php'>English</option>
+				<option value='http://es.html.net/tutorials/css/lesson2.php'>Español</option>
+				<option selected='selected' value='http://fr.html.net/tutorials/css/lesson2.php'>Français</option>
+				<option value='http://he.html.net/tutorials/css/lesson2.php'>עברית</option>
+				<option value='http://it.html.net/tutorials/css/lesson2.php'>Italiano</option>
+				<option value='http://pl.html.net/tutorials/css/lesson2.php'>Polski</option>
+				<option value='http://pt-br.html.net/tutorials/css/lesson2.php'>Português (Brasil)</option>
+				<option value='http://ru.html.net/tutorials/css/lesson2.php'>Русский</option>
+				<option value='http://zh.html.net/tutorials/css/lesson2.php'>中文</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+		
+		
+		<h2>La présentation</h2>
+		<form method='post' action='http://fr.html.net/tutorials/css/lesson2.php'>			<p>
+			<select name="strCSS">
+				
+				<option value='1'>Default</option>
+				<option value='2'>Default - Blue</option>
+				<option value='3'>No CSS</option>			</select>
+			<input type="submit" value=">>" />
+			</p>
+		</form>
+
+		<h2>Traducteur:</h2> <p><a href='http://www.yoyodesign.org/scripts/message.php'>Jean Jacques Solari</a></p>
+		
+			
+
+		
+
+	</div>
+
+	<div id="footer">
+
+		<hr />
+
+		
+		<h1>Qui est en ligne ?:</h1>
+		<p>Au total, il y a <strong>170</strong> utilisateurs en ligne :: 2 inscrits, 0 invisible et 168 invités</p> 
+		<p>Le nombre maximum d’utilisateurs en ligne simultanément a été de <strong>338</strong> le Mar Sep 28, 2010 9:13 am</p> 
+		<p id="userlist"><br />Utilisateurs inscrits : <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Google Adsense [Bot]</span></p>
+		
+		<h1>Statistiques:</h1>
+		<p>Messages au total <strong>6247</strong> - <strong>2592</strong> sujets au total</p><p><strong>6795</strong> membres au total - Notre membre le plus récent est <strong><a href='http://fr.html.net/forums/memberlist.php?mode=viewprofile&amp;u=9869'>Hsd265gbu7</a></strong></p>
+		<p><br /><a href="http://fr.html.net/forums/memberlist.php">Visualiser la liste complète des membres</a></p>
+		
+
+		<h1>Langue:</h1>
+		<p><span>
+		<a href='http://ar.html.net/tutorials/css/lesson2.php'>العربية</a> | <a href='http://de.html.net/tutorials/css/lesson2.php'>Deutsch</a> | <a href='http://html.net/tutorials/css/lesson2.php'>English</a> | <a href='http://es.html.net/tutorials/css/lesson2.php'>Español</a> | Français | <a href='http://he.html.net/tutorials/css/lesson2.php'>עברית</a> | <a href='http://it.html.net/tutorials/css/lesson2.php'>Italiano</a> | <a href='http://pl.html.net/tutorials/css/lesson2.php'>Polski</a> | <a href='http://pt-br.html.net/tutorials/css/lesson2.php'>Português (Brasil)</a> | <a href='http://ru.html.net/tutorials/css/lesson2.php'>Русский</a> | <a href='http://zh.html.net/tutorials/css/lesson2.php'>中文</a> | 		</span></p>
+
+		
+	</div>
+
+	<!-- google_ad_section_end -->
+
+<script type='text/javascript' language='Javascript' src='../../../s1.lqcdn.com/m.min2d33.js?dt=2.3.110104.1'></script>
+	
+<script type="text/javascript" src="../../../apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="../../../platform.twitter.com/widgets.js"></script>
+<script src="../../../connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var fb = document.createElement('fb:like'); 
+fb.setAttribute("href",""); 
+fb.setAttribute("layout","button_count");
+fb.setAttribute("show_faces","false");
+fb.setAttribute("width","");
+fb.setAttribute("style","position:relative; top:-3px;");
+document.getElementById("FbCont").appendChild(fb);
+//--><!]]>
+</script>
+
+
+</body>
+
+<!-- Mirrored from fr.html.net/tutorials/css/lesson2.php by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 29 Mar 2012 09:26:53 GMT -->
+</html>

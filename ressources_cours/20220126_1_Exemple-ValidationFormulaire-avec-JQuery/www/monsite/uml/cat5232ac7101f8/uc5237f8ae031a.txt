@@ -1,0 +1,13 @@
+Nom : Enregistrer les emprunts
+Acteur principal : Bibliothécaire
+Acteurs secondaires : Adhérent, Employé
+événement déclencheur  : Adhérent ou salarié voulant emprunter un livre
+rôle du use case : 
+- Le demandeur (L'adhérent ou un salarié) demande un emprunt ; 
+- Le bibliothécaire vériifie si le demandeur est un adhérent ou un salarié ;
+- Le bibliothécaire vérifie si l'adhérent est à jour de sa cotisation ;
+- Le bibliothécaire vérifie si l'adhérent n'a pas d'exemplaire en retard ;
+
+- Le bibliothécaire enregistre l'emprunt et donnel'exemplaire à l'adhérent.
+
+terminaison du use case : L'exemplaire est emprunté par l'adhérent

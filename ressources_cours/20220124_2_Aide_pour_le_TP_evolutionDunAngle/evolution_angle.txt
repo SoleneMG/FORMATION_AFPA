@@ -1,0 +1,24 @@
+Indication pour le calcul du sinus, cosinus et tangente
+d'un angle qui évolue  de degré en degré depuis l'angle 0
+à l'angle 90 degrés.
+
+for (var i= 0; i <= 90; i++)
+{
+	// Convertir i en radian
+	// PI est une propriété de l'objet Math
+	var angle = i * Math.PI / 180;
+	document.write("<TR>");
+	document.write("<TD align='center'>");
+	document.write(i);
+	document.write("</TD>");
+	document.write("<TD>");
+	document.write(Math.sin(angle));
+	document.write("</TD>");
+	document.write("<TD>");
+	document.write(Math.cos(angle));
+	document.write("</TD>");
+	document.write("<TD>");
+	document.write(Math.tan(angle));
+	document.write("</TD>");
+	document.write("</TR>");
+}

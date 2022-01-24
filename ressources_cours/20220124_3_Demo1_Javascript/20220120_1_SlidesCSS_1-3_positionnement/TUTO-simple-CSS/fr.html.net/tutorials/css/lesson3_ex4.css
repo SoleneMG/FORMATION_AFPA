@@ -1,0 +1,9 @@
+body {
+	background-color: #FFCC66;
+	background-image: url(butterfly.gif);
+	background-repeat: repeat-x;
+}
+h1 {
+	color: #990000;
+	background-color: #FC9804;
+}

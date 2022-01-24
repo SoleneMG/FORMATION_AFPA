@@ -1,0 +1,13 @@
+Exemple<br/>
+<a href="http://www.google.fr">Lien Google</a><br/>
+<a href="http://www.yahoo.fr">Lien Yahoo</a><br />
+</body></html>
+
+<script language="javascript">
+var affich='';
+for ( i=0; i< document.links.length; i++)  
+	{
+	affich += document.links[i].innerHTML + ' ->' + document.links[i].href + "\n"; 
+	}
+alert( affich );
+</script>

@@ -1,0 +1,590 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>Les formulaires - (Exemples)</TITLE>
+</HEAD>
+
+<body>
+
+<table BORDER WIDTH="100%" >
+<tr VALIGN=TOP>
+<td COLSPAN="2" BGCOLOR="#CCCCFF">
+<center><b><font size=+2>Exemples de formulaires HTML</font></b></center>
+</td>
+</tr>
+<tr VALIGN=TOP>
+<td COLSPAN="2" BGCOLOR="#DDDDDD"><b>1 - INPUT type="text"</b></td>
+</tr>
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 1 (Size)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;INPUT -1&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour entrer le nom&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Prénom:&lt;BR&gt;
+<BR>&lt;INPUT <B>NAME="prenom" TYPE="text" SIZE="25"</B>&gt;
+<BR>&lt;P&gt;Nom de famille:&lt;BR&gt;
+<BR>&lt;INPUT <B>NAME="nom" TYPE="text" SIZE="25"</B>&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour entrer le nom</H3> 
+<FORM ACTION=""> 
+<P>Prénom:<BR> 
+<INPUT NAME="prenom" TYPE="text" SIZE="25"> 
+<P>Nom de famille:<BR> 
+<INPUT NAME="nom" TYPE="text" SIZE="25">
+
+</FORM> 
+</td>
+</tr>
+
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 2 (Maxlength)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;INPUT -1&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour entrer le nom&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Prénom:&lt;BR&gt;
+<BR>&lt;INPUT <B>NAME="prenom" TYPE="text" SIZE="25" MAXLENGTH="40"</B>&gt;
+<BR>&lt;P&gt;Nom de famille:&lt;BR&gt;
+<BR>&lt;INPUT <B>NAME="nom" TYPE="text" SIZE="25" MAXLENGTH="40"</B>&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour entrer le nom</H3> 
+<FORM ACTION=""> 
+<P>Prénom:<BR> 
+<INPUT NAME="prenom" TYPE="text" SIZE="25" MAXLENGTH="40"> 
+<P>Nom de famille:<BR> 
+<INPUT NAME="nom" TYPE="text" SIZE="25" MAXLENGTH="40"> 
+</FORM> 
+</td>
+</tr>
+
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 3 (Value)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;INPUT -3&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour adresse du site&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Nom:&lt;BR&gt;
+<BR>&lt;INPUT <B>NAME="nom" TYPE="text" SIZE="25" VALUE="Nom:"</B>&gt;
+<BR>&lt;P&gt;Adresse du site:&lt;BR&gt;
+<BR>&lt;INPUT <B>NAME="site" TYPE="text" SIZE="25" VALUE="http://"</B>&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour adresse du site</H3> 
+<FORM ACTION=""> 
+<P>Nom:<BR> 
+<INPUT NAME="nom" TYPE="text" SIZE="25" VALUE="Nom:"> 
+<P>Adresse du site:<BR> 
+<INPUT NAME="site" TYPE="text" SIZE="25" VALUE="http://"> 
+</FORM> 
+</td>
+</tr>
+
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size="+1">Exemple - 4 (ReadOnly)</font></b>
+<p><font size="-1">&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;INPUT -4&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour protéger du texte&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Site Web:&lt;BR&gt;
+<BR>&lt;INPUT <B>NAME="texte1" TYPE="text" SIZE="40" READONLY<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VALUE="http://www.google.fr"</B>&gt;
+<BR>&lt;P&gt;Commentaire:&lt;BR&gt;
+<BR>&lt;INPUT <B>NAME="texte2" TYPE="text" SIZE="45" READONLY<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VALUE="Le texte dans les deux boîtes n'est pas modifiable"</B>&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour protéger du texte</H3> 
+<FORM ACTION=""> 
+<P>Site Web:<BR> 
+<INPUT NAME="texte1" TYPE="text" SIZE="40" READONLY VALUE="http://www.yahoo.com"> 
+<P>Commentaire:<BR> 
+<INPUT NAME="texte2" TYPE="text" SIZE="42" READONLY VALUE="Le texte dans les deux boîtes n'est pas modifiable"> 
+</FORM>
+</td>
+</tr>
+
+<!---------- le mot de passe ----------->
+
+<tr VALIGN=TOP>
+<td COLSPAN="2" BGCOLOR="#DDDDDD"><b>2 - INPUT type="password"</b></td>
+</tr>
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 1 (Size)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;PASSWORD -1&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "mot de passe"&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Nom:&lt;BR&gt;
+<BR>&lt;INPUT NAME="nom" <B>TYPE="text" SIZE="25"</B>&gt;
+<BR>&lt;P&gt;Mot de Passe:&lt;BR&gt;
+<BR>&lt;INPUT NAME="nom" <B>TYPE="password" SIZE="8"</B>&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "mot de passe"</H3> 
+<FORM ACTION=""> 
+<P>Nom:<BR> 
+<INPUT NAME="nom" TYPE="text" SIZE="25"> 
+<P>Mot de Passe:<BR> 
+<INPUT NAME="nom" TYPE="password" SIZE="8"> 
+</FORM> 
+</td>
+</tr>
+
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 2 (Maxlength)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;PASSWORD -2&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "mot de passe"&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Nom:&lt;BR&gt;
+<BR>&lt;INPUT NAME="nom" <B>TYPE="text" SIZE="25" MAXLENGTH="20"</B>&gt;
+<BR>&lt;P&gt;Mot de Passe:&lt;BR&gt;
+<BR>&lt;INPUT NAME="nom" <B>TYPE="password" SIZE="8" MAXLENGTH="5"</B>&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "mot de passe"</H3> 
+<FORM ACTION=""> 
+<P>Nom:<BR> 
+<INPUT NAME="nom" TYPE="text" SIZE="25" MAXLENGTH="20"> 
+<P>Mot de Passe:<BR> 
+<INPUT NAME="nom" TYPE="password" SIZE="8" MAXLENGTH="5"> 
+</FORM> 
+</td>
+</tr>
+
+<!--------Entrée de type buton radio --------->
+
+<tr VALIGN=TOP>
+<td COLSPAN="2" BGCOLOR="#DDDDDD"><b>3 - INPUT type="radio"</b></td>
+</tr>
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 1 (Name & Value)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;RADIO -1&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "sélection d'un choix"&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Faites votre choix:&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="radio" NAME="Saison" VALUE="1"&gt;</B>Printemps&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="radio" NAME="Saison" VALUE="2"&gt;</B>Eté&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="radio" NAME="Saison" VALUE="3"&gt;</B>Automne&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="radio" NAME="Saison" VALUE="4"&gt;</B>Hiver&lt;BR&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "sélection d'un choix"</H3> 
+<FORM ACTION=""> 
+<P>Faites votre choix:<BR> 
+<INPUT TYPE="radio" NAME="Saison" VALUE="1">Printemps<BR> 
+<INPUT TYPE="radio" NAME="Saison" VALUE="2">Eté<BR> 
+<INPUT TYPE="radio" NAME="Saison" VALUE="3">Automne<BR> 
+<INPUT TYPE="radio" NAME="Saison" VALUE="4">Hiver<BR> 
+</FORM> 
+</td>
+</tr>
+
+<tr VALIGN=TOP>
+<td WIDTH="55%" nowrap><b><font size=+1>Exemple - 2 (checked)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;RADIO-2&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "sélection d'un choix"&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Faites votre choix:&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="radio" NAME="Saison" VALUE="1"&gt;</B>Printemps&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="radio" NAME="Saison" VALUE="2" CHECKED&gt;</B>Eté&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="radio" NAME="Saison" VALUE="3"&gt;</B>Automne&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="radio" NAME="Saison" VALUE="4"&gt;</B>Hiver&lt;BR&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "sélection d'un choix"</H3> 
+<FORM ACTION=""> 
+<P>Faites votre choix:<BR> 
+<INPUT TYPE="radio" NAME="Saison" VALUE="1">Printemps<BR> 
+<INPUT TYPE="radio" NAME="Saison" VALUE="2" CHECKED>Eté<BR> 
+<INPUT TYPE="radio" NAME="Saison" VALUE="3">Automne<BR> 
+<INPUT TYPE="radio" NAME="Saison" VALUE="4">Hiver<BR> 
+</FORM> 
+</td>
+</tr>
+
+
+<!--------Entrée de type 'Case à cocher' --------->
+
+<tr VALIGN=TOP>
+<td COLSPAN="2" BGCOLOR="#DDDDDD"><b>4 - INPUT type="checkbox"</b></td>
+</tr>
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 1 (Name & Value)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;CHECKBOX -1&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "sélection des choix"&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Faites votre choix:&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="checkbox" NAME="Saison" VALUE="1"&gt;</B>Printemps&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="checkbox" NAME="Saison" VALUE="2"&gt;</B>Eté&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="checkbox" NAME="Saison" VALUE="3"&gt;</B>Automne&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="checkbox" NAME="Saison" VALUE="4"&gt;</B>Hiver&lt;BR&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "sélection des choix"</H3> 
+<FORM ACTION=""> 
+<P>Faites votre choix:<BR> 
+<INPUT TYPE="checkbox" NAME="Saison" VALUE="1">Printemps<BR> 
+<INPUT TYPE="checkbox" NAME="Saison" VALUE="2">Eté<BR> 
+<INPUT TYPE="checkbox" NAME="Saison" VALUE="3">Automne<BR> 
+<INPUT TYPE="checkbox" NAME="Saison" VALUE="4">Hiver<BR> 
+</FORM> 
+</td>
+</tr>
+
+<tr VALIGN=TOP>
+<td WIDTH="55%" nowrap><b><font size=+1>Exemple - 2 (checked)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;CHECKBOX-2&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "sélection des choix"&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Faites votre choix:&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="checkbox" NAME="4S" VALUE="1"&gt;</B>Printemps&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="checkbox" NAME="4S" VALUE="2" CHECKED&gt;</B>Eté&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="checkbox" NAME="4S" VALUE="3"&gt;</B>Automne&lt;BR&gt;
+<BR>&lt;INPUT <B>TYPE="checkbox" NAME="4S" VALUE="4"&gt;</B>Hiver&lt;BR&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "sélection des choix"</H3> 
+<FORM ACTION=""> 
+<P>Faites votre choix:<BR> 
+<INPUT TYPE="checkbox" NAME="Saison" VALUE="1">Printemps<BR> 
+<INPUT TYPE="checkbox" NAME="Saison" VALUE="2" CHECKED>Eté<BR> 
+<INPUT TYPE="checkbox" NAME="Saison" VALUE="3">Automne<BR> 
+<INPUT TYPE="checkbox" NAME="Saison" VALUE="4">Hiver<BR> 
+</FORM> 
+</td>
+</tr>
+
+
+<!---------- les listes déroulantes ----------->
+
+<tr VALIGN=TOP>
+<td COLSPAN="2" BGCOLOR="#DDDDDD"><b>5 - Les listes déroulantes</b></td>
+</tr>
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 1 (SIZE=1)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;SELECT -1&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "Liste déroulante"&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Faites votre choix:&lt;BR&gt;
+<BR>&lt;SELECT NAME="Saison" SIZE=1> 
+<BR>&lt;OPTION VALUE="Printemps"&gt;Printemps&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Ete"&gt;Eté&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Automne"&gt;Automne&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Hiver"&gt;Hiver&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;/SELECT&gt; 
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "Liste déroulante"</H3> 
+<FORM ACTION=""> 
+<P>Faites votre choix:<BR> 
+<SELECT NAME="Saison"> 
+<OPTION VALUE="Printemps">Printemps</OPTION><BR> 
+<OPTION VALUE="Ete">Eté</OPTION><BR> 
+<OPTION VALUE="Automne">Automne</OPTION><BR> 
+<OPTION VALUE="Hiver">Hiver</OPTION><BR> 
+</SELECT> 
+</FORM> 
+</td>
+</tr>
+
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 2 (SIZE=3)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;SELECT -2&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "Liste déroulante"&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Faites votre choix:&lt;BR&gt;
+<BR>&lt;SELECT NAME="Saison" SIZE=3> 
+<BR>&lt;OPTION VALUE="Printemps"&gt;Printemps&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Ete"&gt;Eté&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Automne"&gt;Automne&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Hiver"&gt;Hiver&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;/SELECT&gt; 
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "Liste déroulante"</H3> 
+<FORM ACTION=""> 
+<P>Faites votre choix:<BR> 
+<SELECT NAME="Saison" SIZE=3> 
+<OPTION VALUE="Printemps">Printemps</OPTION><BR> 
+<OPTION VALUE="Ete">Eté</OPTION><BR> 
+<OPTION VALUE="Automne">Automne</OPTION><BR> 
+<OPTION VALUE="Hiver">Hiver</OPTION><BR> 
+</SELECT> 
+</FORM> 
+</td>
+</tr>
+
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 3 (SIZE=nombre d'items)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;SELECT -3&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "Liste déroulante"&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Faites votre choix:&lt;BR&gt;
+<BR>&lt;SELECT NAME="Saison" SIZE=4> 
+<BR>&lt;OPTION VALUE="Printemps"&gt;Printemps&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Ete"&gt;Eté&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Automne"&gt;Automne&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Hiver"&gt;Hiver&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;/SELECT&gt; 
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "Liste déroulante"</H3> 
+<FORM ACTION=""> 
+<P>Faites votre choix:<BR> 
+<SELECT NAME="Saison" SIZE=4> 
+<OPTION VALUE="Printemps">Printemps</OPTION><BR> 
+<OPTION VALUE="Ete">Eté</OPTION><BR> 
+<OPTION VALUE="Automne">Automne</OPTION><BR> 
+<OPTION VALUE="Hiver">Hiver</OPTION><BR> 
+</SELECT> 
+</FORM> 
+</td>
+</tr>
+
+
+
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 4 (SIZE=3 & SELECTED)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;SELECT -4&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "Liste déroulante"&lt;/H3&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;P&gt;Faites votre choix:&lt;BR&gt;
+<BR>&lt;SELECT NAME="Saison" SIZE=3> 
+<BR>&lt;OPTION VALUE="Printemps"&gt;Printemps&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Ete" SELECTED&gt;Eté&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Automne"&gt;Automne&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;OPTION VALUE="Hiver"&gt;Hiver&lt;/OPTION&gt;&lt;BR&gt;
+<BR>&lt;/SELECT&gt; 
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "Liste déroulante"</H3> 
+<FORM ACTION=""> 
+<P>Faites votre choix:<BR> 
+<SELECT NAME="Saison" SIZE=3> 
+<OPTION VALUE="Printemps">Printemps</OPTION><BR> 
+<OPTION VALUE="Ete" SELECTED>Eté</OPTION><BR> 
+<OPTION VALUE="Automne">Automne</OPTION><BR> 
+<OPTION VALUE="Hiver">Hiver</OPTION><BR> 
+</SELECT> 
+</FORM> 
+</td>
+</tr>
+
+<!--- Les boites de texte -->
+<tr VALIGN=TOP>
+<td COLSPAN="2" BGCOLOR="#DDDDDD"><b>6 - Boîte de texte (TEXTAREA)</b></td>
+</tr>
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 1 (Rows & Cols)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;TEXTAREA -1&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "boîte de texte"&lt;/H3&gt;
+<BR>&lt;P&gt;Entrer vos commentaires:&lt;BR&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;TEXTAREA <B>NAME="T1" ROWS="5" COLS="38"</B>&gt;&lt;/TEXTAREA&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "boîte de texte"</H3> 
+<P>Entrer vos commentaires:<BR> 
+<FORM ACTION=""> 
+<TEXTAREA NAME="T1" ROWS="5" COLS="38"></TEXTAREA> 
+</FORM> 
+</td>
+</tr>
+
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 2 (Texte dans la boîte)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;TEXTAREA -2&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "boîte de texte"&lt;/H3&gt;
+<BR>&lt;P&gt;Entrer vos commentaires:&lt;BR&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;TEXTAREA <B>NAME="T2" ROWS="5" COLS="38"</B>&gt;
+<BR>Du texte à l'intérieur de la boîte
+<BR>&lt;/TEXTAREA&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "boîte de texte"</H3> 
+<P>Entrer vos commentaires:<BR> 
+<FORM ACTION=""> 
+<TEXTAREA NAME="T1" ROWS="5" COLS="38">Du texte à l'intérieur de la boîte</TEXTAREA> 
+</FORM> 
+</td>
+</tr>
+
+<tr VALIGN=TOP>
+<td WIDTH="55%"><b><font size=+1>Exemple - 3 (Texte protégé)</font></b>
+<p><font size=-1>&lt;HTML&gt;
+<BR>&lt;HEAD&gt;
+<BR>&lt;TITLE&gt;TEXTAREA -3&lt;/TITLE&gt;
+<BR>&lt;/HEAD&gt;
+<BR>&lt;BODY BGCOLOR="white" TEXT="black"&gt;
+<BR>
+<BR>&lt;H3&gt;Formulaire pour "boîte de texte"&lt;/H3&gt;
+<BR>&lt;P&gt;Entrer vos commentaires:&lt;BR&gt;
+<BR>&lt;FORM ACTION=""&gt;
+<BR>&lt;TEXTAREA <B>NAME="T2" ROWS="5" COLS="38" READONLY</B>&gt;
+<BR>Ce texte n'est pas effaçable. 
+<BR>&lt;/TEXTAREA&gt;
+<BR>&lt;/FORM&gt;
+<BR>&lt;/BODY&gt;
+<BR>&lt;/HTML&gt;
+</font></td>
+
+<td align="left" valign="top">
+<H3>Formulaire pour "boîte de texte"</H3> 
+<P>Entrer vos commentaires:<BR> 
+<FORM ACTION=""> 
+<TEXTAREA NAME="T1" ROWS="5" COLS="38" READONLY>Ce texte n'est pas effaçable.</TEXTAREA> 
+</FORM> 
+</td>
+</tr>
+</table>
+
+
+<br>&nbsp;
+<center>
+
+
+</center>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<script language="javascript">
+
+function Vehicule(unNom)
+{
+this.nom = unNom;
+this.demarrer = function()
+	{  document.write('Vroum vroum <br>');	}
+this.arreter = function()
+	{  document.write( this.nom + ' en arrêt<br>'); }
+}
+vehicule1 = new Vehicule('Voiture');
+vehicule1.demarrer();vehicule1.arreter();
+vehicule2 = new Vehicule('Bateau');
+vehicule2.demarrer();vehicule2.arreter();
+
+Vehicule.prototype.typeMoteur='mécanique';
+document.write( vehicule1.typeMoteur + '<br>');
+document.write( vehicule2.typeMoteur + '<br>');
+
+	
+</script>

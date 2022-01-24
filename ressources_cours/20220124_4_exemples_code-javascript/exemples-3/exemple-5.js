@@ -1,0 +1,1 @@
+document.getElementById( "datefield" ).addEventListener( 'change', function(){ do_something(); }, false );

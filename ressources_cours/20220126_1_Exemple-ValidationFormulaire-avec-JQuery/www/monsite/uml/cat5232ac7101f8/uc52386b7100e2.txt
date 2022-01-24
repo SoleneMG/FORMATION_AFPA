@@ -1,0 +1,6 @@
+nom : s'autentifier
+Acteur principal : employé
+Acteurs secondaires : 
+événement déclencheur  : l'employé s'authentifie
+rôle du use case : valider le login et le password saisie pour permettre l'accés au system
+terminaison du use case : authentification

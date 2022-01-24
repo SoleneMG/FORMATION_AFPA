@@ -1,0 +1,21 @@
+<script type="text/javascript" src="jquery-1.3.2.js"></script>
+ <script type="text/javascript">                               
+$(document).ready(function(){
+   $("a").click(function(){
+        alert("Vous venez de cliquer sur "+ $(this).html());
+        return false;
+    });
+ });                              
+ </script>                                                      
+                                                       
+ <body>                                                              
+		<div id="div1">
+		<p>Entete de ma page avec un <a href="#">lien 1</a></p>
+		</div>
+		<div id="div2">
+		 <p>Contenu de ma page avec un <a href="#">lien 2</a></p>
+		</div>
+		<div id="div3">
+		 <p>Pied de page avec un <a href="#">lien 3</a></p>
+		</div>                    
+ </body>                                                                 

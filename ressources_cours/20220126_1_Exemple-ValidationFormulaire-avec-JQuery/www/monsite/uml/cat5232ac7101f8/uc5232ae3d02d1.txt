@@ -1,0 +1,6 @@
+nom : Consulter un livre
+Acteur principal : Salarié, Adhérent
+Acteurs secondaires : Néant
+événement déclencheur  : Volonté de consulter un livre
+rôle du use case : Consulter un livre 
+terminaison du use case : Livre consulté

@@ -1,0 +1,8 @@
+Scenario Nominal du Cas d'Utilisation s'authentifier
+1- L'employé saisie son login et password et valide.
+2- Le système vérifie la validiter du login et mot de passe 
+
+3- Le système connecte l'employé a l'application
+
+Exceptions : 2a
+Extension : 6-4a

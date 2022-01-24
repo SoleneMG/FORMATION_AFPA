@@ -1,0 +1,33 @@
+#sidebar {
+	DISPLAY: none
+}
+#comments {
+	DISPLAY: none
+}
+A.permalink {
+	DISPLAY: none
+}
+#main {
+	FLOAT: none
+}
+A:link {
+	COLOR: #555
+}
+A:visited {
+	COLOR: #555
+}
+HTML BODY PRE {
+	VERTICAL-ALIGN: baseline
+}
+HTML BODY CODE {
+	VERTICAL-ALIGN: baseline
+}
+A[href]:unknown {
+	FONT-SIZE: 90%; content: " (" attr(href) ") "
+}
+A[href^='/']:unknown {
+	content: " (http://askthecssguy.com" attr(href) ") "
+}
+BODY H1 A[href]:unknown {
+	content: ""
+}

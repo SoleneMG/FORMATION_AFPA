@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Page 1</title>
+	</head>
+	<body>
+		<li> Element 1</li>
+		<li> Element 2</li>
+		<li> Element 3</li>
+		<input type="text">
+		<textarea></textarea>
+		<input type="button" value="OK" onclick="onClick()">
+		
+		<script>
+		function onClick()
+		{
+			//On modifie le document grâce au DOM //DHTML
+			window.document.children[0].children[1].children[0].innerText = "COUCOU";
+			
+			//trace dans la console javascript
+			console.log("Hello");
+			
+			//boîte de dialogue modale
+			alert("Salut");
+			
+			//effacement du document précédent
+			document.write("J'écrit une ligne de Html <br/>");
+			document.write("J'écrit une deuxième ligne de Html<br/>");
+			
+			//Pour voir  CTRL^U
+			//!!la page d'origine!!
+		}
+		</script>
+	</body>
+</html>
