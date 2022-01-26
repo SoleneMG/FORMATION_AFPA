@@ -5,7 +5,7 @@ const adviceField = document.querySelector("#advice");
 const commentField = document.querySelector("#comment");
 
 const number = document.querySelector("#number").value;
-const lastNumber = document.querySelector("#lastNumber").value;
+let lastNumber = document.querySelector("#lastNumber").value;
 const trialNumber = document.querySelector("#trial").value;
 const advice = document.querySelector("#advice").value;
 const comment = document.querySelector("#comment").value;
@@ -24,6 +24,4 @@ function isOk(){
     }
 }
 
-function display(){
-
-}
+//keyEvent enter

@@ -27,3 +27,7 @@ input {
     margin-left: auto;
 }
 
+.readonly {
+    background-color: grey;
+    color: white;
+}
