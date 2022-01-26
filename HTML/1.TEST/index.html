@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <form id='form' action='http://rgdv4.mocklab.io' method="get">
+        <label class='req' for='nom'>Nom</label>
+        <input id='nom' type="text" name="nom" />
+        <label for='prenom'>Prénom</label>
+        <input id='prenom' type="text" name="prenom" />
+        <label class='req' for='ec'>Etat civil</label>
+        <select name='etat_civil' id='ec'>
+          <option value=''>--Choisir--</option>
+          <option value='Cel'>Célibataire</option>
+          <option value='Mar'>Marié</option>
+          <option value='Div'>Divorcé</option>
+        </select>
+        <input type="submit" value="Envoyer" />
+        </form>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

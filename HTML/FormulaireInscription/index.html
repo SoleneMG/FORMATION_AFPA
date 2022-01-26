@@ -8,21 +8,21 @@
 </head>
 
 <body id="body">
-    <form method="get" name="inscriptionForm">
+    <form method="get" name="theForm" action="#" id="theForm"> <!--http://rgdv4.mocklab.io-->
         <h1>Formulaire d'inscription</h1>
         <table>
             <tr>
                 <label class="block" for="name">Entrez votre nom</label>
-                <input type="text" id=name>
+                <input type="text" name="name" id="name" required>
             </tr>
             <tr>
                 <label class="block" for="surname">Entrez votre prénom</label>
-                <input type="text" id=surname>
+                <input type="text" name="surname" id="surname" required>
 
             </tr>
             <tr>
                 <label class="block" for="age">Entrez votre âge</label>
-                <input type="text" id=age>
+                <input type="text" name="age" id="age">
             </tr>
         </table>
         <label>Êtes vous un homme ou une femme ?</label>
@@ -31,10 +31,10 @@
         <label for="sex">Femme</label>
         <input type="radio" value="Femme" name="sex" id="woman">
     <div class="center">
-        <input id="cmdValidate" type="button" value="VALIDER" onclick="validate">
+        <input id="cmdValidate" type="submit" value="VALIDER" onClick="return validate(this.form)" /> >
     </div>
     </form>
-    <div class="answer"></div>
+    <div id="answer"></div>
 
 
     <footer id="footer">
