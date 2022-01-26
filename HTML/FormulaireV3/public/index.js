@@ -8,7 +8,8 @@ const cmdValidate = document.querySelector(".valid");
 const cmdprefill = document.querySelector(".prefill");
 const cmdsendWithoutCheck = document.querySelector(".sendWithoutCheck");
 let sexSelected = "Indéfini";
-
+console.log(document.getElementsByName("sex")[0].value);
+console.log(document.getElementById("Homme"));
 
 //Reset
 cmdReset.addEventListener("click", () => {
@@ -22,12 +23,13 @@ cmdReset.addEventListener("click", () => {
 //Pré-remplir
 cmdprefill.addEventListener("click", () => {
     let informations = ["MonNom", "MonPrénom", "30"]
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 3; i++) {
         form[i].value = informations[i];
     }
-    document.getElementById("H").checked = true;
-    sexSelected = "Homme";
-    console.log(document.getElementById("H"));
+    document.getElementById("Homme").checked = true;
+    document.getElementById("Femme").checked = false;
+    console.log(document.getElementsByName("sex")[0].value);
+    console.log(document.getElementById("Homme"));
     
 });
 

@@ -62,6 +62,8 @@ function validate(){
 function submit(){
     if(validate() == true){
         document.theForm.submit();
+    } else {
+        document.theForm.abort();
     }
 }
 
