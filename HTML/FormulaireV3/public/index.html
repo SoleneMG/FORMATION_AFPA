@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Formulaire d'inscription</h1>
+
+    <form class="form" action="#" method="get">
+        <table>
+            <tr>
+                <th>Entrer votre nom</th>
+                <td><input typ="text" id="surname" name="surname"></td>
+            </tr>
+            <tr>
+                <th>Entrer votre prénom</th>
+                <td><input typ="text" id="firstname" name="firstname"></td>
+            </tr>
+            <tr>
+                <th>Entrer votre âge</th>
+                <td><input typ="text" id="age" name="age"></td>
+            </tr>
+        </table>
+        <label class="strong">Êtes-vous un homme ou une femme ?</label>
+        <input class="sex" type="radio" name="sex" id="H" value="Homme">
+        <label for="H">Homme</label>
+        <input class="sex" type="radio" name="sex" id="F" value="Femme">
+        <label for="F">Femme</label>
+        <div class="button">
+            <input class="reset" type="button" value="RESET">
+            <input class="valid" type="submit" value="VALIDER">
+        </div>
+        <div class="debug">
+            <p>DÉBUG</p>
+            <input class="prefill" type="button" value="PRÉ-REMPLIR">
+            <input class="sendWithoutCheck" type="submit" value="ENVOI SANS VÉRIF">
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

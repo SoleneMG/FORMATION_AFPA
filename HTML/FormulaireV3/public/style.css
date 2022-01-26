@@ -1,0 +1,49 @@
+* {
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    width: 200vh;
+    align-items: center;
+}
+
+form {
+    width: 100vh;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+h1 {
+   text-align: center;
+}
+
+table {
+    text-align: left;
+    margin: 10px;
+}
+
+.strong {
+    margin: 3px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.valid {
+    margin-bottom: 10px;
+}
+
+p {
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.prefill {
+   margin: 0px 10px 10px 10px;  /* top right bottom left */
+}
