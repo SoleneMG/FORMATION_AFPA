@@ -1,9 +1,27 @@
 body {
     align-items: center;
+    transition: 0.25s ease;;
+}
+.box {
+    border:10px;
+    width:100vh;
+    height:300px;
 }
 table {
+    border: black solid 2px;
+    background-color: white;
+    border-collapse: collapse;
+    margin:0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
 }
+
+tr {
+    border-bottom: black solid 2px;
+}
+
 .red {
     background-color: red;
 }
@@ -12,4 +30,14 @@ table {
 }
 .blue {
     background-color: blue;
+}
+
+.redBtn {
+    text-align: center;
+}
+.greenBtn {
+    text-align: center;
+}
+.blueBtn {
+    text-align: center;
 }

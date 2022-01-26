@@ -1,0 +1,27 @@
+body {
+    width: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.left {
+    margin-top:18px;
+    margin: 20px;
+    width: 50vh;
+    float: left;
+}
+
+.right {
+    width:50vh;
+    float: right;
+}
+
+table {
+    border: solid black 1px;
+}
+
+th, td {
+    border: solid black 1px;
+}
