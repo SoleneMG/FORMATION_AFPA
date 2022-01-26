@@ -1,0 +1,29 @@
+
+h1, h3 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+p {
+    margin: 50px 0px 10px 0px;
+    text-align: center;
+}
+table {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: right;
+    border: solid black 2px;
+}
+
+input {
+    margin: 10px;
+}
+
+.btn {
+    width: 500px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
