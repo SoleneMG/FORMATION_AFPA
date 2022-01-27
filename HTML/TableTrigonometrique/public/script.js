@@ -45,7 +45,7 @@ for (let row = 0; row < 5; row++) {
             newTd.innerHTML = navigator.appCodeName; //NavigatorID.appCodeName;
             break;
         case 3:
-            newTd.innerHTML = navigator.usergAgent; //NavigatorID.userAgent; // userAgent
+            newTd.innerHTML = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"; //NavigatorID.userAgent; // userAgent
             break;
         case 4:
             newTd.innerHTML = navigator.platform; //  NavigatorID.platform;

@@ -10,6 +10,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import model.CD;
@@ -23,6 +24,7 @@ public class Main {
 		String csvFilePath = "res\\CDAUDIO0.CSV";
 		String htmlFilePath = "res\\index.html";
 		List<CD> dataList = m.extractDataFromCsv(csvFilePath, 0);
+		Collections.sort(dataList);
 		HtmlBuilder htmlBuilder = new HtmlBuilder();
 		String htmlFile = htmlBuilder.appendLang("fr")
 				.appendHead()
